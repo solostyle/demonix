@@ -215,24 +215,26 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author:
+   Author: Archana
    ========================================================================== */
 
 
 body {margin:1em}
-header {position:absolute;top:0;left:0;width:100%;z-index:1;background-color:rgba(51, 170, 238, 0.6)}
+header#prototype, footer, section#main {clear:both;margin:auto}
+header#prototype {position:absolute;top:0;left:0;width:100%;z-index:1;background-color:rgba(51, 170, 238, 0.6)}
+section#main {margin-top:4em}
 footer {position:absolute;bottom:0;left:0;width:100%;z-index:1;background-color:rgba(51, 170, 238, 0.6)}
 header h1 {margin:.2em}
 footer p {margin:.2em!important}
 
 
-header, footer, section#main {clear:both;margin:auto}
 section h2 {color:#aaa;padding:0;margin:.5em}
 p {margin-top:0}
-ol {list-style:none;padding:0}
-ol li {border:1px solid #ccc;display: inline-block;padding:1.5%;margin-right:1%;text-align:center;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px}
-ol li:hover {border-color:black}
-ol li:last-child {margin-right:0}
+ol.inline {list-style:none;padding:0;margin:1em 0}
+ol.inline li {border-left:1px solid #ccc;border-right:1px solid #ccc;border-top:0;border-bottom:0;display: inline-block;padding:.5%;margin:0;text-align:center;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px}
+ol.inline li:hover {border-color:black}
+ol.inline li:first-child {border-left:0}
+ol.inline li:last-child {margin-right:0;border-right:0}
 
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
