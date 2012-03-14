@@ -230,7 +230,7 @@ footer p {margin:.2em!important}
 
 section h2 {color:#aaa;padding:0;margin:.5em}
 p {margin-top:0}
-ol.inline {list-style:none;padding:0;margin:1em 0}
+ol.inline {list-style:none;padding:0;margin:1em 0;background-color:rgba(0, 0, 0, .05)}
 ol.inline li {border-left:1px solid #ccc;border-right:1px solid #ccc;border-top:0;border-bottom:0;display: inline-block;padding:.5%;margin:0;text-align:center;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px}
 ol.inline li:hover {border-color:black}
 ol.inline li:first-child {border-left:0}
