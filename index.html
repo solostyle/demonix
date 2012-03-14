@@ -29,7 +29,7 @@
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <header id="prototype">
+  <header id="prototype-header">
 		<h1>Prototype for integrating demographics</h1>
   </header>
   <section id="main">
@@ -60,15 +60,25 @@
 		
 		<!-- #jpMainContent -->
 		<section id="portal">
-			
+			<div id="portal-menu">
+				<div id="portal-menu-search"><h2>New Search</h2></div>
+				<div id="portal-menu-applied"><h2>Current Selections</h2></div>
+				<div id="portal-menu-filters"><h2>Refine Search By</h2></div>
+			</div>
+			<div id="portal-presentation">
+				<div id="portal-presentation-summary"><h2>Supply and Demand Summary</h2></div>
+				<div id="portal-presentation-detail"><h2>Supply and Demand Detail</h2></div>
+			</div>
 		</section>
 		
+		<div class="clearfix"></div>
 		<!-- #jpFooter -->
 		<footer>
+			<p>placeholder footer</p>
 		</footer>
 		
   </section>
-  <footer>
+  <footer id="prototype-footer">
 		<p><em>created by: Archana</em> for careerbuilder.com</p>
   </footer>
 
