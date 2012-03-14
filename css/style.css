@@ -221,10 +221,10 @@ td { vertical-align: top; }
 
 body {margin:1em}
 header#prototype, footer, section#main {clear:both;margin:auto}
-header#prototype {position:absolute;top:0;left:0;width:100%;z-index:1;background-color:rgba(51, 170, 238, 0.6)}
+header#prototype {position:absolute;top:0;left:0;width:100%;z-index:1;background-color:rgba(166, 170, 238, 0.6)}
+footer {position:absolute;bottom:0;left:0;width:100%;z-index:1;background-color:rgba(166, 170, 238, 0.6)}
 section#main {margin-top:4em}
-footer {position:absolute;bottom:0;left:0;width:100%;z-index:1;background-color:rgba(51, 170, 238, 0.6)}
-header h1 {margin:.2em}
+header#prototype h1 {margin:.2em}
 footer p {margin:.2em!important}
 
 

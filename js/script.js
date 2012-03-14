@@ -1,6 +1,6 @@
 document.title = 'Prototype for integrating demographics';
 
-this.Mastermind = this.Mastermind || function () {
+this.Demonix = this.Demonix || function () {
 	var colors = ['red','orange','yellow','green','blue','violet'];
 	var answer = {};
 	var guesses = {};
@@ -164,10 +164,10 @@ Array.remove = function(array, from, to) {
   return array.push.apply(array, rest);
 };
 
-this.Mastermind.ChooseAnswer();
-this.Mastermind.PopulateChoices();
-this.Mastermind.PopulateEmptyGuesses();
-jQuery('#color_choices li').click(this.Mastermind.UserChoice);
-jQuery('#reset_colors').click(this.Mastermind.Clear);
-jQuery('#submit_colors').click(this.Mastermind.Evaluate);
+this.Demonix.ChooseAnswer();
+this.Demonix.PopulateChoices();
+this.Demonix.PopulateEmptyGuesses();
+jQuery('#color_choices li').click(this.Demonix.UserChoice);
+jQuery('#reset_colors').click(this.Demonix.Clear);
+jQuery('#submit_colors').click(this.Demonix.Evaluate);
 jQuery('#new_game').click(window.location.reload);
