@@ -19,7 +19,7 @@
 #JPTopNav ul li a.activeitem{color:#FF6600;}*/
 
 #jpHeader {
-	background: #132f6e url(../../images/jp/background/navarrays_final.jpg) no-repeat bottom center;
+	background: #132f6e url(navarrays_final.jpg) no-repeat bottom center;
 	height:150px !important;
 	margin:0 auto;
 }
@@ -30,7 +30,7 @@
 
 /*==== Job Poster Top Nav =======*/
 #JPTopNav {
-	background: url(../../images/jp/jpnestednav/bg_JPTopNav.jpg) left bottom repeat-x;
+	background: url(bg_JPTopNav.jpg) left bottom repeat-x;
 	font-size: 13px;
 	font-weight: bold;
 	padding: 6px 0;
@@ -50,7 +50,7 @@
 	float: left;
 	padding:0;
 	margin: 0;
-	background: url(../../images/jp/jpnestednav/bg_jpTobNav-button-r.png) 100% 0 no-repeat;
+	background: url(bg_jpTobNav-button-r.png) 100% 0 no-repeat;
 	margin-left: 2px;
 	padding-right: 5px;
 }
@@ -61,7 +61,7 @@
 	padding:9px 12px 8px 18px;
 	display: block;
 	margin-right: 0px;
-	background: url(../../images/jp/jpnestednav/bg_jpTopNav-button.png) 0 0 no-repeat;
+	background: url(bg_jpTopNav-button.png) 0 0 no-repeat;
 }
 #JPTopNav ul li a:hover {
 	color: #FFFFCC;
