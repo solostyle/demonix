@@ -1,0 +1,1072 @@
+body { margin: 0px; }
+.pnlInnerWrapper { margin: 0 auto; width: 960px; }
+#cbHeader, #pnlOuterWrapper { background: #fff; }
+.bounds { width: 960px; margin: 0 auto; }
+
+/* Sign In Bar */
+.cb_PBar { width: 100%; background-color: #bbb;  }
+
+/* Header */
+#jpHeader { width: 100%; text-align: center; background-color: #0f3d71; font: 11px arial, helvetica, sans-serif; color: #fff; }
+#jpHeader a, #jpHeader a:visited { color: #fff; }
+#jpHeader_inner { padding: 10px 0; text-align: left; }
+#jpHeader_security { float:left;  text-align: right; font-weight: bold; font-size: 12px; margin-left:175px;}/*margin: 0px 40px 2px 15px;*/
+/*#jpHeader_security { float: right; margin: 0px 5px 2px 50px; text-align: right; font-weight: bold; font-size: 12px; }*/
+#jpHeader_logo { float: left; width: 200px; margin: 0 10px; padding: 10px 0; }
+#jpHeader_banner, #jpHeader_secure { float: right; width: 728px; text-align: right; }
+#jpHeader_secure div { float: right; width: 160px; line-height: 2em; }
+#jpHeader_secure div.logo { width: 130px; }
+#jpHeader_secure1 { float:left; width: 300px; text-align: right; }
+#jpHeader_secure1 div { float: right; width: 160px; line-height: 2em; }
+#jpHeader_secure1 div.logo { width: 130px; margin-left:-15px; float:left;   }
+
+#jpHeader_secure #secure_wrapper { position: relative; }
+#jpHeader_secure #secure_popup { position: absolute;  margin-left: -12em; width: 300px; z-index: 999999; border: 1px solid #fff; text-align: left; background-color: #0f3d71; }
+#jpHeader_secure .popup_inner { width: auto; margin: 0 10px; padding: 10px 0; }
+#jpHeader_status { font: 11px Arial, Helvetica, Sans-Serif; color: #000; text-align: right; font-weight: bold; }
+#jpHeader_status ul { margin: 0; padding: 0; float: right; }
+#jpHeader_status li { list-style-type: none; float: left; padding: .3em 12px; }
+
+/* Footer */
+.jpFooter { width: 100%; padding-top: 10px; text-align: center; font: 11px Arial,Helvetica, Sans-Serif; background-color: #132F6E; color: #fff; }
+.jpFooter a, .jpFooter a:visited { color: #fff; text-decoration: none; }
+.jpFooter a:hover { text-decoration: underline; }
+
+#jpFooter_inner, #jpFooter_csCallOut { width: 760px; margin: 0 auto; padding: 10px 0; text-align: left; }
+
+#jpFooter_csCallOut { text-align: center; color: #000; width: 43em; margin: 10px auto 0 auto; background-color: #bbb; }
+#jpFooter_csCallOut ul { margin: 0 0 0 1em; padding: 0; text-align: left; }
+#jpFooter_csCallOut li { float: left; padding: .5em 1em; list-style-type: none; border-right: 1px solid #000; }
+#jpFooter_csCallOut li.last { border-right: none; }
+
+#jpFooter_inner div { float: left; width: 22%; margin: 0 1%; }
+#jpFooter_inner dl { margin: .5em 0; padding: 0; }
+#jpFooter_inner dt { border-bottom: 1px solid #fff; display: block; font-weight: bold; }
+#jpFooter_inner dd { line-height: 20px; margin: 0; }
+#jpFooter_inner #pnlCountryLinks,
+#jpFooter_inner #pnlCountryLinks div { width: 100%; padding: 0; margin: 0; }
+#jpFooter_inner span { display: block; line-height: 20px; font-weight: normal; }
+
+.jsHomePageWrapper { background-color: #AABCD5; }
+
+.CBJobPoster { background-color: #0F3D71; }
+.cb_style { font: 11px arial,helvetica; }
+.cb_style h1, #jpiHeader h1 a 
+{
+	font: 22px arial;
+	font-weight: bold;
+	color: #000;
+	margin: 0px;
+	text-decoration: none;
+}
+.cb_style h2, #jpiMainContent h2 a 
+{
+	font: 18px arial; 
+	font-weight: bold; color: #006; 
+	margin: 0px; 
+	text-decoration: none;
+}
+#jpiMainContent h2 a:hover, #jpiHeader h1 a:hover 
+{
+	text-decoration: underline;
+}
+.cb_style h3 
+{
+	font: 12px arial; 
+	font-weight: bold; 
+	color: #006; 
+	margin: 0px;
+}
+.cb_style select, .cb_style input, td {
+	font: 11px arial,helvetica;
+	color: #333333;
+}
+.cb_style a{
+	font: arial,helvetica;
+	color: #000099;
+}
+.cb_style .hdr_gry_bld, .cb_style .hdr_bold{
+	font: bold 18px arial,helvetica;
+	color: #333333;
+}
+.cb_style .blu_bold{			/* slightly bigger, clickable title links */
+	font: bold 14px arial,helvetica;
+	color: #000066;
+}
+.cb_style .bdy_gry{
+	font: bold 11px arial,helvetica;
+	color: #333333;
+}
+/* Nav */
+.cb_style .nav_bold{
+	background: none;
+	font: bold 11px arial,helvetica;
+	color: #333333;
+	text-decoration:underline;
+}
+
+.cb_style .nav{
+	background: none;
+	font: 11px arial,helvetica;
+	color: #333333;
+	text-decoration:none;
+}
+
+.cb_style A.nav:hover{
+	text-decoration:underline;
+}
+
+.cb_style .results_nav{
+	font: bold 11px arial,helvetica;
+	color: #333333;
+}
+.jpiGreyBox 
+{
+	background-color: #F1F1F1; 
+	width: 140px; 
+	margin-bottom: 10px; 
+	padding: 5px; 
+	display: block; 
+	text-decoration: none;
+}
+.jpiGreyBox p 
+{
+	font: 10px arial;
+	margin: 0px;
+}
+.jpiArrow 
+{
+	padding-left: 10px; 
+	background-repeat: no-repeat; 
+	background-position: left 5px;
+}
+.jpiSpacer 
+{
+	height: 9px;
+}
+#jpiWrapper 
+{
+	position: relative; 
+	padding: 9px;
+}
+#jpiLayout 
+{
+	height: 467px; 
+	background-color: #FFF; 
+	background-repeat: no-repeat; 
+	background-position: top left;
+}
+#jpiHeader 
+{
+	background-color: #E3E1CD; 
+	margin: 5px 0px 10px 14px; 
+	padding: 2px 6px;
+}
+#jpiMainContent 
+{
+	width: 272px; 
+	height: 390px; 
+	padding: 0px 10px 0px 18px; 
+	margin-bottom: 10px; 
+/*	border-right-width: 1px; 
+	border-right-style: solid; 
+	border-right-color: #CCC; */
+}
+#jpiMainContent p 
+{
+	font: 11px arial; 
+	margin: 0px;
+}
+#jpiMainContent a 
+{
+	font: 11px arial; 
+	color: #006;
+}
+#jpiMainContent a.jpiHighlightLink 
+{
+	font: 12px arial; 
+	color: #C00;
+}
+#jpiMainContent .jpiLinks 
+{
+	margin: 5px 0px;
+}
+#jpiRightContent 
+{
+	font: 11px arial; 
+	width: 160px; 
+	padding-left: 10px;
+}
+#jpiRightContent a 
+{
+	font: 10px arial; 
+	color: #333;
+}
+#jpiLoginTab 
+{
+	width: 240px; 
+	height: 104px; 
+	background-color: #006; 
+	position: absolute; 
+	top: -7px; 
+	right: 0px; 
+	z-index: 10;
+}
+#jpiLoginTab td 
+{
+	color: #FFF; 
+	vertical-align: middle;
+}
+#jpiLoginTab form 
+{
+	margin: 0px; 
+	text-align: right; 
+	padding-left: 18px; 
+	padding-right: 18px;
+}
+#jpiLoginTab a, #jpiLoggedInTab a, #jpiLoggedInTab td 
+{
+	font: 10px arial; 
+	color: #FFF;
+}
+.jpiTextInput 
+{
+	width: 120px; 
+	height: 12px; 
+	margin-bottom: 1px;
+}
+#jpiLoggedInTab 
+{
+	height: 26px; 
+	position: absolute; 
+	top: -26px; 
+	right: 9px; 
+	z-index: 10;
+}
+#jpiLeftLink 
+{
+	width: 265px; 
+	height: 400px; 
+	display: block;
+}
+#jpiCobrandLoggedInTab 
+{
+	height: 26px; 
+	position: absolute; 
+	top: 23px; 
+	right: 25px; 
+	z-index: 10;
+}
+
+/* Page Bucket Styles */
+#pageBucketWrapper { text-align: center; }
+#pageBucketBlueWrapper { margin: 0 auto 0 auto; text-align: left; width: 740px; padding: 0 5px 5px 5px; }
+#pageBucketContentWrapper { margin: 0; width: 740px; padding: 0; background-color: #fff; }
+
+.cb_style #RDBRelease
+{
+	text-align: right;
+	padding-right: 15px;
+}
+
+.cb_style #RDBRelease span a
+{
+	font-size:12px;
+	font-family: Arial; 
+	font-weight: bold;
+	color:#0000EE;
+	text-decoration: underline;
+}
+
+.cb_style #RDBSummaryPicker
+{
+	float: right;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color:#000000;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* Clearing Classes */
+.clear {
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Clearing floats - Hat Tip: http://www.positioniseverything.net/easyclearing.html  */
+.clearfix:after 
+{
+    content: "."; 
+    display: block; 
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* JCK - added this to remove the extra spacing in Safari and Firefox */
+.c\learfix:after { line-height: 0; }
+.clearfix { display: inline-table; }
+
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+/* End hide from IE-mac */
+/* End Clearing Classes */
+
+.jp_xavier_email_targ { color: #FFF; float: none; position: absolute; }
+.jp_xavier_email_targ ul { padding: 0px; margin: 0px; width: 335px; }
+.jp_xavier_email_targ li { background-color: #7287A3; width: 100%; list-style-type: none; cursor: pointer; margin: 0px; padding: 3px 5px; }
+.jp_xavier_email_targ span.substr { font-weight: bold; }
+.jp_xavier_email_targ li.selected { background-color: #5A6E8A; }
+
+.disabledCBHyperlink{
+
+color:#808080;
+
+}
+
+
+.DisplayField_Center
+{
+	margin: 6px;
+	text-align: center;
+}
+
+ .Hidden
+{
+	display: none; 
+}
+
+/* stupid asterisk */
+.cb_style .requiredStar { font-family: Arial, Sans-Serif; font-size: 14px; text-align:center; color:#ff6600; vertical-align: bottom;}
+.cb_style .requiredText {font-weight: bold; font-family: arial,helvetica; font-size: 10px; color: #FF6600;}
+
+.lnkBtn 
+{ color:#006; font-family:Arial,Sans-Serif; font-size:10px; 
+  text-align:center; width:auto; height:15px; background-color:#fff; 
+  border: solid 1px #006;
+  }
+.cb_style a.lnkBtn{color: #006 !important; text-decoration: none; font-weight:bold;}
+.cb_style a.lnkBtn:hover{text-decoration: none;}
+.cb_style a.lnkBtn:visited {color: #006 !important; text-decoration: none; font-weight:bold;}
+
+/* Buttons */
+ .linkbtn
+{
+	font-weight: bold;
+	font-size:12px; 
+	color: #fff;
+	cursor: hand;
+	width: auto ;
+	border: 1px solid #c30;
+	border-top-color: #fc6;
+	padding: .25em !important; /* hold this line for Firefox and Safari */
+	padding: .25em 0; /* take of the left/right margins for IE */
+background: #ff7d00 url("../../images/js/elements/buttons/bg_btn.gif") 0 0 repeat-x !important; /* hold this line for Firefox and Safari */
+background: #ff7d00 url("../../images/js/elements/buttons/bg_btn.gif") 0 -1px repeat-x; /* shift the bg up 1px for IE */
+}
+
+.cb_style a.linkbtn{color: #FFF !important; text-decoration: none; font-weight:bold;}
+.cb_style a.linkbtn:hover{text-decoration: none;}
+.cb_style a.linkbtn:visited {color: #FFF !important; text-decoration: none; font-weight:bold;}
+
+.templateHeaders
+{
+	color:#006; font-family:Arial Narrow; font-size:16px; font-weight:bold; text-align:center;
+	
+}
+
+.videoWrapper {margin: 2px; width: auto; float: left; text-align: center; clear:both; margin-left:50px; margin-bottom:10px; margin-top:10px;}
+	h1.vtheader {display:inline; margin-right:128px;}
+	h2.entryform {display:inline; text-align:right;}
+    .topvideoboxwrapper{text-align:center; margin-left:40px; float:left; margin-bottom:25px; margin-top:10px;}
+    .topvideobox {height:343px; overflow:auto; border:solid 1px #006; width:220px; clear:right;}
+    .topvideobox img{margin:0px auto 0px auto; border:none;}
+    .topvideobox p.byline {margin-left:10px; margin-top:0px; margin-bottom:20px; border:none;}
+    .topvideobox a {border:none; text-decoration:none;}
+    .disclaimer{text-align:left; margin-top:15px;}
+    .topvideobox p {margin-left:10px; margin-top:0px; margin-bottom:0px; border:none;}
+.videobtn{
+background:#2629A5 url(../../images/js/elements/buttons/bg_btn.gif) repeat-x scroll 0 0 !important;
+	border-color:#FFCC66 #CC3300 #CC3300;
+	border-style:solid;
+	border-width:1px;
+	padding:0.25em !important;
+	font-weight:bold;
+	line-height:20px;
+	margin:1px auto;
+}
+.videobtn a{
+	color:#ffffff;
+	font-size:17px;
+	text-decoration:none;
+	text-align:center;
+}
+.videobtn a:hover{
+	text-decoration:underline;
+}
+.videobtn a:visited{
+	color:#ffffff;
+}
+#infoWrapper ul.emplyervidcopy
+{
+	list-style-type:disc;
+	padding:none;
+	margin:5px 10px 5px 25px;
+}
+.borderclass{
+	font-size:13px; 
+	padding-right:20px; 
+	border: solid 1px #006;
+}
+#infoWrapper .borderclass{
+	border:none;
+}
+
+.JPMyCBPageWrapper{background-color:#ffffff;}
+.JPMyCBLeftWrapper{float:left;width:70%; background-color:#ebebeb; margin-left:1px; padding:5px; display:inline;}
+.JPMyCBLeftWrapper h1{color:#424242; font-size:12px; margin-bottom:5px;}
+.JPMyCBPageWrapper .JPMyCBSnapshotWrapper{ background-color:#f0f0f0; color:#333; }
+.JPMyCBSnapshotWrapper .stdInnerContent { padding: 10px 0 0 0; }
+.JPMyCBPageWrapper .JPMyCBSnapshotWrapper h3{color:#416391;}
+.JPMyCBPageWrapper .JPMyCBSnapshotWrapper hr{background-color:#f8f8f8; height:1px;}
+.JPMyCBPageWrapper .JPMyCBSnapshotWrapper td{ color:#333;}
+.JPMyCBPageWrapper .JPMyCBSnapshotWrapper td a{ color:#416391; text-decoration:underline;}
+.JPMyCBPageWrapper .JPMyCBSnapshotWrapper .btn a { color: #fff; }
+
+.JPMyCBSnapshotLeft{float:left; width:50%; border-right: solid 1px #fefefe;}
+.JPMyCBSnapshotRight {float:left; width:50%;}
+.JPMyCBWhiteBoxWrapper div{background-color:#ffffff; margin:10px 0px 10px 0px; padding:5px 10px 5px 10px; color:#000000; border: solid 1px #c7c7c7;}
+.JPMyCBWhiteBoxWrapper a{text-decoration:underline;}
+.JPMyCBWhiteBoxWrapper hr{background-color:#ebebeb; height:1px;}
+.JPMyCBWhiteBoxWrapper h3{color:#000000;}
+.JPMyCBWhiteBoxWrapper td .btn a{ color:#fefefe; text-decoration:underline;}
+.JPMyCBWhiteBoxWrapper .btn a{ color:#fefefe; text-decoration:underline;}
+.JPMyCBRightWrapper{float:left;width:18%; padding:5px; padding-left:5px; display:inline;}
+.JPMyCBRightWrapper hr{padding-top:0px; height:1px; margin-top:0px; width:100%;}
+.JPMyCBRightWrapper h3{color:#000000;}
+.cb_style h3{border-bottom:none;}
+.JPMyCBPageWrapper #pnlIMChat {border:solid 1px #c7c7c7; padding:10px; margin-top:5px; margin-bottom:10px;}
+.JPMyCBPageWrapper .news {margin-left:10px; margin-top:10px; border-bottom:dashed 1px #ccc; padding-bottom:10px; margin-right:10px;}
+.JPMyCBPageWrapper .news a {margin-left:10px;}
+.JPMyCBWhiteBoxWrapper .MyCBNews{padding:0px; margin:0px;}
+.JPMyCBWhiteBoxWrapper .MyCBNews h3{background:url(../../images/jp/elements/NewsGrad.gif) repeat-x; color:#fff; padding:10px 0px 6px 10px; border-bottom:solid 2px #F8931F;}
+
+
+#myCBColLeft {width:45%; float:left; border:none; background:none;}
+#myCBColRight {width:45%; float:left; border:none; background:none;}
+#myCBColLeft img{margin-left:15%;}
+#myCBColRight img {margin-left:15%;}
+
+#myCBColLeft a {text-decoration:none; color:#000000;}
+#myCBColRight a {text-decoration:none; color:#000000;}
+
+.YearWidth {
+	width: 60px !important;
+	margin: 0 0 0 10px !important;
+}
+.smallGradText {
+	font-size: 10px;
+	display: block;	
+}
+.MonthWidth {
+	margin: 0 !important;
+	width: auto !important;
+}
+.schoolTable label {
+	display: block;
+}
+#JPMyCBContentWrapper { 
+    background: #FFF; 
+    width: 960px; 
+    margin: 0 auto; 
+    padding-bottom: 32px; 
+} 
+ 
+#jpMainContent { 
+    margin-left: 170px; 
+    width: 760px; 
+    font-size: 12px; 
+    line-height: 1.4em; 
+}
+#jp_mainContent h2
+{
+    border-bottom:none;
+}
+
+.NewJobPosting 
+{
+	margin: 13px 0 29px !important;
+}
+
+.NewJobPosting a
+{
+	font-size: 15px;
+    font-weight: bold;
+}
+
+.ProductSelectionRight {
+	margin: -38px 5px 28px !important;
+}
+
+.ProductSelectionRight a{
+	float: right;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.shoppingCartTitle, .cb_style h2, .cb_style legend{
+    border-bottom:none;
+}
+    #jp_couponButton{background-color:Transparent; float:right; border:none; cursor:pointer; color:#000099; font-weight:bold; font-family:Arial, Helvetica, Sans-Serif; font-size:11px;}    
+    .hideme{float:left;}
+    #jp_mainWrapper .hideme a{text-decoration:none !important;}
+    #jp_mainWrapper button.jp_updateCart, #jp_mainWrapper button.jp_addtoCart {
+	display: block;
+	border: 0;
+	width: 80px;
+	margin: 0 0 0 10px;
+	padding: 0;
+	text-indent: 12px;
+	background: transparent url(http://img.icbdr.com/images/JP/widgets/addtocarticon.gif) no-repeat left 1px !important;
+	color: #0f3d71;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	text-decoration: none !important;
+	cursor: pointer;
+    float:left;
+}
+#jp_mainWrapper a:hover, #jp_mainWrapper a:active {
+text-decoration:none !important;
+}
+#jp_mainWrapper a:link, #jp_mainWrapper a:visited {
+text-decoration:none !important;
+}
+#jp_mainWrapper fieldset{padding-top:2px; padding-bottom:2px; clear:both; border:none; border-bottom:1px #CCCCCC solid;}
+
+.prodInfo{width:60%;}
+
+.jp_jobLogo, .jp_crossPosting{margin-left:10px; border-bottom:1px #CCCCCC solid; margin-top:10px;}
+.jp_smartJob{margin-left:10px; margin-top:10px;}
+
+#ddlJobLogo, #ddMainProductQty, #ddlCrossPosting, #ddlSmartJob, #ddlRDB, #ddlBB{float:left; margin-bottom:10px; margin-left:5px;}
+.total{ float:left; text-align:right; border: 1px solid transparent;}
+.jp_jobPostings{margin-top:5px;}
+
+#jp_mainWrapper fieldset h2{margin-bottom:5px;}
+
+#ddlJobLogo button, #ddMainProductQty button, #ddlCrossPosting button, #ddlSmartJob button, #ddlRDB button, #ddlBB button{font-weight:bold;}
+
+.shoppingCartItem span{margin-left:15px;}
+.otheritems{float:left; width:100%; border-top:solid 1px #ccc; border-bottom:solid 1px #ccc; background-color:#eee; font-weight:bold; color:#4D4D4D; font-size:14px; padding:5px 0px 5px 10px; margin-top:10px;}
+.checkout span{}
+.checkout {margin-bottom:10px;}
+.jp_cartList .total{float:right; width:8%; text-align:right; font-weight:bold; font-size:14px; color:#4d4d4d; margin-top:10px;}
+.jp_cartList span{float:left; width:25%;}
+.shoppingCartItem{float:left; width:100%; margin-left:0px; margin-top:5px; margin-bottom:5px; font-size:13px; color:#4D4D4D;}
+.jp_cartList .itemquantity{width:25%;}
+.jp_cartList .selectBox{float:left; width:20%;}
+.jp_cartList .selectBox select{vertical-align:top;}
+.jp_cartList .trashicon{float:right;width:.5%;}
+#jp_mainContainer{width:100%;}
+.jp_cartList .itemcost{width:7%; font-size:12px; text-align:right;}
+.jp_cartList .itemcosttotal{width:9%; float:right; text-align:right;}
+.TotalBox .discount{float:left; text-align:right; width:120px;}
+.TotalBox .total{float:right; text-align:right; font-weight:bold; font-size:13px; color:#4d4d4d; margin-top:10px; padding:0 5px 0 5px; width:75px; }
+.TotalBox{float:right; width:260px; margin-right:3px; margin-top:10px;}
+.TotalBox .trashicon{float:right;width:1%;}
+.TotalBox .amnt{width:60px;}
+.totalBoxWrapper{border-top:1px solid #ccc; float:left; width:100%; margin-bottom:10px;}
+.TotalBox .totaltext{width:40px;}
+.hideme ul li{list-style-image:url(http://img.icbdr.com/images/jp/OrangeBullet.gif); padding:5px 0 5px 0;}
+.prodChooser{}
+.prodChooserVariable{}
+#jp_mainWrapper .prodChooserVariable button.jp_updateCart, #jp_mainWrapper .prodChooserVariable button.jp_addtoCart{}
+
+.checkoutWrapper{float:right; width:28%;}
+
+.jp_continue{float:right;}
+#jp_continueOne {margin-bottom:10px;}
+.jp_CartLabels .itemquantity{float:left;font-weight:bold; font-size:12px; margin-left:14px;}
+.jp_CartLabels .selectBox{float:left;margin-left:14px; font-weight:bold; font-size:12px;}
+.jp_CartLabels .trashicon{float:left;font-weight:bold; font-size:12px;}
+
+.jp_CartLabels .itemcost{font-size:12px; text-align:right; float:left;font-weight:bold; margin-left:156px;}
+.jp_CartLabels .itemcosttotal{float:left; text-align:right;font-weight:bold; font-size:12px; margin-left:355px;}
+.jp_CartLabels{margin:10px 0; padding-bottom:10px;}
+
+/* Added by SiteIndiaProject3 - Unni/Sheeja- Start */
+
+/*.NeedHelp{width:100%; text-align:right; padding-left:300px;  font: 12px arial; margin-top:10px; background:url("http://img.icbdr.com/images/jp/img/orange_help.gif") no-repeat scroll left center transparent;  }*/
+.NeedHelp{background:url("https://secure.icbdr.com/images/jp/img/orange_help.gif") no-repeat scroll left center transparent; float:right; font-size: 12px arial; padding:4px 0 4px 18px; margin-top:10px;
+          }
+.NeedHelpNumber{text-align:right; font:bold 14px arial;  }
+.jp_CartLabels .itemquantitypr{float:left;font-weight:bold;font-size:12px; margin-left:15px; }
+.jp_CartLabels .selectBoxpr{float:left; text-align:right;font-weight:bold; font-size:12px;margin-left:355px;}
+.jp_CartLabels .itemcostpr{ float:left;font-size:12px; text-align:right;font-weight:bold;margin-left:85px;}
+.jp_CartLabels .itemcosttotalpr{float:left; text-align:right;font-weight:bold; font-size:12px;margin-left:82px;}
+/*.jp_cartList .itemquantitypr{width:39%;   }
+.jp_cartList .selectBoxpr{float:left; width:20%; text-align:right;margin-left:45px;}
+.jp_cartList .selectBoxpr select{vertical-align:top;}
+.jp_cartList .itemcostpr{width:10%; font-size:12px; text-align:right; float:left; margin-left:50px;}
+.jp_cartList .itemcosttotalpr{width:10%; float:left; text-align:right; margin-left:35px; }*/
+
+.jp_cartList .itemquantitypr{width:275px;   }
+.jp_cartList .selectBoxpr{float:left; width:175px; text-align:right;margin-left:35px;}
+.jp_cartList .selectBoxpr select{vertical-align:top;}
+.jp_cartList .itemcostpr{width:80px; font-size:12px; text-align:right; float:left; margin-left:35px;}
+.jp_cartList .itemcosttotalpr{width:80px; float:left; text-align:right;  margin-left:30px; padding-right:5px; }
+.productcart {width:733px; padding: 0px 5px 5px 5px; overflow:hidden;   }
+
+.totalBoxWrapperpr {border:1px solid #ccc;float:left; width:735px; margin-top:10px;  margin-bottom:10px;background:url("https://secure.icbdr.com/images/intl/LightGrayGradient.jpg") repeat-x scroll 0 0 transparent;}
+.jp_Continuebtnpr{float:right; margin-bottom:5px; }
+.shoppingCartTitle1{ color:#4D4D4D; font:bold 22px arial; padding :4px 0 10px 0;}
+/*.tooltip {height:100%; padding:.3em .3em .5em .3em; width:740px; border: solid 1px !important; background:url("https://img.icbdr.com/images/Images/jpimages/tooltip.jpg") 
+.tooltip-ad{float:left; width:740px; border:transparent solid 1px; margin-top:-5px; position:absolute; background:url("http://img.icbdr.com/images/Images/jpimages/tooltip_top.jpg") no-repeat }*/
+.tooltip-top {height:26px; width:740px; border:transparent solid 1px; position:absolute; padding-top:6px; margin-top:0px; background !important; background:url("https://secure.icbdr.com/images/Images/jpimages/tooltip_topnew.jpg") no-repeat;  } 
+.tooltip-middle {border:1px solid transparent;float:left; width:739px; margin-top:-1px; padding:5px 0px 2px 0px;  background:url("https://secure.icbdr.com/images/Images/jpimages/middle_repeat.jpg");}  
+.tooltip-Bottom {height:20px; border:1px solid transparent;float:left; margin-top:-3px; width:740px;background:url("https://secure.icbdr.com/images/Images/jpimages/tooltip_bottom.jpg") no-repeat;}  
+.jp_jobPostings1 {position:relative; font-size:12px; }  
+.jp_chooseUpgrades{border:1px solid #dce8f9; margin-top:10px; width:735px; font-size:12px;}
+#fsAddUpgrades{width:100%;}
+.h2Bg{ padding-left:10px;  width:725px;font: 18px arial; font-weight: bold; color: #ffffff; margin: 0px; text-decoration: none; background-color: #132f6e; background-image: url(https://secure.icbdr.com/images/jp/elements/NewsGrad.gif)); }
+.otheritemsHeader{float:left; width:725px; border:solid 1px #ccc; background-color:#ccc; font-weight:bold; color:#4D4D4D; font-size:14px; padding:5px 0px 5px 10px; margin-top:5px;}
+.jp_jobLogo1{ background-color:#DCE8F9; border:1px #3a71ae solid; padding:5px 0px 10px 10px; }
+.jp_crossPosting1 { background-color:#DCE8F9; border:1px #3a71ae solid; margin-top:5px; padding:5px 0px 10px 10px;}
+.jp_smartJob1{ background-color:#DCE8F9; border:1px #3a71ae solid; margin-top:5px; padding:5px 0px 10px 10px;}
+.learnmore{ background: #ececec url(https://secure.icbdr.com/images/personified/arrow_right.gif) no-repeat; padding: 2px 5px 2px 10px;  float:left;
+            background-position :0.2em 50%; } /*  -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;*/
+.prodChooserpr{width:39%;}
+button.jp_addtoCartpr {                 
+	display: block;
+	border: 0;
+	width: 80px;
+	margin: 0 0 0 10px;
+	padding: 0;
+	text-indent: 12px;
+	background: transparent url(https://secure.icbdr.com/images/JP/widgets/addtocarticon.gif) no-repeat left 1px !important;
+	color: #0f3d71;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	text-decoration: none !important;
+	cursor: pointer;
+    float:right;
+}
+.hidemelearn{float:left;}
+.hidemelearn a{text-decoration:none !important;}
+.hidemelearn ul li{list-style-image:url(https://secure.icbdr.com/images/blue_bullet.gif) !important; padding:-10px 20px 5px 0; text-align:justify; margin-top:8px; }
+/*.prodChooserQty{float:left; width:100px; text-align:right;margin-left:10px;}*/
+.prodChooserQty{float:left; width:80px; text-align:left;margin-left:32px; padding:5px; }
+.prodehChooserQty{float:left; width:80px; text-align:left;margin-left:30px;}
+.prodChooserItemPrice{width:40px; font-size:12px; text-align:right; float:left; margin-left:0px;padding-top:6px; }
+.prodtotalItemPrice{width:80px; float:left; text-align:right;  margin-left:20px; padding-right:5px; padding-top:6px;}
+.prodehChooserItemPrice{width:50px; font-size:12px; text-align:right; float:left; margin-left:5px;}
+.prodehtotalItemPrice{width:80px; float:left; text-align:right;  margin-left:10px; padding-right:4px; }
+.prodOtherItemPrice{width:80px; float:left; text-align:right;  margin-left:30px; padding-right:5px; }
+/*.prodChooserItemPrice{float:Left; width:10%;margin-left:75px;}
+.prodChooserQty{float:left; width:18%;margin-left:22px;}
+.prodOtherItemPrice{float:Left; width:10%;margin-left:45px; text-align:right;}*/
+.prodOtherQty{float:left; width:19%;margin-left:22px;}
+/* Added by SiteIndiaProject3 - Unni/Sheeja - End */
+
+/* Error Message Controls */
+
+.errMsgBox
+{
+	text-align: center;
+	width: 350px;
+	margin: 0px auto;
+	border: 2px solid #CCC;
+}
+
+.errMsgHeader
+{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #FF6600;
+}
+
+.errMsgFiller
+{
+    height:20px;
+    clear:both;
+    margin:auto;
+}
+
+.errMsgDetail
+{
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.errMsgIcon
+{
+	width: 30px;
+	margin: 5px auto;
+}
+
+.errMsgMessageBody
+{
+	background-color: #F2F5F8;
+	margin: 0px 5px 5px 5px;
+	padding: 5px 0px 3px 0px;
+}
+
+.errMsgPushFooter
+{
+    height:290px;
+}
+/* Watermark Message Controls */
+
+.wmMsgBox
+{
+	text-align: center;
+	vertical-align:top;
+	width: 350px;
+	margin: 0px auto;
+	border: 0px;
+}
+
+.wmMsgFillerV10
+{
+    height:10px;
+    margin:auto;
+}
+
+.wmMsgFillerV20
+{
+    height:20px;
+    margin:auto;
+}
+
+.wmMsgFillerV5
+{
+    height:5px;
+    margin:auto;
+}
+
+.wmMsgDetail
+{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #c0c0c0;
+}
+
+.wmMsgMessageBody
+{
+	background:transparent;
+	margin: 0px 5px 5px 5px;
+	padding: 5px 0px 3px 0px;
+}
+
+.wmMsgPushFooter
+{
+    height:290px;
+}
+
+.memberinfodetailsascx
+{
+    float: left;
+}
+
+/* Specific styles forJobPoster pages. page removed from  */
+/* cocde is removed from JobPoster.UI.css */
+
+
+.jp_header {
+	color: rgb(0, 46, 112) !important;
+	margin-bottom: .5em !important;
+	margin-top: .5em !important;
+}
+
+.jp_metainfo {
+	font-size: 1.25em;
+	color: rgb(100, 100, 100);
+}
+
+	.jp_metainfo b {
+		color: rgb(0, 46, 112);
+		font-size: 1.3em;
+	}
+	
+.jp_emphasis {
+	color: #F5842C;
+}
+
+.jp_link {
+	color: rgb(0, 113, 188) !important;
+	text-decoration: none !important;
+	font-weight: bold !important;
+}
+	.jp_link:hover {
+		text-decoration: underline !important;
+	}
+	
+	
+form.multigeo_upload_form, div.multigeo_upload_form {
+    text-align: left;
+}
+
+/* HEADER & LABEL SYTLES */
+.multigeo_upload_form h1 {
+    font-size: 22px;
+    margin: .2em 0 .2em 0;
+    color: #202245;
+}
+
+.multigeo_upload_form h2 {
+    border: none;
+    color: #202245;
+    margin: 1em 0 .8em 0;
+}
+
+.multigeo_upload_form h3 {
+    font-weight: normal;
+    color: #202245;
+    margin: .75em 0 .75em 0;
+    font-size: 16px;
+    border: none;
+}
+
+.multigeo_upload_form h4 {
+    margin: .5em 0 .5em 0;
+    font-size: 12px;
+    color: #333333;
+    line-height: 14px;
+}
+
+.multigeo_upload_form h5 {
+    margin: .2em 0 .5em 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.multigeo_upload_form h6 {
+    margin: .2em 0 .2em 0;
+    font-size: 12px;
+    color: #333;
+}
+
+.multigeo_upload_form label {
+    margin: .5em 0 .5em 0;
+    font-size: 12px;
+    color: #333333;
+    line-height: 14px;
+    font-weight: bold;
+}
+
+
+/* INPUT & LINK STYLES (Text boxes, buttons, anchors) */
+.multigeo_upload_form input[type=text], .multigeo_upload_form input[type=email], .multigeo_upload_form input[type=password],
+.multigeo_upload_form input[type=url] {
+    font-size: 14px;
+    padding: 0.2em 0.4em;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    margin-right: 1em;
+}
+
+.multigeo_upload_form select {
+    font-size: 14px;
+    padding: .2em .2em .2em .4em;
+}
+
+.multigeo_upload_form .button, .multigeo_upload_form input[type="button"] {
+    background-image: -moz-linear-gradient(#F98A07, ##F1E195); /* FF 3.6+ */
+    background-image: -ms-linear-gradient(#F98A07, ##F1E195); /* IE10 */
+    background-image: -webkit-linear-gradient(#F98A07, ##F1E195); /* Safari 5.1+, Chrome 10+ */
+    background-image: -o-linear-gradient(#F98A07, ##F1E195); /* Opera 11.10 */
+    -pie-background-image: linear-gradient(#F98A07, ##F1E195); /* csspie */
+    background-color: #F1E195 !important;
+    border: 2px solid #316895;
+    color: black;
+    font-weight: bold;
+    font-size: 12px !important;
+    font-style: normal;
+    padding: .4em 2.5em .4em 2.5em;
+    text-align: center;
+    margin: 1em 0 0 1em !important;
+    line-height: 16px;
+    -moz-border-radius: 4px 4px 4px 4px;
+}
+
+.multigeo_upload_form .button:hover, .multigeo_upload_form input[type="button"]:hover {
+    cursor: pointer;
+    background-image: -moz-linear-gradient(#F08100, #F1E195); /* FF 3.6+ */
+    background-image: -ms-linear-gradient(#F08100, #F1E195); /* IE10 */
+    background-image: -webkit-linear-gradient(#F08100, #F1E195); /* Safari 5.1+, Chrome 10+ */
+    background-image: -o-linear-gradient(#F08100, #F1E195); /* Opera 11.10 */
+    -pie-background-image: linear-gradient(#F08100, #F1E195); /* csspie */
+    background-color: #F1E195 !important;
+    border-radius: 0px;
+    color: White;
+    font-weight: bold;
+    font-size: 12px !important;
+    font-style: normal;
+    padding: .4em 2.5em .4em 2.5em;
+    text-align: center;
+    margin-top: 1em !important;
+    line-height: 16px;
+    -moz-border-radius: 4px 4px 4px 4px;
+}
+
+
+.multigeo_upload_form a {
+    color: #363fb5;
+    margin: 1em 0 0 1em !important;
+}
+
+.multigeo_upload_form a:hover {
+    cursor: pointer;
+}
+
+
+/* LEFT/RIGHT COLUMN STYLES */
+.multigeo_upload_form .right {
+    width: 30%;
+    float: right;
+    padding-top: 1em;
+    text-align: center;
+}
+
+.multigeo_upload_form .right div.littleBox {
+    font-weight: bold;
+    background-color: #F9F9F9;
+    border: solid 1px #D1D1DB;
+    padding: 1.25em;
+    margin: .5em 0 1.25em -1em;
+    color: #202245;
+}
+
+.multigeo_upload_form .right ul {
+    font-weight: normal;
+    padding-left: 1.5em;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.multigeo_upload_form .right ul * {
+    padding-bottom: .5em;
+}
+
+.multigeo_upload_form .left {
+    width: 50%;
+    float: left;
+}
+
+.multigeo_upload_form .left div {
+    padding-top: .25em;
+}
+
+.multigeo_upload_form .left h2 {
+    margin: 1em 0 0 0;
+    padding-bottom: 1em;
+}
+
+.multigeo_upload_form .submitBar {
+    margin-top: 1em;
+}
+
+
+/* VALIDATION STYLES */
+.multigeo_upload_form .status {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+}
+
+.multigeo_upload_form .inputError {
+    border-color: Red;
+    border-style: solid;   
+}
+
+.multigeo_upload_form .errorText {
+    color: #F00;
+    font-size: 11px;
+    height: 1em;
+    padding-bottom: .5em;
+}
+
+.multigeo_upload_form .parserResults {
+    font-size: 11px;
+    height: 1em;
+    padding-bottom: 0.5em;
+}
+
+.multigeo_upload_form #parserSuccess {
+    color: #008000;
+}
+
+.multigeo_upload_form #parserError {
+    color: #FF0000;
+}
+
+.multigeo_upload_form .disabled {
+    opacity:0.5;
+    filter:alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.multigeo_upload_form input.default {
+        color: #888;
+}
+
+.multigeo_upload_form #divHideFileUploadButton {
+        position: absolute;
+        z-index: 12;
+        top: -10000px;
+        left: -10000px;
+	    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	    filter: alpha(opacity=0);
+        opacity: 0.0;
+        border: 1px solid red;
+ }
+    
+.multigeo_upload_form #divUploadLocationsFile {
+        margin: 1em 0em 0em 1em !important;
+ }
+    
+ .multigeo_upload_form  #divFileUploadStyled input  {
+        cursor: pointer;
+        left: -10000px;
+        opacity: 0;
+        position: absolute;
+        top: -10000px;
+        z-index: 10;
+}
+    
+.multigeo_upload_form #spanFilename {
+    padding: 2px 0px 0px 0px;
+    color: #666;
+    font-style: italic;
+}
+
+.multigeo_upload_form  #spanFileSelected, #spanFileBrowse {
+    display: none;
+}
+
+.multigeo_upload_form #spanFileSelected a {
+    padding: 0px 0px 5px 5px;
+    cursor: pointer;
+}
+
+.multigeo_upload_form #spanFileBrowse a {
+    cursor: default;
+}
+
+.multigeo_upload_form #spanFileBrowse .tips {
+    font-style: italic;
+    font-size: 12px;
+    color: #666666;
+    padding-left: 3em;
+}
+
+.multigeo_upload_form #spanFileBrowse .tips img {
+    padding-right: 0.6em;
+}

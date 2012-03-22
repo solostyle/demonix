@@ -1,0 +1,222 @@
+#jpHeader 
+{
+background: #132f6e url(../../images/jp/background/navarrays_final.jpg) no-repeat bottom center;
+height:150px !important;
+margin:0 auto;
+}
+.bounds{width:960px;}
+
+/* hides menus */
+.nav .hide { display: none; }
+.nav a{cursor:pointer;}
+.nav .killOrangeNav 
+{
+    position:absolute;
+    left:-5000px;
+}
+
+/* horizontal line */
+.nav { background-color: transparent; margin:-25px auto 0!important; position:relative; z-index:200000;}
+.nav .priwrapper { width: 100%; margin:0 auto;}
+.nav .secwrapper { width: 100%; background-color: #f7931e; margin:0 auto;}
+.nav .last {
+	/*border-right: solid 1px #5a6e8a;*/
+	width: 0px;
+}
+
+/* highlight log in/out link */
+.nav a.log div, li.releaserdblock a div { color: #f60; }
+.nav a.log:hover div, li.releaserdblock a div:hover { color: #fff; }
+
+/***** NAV BARS *****/
+
+/* the outermost containing ul */
+.nav ul {
+	list-style: none;
+	margin: 0px auto;
+	padding: 0px;
+	font: 11px arial;
+	line-height: 100%; /* helps align sub menu with head link */
+	text-align: left;
+}
+
+/* all links in the nav */
+.nav a, .nav a:link{
+	display: block;
+	white-space: nowrap;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+/* highlights moused over link */
+.nav a:hover { text-decoration: none; }
+
+/* level 2+ links */
+.nav ul ul a { width: 100%; }
+
+/* inner wrapper for links */
+.nav a div { padding: 4px 9px; border-left: solid 1px #5a6e8a; }
+
+/* inner wrapper for level 2+ links */
+.nav ul ul a div { padding: 9px; }
+
+/* set on level 1+ head link of a drop down via javascript */
+.nav .open {	
+	/*background-color: Fuchsia;*/
+
+	color: #fff;
+}
+
+.nav a.open, .nav a.open:link { color: #fff; }
+
+/* set on level 2+ head link of a drop down via javascript */
+.nav ul ul .open {}
+
+/* set on links that do not have sub menus */
+.nav .expandnone { float: left; }
+
+/* set on head links that have level 2 sub menus */
+.nav .expanddown {}
+
+/* set on head links that have level 3+ sub menus */
+.nav .expandright {}
+
+
+/***** PRIMARY NAV BAR OVERRIDES *****/
+
+.nav .pri {font-size: 11px;}
+.nav .pri a, .nav .pri a:visited { border-left: none; }
+.nav .pri a div { border-left: none; }
+.nav .pri a:hover { color: #fff; text-decoration: underline; }
+.nav .pri .open { color: #fff;}
+.nav .pri .open:hover { color: #fff; text-decoration: none;}
+.open ul ul li {border-bottom:solid 1px #fff}
+
+.nav .pri .jobseeker { float: right; }
+
+/* level 2+ drop down ul */
+.nav ul ul {
+	position: absolute;
+	z-index: 41001;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+    
+}
+.nav .pri ul
+{
+    
+}
+/* level 3+ drop down ul */
+.nav ul ul ul {
+	border-top: solid 1px #5a6e8a;
+	margin-top: 0; /* shifts menu up to be next to head link */
+}
+
+/* any li in the nav */
+.nav ul li { margin: 0px; padding: 0px; float: left; }
+
+/* level 2+ li */
+.nav ul ul li{
+	width: 215px;
+	/*background-color: green;*/
+	background-color: #f7931e;
+}
+
+.nav ul ul li a, .nav ul ul li a:link, .nav ul ul li a:visited { color: #fff; }
+.nav .pri ul a:hover 
+{
+	/*background-color: Yellow;*/
+	
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav .pri ul a:hover {color: #fff;}
+.nav .pri ul a div{border:solid 1px #fff; border-top:none; margin:inherit 8px;}
+.nav .pri .expanddown{font-size:13px;}
+.nav .pri li ul li a div {background:#335bb1 url(../../images/jp/background/navwhitearrows.gif) no-repeat 4px 12px;padding-left:15px;}
+.nav .pri li ul li a:hover div {background:#183c8d url(../../images/jp/background/navwhitearrows.gif) no-repeat 4px 12px;}
+
+/***** SECONDARY NAV BAR OVERRIDES *****/
+
+.nav .sec 
+{
+	/*background-color: Orange;*/
+	
+
+}
+
+.nav .sec a:hover { color: #183c8d; background-image: none; background-color: #fff; }
+.nav .sec li 
+{
+	/*background-color: purple;*/
+	background-color: #f7931e;
+	
+}
+.nav .sec li .open div{background-color:#fff; color:#183c8d; margin-top:-1px;}
+.nav .sec li .open ul div {border:0px;} 
+
+.nav .sec ul a div{background-color:#fff; color:#183c8d;}
+.nav .sec a div { border-left: none; padding: 9px;}
+.nav .sec a.expandnone:hover div{}
+.nav .sec a.expandnone{margin-right:0px;}
+
+
+.nav .sec li ul li a div{background:#fff url(../../images/jp/background/navorangearrows.gif) no-repeat 4px 12px; padding-left:15px; border-bottom:solid 1px #183c8d;}
+.nav .sec li a.expanddown div {background:#f7931e url(../../images/jp/background/navwhitearrows.gif) no-repeat 4px 12px; padding-left:15px;}
+.nav .sec li a.open div{background:#fff url(../../images/jp/background/navorangearrows.gif) no-repeat 4px 12px; padding-left:15px;}
+.nav .sec li a.expandnone div {background:#f7931e url(../../images/jp/background/navwhitearrows.gif) no-repeat 4px 12px; padding-left:15px;}
+.nav .sec li a.expandnone:hover div{background:#fff url(../../images/jp/background/navorangearrows.gif) no-repeat 4px 12px; padding-left:15px;}
+.nav .sec ul li a.expandnone:hover div{background-color:#183c8d; color:#fff;}
+.nav .sec li ul a.expandnone:hover div{background: #f7931e url(../../images/jp/background/navwhitearrows.gif) no-repeat 4px 12px; color:#fff; margin-top:0px;}
+.nav .sec li ul a.expandnone div {background:#fff url(../../images/jp/background/navorangearrows.gif) no-repeat 4px 12px; padding-left:15px; margin-left:-1px;}
+.nav .sec li ul {border:solid 1px #183c8d; border-top:0px; border-bottom:0px;}
+.nav .pri a.open {display:block;}
+.nav .pri li a.expanddown{
+	
+	background: url(../../images/jp/background/leftbtn2.jpg) no-repeat;
+	padding: 0 0 0 10px;
+	_padding: 0 0 0 8px;
+	margin: -4px 0 0 0;
+	_margin-top:-2px;
+	_float:left;
+	display:block;
+	
+	
+}
+.nav .pri a.expanddown div{
+	float: left;
+	height: 28px;
+	_height: 27px;
+	background: url(../../images/jp/background/middlebtn2.jpg) repeat-x left top;
+	line-height: 28px;
+	_line-height: 27px;
+	padding: 0 25px 0px 10px;
+	_padding: 0 25px 0px 8px;
+	color: #fff;
+	text-decoration: none;
+	display:inline;
+}
+.nav .pri a.expanddown span {
+	background: url(../../images/jp/background/rightbtn2.jpg) no-repeat;
+	float: left;
+	width: 25px;
+	height: 28px;
+	_height:27px;
+	display:inline;
+}
+.nav .pri li ul{display:block; clear:both;}
+.nav .pri li ul.hide{display:none;}
+.nav .pri{padding-top:0px;}
+
+
+.nav .sec li a{margin-right:2px; _margin-right:0px;}
+.nav .sec li a.open{border-left:solid 1px #183c8d;border-right:solid 1px #183c8d;margin-right:0px;}
+.nav .sec li a.expandnone{margin-right:2px;_margin-right:0px;}
+.nav .sec li a.expandnone:hover {border-left:solid 1px #183c8d;border-right:solid 1px #183c8d; margin-right:0px;}
+.nav .sec ul li a.expandnone:hover {border:none;margin-right:0px;}
+
+
