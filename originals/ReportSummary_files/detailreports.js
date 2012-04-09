@@ -1261,7 +1261,10 @@ var ModulesManager = function () {
                         ofilterManager.addFilter(id, "onetcode:" + value, value)
                         matchChkBox.attr('checked', true);
                         var label = facetsummaryWrapper.find("label[for=" + id + "]").text();
-                        createDefaultONETFilters(facetsummaryWrapper, id, label);
+						//only create the default if one does not exist
+						if (!$('#'+id)) {
+							createDefaultONETFilters(facetsummaryWrapper, id, label);
+						}
                     }
                 });
                 if (ofilterManager.filtersCount() > 0) {
