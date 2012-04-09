@@ -1499,8 +1499,7 @@ function explode(delimiter, string, limit)
         return partA;
     }
 }
-$(document).ready(function ()
-{
+$(document).ready(function () {
     $("#retrievingData").dialog({ modal: true, resizable: false, autoOpen: false, draggable: false, open: function (event, ui) { $(".ui-dialog-titlebar-close").hide(); } });
     $("#errorDialog").dialog({ width: 450, modal: true, resizable: false, autoOpen: false, draggable: false, open: function (event, ui) { $(".ui-dialog-titlebar-close").show(); } });
     //Added this code for testing
@@ -1509,8 +1508,7 @@ $(document).ready(function ()
         resizable: false,
         autoOpen: false,
         draggable: false,
-        open: function (event, ui)
-        {
+        open: function (event, ui) {
             $(".ui-dialog-titlebar-close").hide();
         }
     });
@@ -1523,97 +1521,67 @@ $(document).ready(function ()
     downloadManager.onDocumentReady();
 
 
-    $('.search-content .show-more').click(function (event)
-    {
+    $('.search-content .show-more').click(function (event) {
         $('.search-content .show-more').toggle();
         $('.search-content .more-filters').toggle();
         event.preventDefault();
     });
 
 
-    $('a#ExportExcelLink').click(function (evt)
-    {
+    $('a#ExportExcelLink').click(function (evt) {
         evt.preventDefault();
-                evt.stopPropagation();
-		$("#ajaxMsg").html("Generating Report...");
-        //alert(ModulesManager.Filters.toString());
+        evt.stopPropagation();
+        $("#ajaxMsg").html("Generating Report...");
         AjaxProgressBar.showModalDialog();
-
-//        var ajaxCall = $.ajax({
-//            type: "GET",
-//            url: "ReportSummaryExcel.aspx?did=" + window.location.querystring["did"] + "&filter=" + ModulesManager.Filters.toString(),
-//                        data: { did: window.location.querystring["did"],
-//                            filter: ModulesManager.Filters.toString(),
-//                            chart: "csv",
-//                            content: contentName
-//                        },
-//            success: function (response) {
-//                AjaxProgressBar.closeDialog();
-//            },
-//            error: function (obj) {
-//                showError($("#filterErrorMsg").html());
-//                toggleProgressMessage(false);
-//            }
-//        });
-setTimeout(function () {
+        setTimeout(function () {
             AjaxProgressBar.closeDialog();
             $("#ajaxMsg").html("Updating Report Data...");
-        }, 4000);
-
-        document.location.href = "ReportSummaryExcel.aspx?did=" + window.location.querystring["did"] + "&filter=" + ModulesManager.Filters.toString();
-        //url: "reposrtsummary.aspx?did=" + window.location.querystring["did"] + "&filter=" + ModulesManager.Filters.toString()
-        //filter: ModulesManager.Filters.toString()}
-    });
+            }, 4000);
+        document.location.href = "ReportSummaryExcel.aspx?did=" + window.location.querystring["did"] + "&filter=" + ModulesManager.Filters.toString() + activeLaborPressure + "&IsInternalUser=" + ScriptVariables.Get('IsInternalUser');
+         });
 
     //Added this code for testing
-    $('#myExportLink').click(function (evt)
-    {
+    $('#myExportLink').click(function (evt) {
         //evt.preventDefault();
         //        evt.stopPropagation();
         //alert(ModulesManager.Filters.toString());
-        
+
         //document.location.href = "SupplyDemandPDF.aspx?did=" + window.location.querystring["did"] + "&filter=" + ModulesManager.Filters.toString();
         downloadManager.setTryingToExportValue(true);
         var currentSelectedTabID = $('#SDTabs UL LI.selected').attr('id');
         downloadManager.setCurrentSelectedTabID(currentSelectedTabID);
         $('#imageExport').parent().css({ position: "fixed" }).end().dialog('open');
 
-        if(currentSelectedTabID != 'LaborPressureView')
-        {
+        if (currentSelectedTabID != 'LaborPressureView') {
             toggleTabs($('li#LaborPressureView'));
             flashMovie = document.getElementById('amActiveLaborMiniStateHeatMap');
-            if (flashMovie.id == "amActiveLaborMiniStateHeatMap")
-            {
+            if (flashMovie.id == "amActiveLaborMiniStateHeatMap") {
                 setTimeout(function () { flashMovie.rebuild() }, 1500);
 
             }
-        }else{
+        } else {
             amMapCompleted("amActiveLaborMiniStateHeatMap");
         }
 
     });
 
-    $('#SDTabs li').click(function (evt)
-    {
+    $('#SDTabs li').click(function (evt) {
         toggleTabs($(this));
         CB.Tally('SupplyDemand', 'TabClick', $(this).attr('id'));
     });
     var cScreen = '' + screen.width + 'x' + screen.height + '';
     var cViewPort = '' + window.innerWidth + 'x' + window.innerHeight + '';
-    if (window.innerWidth >= 1280 && window.innerHeight >= 1024)
-    {
+    if (window.innerWidth >= 1280 && window.innerHeight >= 1024) {
         CB.Tally('SupplyDemand', 'ViewPort', "Jumbo");
         CB.Tally('SupplyDemand', 'Screen', cScreen);
-    } else
-    {
+    } else {
         CB.Tally('SupplyDemand', 'ViewPort', cViewPort);
         CB.Tally('SupplyDemand', 'Screen', cScreen);
     }
 
     //makes the create new report tab expandable
-    $('#newreport').click(function ()
-    {
+    $('#newreport').click(function () {
         $(this).next().slideToggle("slow");
     });
 
-});                //end $(document).ready
+});                 //end $(document).ready

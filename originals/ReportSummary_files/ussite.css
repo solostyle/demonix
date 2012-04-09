@@ -1,5 +1,5 @@
 ﻿body {
-background:#D7DEF0 url(../../images/js/h_grad.jpg) repeat-y;
+background:#D7DEF0 url(h_grad.jpg) repeat-y;
 background-position:center;
 }
 
@@ -1834,7 +1834,7 @@ margin-top:-2px;
 }
 
 #cbHeader #cbHeader_grad {
-background:#D7DEF0 url(../../images/js/h_grad.jpg) repeat-y scroll center center;
+background:#D7DEF0 url(h_grad.jpg) repeat-y scroll center center;
 width:100%;
 }
 

@@ -137,8 +137,8 @@ margin:0 auto;
 .nav .pri ul a:hover {color: #fff;}
 .nav .pri ul a div{border:solid 1px #fff; border-top:none; margin:inherit 8px;}
 .nav .pri .expanddown{font-size:13px;}
-.nav .pri li ul li a div {background:#335bb1 url(../../images/jp/background/navwhitearrows.gif) no-repeat 4px 12px;padding-left:15px;}
-.nav .pri li ul li a:hover div {background:#183c8d url(../../images/jp/background/navwhitearrows.gif) no-repeat 4px 12px;}
+.nav .pri li ul li a div {background:#335bb1 url(navwhitearrows.gif) no-repeat 4px 12px;padding-left:15px;}
+.nav .pri li ul li a:hover div {background:#183c8d url(navwhitearrows.gif) no-repeat 4px 12px;}
 
 /***** SECONDARY NAV BAR OVERRIDES *****/
 
@@ -165,19 +165,19 @@ margin:0 auto;
 .nav .sec a.expandnone{margin-right:0px;}
 
 
-.nav .sec li ul li a div{background:#fff url(../../images/jp/background/navorangearrows.gif) no-repeat 4px 12px; padding-left:15px; border-bottom:solid 1px #183c8d;}
-.nav .sec li a.expanddown div {background:#f7931e url(../../images/jp/background/navwhitearrows.gif) no-repeat 4px 12px; padding-left:15px;}
-.nav .sec li a.open div{background:#fff url(../../images/jp/background/navorangearrows.gif) no-repeat 4px 12px; padding-left:15px;}
-.nav .sec li a.expandnone div {background:#f7931e url(../../images/jp/background/navwhitearrows.gif) no-repeat 4px 12px; padding-left:15px;}
-.nav .sec li a.expandnone:hover div{background:#fff url(../../images/jp/background/navorangearrows.gif) no-repeat 4px 12px; padding-left:15px;}
+.nav .sec li ul li a div{background:#fff url(navorangearrows.gif) no-repeat 4px 12px; padding-left:15px; border-bottom:solid 1px #183c8d;}
+.nav .sec li a.expanddown div {background:#f7931e url(navwhitearrows.gif) no-repeat 4px 12px; padding-left:15px;}
+.nav .sec li a.open div{background:#fff url(navorangearrows.gif) no-repeat 4px 12px; padding-left:15px;}
+.nav .sec li a.expandnone div {background:#f7931e url(navwhitearrows.gif) no-repeat 4px 12px; padding-left:15px;}
+.nav .sec li a.expandnone:hover div{background:#fff url(navorangearrows.gif) no-repeat 4px 12px; padding-left:15px;}
 .nav .sec ul li a.expandnone:hover div{background-color:#183c8d; color:#fff;}
-.nav .sec li ul a.expandnone:hover div{background: #f7931e url(../../images/jp/background/navwhitearrows.gif) no-repeat 4px 12px; color:#fff; margin-top:0px;}
-.nav .sec li ul a.expandnone div {background:#fff url(../../images/jp/background/navorangearrows.gif) no-repeat 4px 12px; padding-left:15px; margin-left:-1px;}
+.nav .sec li ul a.expandnone:hover div{background: #f7931e url(navwhitearrows.gif) no-repeat 4px 12px; color:#fff; margin-top:0px;}
+.nav .sec li ul a.expandnone div {background:#fff url(navorangearrows.gif) no-repeat 4px 12px; padding-left:15px; margin-left:-1px;}
 .nav .sec li ul {border:solid 1px #183c8d; border-top:0px; border-bottom:0px;}
 .nav .pri a.open {display:block;}
 .nav .pri li a.expanddown{
 	
-	background: url(../../images/jp/background/leftbtn2.jpg) no-repeat;
+	background: url(leftbtn2.jpg) no-repeat;
 	padding: 0 0 0 10px;
 	_padding: 0 0 0 8px;
 	margin: -4px 0 0 0;
@@ -191,7 +191,7 @@ margin:0 auto;
 	float: left;
 	height: 28px;
 	_height: 27px;
-	background: url(../../images/jp/background/middlebtn2.jpg) repeat-x left top;
+	background: url(middlebtn2.jpg) repeat-x left top;
 	line-height: 28px;
 	_line-height: 27px;
 	padding: 0 25px 0px 10px;
@@ -201,7 +201,7 @@ margin:0 auto;
 	display:inline;
 }
 .nav .pri a.expanddown span {
-	background: url(../../images/jp/background/rightbtn2.jpg) no-repeat;
+	background: url(rightbtn2.jpg) no-repeat;
 	float: left;
 	width: 25px;
 	height: 28px;
