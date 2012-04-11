@@ -628,8 +628,9 @@ table.detailView .msa.last {padding-right:25px;}
 .clearAll {font-size:10px; text-align:left; cursor:pointer; color:#EE7F0C; text-decoration:underline;}
 .clearAll.inactive {display:none;}
 
-.titled_tips {margin:0; text-decoration:none !important; font-size: 10px;}
-.titled_tips img{border:none 0; margin-bottom:-2px;vertical-align:sub;}
+.titled_tips {display:inline-block;background:url("question.png") no-repeat scroll 0 0 transparent;font-size:1em;min-height:16px;min-width:16px}
+.titled_tips:hover {cursor:help}
+
 .cluetip-cbTitledTip
 {
     position:relative;
