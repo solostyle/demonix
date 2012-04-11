@@ -623,11 +623,7 @@ table.detailView .msa.last {padding-right:25px;}
 }
 #filter-search .filter-content .toggle {
     margin-top:-17px;
-    left:270px;
-    display:inline !important;
-    cursor:pointer;
-    position:absolute;
-    /*z-index:1000;*/
+    float: left;
 }
 .clearAll {font-size:10px; text-align:left; cursor:pointer; color:#EE7F0C; text-decoration:underline;}
 .clearAll.inactive {display:none;}

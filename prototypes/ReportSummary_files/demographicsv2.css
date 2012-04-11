@@ -150,11 +150,7 @@ div.barGraph {
 
 #DemographicsfacetSummary .facet-ui .filter-content .toggle, #facetSummary .facet-ui .filter-content .toggle {
     cursor: pointer;
-    display: inline !important;
-    left: 170px;
-    position: relative;
-    top: -17px;
-    /*z-index:1000;*/
+    float: right;
     text-indent:0px;
 }
 
