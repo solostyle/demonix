@@ -324,7 +324,7 @@ var ReportFilters = function (wrapperID) {
             } else {
                 removeCacheFilter(checkBox.attr("id"));
                 if (parentWrapper.find("#searched-for").attr("class") == "facet-ui") {
-                     parentWrapper.find("#searched-for" + " #" + checkBox.attr("id")).remove();
+                     //parentWrapper.find("#searched-for" + " #" + checkBox.attr("id")).remove();
                     if (cacheDictionary.count() == 0 || (cacheDictionary.count() == 1 && checkedFacetsToString().indexOf("mmYY") != -1)) { //ingore if there is a heat map filter
                         parentWrapper.find("#searched-for").attr("class", "facet-ui inactive");
                     }
@@ -502,26 +502,26 @@ var MiniLineChartModule = function (tabID, moduleID, fancyBoxParentID, contentNa
     },
     this.requestData = function (socValue) {
         this.prototype.filterList = ModulesManager.Filters.toString();
-        AjaxProgressBar.showModalDialog();
-        var ajaxCall = $.ajax({
-            type: "POST",
-            url: ScriptVariables.Get('filterURL'),
-            data: { did: self.prototype.did,
-                filter: this.prototype.filterList,
-                soc: socValue,
-                chart: this.prototype.chartName,
-                content: this.prototype.contentName
-            },
-            success: function (response) {
-                var results = eval('(' + response + ')');
-                self.prototype.updateContent(results, contentName);
-                self.updateContent(results, self.prototype.contentName, ChartType.SOCChange());
-                AjaxProgressBar.closeDialog();
-            },
-            error: function (obj) {
-                showError($("#filterErrorMsg").html());
-            }
-        });
+        //AjaxProgressBar.showModalDialog();
+        // var ajaxCall = $.ajax({
+            // type: "POST",
+            // url: ScriptVariables.Get('filterURL'),
+            // data: { did: self.prototype.did,
+                // filter: this.prototype.filterList,
+                // soc: socValue,
+                // chart: this.prototype.chartName,
+                // content: this.prototype.contentName
+            // },
+            // success: function (response) {
+                // var results = eval('(' + response + ')');
+                // self.prototype.updateContent(results, contentName);
+                // self.updateContent(results, self.prototype.contentName, ChartType.SOCChange());
+                // AjaxProgressBar.closeDialog();
+            // },
+            // error: function (obj) {
+                // showError($("#filterErrorMsg").html());
+            // }
+        // });
     };
     this.updateContent = function (results, contentName, chartName) {
         // update all mini trend charts
@@ -653,26 +653,26 @@ var DetailTrendYOYModule = function (tabID, moduleID, fancyBoxParentID, contentN
         this.prototype.filterList = ModulesManager.Filters.toString();
         var dataType = ModulesManager.Filters.get_numericDataType();
         var ajaxURL = AJAXRequest.URL(this.prototype.contentName);
-        AjaxProgressBar.showModalDialog();
-        var ajaxCall = $.ajax({
-            type: "POST",
-            url: ajaxURL,
-            data: { did: this.prototype.did,
-                filter: this.prototype.filterList,
-                data: dataType, chart: chartName,
-                content: this.prototype.contentName,
-                soc: AJAXRequest.SOC()
-            },
-            success: function (response) {
-                var results = eval('(' + response + ')');
-                self.prototype.updateContent(results, contentName);
-                self.updateContent(results, self.prototype.contentName);
-                AjaxProgressBar.closeDialog();
-            },
-            error: function (obj) {
-                showError($("#filterErrorMsg").html());
-            }
-        });
+        //AjaxProgressBar.showModalDialog();
+        // var ajaxCall = $.ajax({
+            // type: "POST",
+            // url: ajaxURL,
+            // data: { did: this.prototype.did,
+                // filter: this.prototype.filterList,
+                // data: dataType, chart: chartName,
+                // content: this.prototype.contentName,
+                // soc: AJAXRequest.SOC()
+            // },
+            // success: function (response) {
+                // var results = eval('(' + response + ')');
+                // self.prototype.updateContent(results, contentName);
+                // self.updateContent(results, self.prototype.contentName);
+                // AjaxProgressBar.closeDialog();
+            // },
+            // error: function (obj) {
+                // showError($("#filterErrorMsg").html());
+            // }
+        // });
     };
     this.updateContent = function (results, contentName) {
         if (contentName == ContentType.Demand() && results.demandTrendLineDataXML != null) {
@@ -744,25 +744,25 @@ var DetailTopCategoryModule = function (tabID, moduleID, fancyBoxParentID, conte
     this.requestData = function (chartName, contentName) {
         this.prototype.filterList = ModulesManager.Filters.toString();
         var ajaxURL = AJAXRequest.URL(contentName);
-        AjaxProgressBar.showModalDialog();
-        var ajaxCall = $.ajax({
-            type: "POST",
-            url: ajaxURL,
-            data: { did: this.prototype.did,
-                filter: this.prototype.filterList,
-                chart: chartName,
-                content: contentName
-            },
-            success: function (response) {
-                var results = eval('(' + response + ')');
-                self.prototype.updateContent(results, contentName);
-                self.updateContent(results, self.prototype.contentName);
-                AjaxProgressBar.closeDialog();
-            },
-            error: function (obj) {
-                showError($("#filterErrorMsg").html());
-            }
-        });
+        //AjaxProgressBar.showModalDialog();
+        // var ajaxCall = $.ajax({
+            // type: "POST",
+            // url: ajaxURL,
+            // data: { did: this.prototype.did,
+                // filter: this.prototype.filterList,
+                // chart: chartName,
+                // content: contentName
+            // },
+            // success: function (response) {
+                // var results = eval('(' + response + ')');
+                // self.prototype.updateContent(results, contentName);
+                // self.updateContent(results, self.prototype.contentName);
+                // AjaxProgressBar.closeDialog();
+            // },
+            // error: function (obj) {
+                // showError($("#filterErrorMsg").html());
+            // }
+        // });
     };
     this.updateContent = function (results, contentName) {
         if (contentName == ContentType.Demand() && results.barTopEmployerDataXML != null) {
@@ -918,28 +918,28 @@ var DetailHeatMapModule = function (tabID, moduleID, fancyBoxParentID, contentNa
         if (DropDownVal == '') {
             DropDownVal = -1;
         }
-        AjaxProgressBar.showModalDialog();
-        var ajaxCall = $.ajax({
-            type: "POST",
-            url: ajaxURL,
-            data: { did: this.prototype.did,
-                filter: this.prototype.filterList,
-                chart: chartName,
-                content: this.prototype.contentName,
-                soc: AJAXRequest.SOC(),
-                xxYY: DropDownVal
-            },
-            success: function (response) {
-                var results = eval('(' + response + ')');
-                self.prototype.updateContent(results, contentName);
-                self.updateContent(results, contentName, chartName, AJAXRequest.SOC());
-                self.updateDetailHeader(DropDownVal, chartName);
-                AjaxProgressBar.closeDialog();
-            },
-            error: function (obj) {
-                showError($("#filterErrorMsg").html());
-            }
-        });
+        //AjaxProgressBar.showModalDialog();
+        // var ajaxCall = $.ajax({
+            // type: "POST",
+            // url: ajaxURL,
+            // data: { did: this.prototype.did,
+                // filter: this.prototype.filterList,
+                // chart: chartName,
+                // content: this.prototype.contentName,
+                // soc: AJAXRequest.SOC(),
+                // xxYY: DropDownVal
+            // },
+            // success: function (response) {
+                // var results = eval('(' + response + ')');
+                // self.prototype.updateContent(results, contentName);
+                // self.updateContent(results, contentName, chartName, AJAXRequest.SOC());
+                // self.updateDetailHeader(DropDownVal, chartName);
+                // AjaxProgressBar.closeDialog();
+            // },
+            // error: function (obj) {
+                // showError($("#filterErrorMsg").html());
+            // }
+        // });
     };
     this.updateContent = function (results, contentName, chartName, socName) {
         if (G_FANCYBOX_MODULE_PARENT_ID != null) { // renders on demand
@@ -1157,7 +1157,7 @@ var ModulesManager = function () {
             clearTimeout(ajaxDelayInterval);
         }
         setReportFilters(obj);
-        AjaxProgressBar.showFacetUpdate(obj.parent(), facetSummaryWrapperID);
+        //AjaxProgressBar.showFacetUpdate(obj.parent(), facetSummaryWrapperID);
         ajaxDelayInterval = setTimeout(function () {
             requestData();
         }, 800);
@@ -1169,21 +1169,21 @@ var ModulesManager = function () {
         if (ajaxRequest != null) {
             ajaxRequest.abort();
         }
-        AjaxProgressBar.showDialog(true);
-        ajaxRequest = $.ajax({
-            type: "POST",
-            timeout: 60000,
-            url: ScriptVariables.Get('filterURL'),
-            data: { did: did, filter: ofilterManager.toString(), data: dataType, chart: "all", content: "all" },
-            success: function (response) {
-                updateWithSuccessAjaxCallback(response);
-            },
-            error: function (obj) {
-                if (ajaxRequest.statusText != 'abort') {
-                    showError($("#filterErrorMsg").html());
-                }
-            }
-        });
+        //AjaxProgressBar.showDialog(true);
+        // ajaxRequest = $.ajax({
+            // type: "POST",
+            // timeout: 60000,
+            // url: ScriptVariables.Get('filterURL'),
+            // data: { did: did, filter: ofilterManager.toString(), data: dataType, chart: "all", content: "all" },
+            // success: function (response) {
+                // updateWithSuccessAjaxCallback(response);
+            // },
+            // error: function (obj) {
+                // if (ajaxRequest.statusText != 'abort') {
+                    // showError($("#filterErrorMsg").html());
+                // }
+            // }
+        // });
     };
     function updateWithSuccessAjaxCallback(response) {
         var results = eval('(' + response + ')');
@@ -1293,7 +1293,7 @@ var ModulesManager = function () {
         Initialization: function (results) {
             initializeModuleHandlers();
             facetsummaryWrapper.find("#searched-for .clearAll").click(function () {
-                AjaxProgressBar.showFacetUpdate($(this).parent(), facetSummaryWrapperID);
+                //AjaxProgressBar.showFacetUpdate($(this).parent(), facetSummaryWrapperID);
                 ofilterManager.clearFilters();
                 requestData();
             });
@@ -1359,26 +1359,26 @@ var downloadManager = function () {
         if (answer)
         {
             toggleProgressMessage(true);
-            AjaxProgressBar.showModalDialog();
-            var ajaxCall = $.ajax({
-                type: "POST",
-                url: ScriptVariables.Get('CSVExportLink'),
-                data: { did: window.location.querystring["did"],
-                    filter: ModulesManager.Filters.toString(),
-                    chart: "csv",
-                    content: contentName
-                },
-                success: function (response)
-                {
-                    AjaxProgressBar.closeDialog();
-                    toggleProgressMessage(false);
-                },
-                error: function (obj)
-                {
-                    showError($("#filterErrorMsg").html());
-                    toggleProgressMessage(false);
-                }
-            });
+            //AjaxProgressBar.showModalDialog();
+            // var ajaxCall = $.ajax({
+                // type: "POST",
+                // url: ScriptVariables.Get('CSVExportLink'),
+                // data: { did: window.location.querystring["did"],
+                    // filter: ModulesManager.Filters.toString(),
+                    // chart: "csv",
+                    // content: contentName
+                // },
+                // success: function (response)
+                // {
+                    // AjaxProgressBar.closeDialog();
+                    // toggleProgressMessage(false);
+                // },
+                // error: function (obj)
+                // {
+                    // showError($("#filterErrorMsg").html());
+                    // toggleProgressMessage(false);
+                // }
+            // });
         }
     };
     return {

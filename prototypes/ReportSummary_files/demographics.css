@@ -231,7 +231,6 @@ div#DemographicsTabsContent div.AllDemographicsWrapper
 
 #DemographicsfacetSummary #Demographics-searched-for .searched-for-content {font-size:80.5%;}
 #DemographicsfacetSummary #Demographics-searched-for .searched-for-content li{
-    padding-left: 10px;
     background-image: url(../../../../images/personified/remove_selection.gif);
     background-repeat: no-repeat;
     background-position: 0 -.3em;

@@ -588,7 +588,6 @@ table.detailView .msa.last {padding-right:25px;}
 
 #searched-for .searched-for-content, #Demographics-searched-for .search-for-content {font-size:80.5%;}
 #searched-for .searched-for-content li, #Demographics-searched-for .searched-for-content li{
-    padding-left: 10px;
     background-image: url(../../../../images/personified/remove_selection.gif);
     background-repeat: no-repeat;
     background-position: 0 -.3em;
@@ -602,7 +601,7 @@ table.detailView .msa.last {padding-right:25px;}
 */
 #searched-for .searched-for-content span, #Demographics-searched-for .searched-for-content span{
     vertical-align:bottom;
-    margin-left:10px;   
+    margin-left:17px;   
     cursor:pointer;
 }
 .filter-content {font-size:80.5%;}

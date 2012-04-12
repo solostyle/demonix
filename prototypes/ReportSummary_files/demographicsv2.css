@@ -8,8 +8,6 @@
 #searched-for .searched-for-content li, #Demographics-search-for .searched-for-content li{
     background-image: url("http://img.icbdr.com/images/Personified/Remove_SelectedV2_07.gif ") !IMPORTANT;
     background-position: 0 0 !IMPORTANT;
-    margin-left: 8px !IMPORTANT;
-    padding-left: 8px !IMPORTANT;
     margin-bottom:5px !important;
 }
 #SDTabs li .tabtitle
