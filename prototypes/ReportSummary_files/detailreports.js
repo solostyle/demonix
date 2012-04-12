@@ -1133,7 +1133,7 @@ var ModulesManager = function () {
             }
         })
         facetsummaryWrapper.find("#searched-for li").click(function () {
-            var searchedFilter = facetsummaryWrapper.find("#filter-search #" + $(this).attr("id"));
+            var searchedFilter = facetsummaryWrapper.find(".filter-content #" + $(this).attr("id"));
             ofilterManager.removeFilter($(this).attr("id"));
             searchedFilter.attr('checked', false);
             searchedFilter.trigger("click");
@@ -1255,7 +1255,7 @@ var ModulesManager = function () {
             if (arMatches.length >= 1) {
                 $.each(arMatches, function (index, value) {
                     var id = "onetcode" + value.replace(/[^0-9]/g, '');
-                    var firstCategoryWrapper = facetsummaryWrapper.find("#filter-search ul li:first");
+                    var firstCategoryWrapper = facetsummaryWrapper.find(".filter-content ul li:first");
                     var matchChkBox = firstCategoryWrapper.find('input[value$="' + value + '"]')
                     if (matchChkBox.attr("id") != undefined) {
                         ofilterManager.addFilter(id, "onetcode:" + value, value)
@@ -1283,7 +1283,7 @@ var ModulesManager = function () {
 
         facetWrapper.find("#searched-for li:last").click(function () {
             $(this).remove();
-            var searchedFilter = facetWrapper.find("#filter-search #" + $(this).attr("id"));
+            var searchedFilter = facetWrapper.find(".filter-content #" + $(this).attr("id"));
             ofilterManager.removeFilter(searchedFilter.val());
             searchedFilter.attr('checked', false);
             searchedFilter.trigger("click");

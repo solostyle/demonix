@@ -243,7 +243,7 @@ div#DemographicsTabsContent div.AllDemographicsWrapper
     margin-left:10px;   
     cursor:pointer;
 }
-#DemographicsfacetSummary #filter-search .filter-content {font-size:80.5%;}
+#DemographicsfacetSummary .filter-content {font-size:80.5%;}
 /*
 #DemographicsfacetSummary #filter-search .filter-content .show-more 
 {
@@ -252,12 +252,12 @@ div#DemographicsTabsContent div.AllDemographicsWrapper
     display:block;
 }
 */
-#DemographicsfacetSummary #filter-search .filter-content .headerText{font-size:12px; font-weight:bold; padding-top:5px; padding-bottom:5px;}
-#DemographicsfacetSummary #filter-search .filter-content li input {
+#DemographicsfacetSummary .filter-content .headerText{font-size:12px; font-weight:bold; padding-top:5px; padding-bottom:5px;}
+#DemographicsfacetSummary .filter-content li input {
    float:left;
    margin-top:-1px;
 }
-#DemographicsfacetSummary #filter-search .filter-content .toggle, #facetSummary #filter-search .filter-content .toggle {
+#DemographicsfacetSummary .filter-content .toggle, #facetSummary .filter-content .toggle {
     cursor: pointer;
     float: right;
     text-indent:0px;

@@ -605,7 +605,7 @@ table.detailView .msa.last {padding-right:25px;}
     margin-left:10px;   
     cursor:pointer;
 }
-#filter-search .filter-content {font-size:80.5%;}
+.filter-content {font-size:80.5%;}
 
 /*
 #filter-search .filter-content .show-more 
@@ -616,12 +616,12 @@ table.detailView .msa.last {padding-right:25px;}
 }
 */
 
-#filter-search .filter-content .headerText{font-size:12px; font-weight:bold; padding-top:5px; padding-bottom:5px;}
-#filter-search .filter-content li input {
+.filter-content .headerText{font-size:12px; font-weight:bold; padding-top:5px; padding-bottom:5px;}
+.filter-content li input {
    float:left;
    margin-top:-1px;
 }
-#filter-search .filter-content .toggle {
+.filter-content .toggle {
     margin-top:-18px;
     float:right;
 }

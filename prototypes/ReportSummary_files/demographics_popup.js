@@ -46,7 +46,7 @@ var DemographicManager = function () {
             }
         });
         demoGraphicWrapper.find("#searched-for li").click(function () {
-            var searchedFilter = demoGraphicWrapper.find("#filter-search #" + $(this).attr("id"));
+            var searchedFilter = demoGraphicWrapper.find(".filter-content #" + $(this).attr("id"));
             oFilterManager.removeFilter($(this).attr("id"));
             searchedFilter.attr('checked', false);
             searchedFilter.trigger("click");
@@ -193,7 +193,7 @@ var DemographicManager = function () {
                 $.each(arMatches, function (index, value) {
                     var id = "onetcode" + value.replace(/[^0-9]/g, '');
                     oFilterManager.addFilter(id, "onetcode:" + value, value)
-                    var firstCategoryWrapper = demoGraphicWrapper.find("#filter-search ul li:first");
+                    var firstCategoryWrapper = demoGraphicWrapper.find(".filter-content ul li:first");
                     var matchChkBox = firstCategoryWrapper.find('input[value$="' + value + '"]')
                     if (matchChkBox.attr("id") != undefined) {
                         matchChkBox.attr('checked', true);
