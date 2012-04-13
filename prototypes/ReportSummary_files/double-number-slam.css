@@ -1,0 +1,11 @@
+.facets li li {display:table!important}
+.facets li li>* {display:block;float:left;clear:none!important}
+.facets li li:hover {background-color:#efefef}
+
+.facetCountSupplyWrapper, .facetCountDemandWrapper {width:40px;text-align:right}
+.filterCheckboxWrapper {width:98px;padding:0 2px!important}
+.filterCheckbox {display:none!important}
+
+.facetCountSupply {color:green;display:inline}
+.facetCountDemand {color:red;display:inline}
+.filterCheckboxWrapper input {display:inline}
