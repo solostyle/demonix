@@ -545,7 +545,7 @@ table.detailView .msa.last {padding-right:25px;}
 .facet-ui ol, ul  { list-style-type:none; list-style:none outside none; }
 .facet-ui .header {
     font-weight:bold;
-    padding:6px 20px 4px;
+    padding:6px 10px 4px;
     font-size:14px;
     color:#555555;
     background-color: #111;
