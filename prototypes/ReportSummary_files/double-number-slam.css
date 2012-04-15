@@ -10,7 +10,7 @@
 .facetCountDemand {color:red;display:inline}
 .filterCheckboxWrapper input {display:inline}
 
-#facetsBothHeader, #facetsSupplyHeader, #facetsDemandHeader {cursor:pointer}
+#facetsBothHeader, #facetsSupplyHeader, #facetsDemandHeader, #newReportHeader {cursor:pointer;border-radius:5px 5px 0 0}
 .facetsBoth {}
 .facetsSupply {}
 .facetsDemand {}

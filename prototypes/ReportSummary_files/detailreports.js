@@ -1583,7 +1583,7 @@ $(document).ready(function () {
     }
 
     //makes the create new report tab expandable
-    $('#newreport').click(function () {
+    $('#newReportHeader').click(function () {
         $(this).next().slideToggle("slow");
     });
 

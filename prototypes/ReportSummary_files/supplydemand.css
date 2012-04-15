@@ -521,7 +521,7 @@ table.detailView .msa.last {padding-right:25px;}
     cursor:hand;
     position:relative;
     z-index:2100;
-    background: url('../../../../images/personified/750x300cblogo_watermark.png') -125px -25px no-repeat;
+    background: url('750x300cblogo_watermark.png') -125px -25px no-repeat;
 }
 
 /* Override Tab CSS */
@@ -549,7 +549,7 @@ table.detailView .msa.last {padding-right:25px;}
     font-size:14px;
     color:#555555;
     background-color: #111;
-    background: url('../../../../images/personified/header_bg.png') no-repeat; 
+    background: url('header_bg.png') no-repeat; 
 }
 .facet-ui .content 
 {
