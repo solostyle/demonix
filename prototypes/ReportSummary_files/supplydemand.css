@@ -45,7 +45,7 @@ body div#pnlOuterWrapper.pnlOuterWrapper div#JPLeftNav,
     display:none;
 }
 #pnlOuterWrapper {background: #FFFFFF !important;}
-div#jpMainContent {width:1120px;margin-left:20px;margin-bottom:30px;}
+div#jpMainContent {margin-bottom:30px;}
 #pnlOuterWrapper div#JPLeftNav{width:0px;display:none;}
 #pnlInnerWrapper {width:100% !important; margin-top:10px;}
 #filterErrorMsg {display:none;}
@@ -288,13 +288,14 @@ div.facetNav li
 }
 #search-header 
 {
-    width:850px; display:inline-block; 
-    /* padding:7px 15px 5px 15px; */
-    padding:0px;
-    margin-top:15px;
-    margin:0px 15px;
-    margin-bottom:15px;
-    background-color: #F2F2F2;
+	background-color: #ddf3f8;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+	display:inline-block;
+	margin:0 15px 15px;
+    padding:0;
+	width:850px;
 }
 #search-header .summary
 {
