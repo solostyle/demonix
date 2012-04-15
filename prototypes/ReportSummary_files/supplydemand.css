@@ -1,6 +1,8 @@
 ﻿/* ensure override site stuff and ensure they are not affected by site changes */
 .cb_style {font: 11px arial,helvetica;text-align: left;}
-.pnlInnerWrapper {text-align: left;}
+#pnlInnerWrapper {margin-left:4px!important;margin-top:10px}
+#_ctl0__ctl1_hgcPri, .nav .pri {overflow:hidden;padding:0;width:100%}
+
 input[type="checkbox"] {
     margin-right: 1px;
 }
@@ -13,11 +15,9 @@ body div#pnlOuterWrapper div#JPBreadcrumb,
 body div#pnlOuterWrapper div#jpMainContent div#pnlInnerWrapper,
 body div#pnlOuterWrapper div#jpMainContent
 {
-    margin-left:auto;
-    margin-right:auto;
-    width:1105px;
-    padding-left:10px;
-    padding-right:10px;
+	margin-left: auto;
+	margin-right: auto;
+	width:1105px
 }
 
 body div#jpHeader,
@@ -45,9 +45,8 @@ body div#pnlOuterWrapper.pnlOuterWrapper div#JPLeftNav,
     display:none;
 }
 #pnlOuterWrapper {background: #FFFFFF !important;}
-div#jpMainContent {margin-bottom:30px;}
+#jpMainContent {margin-bottom:30px;overflow:hidden}
 #pnlOuterWrapper div#JPLeftNav{width:0px;display:none;}
-#pnlInnerWrapper {width:100% !important; margin-top:10px;}
 #filterErrorMsg {display:none;}
 /* Begin AutoComplete CSS */
 .jobtitle, .location {font-size:14px !important; color:#111111; }
@@ -270,7 +269,6 @@ div.facetNav
     float:left;
     font-family:Arial, Helvetica, sans-serif;
     width:205px;
-    padding-left:5px;
     font-size:16px;
 }
 div.facetNav li
