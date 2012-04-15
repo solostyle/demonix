@@ -29,7 +29,7 @@ jQuery('#facetsBothHeader,#facetsSupplyHeader,#facetsDemandHeader,#newReportHead
 	if (jQuery(this).next().css('display')=="none") {
 		jQuery(this).append('<span style="float:right">+</span>');
 	} else {
-		jQuery(this).append('<span style="float:right">-</span>');
+		jQuery(this).append('<span style="float:right;margin-top:-7px">_</span>');
 	}
 });
 jQuery('#facetsBothHeader,#facetsSupplyHeader,#facetsDemandHeader,#newReportHeader').mouseout(function() {
