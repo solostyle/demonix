@@ -1,10 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-.facet-ui .header{
-    background:url("http://img.cbdr.com/images/Personified/blueHeader_bg.png") no-repeat scroll 0 0 transparent;
-    color:#FFFFFF !IMPORTANT;
-}
 #searched-for .searched-for-content li, #Demographics-search-for .searched-for-content li{
     background-image: url("http://img.icbdr.com/images/Personified/Remove_SelectedV2_07.gif ") !IMPORTANT;
     background-position: 0 0 !IMPORTANT;

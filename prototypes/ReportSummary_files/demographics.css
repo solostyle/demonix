@@ -195,9 +195,8 @@ div#DemographicsTabsContent div.AllDemographicsWrapper
     font-weight:bold;
     padding:6px 10px 4px;
     font-size:14px;
-    color:#555555;
-    background-color: #111;
-    background: url('../../../../images/personified/header_bg.png') no-repeat;
+    color:#fff;
+    background:url("http://img.cbdr.com/images/Personified/blueHeader_bg.png") no-repeat scroll 0 0 transparent;
     width: 165px;
 }
 #DemographicsfacetSummary .facet-ui .content 
