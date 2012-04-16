@@ -33,20 +33,16 @@ div.nav
     z-index:25;
 }
 
-body div#pnlOuterWrapper div#JPLeftNav
+body div#pnlOuterWrapper div#JPLeftNav,
+#jpMainContent div.custom_nav
 {
     display:none;
 }
 /* end of hacking job poster header footer */
 
-body div#pnlOuterWrapper.pnlOuterWrapper div#JPLeftNav, 
-#jpMainContent div.custom_nav
-{
-    display:none;
-}
 #pnlOuterWrapper {background: #FFFFFF !important;}
 #jpMainContent {margin-bottom:30px;overflow:hidden}
-#pnlOuterWrapper div#JPLeftNav{width:0px;display:none;}
+
 #filterErrorMsg {display:none;}
 /* Begin AutoComplete CSS */
 .jobtitle, .location {font-size:14px !important; color:#111111; }
