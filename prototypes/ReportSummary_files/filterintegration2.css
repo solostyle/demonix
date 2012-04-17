@@ -1,4 +1,4 @@
 .facetNav {float:none!important;width:100%!important}
 .facet-ui {width:100%!important}
 ul.facets {overflow:hidden!important}
-.facets>li {width:30%!important;float:left;display:block;clear:none!important;margin-right:1%!important}
+.facets>li {width:30%;float:left;display:block;clear:none;margin-right:1%!important}

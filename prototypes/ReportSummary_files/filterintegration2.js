@@ -1,0 +1,1 @@
+jQuery(".facets>li:nth-child(3n+1)").css("clear","left");
