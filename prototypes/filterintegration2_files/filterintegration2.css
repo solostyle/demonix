@@ -1,0 +1,12 @@
+.facetNav {float:none!important;width:100%!important}
+.facet-ui {width:100%!important}
+ul.facets {overflow:hidden!important;padding:0;margin:0 1%}
+.facets>li {width:32%;float:left;display:block;clear:none}
+.facets .headerText {background-color:#88aaff;border-radius:5px 5px 0 0;color:white;cursor:pointer;padding:5px}
+.facets .headerText:hover {background-color:#ffa500;color:black}
+.facets>li>div>ul {border-top:0;border-right:1px solid #cdf;border-bottom:1px solid #cdf;border-left:1px solid #cdf;border-radius:0 0 5px 5px;padding:5px!important}
+
+#dashboard, #search-header, #SDTabs, #TabsContent
+{width:100%!important}
+
+#search-body {overflow:auto}
