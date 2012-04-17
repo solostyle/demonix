@@ -1138,8 +1138,7 @@ var ModulesManager = function () {
             searchedFilter.attr('checked', false);
             searchedFilter.trigger("click");
         });
-        facetsummaryWrapper.find('.filter-content .toggle').click(function () {
-            $(this).find('img').toggle();
+        facetsummaryWrapper.find('.facets>li>.headerText').click(function () {
             $(this).next().toggle();
         });
     };
@@ -1335,6 +1334,24 @@ var toggleTabs = function (tab) {
         tab.addClass("selected");
         $(('#' + tab.attr('id') + 'Content')).addClass("selected");
     }
+	// added by archana
+	switch (jQuery('#SDTabs UL LI.selected').attr('id')) {
+		case "DemandView":
+			jQuery(".facetSupply").hide();
+			jQuery(".facetDemand").show();
+			break;
+		case "SupplyView":
+			jQuery(".facetDemand").hide();
+			jQuery(".facetSupply").show();
+			break;
+		default:
+			jQuery(".facetDemand, .facetSupply").show(); //weird
+	}
+	jQuery(".facets>li:not(:hidden)").css("clear","none");
+	jQuery(".facets>li:not(:hidden)").each(function(index) {
+		if (index%3==0) jQuery(this).css("clear","left");
+	});
+	// end added by archana
 };
 
 var activeLaborPressure = { mapID: null, data: null };

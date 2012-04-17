@@ -1,10 +1,9 @@
 ﻿/* ensure override site stuff and ensure they are not affected by site changes */
 .cb_style {font: 11px arial,helvetica;text-align: left;}
-#pnlInnerWrapper {margin-left:4px!important;margin-top:10px}
 #_ctl0__ctl1_hgcPri, .nav .pri {overflow:hidden;padding:0;width:100%}
 
 input[type="checkbox"] {
-    margin-right: 1px;
+    margin-right: 5px;
 }
 
 /* fix job poster header and footer woes */
@@ -12,13 +11,14 @@ body div#jpHeader div#jpHeader_inner,
 body div#JobPosterNavBar div.priwrapper,
 body div#pnlOuterWrapper div#JPTopNav ul,
 body div#pnlOuterWrapper div#JPBreadcrumb,
-body div#pnlOuterWrapper div#jpMainContent div#pnlInnerWrapper,
 body div#pnlOuterWrapper div#jpMainContent
 {
 	margin-left: auto;
 	margin-right: auto;
 	width:1105px
 }
+body div#pnlOuterWrapper div#jpMainContent div#pnlInnerWrapper {margin-top:10px;width:100%}
+body div#pnlOuterWrapper div#JPTopNav>ul>li:first-child {margin-left:0}
 
 body div#jpHeader,
 body div#JobPosterNavBar,
@@ -267,10 +267,8 @@ div.facetNav
     width:205px;
     font-size:16px;
 }
-div.facetNav li
-{
-    margin:4px 0px;
-}
+.facets li {margin-right:2%;margin-bottom:1%}
+.facetNav li li {margin:4px 0px}
 
 .feedback {font-size:12px; font-family:Arial; padding-bottom:8px; padding-left:10px; text-decoration:none !important;}
 #search-content #dashboard 
@@ -524,12 +522,12 @@ table.detailView .msa.last {padding-right:25px;}
 .MapsTabs .ui-tabs ui-widget ui-widget-content ui-corner-all {border:solid 1px #cccccc !important; }
 
 /* Facets CSS */
-.facet-ui  div, .facet-ui p, .facet-ui span, .facet-ui h3, .facet-ui h4, .facet-ui ol, .facet-ui ul, .facet-ui li {
+/*.facet-ui  div, .facet-ui p, .facet-ui span, .facet-ui h3, .facet-ui h4, .facet-ui ol, .facet-ui ul, .facet-ui li {
     border:0 none;  
     clear:both;
     margin:0px;
     padding:0px;
-}
+}*/
 .facet-ui.inactive {display:none;} 
 .facet-ui 
 {
@@ -539,7 +537,8 @@ table.detailView .msa.last {padding-right:25px;}
 }
 .facet-ui ol, ul  { list-style-type:none; list-style:none outside none; }
 .facet-ui .header {
-    background:url("http://img.cbdr.com/images/Personified/blueHeader_bg.png") no-repeat scroll 0 0 transparent;
+    background:#68d;
+	border-radius:5px 5px 0 0;
 	color:#fff;
 	font-weight:bold;
     padding:6px 10px 4px;

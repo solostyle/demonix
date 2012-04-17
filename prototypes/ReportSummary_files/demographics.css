@@ -177,12 +177,12 @@ div#DemographicsTabsContent div.AllDemographicsWrapper
     display:none;
 }
 
-#DemographicsfacetSummary .facet-ui  div, .facet-ui p, .facet-ui span, .facet-ui h3, .facet-ui h4, .facet-ui ol, .facet-ui ul, .facet-ui li {
+/*#DemographicsfacetSummary .facet-ui  div, .facet-ui p, .facet-ui span, .facet-ui h3, .facet-ui h4, .facet-ui ol, .facet-ui ul, .facet-ui li {
     border:0 none;  
     clear:both;
     margin:0px;
     padding:0px;
-}
+}*/
 #DemographicsfacetSummary .facet-ui.inactive {display:none;} 
 #DemographicsfacetSummary .facet-ui 
 {
