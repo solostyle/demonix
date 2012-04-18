@@ -24,7 +24,7 @@ jQuery(".facets li li").click(function() {
 });
 
 // Close to begin with
-jQuery('#facetsSupply,#facetsDemand,#newReport').toggle(false);
+jQuery('#facetsSupply,#facetsDemand').toggle(false);
 
 // Mouseover events
 jQuery('#facetsBothHeader,#facetsSupplyHeader,#facetsDemandHeader,#newReportHeader').mouseover(function() {
