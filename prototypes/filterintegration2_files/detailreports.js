@@ -1347,8 +1347,11 @@ var toggleTabs = function (tab) {
 		default:
 			jQuery(".facetDemand, .facetSupply").show(); //weird
 	}
-	jQuery(".facets>li:not(:hidden)").css("clear","none");
+	jQuery(".facets>li:not(:hidden)").css({"clear":"none","margin-right":"2%"});
 	jQuery(".facets>li:not(:hidden)").each(function(index) {
+		if ((index+1)%3==0) {
+			jQuery(this).css("margin-right","0");
+		}
 		if (index%3==0) jQuery(this).css("clear","left");
 	});
 	// end added by archana
