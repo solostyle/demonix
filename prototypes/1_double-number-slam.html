@@ -397,10 +397,12 @@
         <div class="header">Applied Filters</div>
         <div class="content">
             <div class="searched-for-content">
-               <ul><li id="onetcode15109904"><span>Web Developers</span></li></ul>
+               <ul><li id="selected_WebDevelopers"><span>Web Developers</span></li></ul>
             </div>
             <div class="clearAll">Clear all filters</div>
 		</div>
+	</div>
+	<div id="" class="">
 		<!-- Filters start here -->
 		<div id="facetsBothHeader" class="header">Supply & Demand Filters</div>
 		<div id="facetsBoth" class="content">
@@ -421,7 +423,10 @@
 									<div class="filterCheckboxWrapper">All Occupations</div>
 									<div class="facetCountDemandWrapper"><span class="facetCountDemand">979,386</span></div>
 								</li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">1,170</span></div><div class="filterCheckboxWrapper">Web Developers</div><div class="facetCountDemandWrapper"><span class="facetCountDemand">145,280</span></div></li>
+								<li class="selected">
+									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">1,170</span></div>
+									<div class="filterCheckboxWrapper">Web Developers</div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">145,280</span></div></li>
 								<li>
 									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">531</span></div>
 									<div class="filterCheckboxWrapper">Computer Software Engineers, Applications</div>
@@ -1634,194 +1639,9 @@ so.write("ucSupplyView_amSupplyMiniStateHeatMap_pnlFlashContent");
     </div>  
 </div>  
    
-<!-- FancyBox Popup -->
+<!-- FancyBox Popup removed -->
 
 
-    <div style="width:1024px; height:603px;" id="FancyBoxDemographicsPopup"> <!-- this determines the width of FancyBox -->
-        <div id="FancyBoxBorderWrapper">
-            <div id="DemographicsTabsContent">
-                <h2>Demographics 
-                    <a title="Active Resumes|The data provided includes active jobs seekers from the entire CareerBuilder network including our niche sites.  An active job seeker is anyone who has completed at least one of the following in the time frame specified:&lt;ol&gt;&lt;li&gt;Created a new resume&lt;/li&gt;&lt;li&gt;Modified an existing resume&lt;/li&gt;&lt;li&gt;Applied to a job posting using a saved resume." class="titled_tips" href="#">&nbsp;</a>
-                  
-                
-                <div style="display: inline; float: right;">
-                    <a id="lnkDemoGraphicsToCareerBuilderRDB" class="lnkCareerBuilderRDB" href="#" style="font-size: 70%;">View These Resumes</a>
-                    <a title="CareerBuilder Resume Database Link|This link will take you out of the Supply &amp; Demand portal and over to the CareerBuilder Resume Database (RDB).  You will land on the search results page with the results currently displayed here.&lt;BR&gt;&lt;BR&gt;Note #1: Since CareerBuilder RDB product is only used when you perform an action on an individual resume you may browse the results on the RDB page as much as you like without using any of your RDB product until you choose to perform an action (such as viewing or emailing a specific resume).&lt;BR&gt;&lt;BR&gt;Note #2: Once in the RDB if you modify your search you will lose some of your Supply &amp; Demand search fields (such as Active Month Range) as they are not available on the RDB at this time.&lt;BR&gt;&lt;BR&gt;&lt;FONT COLOR='RED'&gt;Note #3: The CareerBuilder Demographics section includes EEO filters such as Race and Gender.  To be compliant with EEO regulations these filters can be utilized to show data in aggregate form only.  This means that any EEO filters you have selected will be dropped from your search when you cross over to the CareerBuilder Resume Database.&lt;/FONT&gt;" class="titled_tips" href="#">&nbsp;</a>
-                </div>
-                
-                </h2>         
-                
-                    <div id="DemographicsfacetSummary" class="facet-ui">
-                        <div id="searched-for" class="facet-ui inactive">
-                            <div class="header">Refine Your Search</div>
-                            <div class="content">
-                                <div class="searched-for-content">
-                                   <ul></ul>
-                                </div>
-                                <div class="clearAll">
-                                    Clear all filters
-                                </div>
-
-                                <div class="filter-content">
-                                    <ul class="facets">
-                                    </ul>
-                                </div>                    
-                            </div>
-                        </div>
-                        <div style="clear:right;"></div>
-                    </div>
-                
-
-                <div id="DemographicsChartsWrapper">
-                    <center>
-                    <div id="categories-bar">
-		               
-		                <table cellpadding="3" cellspacing="3">
-			                <tbody><tr>
-				                <td><div id="other-bar" class="category-bar category-selected"> Company </div> </td>
-				                <td><div id="location-bar" class="category-bar"> Location </div> </td>
-				                <td><div id="experience-bar" class="category-bar"> Experience </div> </td>
-				                <td><div id="demographics-bar" class="category-bar"> Demographics </div> </td>
-				                <td><div id="educaton-bar" class="category-bar"> Education </div> </td>
-			                </tr>
-		                </tbody></table>
-	                </div>
-	                </center>
-
-                    
-                    <div id="content-container" align="center">
-		                <div style="" id="companies-content" class="sub-content">
-                            <div id="EmployerViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Company Name</span>
-                                <div id="EmployerView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-
-                            <div id="IndustryViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Company Industry</span>
-                                <div id="IndustryView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-
-                            <div id="EmployeeSizeViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Company Size</span>
-                                <div id="EmployeeSizeView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-		                </div>
-		
-		                <div id="location-content" class="sub-content" style="display:none">
-			                
-                                <div id="StateViewWrapper" class="AllDemographicsWrapper">
-                                    <span class="header">State</span>
-                                    <div id="StateView" class="DemographicsView"></div>
-                                    <p class="chartDisclaimerText"></p>
-                                </div>
-                            
-					            <div id="MSAViewWrapper" class="AllDemographicsWrapper">
-                                    <span class="header">MSA</span>
-                                    <div id="MSAView" class="DemographicsView"></div>
-                                    <p class="chartDisclaimerText"></p>
-                                </div>
-                            
-					            <div id="CityStateViewWrapper" class="AllDemographicsWrapper">
-                                    <span class="header">City &amp; State</span>
-                                    <div id="CityStateView" class="DemographicsView"></div>
-                                    <p class="chartDisclaimerText"></p>
-                                </div>
-                            
-                                <div id="WillingToRelocateViewWrapper" class="AllDemographicsWrapper">
-                                    <span class="header">Willing to Relocate</span>
-                                    <div id="WillingToRelocateView" class="DemographicsView"></div>
-                                    <p class="chartDisclaimerText"></p>
-                                </div>
-                            
-		                </div>
-		
-		                <div id="experience-content" class="sub-content" style="display:none">
-			                 <div id="YearsExpViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Years Experience</span>
-                                <div id="YearsExpView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-
-                            <div id="JobTitleViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Most Recent Job Title</span>
-                                <div id="JobTitleView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-
-                            <div id="ManagementExperienceViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Management Experience</span>
-                                <div id="ManagementExperienceView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-                            <div id="OccupationViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Occupation</span>
-                                <div id="OccupationView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-		                </div>
-		
-		                <div id="education-content" class="sub-content" style="display:none">
-			                <div id="EducationViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Education</span>
-                                <div id="EducationView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-
-			                <div id="TopSchoolsViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Top Schools</span>
-                                <div id="TopSchoolsView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-
-			                <div id="TopMajorsViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Top Majors</span>
-                                <div id="TopMajorsView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-		                </div>
-
-                        <div id="demographics-content" class="sub-content" style="display:none">
-		                    <div id="RaceViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Ethnicity</span>
-                                <div id="RaceView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-
-		                    <div id="GenderViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Gender</span>
-                                <div id="GenderView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-                            
-                            <div id="MilitaryExperienceViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Military Experience</span>
-                                <div id="MilitaryExperienceView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-
-		                    <div id="USSecurityClearanceViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">US Security Clearance</span>
-                                <div id="USSecurityClearanceView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-
-                            <div id="LanguagesSpokenViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Languages Spoken</span>
-                                <div id="LanguagesSpokenView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-		                </div>
-	                </div>
-                
-                    
-                    <div style="border:none; clear:both;"></div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 <div id="drillDownReports" style="display:none;">

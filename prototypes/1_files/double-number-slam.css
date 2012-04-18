@@ -1,7 +1,7 @@
 .facets li li {display:table!important;border-radius:4px;border:1px solid transparent;cursor:pointer}
 .facetNumberTitle>div, .facets li li>* {display:block;float:left;clear:none!important}
 .facets li li:hover {background-color:#ffffcf}
-.facets li li.selected {background-color:#ffffcf;border-color:#eeee0f}
+.facets li li.selected {background-color:#ffffcf;border-color:#eedd0f}
 
 .facetCountSupplyWrapper, .facetCountDemandWrapper {font-weight:bold;width:45px;text-align:right}
 .facetNumberTitle .facetCountSupplyWrapper {text-align:left}
@@ -20,3 +20,4 @@
 
 .filter-content {color:#333!important;cursor:pointer;font-size:10px;font-weight:bold}
 .headerText {color:#09609a}
+#searched-for {margin-bottom:10px}

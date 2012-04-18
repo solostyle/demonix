@@ -586,9 +586,9 @@ table.detailView .msa.last {padding-right:25px;}
 
 #searched-for .searched-for-content, #Demographics-searched-for .search-for-content {font-size:80.5%;}
 #searched-for .searched-for-content li, #Demographics-searched-for .searched-for-content li{
-    background-image: url(../../../../images/personified/remove_selection.gif);
+    background-image: url('http://www.careerbuilder.com/images/personified/remove_selection.gif');
     background-repeat: no-repeat;
-    background-position: 0 -.3em;
+    background-position: 0 -.15em;
     margin-bottom:5px !important;
     /*height:18px;*/
 }
