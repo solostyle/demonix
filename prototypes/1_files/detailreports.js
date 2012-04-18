@@ -382,6 +382,8 @@ var ReportFilters = function (wrapperID) {
         parentWrapper = $("#" + wrapperID);
         cacheDictionary = new Dictionary();
         parentWrapper.find("#searched-for").attr("class", "facet-ui inactive");
+		jQuery(".facets li li.selected").removeClass("selected");
+		jQuery("#searched-for .searched-for-content ul").empty();
     };
     return {
         set_numericDataType: function (value) { isNumericDataType = value; },

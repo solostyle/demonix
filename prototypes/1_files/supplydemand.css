@@ -590,7 +590,8 @@ table.detailView .msa.last {padding-right:25px;}
     background-repeat: no-repeat;
     background-position: 0 -.15em;
     margin-bottom:5px !important;
-    /*height:18px;*/
+    min-height:18px;
+	cursor:pointer;
 }
 /*
 #searched-for .searched-for-content li.longText, #Demographics-searched-for .searched-for-content li.longText{height:28px;}
@@ -599,8 +600,7 @@ table.detailView .msa.last {padding-right:25px;}
 */
 #searched-for .searched-for-content span, #Demographics-searched-for .searched-for-content span{
     vertical-align:bottom;
-    margin-left:17px;   
-    cursor:pointer;
+    margin-left:17px;
 }
 .filter-content {font-size:80.5%;}
 
