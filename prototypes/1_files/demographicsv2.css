@@ -79,12 +79,6 @@ div#search-body #SDTabs ul li.selected a
     font-weight: bold !IMPORTANT;
 }
 */
-.filter-content Label
-{
-    color:#09609a;
-    font-size:10px;
-    font-weight:bold;
-}
 
 .module .header, .detail_module .header
 {

@@ -1,10 +1,13 @@
-.facets li li {display:table!important;border-radius:4px;border:1px solid transparent}
-.facets li li>* {display:block;float:left;clear:none!important}
+.facets li li {display:table!important;border-radius:4px;border:1px solid transparent;cursor:pointer}
+.facetNumberTitle>div, .facets li li>* {display:block;float:left;clear:none!important}
 .facets li li:hover {background-color:#ffffcf}
 .facets li li.selected {background-color:#ffffcf;border-color:#eeee0f}
 
-.facetCountSupplyWrapper, .facetCountDemandWrapper {width:45px;text-align:right}
-.filterCheckboxWrapper {width:86px;padding:0 2px!important}
+.facetCountSupplyWrapper, .facetCountDemandWrapper {font-weight:bold;width:45px;text-align:right}
+.facetNumberTitle .facetCountSupplyWrapper {text-align:left}
+.facetNumberTitle .facetCountDemandWrapper {text-align:right}
+
+.filterCheckboxWrapper {width:87px;padding:0 2px!important}
 .filterCheckbox {display:none!important}
 
 .facetCountDemand, .facetCountSupply {color:#b70;display:inline}
@@ -15,5 +18,5 @@
 .facetsSupply {}
 .facetsDemand {}
 
-.filter-content label {color:#333!important}
+.filter-content {color:#333!important;cursor:pointer;font-size:10px;font-weight:bold}
 .headerText {color:#09609a}
