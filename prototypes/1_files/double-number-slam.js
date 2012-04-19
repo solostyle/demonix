@@ -3,6 +3,7 @@ jQuery('#facetsBothHeader').click(function() {
 	jQuery(this).next().slideToggle('slow', function() {
 		// Animation complete
 	});
+	jQuery('#facetsBothHeader span').toggle();
 	jQuery('#facetsSupply,#facetsDemand').toggle(false);
 });
 
@@ -10,13 +11,19 @@ jQuery('#facetsSupplyHeader').click(function() {
 	jQuery(this).next().slideToggle('slow', function() {
 		// Animation complete
 	});
+	jQuery('#facetsSupplyHeader span').toggle();
 	jQuery('#facetsBoth,#facetsDemand').toggle(false);
 });
 jQuery('#facetsDemandHeader').click(function() {
 	jQuery(this).next().slideToggle('slow', function() {
 		// Animation complete
 	});
+	jQuery('#facetsDemandHeader span').toggle();
 	jQuery('#facetsBoth,#facetsSupply').toggle(false);
+});
+jQuery('#newReportHeader').click(function() {
+    jQuery(this).next().slideToggle("slow");
+	jQuery('#newReportHeader span').toggle();
 });
 
 // what happens when a filter in the main section is clicked
@@ -81,19 +88,23 @@ jQuery(".searched-for-content").click( function toggleFilters(e) {
 
 // Close to begin with
 jQuery('#facetsSupply,#facetsDemand').toggle(false);
+jQuery('#facetsSupplyHeader .expandedInd,#facetsDemandHeader .expandedInd').toggle(false);
+// Open to begin with
+jQuery('#facetsBothHeader .collapsedInd,#newReportHeader .collapsedInd').toggle(false);
 
 // Mouseover events
 jQuery('#facetsBothHeader,#facetsSupplyHeader,#facetsDemandHeader,#newReportHeader').mouseover(function() {
 	//if(console.log) {console.log(this);}
 	jQuery(this).css('background',"url('ReportSummary_files/bg_jpTopNav-button.png') no-repeat scroll -2px -34px transparent");
-	if (jQuery(this).next().css('display')=="none") {
-		jQuery(this).append('<span style="float:right">+</span>');
-	} else {
-		jQuery(this).append('<span style="float:right;margin-top:-7px">_</span>');
-	}
+	// if (jQuery(this).next().css('display')=="none") {
+		// jQuery(this).append('<span style="float:right">+</span>');
+	// } else {
+		// jQuery(this).append('<span style="float:right;margin-top:-7px">_</span>');
+	// }
 });
 jQuery('#facetsBothHeader,#facetsSupplyHeader,#facetsDemandHeader,#newReportHeader').mouseout(function() {
 	//if(console.log) {console.log(this);}
 	jQuery(this).css('background','');
-	jQuery(this).find('span').remove();
+	// jQuery(this).find('span').remove();
 });
+
