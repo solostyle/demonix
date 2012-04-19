@@ -10,14 +10,14 @@
 	<link rel="stylesheet" type="text/css" href="ReportSummary_files/jobposter.css">
 	<link rel="stylesheet" type="text/css" href="ReportSummary_files/jquery.css">
 	<link rel="stylesheet" type="text/css" href="ReportSummary_files/jquery-ui-1.css">
-	<link rel="stylesheet" type="text/css" href="ReportSummary_files/supplydemand.css">
-	<link rel="stylesheet" type="text/css" href="ReportSummary_files/demographicsv2.css">
-	<link rel="stylesheet" type="text/css" href="ReportSummary_files/demographics.css">
+	<link rel="stylesheet" type="text/css" href="1a_files/supplydemand.css">
+	<link rel="stylesheet" type="text/css" href="1a_files/demographicsv2.css">
+	<link rel="stylesheet" type="text/css" href="1a_files/demographics.css">
 	<link rel="stylesheet" type="text/css" href="ReportSummary_files/demo_style.css">
 	<link rel="stylesheet" type="text/css" href="ReportSummary_files/smart_wizard.css">
 	<link rel="stylesheet" type="text/css" href="ReportSummary_files/jpnav.css">
 	<link rel="stylesheet" type="text/css" href="ReportSummary_files/jpnestednavigation.css">
-	<link rel="stylesheet" type="text/css" href="ReportSummary_files/double-number-slam.css">
+	<link rel="stylesheet" type="text/css" href="1a_files/double-number-slam.css">
 	<script type="text/javascript">    var ScriptVariables = function(){
         var _vars = new Array();
             _vars['currentVer'] = 'v16.10';
@@ -73,7 +73,7 @@
 <script type="text/javascript" src="ReportSummary_files/datacollections.js"></script>
 <script type="text/javascript" src="ReportSummary_files/locationautocomplete.js"></script>
 <script type="text/javascript" src="ReportSummary_files/moment.js"></script>
-<script type="text/javascript" src="ReportSummary_files/detailreports.js"></script>
+<script type="text/javascript" src="1a_files/detailreports.js"></script>
 <script type="text/javascript" src="ReportSummary_files/search.js"></script>
 <script type="text/javascript" src="ReportSummary_files/demographics_popup.js"></script>
 <script type="text/javascript" src="ReportSummary_files/jquery_003.js"></script>
@@ -353,7 +353,7 @@
 				
 <div id="facetSummary" class="facet-ui">
     <div id="refine-search" class="facet-ui">
-       <div id="newReportHeader" class="header">Create a New Report</div>
+       <div id="newReportHeader" class="header">Create a New Report<span class="collapsedInd" style="float:right;display:none">+</span><span class="expandedInd" style="float:right;margin-top:-7px">_</span></div>
         <div id="newReport" class="content">
             <div class="search-content">
                 <ul>    
@@ -397,47 +397,75 @@
         <div class="header">Applied Filters</div>
         <div class="content">
             <div class="searched-for-content">
-               <ul><li id="onetcode15109904"><span>Web Developers</span></li></ul>
+               <ul><li><span>Web Developers</span></li></ul>
             </div>
             <div class="clearAll">Clear all filters</div>
 		</div>
+	</div>
+	<div id="AllFilters" class="">
 		<!-- Filters start here -->
-		<div id="facetsBothHeader" class="header">Supply & Demand Filters</div>
+		<div id="facetsBothHeader" class="header">Supply & Demand Filters<span class="collapsedInd" style="float:right;display:none">+</span><span class="expandedInd" style="float:right;margin-top:-7px">_</span></div>
 		<div id="facetsBoth" class="content">
 			<div class="filter-content">
                 <ul class="facets">
 					<li>
-						<div class="headerText">Occupation <a href="#" class="titled_tips" title="Occupations Filter|The Occupation filter displays the most relevant Standard Occupational Classifications (SOC) returned the result set.">&nbsp;</a></div>
+						<div class="headerText">Occupation</div>
 						<div class="toggle"><img src="ReportSummary_files/expand.png" alt=""><img src="ReportSummary_files/collapse.png" alt="" style="display: none;"></div>
+						<div class="facetNumberTitle">
+							<div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
+							<div class="filterCheckboxWrapper">&nbsp;</div>
+							<div class="facetCountDemandWrapper"><span class="facetCountDemand">Demand</span></div>
+						</div>
 						<div id="onetcode">
 							<ul>
 								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">311,830</span></div>
-									<div class="filterCheckboxWrapper"><input class="filterCheckbox" value="onetcode" id="onetcode" type="checkbox"><label for="onetcode"><b>All Occupations</b></label></div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">979,386</span></div>
+									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(311,830)</span></div>
+									<div class="filterCheckboxWrapper">All Occupations</div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(979,386)</span></div>
 								</li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">1,170</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" checked="checked" value="onetcode:15-1099.04" id="onetcode15109904" type="checkbox"><label for="onetcode15109904">Web Developers</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">145,280</span></div></li>
+								<li class="selected">
+									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(1,170)</span></div>
+									<div class="filterCheckboxWrapper">Web Developers</div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(145,280)</span></div></li>
 								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">531</span></div>
-									<div class="filterCheckboxWrapper"><input class="filterCheckbox" value="onetcode:15-1031.00" id="onetcode15103100" type="checkbox"><label for="onetcode15103100">Computer Software Engineers, Applications</label></div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">35,960</span></div>
-								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">1,227</span></div>
-									<div class="filterCheckboxWrapper"><input class="filterCheckbox" value="onetcode:15-1051.00" id="onetcode15105100" type="checkbox"><label for="onetcode15105100">Computer Systems Analysts</label></div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">24,327</span></div>
+									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(531)</span></div>
+									<div class="filterCheckboxWrapper">Computer Software Engineers, Applications</div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(35,960)</span></div>
 								</li>
 								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">465</span></div>
-									<div class="filterCheckboxWrapper"><input class="filterCheckbox" value="onetcode:15-1021.00" id="onetcode15102100" type="checkbox"><label for="onetcode15102100">Computer Programmers</label></div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">18,470</span></div>
+									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(1,227)</span></div>
+									<div class="filterCheckboxWrapper">Computer Systems Analysts</div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(24,327)</span></div>
 								</li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">709</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="onetcode:15-1099.01" id="onetcode15109901" type="checkbox"><label for="onetcode15109901">Software Quality Assurance Engineers and Testers</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">6,667</span></div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">404</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="onetcode:15-1071.00" id="onetcode15107100" type="checkbox"><label for="onetcode15107100">Network and Computer Systems Administrators</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">4,979</span></div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">459</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="onetcode:15-1061.00" id="onetcode15106100" type="checkbox"><label for="onetcode15106100">Database Administrators</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">4,405</span></div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">n/a</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="onetcode:15-1099.02" id="onetcode15109902" type="checkbox"><label for="onetcode15109902">Computer Systems Engineers/Architects</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">2,821</span></div></li> 
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">n/a</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="onetcode:11-2021.00" id="onetcode11202100" type="checkbox"><label for="onetcode11202100">Marketing Managers</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">2,400</span></div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">n/a</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="onetcode:15-1099.11" id="onetcode15109911" type="checkbox"><label for="onetcode15109911">Information Technology Project Managers</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">2,377</span></div></li> 
+								<li>
+									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(465)</span></div>
+									<div class="filterCheckboxWrapper">Computer Programmers</div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(18,470)</span></div>
+								</li>
+								<li>
+									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(709)</span></div>
+									<div class="filterCheckboxWrapper">Software Quality Assurance Engineers and Testers</div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(6,667)</span></div></li>
+								<li>
+									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(404)</span></div>
+									<div class="filterCheckboxWrapper">Network and Computer Systems Administrators</div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(4,979)</span></div></li>
+								<li>
+									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(459)</span></div>
+									<div class="filterCheckboxWrapper">Database Administrators</div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(4,405)</span></div></li>
+								<li>
+									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(n/a)</span></div>
+									<div class="filterCheckboxWrapper">Computer Systems Engineers/Architects</div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(2,821)</span></div></li> 
+								<li>
+									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(n/a)</span></div>
+									<div class="filterCheckboxWrapper">Marketing Managers</div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(2,400)</span></div></li>
+								<li>
+									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(n/a)</span></div>
+									<div class="filterCheckboxWrapper">Information Technology Project Managers</div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(2,377)</span></div></li> 
 							</ul>
 						</div></li>
 <!--Supply
@@ -448,19 +476,19 @@ Computer and Information Systems Managers (293)
 					<li>
 						<div class="headerText">Company Name</div>
 						<div class="toggle"><img src="ReportSummary_files/expand.png" alt=""><img src="ReportSummary_files/collapse.png" alt="" style="display: none;"></div>
-						<div id="companyname">
+						<div id="companyname" style="display:none">
 							<ul>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">98</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname" id="companyname" checked="checked" type="checkbox"><label for="companyname"><b>All Company Names</b></label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">979,386</span></div></li> 
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">n/a</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:atlantic tele- network, inc." id="companynameatlantictelenetworkinc" type="checkbox"><label for="companynameatlantictelenetworkinc">Atlantic Tele- Network, Inc.</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">3,976</span></div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">n/a</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:booz allen hamilton inc." id="companynameboozallenhamiltoninc" type="checkbox"><label for="companynameboozallenhamiltoninc">Booz Allen Hamilton Inc.</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">537</span></div></li> 
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">n/a</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:international business machines corporation" id="companynameinternationalbusinessmachinescorporation" type="checkbox"><label for="companynameinternationalbusinessmachinescorporation">International Business Machines Corporation</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">446</span></div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">n/a</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:creative circle" id="companynamecreativecircle" type="checkbox"><label for="companynamecreativecircle">Creative Circle</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">369</span></div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">n/a</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:maxim integrated products, inc." id="companynamemaximintegratedproductsinc" type="checkbox"><label for="companynamemaximintegratedproductsinc">Maxim Integrated Products, Inc.</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">362</span></div></li> 
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">n/a</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:saic, inc." id="companynamesaicinc" type="checkbox"><label for="companynamesaicinc">Saic, Inc.</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">290</span></div></li> 
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">n/a</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:hewlett- packard company" id="companynamehewlettpackardcompany" type="checkbox"><label for="companynamehewlettpackardcompany">Hewlett- Packard Company</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">287</span></div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">n/a</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:computer sciences corporation" id="companynamecomputersciencescorporation" type="checkbox"><label for="companynamecomputersciencescorporation">Computer Sciences Corporation</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">197</span></div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">n/a</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:northrop grumman corporation" id="companynamenorthropgrummancorporation" type="checkbox"><label for="companynamenorthropgrummancorporation">Northrop Grumman Corporation </label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">196</span></div></li> 
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">n/a</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:amtex systems, inc." id="companynameamtexsystemsinc" type="checkbox"><label for="companynameamtexsystemsinc">Amtex Systems, Inc.</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">177</span></div></li>
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(98)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname" id="companyname" checked="checked" type="checkbox"><label for="companyname"><b>All Company Names</b></label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(979,386)</span></div></li> 
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(n/a)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:atlantic tele- network, inc." id="companynameatlantictelenetworkinc" type="checkbox"><label for="companynameatlantictelenetworkinc">Atlantic Tele- Network, Inc.</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(3,976)</span></div></li>
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(n/a)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:booz allen hamilton inc." id="companynameboozallenhamiltoninc" type="checkbox"><label for="companynameboozallenhamiltoninc">Booz Allen Hamilton Inc.</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(537)</span></div></li> 
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(n/a)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:international business machines corporation" id="companynameinternationalbusinessmachinescorporation" type="checkbox"><label for="companynameinternationalbusinessmachinescorporation">International Business Machines Corporation</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(446)</span></div></li>
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(n/a)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:creative circle" id="companynamecreativecircle" type="checkbox"><label for="companynamecreativecircle">Creative Circle</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(369)</span></div></li>
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(n/a)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:maxim integrated products, inc." id="companynamemaximintegratedproductsinc" type="checkbox"><label for="companynamemaximintegratedproductsinc">Maxim Integrated Products, Inc.</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(362)</span></div></li> 
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(n/a)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:saic, inc." id="companynamesaicinc" type="checkbox"><label for="companynamesaicinc">Saic, Inc.</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(290)</span></div></li> 
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(n/a)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:hewlett- packard company" id="companynamehewlettpackardcompany" type="checkbox"><label for="companynamehewlettpackardcompany">Hewlett- Packard Company</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(287)</span></div></li>
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(n/a)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:computer sciences corporation" id="companynamecomputersciencescorporation" type="checkbox"><label for="companynamecomputersciencescorporation">Computer Sciences Corporation</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(197)</span></div></li>
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(n/a)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:northrop grumman corporation" id="companynamenorthropgrummancorporation" type="checkbox"><label for="companynamenorthropgrummancorporation">Northrop Grumman Corporation </label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(196)</span></div></li> 
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(n/a)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="companyname:amtex systems, inc." id="companynameamtexsystemsinc" type="checkbox"><label for="companynameamtexsystemsinc">Amtex Systems, Inc.</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(177)</span></div></li>
 							</ul>
 						</div>
 					</li>
@@ -481,16 +509,16 @@ Unitrin Specialty (6)
 						<div class="toggle"><img src="ReportSummary_files/expand.png" alt="" style="display: none;"><img src="ReportSummary_files/collapse.png" alt=""></div>
 						<div id="naics" style="display:none">
 							<ul>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">311,830</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics" id="naics" checked="checked" type="checkbox"><label for="naics"><b>All Industries</b></label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">979,386</span></div></li> 
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">18</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics:541512" id="naics541512" type="checkbox"><label for="naics541512">Computer Systems Design Services</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">7,916</span></div></li> 
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">28</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics:541511" id="naics541511" type="checkbox"><label for="naics541511">Custom Computer Programming Services</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">5,548</span></div></li> 
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">24</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics:517911" id="naics517911" type="checkbox"><label for="naics517911">Telecommunications Resellers</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">4,257</span></div></li> 
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">13</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics:511210" id="naics511210" type="checkbox"><label for="naics511210">Software Publishers</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">1,536</span></div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">14</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics:541611" id="naics541611" type="checkbox"><label for="naics541611">Administrative Management and General Management Consulting Services</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">1,498</span></div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">311,830</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics:561311" id="naics561311" type="checkbox"><label for="naics561311">Employment Placement Agencies</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">1,326</span></div></li> 
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">14</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics:561499" id="naics561499" type="checkbox"><label for="naics561499">All Other Business Support Services</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">1,194</span></div></li> 
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">311,830</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics:541618" id="naics541618" type="checkbox"><label for="naics541618">Other Management Consulting Services</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">1,075</span></div></li> 
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">13</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics:611310" id="naics611310" type="checkbox"><label for="naics611310">Colleges, Universities, and Professional Schools</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">996</span></div></li> 
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(311,830)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics" id="naics" checked="checked" type="checkbox"><label for="naics"><b>All Industries</b></label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(979,386)</span></div></li> 
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(18)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics:541512" id="naics541512" type="checkbox"><label for="naics541512">Computer Systems Design Services</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(7,916)</span></div></li> 
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(28)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics:541511" id="naics541511" type="checkbox"><label for="naics541511">Custom Computer Programming Services</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(5,548)</span></div></li> 
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(24)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics:517911" id="naics517911" type="checkbox"><label for="naics517911">Telecommunications Resellers</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(4,257)</span></div></li> 
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(13)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics:511210" id="naics511210" type="checkbox"><label for="naics511210">Software Publishers</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(1,536)</span></div></li>
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(14)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics:541611" id="naics541611" type="checkbox"><label for="naics541611">Administrative Management and General Management Consulting Services</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(1,498)</span></div></li>
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(311,830)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics:561311" id="naics561311" type="checkbox"><label for="naics561311">Employment Placement Agencies</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(1,326)</span></div></li> 
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(14)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics:561499" id="naics561499" type="checkbox"><label for="naics561499">All Other Business Support Services</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(1,194)</span></div></li> 
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(311,830)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics:541618" id="naics541618" type="checkbox"><label for="naics541618">Other Management Consulting Services</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(1,075)</span></div></li> 
+								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(13)</span></div><div class="filterCheckboxWrapper"><input class="filterCheckbox" value="naics:611310" id="naics611310" type="checkbox"><label for="naics611310">Colleges, Universities, and Professional Schools</label></div><div class="facetCountDemandWrapper"><span class="facetCountDemand">(996)</span></div></li> 
 							</ul>
 						</div>
 					</li>
@@ -500,7 +528,7 @@ Insurance Agencies and Brokerages (16)-->
 				</ul>
 			</div>
 		</div>
-		<div id="facetsSupplyHeader" class="header">Supply Filters</div>
+		<div id="facetsSupplyHeader" class="header">Supply Filters<span class="collapsedInd" style="float:right">+</span><span class="expandedInd" style="float:right;margin-top:-7px">_</span></div>
 		<div id="facetsSupply" class="content">
 			<div class="filter-content">
                 <ul class="facets">
@@ -509,8 +537,8 @@ Insurance Agencies and Brokerages (16)-->
 						<div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png">                        <img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div>
 						<div style="display:none" id="statename">
 							<ul>
-								<li><span class="facetCountSupply">311,830</span><input class="filterCheckbox" type="checkbox" checked="checked" id="statename" value="statename"><label for="statename"><b>All States</b></label><span class="facetCountDemand">979,386</span></li>
-								<li><span class="facetCountSupply">311,830</span><input class="filterCheckbox" type="checkbox" id="statenameTexas" value="statename:Texas"><label for="statenameTexas">Texas (1,170)</label><span class="facetCountDemand">979,386</span></li>
+								<li><span class="facetCountSupply">(311,830)</span><input class="filterCheckbox" type="checkbox" checked="checked" id="statename" value="statename"><label for="statename"><b>All States</b></label><span class="facetCountDemand">(979,386)</span></li>
+								<li><span class="facetCountSupply">(311,830)</span><input class="filterCheckbox" type="checkbox" id="statenameTexas" value="statename:Texas"><label for="statenameTexas">Texas (1,170)</label><span class="facetCountDemand">(979,386)</span></li>
 							</ul>
 						</div>
 					</li>
@@ -651,7 +679,7 @@ Insurance Agencies and Brokerages (16)-->
                 </ul>
             </div>                    
 		</div>
-		<div id="facetsDemandHeader" class="header">Demand Filters</div>
+		<div id="facetsDemandHeader" class="header">Demand Filters<span class="collapsedInd" style="float:right">+</span><span class="expandedInd" style="float:right;margin-top:-7px">_</span></div>
 		<div id="facetsDemand" class="content">
 			<div class="filter-content">
                 <ul class="facets">
@@ -660,9 +688,9 @@ Insurance Agencies and Brokerages (16)-->
 						<div class="toggle"><img src="ReportSummary_files/expand.png" alt="" style="display: none;"><img src="ReportSummary_files/collapse.png" alt=""></div>
 						<div id="isstaffing" style="display:none">
 							<ul>
-								<li><span class="facetCountSupply">311,830</span><input class="filterCheckbox" value="isstaffing" id="isstaffing" checked="checked" type="checkbox"><label for="isstaffing"><b>All (Staffing and Non-Staffing)</b></label><span class="facetCountDemand">979,386</span></li> 
-								<li><span class="facetCountSupply">311,830</span><input class="filterCheckbox" value="isstaffing:false" id="isstaffingfalse" type="checkbox"><label for="isstaffingfalse">No (100,334)</label><span class="facetCountDemand">979,386</span></li>
-								<li><span class="facetCountSupply">311,830</span><input class="filterCheckbox" value="isstaffing:true" id="isstaffingtrue" type="checkbox"><label for="isstaffingtrue">Yes (44,946)</label><span class="facetCountDemand">979,386</span></li> 
+								<li><span class="facetCountSupply">(311,830)</span><input class="filterCheckbox" value="isstaffing" id="isstaffing" checked="checked" type="checkbox"><label for="isstaffing"><b>All (Staffing and Non-Staffing)</b></label><span class="facetCountDemand">(979,386)</span></li> 
+								<li><span class="facetCountSupply">(311,830)</span><input class="filterCheckbox" value="isstaffing:false" id="isstaffingfalse" type="checkbox"><label for="isstaffingfalse">No (100,334)</label><span class="facetCountDemand">(979,386)</span></li>
+								<li><span class="facetCountSupply">(311,830)</span><input class="filterCheckbox" value="isstaffing:true" id="isstaffingtrue" type="checkbox"><label for="isstaffingtrue">Yes (44,946)</label><span class="facetCountDemand">(979,386)</span></li> 
 							</ul>
 						</div>
 					</li>
@@ -850,12 +878,12 @@ Insurance Agencies and Brokerages (16)-->
                 <div id="search-body">
                     <div id="SDTabs">
                         <ul class="clearfix tabbedNavigation">
-                            <li class="selected" id="DemandView"><a id="#"><span class="tabtitle">
-                                Demand <em>Job Postings</em> </span></a>
-                            </li>
-                            <li id="SupplyView"><a id="#"><span class="tabtitle">
+                            <li class="selected" id="SupplyView"><a id="#"><span class="tabtitle">
                                 Supply <em>Workforce - Active and Total</em>
                             </span></a></li>
+							<li id="DemandView"><a id="#"><span class="tabtitle">
+                                Demand <em>Job Postings</em> </span></a>
+                            </li>
                             <li id="LaborPressureView"><a id="#"><span class="tabtitle">
                                 Labor Pressure <em>Supply Over Demand</em>
                             </span></a></li>
@@ -1588,7 +1616,7 @@ so.write("ucSupplyView_amRDBMiniStateHeatMap_pnlFlashContent");
     </div>
     <div id="supply-map-module" class="module half only bottom">                    
         <div class="content">
-            <span class="header">Available Workforce by State As of 02/29/2012</span>
+            <span class="header">Available Workforce by State As of 02/29/2012)</span>
             <div id="miniSupplyMapWrapper" class="chart legend">
                 <div id="ucSupplyView_amSupplyMiniStateHeatMap_pnlFlashContent"><embed type="application/x-shockwave-flash" src="ReportSummary_files/ammap.swf" style="" id="amSupplyMiniStateHeatMap" name="amSupplyMiniStateHeatMap" bgcolor="#ffffff" quality="high" wmode="transparent" flashvars="map_id=amSupplyMiniStateHeatMap&amp;path=http://www.careerbuilder.com/images/ammap/&amp;map_data=%3C%3Fxml%20version%3D'1.0'%20encoding%3D'UTF-8'%3F%3E%3Cmap%20map_file%3D'maps%2Fusa.swf'%3E%3Careas%3E%3Carea%20value%3D'35268'%20mc_name%3D'CA'%20title%3D'California'%20hoover_color%20%3D%20'%231c3957'%20color%20%3D%20'%231c3957'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'15701'%20mc_name%3D'IL'%20title%3D'Illinois'%20hoover_color%20%3D%20'%231c3957'%20color%20%3D%20'%231c3957'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'11320'%20mc_name%3D'TX'%20title%3D'Texas'%20hoover_color%20%3D%20'%231c3957'%20color%20%3D%20'%231c3957'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'11274'%20mc_name%3D'MD'%20title%3D'Maryland'%20hoover_color%20%3D%20'%231c3957'%20color%20%3D%20'%231c3957'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'11146'%20mc_name%3D'VA'%20title%3D'Virginia'%20hoover_color%20%3D%20'%231c3957'%20color%20%3D%20'%231c3957'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'10006'%20mc_name%3D'DC'%20title%3D'District%20of%20Columbia'%20hoover_color%20%3D%20'%231c3957'%20color%20%3D%20'%231c3957'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'8844'%20mc_name%3D'WA'%20title%3D'Washington'%20hoover_color%20%3D%20'%231c3957'%20color%20%3D%20'%231c3957'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'8823'%20mc_name%3D'MN'%20title%3D'Minnesota'%20hoover_color%20%3D%20'%231c3957'%20color%20%3D%20'%231c3957'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'8797'%20mc_name%3D'MI'%20title%3D'Michigan'%20hoover_color%20%3D%20'%231c3957'%20color%20%3D%20'%231c3957'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'8688'%20mc_name%3D'NJ'%20title%3D'New%20Jersey'%20hoover_color%20%3D%20'%231c3957'%20color%20%3D%20'%231c3957'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'8529'%20mc_name%3D'OH'%20title%3D'Ohio'%20hoover_color%20%3D%20'%231c3957'%20color%20%3D%20'%231c3957'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'7598'%20mc_name%3D'CO'%20title%3D'Colorado'%20hoover_color%20%3D%20'%233b5c7a'%20color%20%3D%20'%233b5c7a'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'6387'%20mc_name%3D'PA'%20title%3D'Pennsylvania'%20hoover_color%20%3D%20'%233b5c7a'%20color%20%3D%20'%233b5c7a'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'6185'%20mc_name%3D'NY'%20title%3D'New%20York'%20hoover_color%20%3D%20'%233b5c7a'%20color%20%3D%20'%233b5c7a'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'6058'%20mc_name%3D'FL'%20title%3D'Florida'%20hoover_color%20%3D%20'%233b5c7a'%20color%20%3D%20'%233b5c7a'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'5424'%20mc_name%3D'MA'%20title%3D'Massachusetts'%20hoover_color%20%3D%20'%233b5c7a'%20color%20%3D%20'%233b5c7a'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'5414'%20mc_name%3D'OR'%20title%3D'Oregon'%20hoover_color%20%3D%20'%233b5c7a'%20color%20%3D%20'%233b5c7a'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'4639'%20mc_name%3D'MO'%20title%3D'Missouri'%20hoover_color%20%3D%20'%233b5c7a'%20color%20%3D%20'%233b5c7a'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'4339'%20mc_name%3D'NC'%20title%3D'North%20Carolina'%20hoover_color%20%3D%20'%233b5c7a'%20color%20%3D%20'%233b5c7a'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'4326'%20mc_name%3D'GA'%20title%3D'Georgia'%20hoover_color%20%3D%20'%233b5c7a'%20color%20%3D%20'%233b5c7a'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'2510'%20mc_name%3D'AZ'%20title%3D'Arizona'%20hoover_color%20%3D%20'%233b5c7a'%20color%20%3D%20'%233b5c7a'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'2432'%20mc_name%3D'AL'%20title%3D'Alabama'%20hoover_color%20%3D%20'%237794a8'%20color%20%3D%20'%237794a8'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'2397'%20mc_name%3D'IN'%20title%3D'Indiana'%20hoover_color%20%3D%20'%237794a8'%20color%20%3D%20'%237794a8'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'2375'%20mc_name%3D'TN'%20title%3D'Tennessee'%20hoover_color%20%3D%20'%237794a8'%20color%20%3D%20'%237794a8'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'2165'%20mc_name%3D'UT'%20title%3D'Utah'%20hoover_color%20%3D%20'%237794a8'%20color%20%3D%20'%237794a8'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'1896'%20mc_name%3D'LA'%20title%3D'Louisiana'%20hoover_color%20%3D%20'%237794a8'%20color%20%3D%20'%237794a8'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'1759'%20mc_name%3D'KY'%20title%3D'Kentucky'%20hoover_color%20%3D%20'%237794a8'%20color%20%3D%20'%237794a8'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'1745'%20mc_name%3D'WI'%20title%3D'Wisconsin'%20hoover_color%20%3D%20'%237794a8'%20color%20%3D%20'%237794a8'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'1649'%20mc_name%3D'NV'%20title%3D'Nevada'%20hoover_color%20%3D%20'%237794a8'%20color%20%3D%20'%237794a8'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'1552'%20mc_name%3D'OK'%20title%3D'Oklahoma'%20hoover_color%20%3D%20'%237794a8'%20color%20%3D%20'%237794a8'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'1511'%20mc_name%3D'SC'%20title%3D'South%20Carolina'%20hoover_color%20%3D%20'%237794a8'%20color%20%3D%20'%237794a8'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'1480'%20mc_name%3D'CT'%20title%3D'Connecticut'%20hoover_color%20%3D%20'%23a2b8cc'%20color%20%3D%20'%23a2b8cc'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'1457'%20mc_name%3D'IA'%20title%3D'Iowa'%20hoover_color%20%3D%20'%23a2b8cc'%20color%20%3D%20'%23a2b8cc'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'1365'%20mc_name%3D'KS'%20title%3D'Kansas'%20hoover_color%20%3D%20'%23a2b8cc'%20color%20%3D%20'%23a2b8cc'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'1321'%20mc_name%3D'WV'%20title%3D'West%20Virginia'%20hoover_color%20%3D%20'%23a2b8cc'%20color%20%3D%20'%23a2b8cc'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'1187'%20mc_name%3D'HI'%20title%3D'Hawaii'%20hoover_color%20%3D%20'%23a2b8cc'%20color%20%3D%20'%23a2b8cc'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'1139'%20mc_name%3D'NH'%20title%3D'New%20Hampshire'%20hoover_color%20%3D%20'%23a2b8cc'%20color%20%3D%20'%23a2b8cc'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'1113'%20mc_name%3D'ID'%20title%3D'Idaho'%20hoover_color%20%3D%20'%23a2b8cc'%20color%20%3D%20'%23a2b8cc'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'1078'%20mc_name%3D'NM'%20title%3D'New%20Mexico'%20hoover_color%20%3D%20'%23a2b8cc'%20color%20%3D%20'%23a2b8cc'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'1075'%20mc_name%3D'RI'%20title%3D'Rhode%20Island'%20hoover_color%20%3D%20'%23a2b8cc'%20color%20%3D%20'%23a2b8cc'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'772'%20mc_name%3D'NE'%20title%3D'Nebraska'%20hoover_color%20%3D%20'%23a2b8cc'%20color%20%3D%20'%23a2b8cc'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'706'%20mc_name%3D'AR'%20title%3D'Arkansas'%20hoover_color%20%3D%20'%23c7e3fd'%20color%20%3D%20'%23c7e3fd'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'690'%20mc_name%3D'MS'%20title%3D'Mississippi'%20hoover_color%20%3D%20'%23c7e3fd'%20color%20%3D%20'%23c7e3fd'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'549'%20mc_name%3D'AK'%20title%3D'Alaska'%20hoover_color%20%3D%20'%23c7e3fd'%20color%20%3D%20'%23c7e3fd'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'546'%20mc_name%3D'MT'%20title%3D'Montana'%20hoover_color%20%3D%20'%23c7e3fd'%20color%20%3D%20'%23c7e3fd'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'486'%20mc_name%3D'ME'%20title%3D'Maine'%20hoover_color%20%3D%20'%23c7e3fd'%20color%20%3D%20'%23c7e3fd'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'362'%20mc_name%3D'DE'%20title%3D'Delaware'%20hoover_color%20%3D%20'%23c7e3fd'%20color%20%3D%20'%23c7e3fd'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'243'%20mc_name%3D'ND'%20title%3D'North%20Dakota'%20hoover_color%20%3D%20'%23c7e3fd'%20color%20%3D%20'%23c7e3fd'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'215'%20mc_name%3D'VT'%20title%3D'Vermont'%20hoover_color%20%3D%20'%23c7e3fd'%20color%20%3D%20'%23c7e3fd'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'209'%20mc_name%3D'WY'%20title%3D'Wyoming'%20hoover_color%20%3D%20'%23c7e3fd'%20color%20%3D%20'%23c7e3fd'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3Carea%20value%3D'205'%20mc_name%3D'SD'%20title%3D'South%20Dakota'%20hoover_color%20%3D%20'%23c7e3fd'%20color%20%3D%20'%23c7e3fd'%20color_no_value%20%3D%20''%3E%3C%2Farea%3E%3C%2Fareas%3E%3C%2Fmap%3E&amp;map_settings=%3C%3Fxml%20version%3D'1.0'%20encoding%3D'UTF-8'%3F%3E%3Csettings%3E%20%3Cdeveloper_mode%3EFalse%3C%2Fdeveloper_mode%3E%20%3Cadd_time_stamp%3ETrue%3C%2Fadd_time_stamp%3E%20%3Cdrag_map%3EFalse%3C%2Fdrag_map%3E%20%3Ccolor_change_time_start%3E0.1%3C%2Fcolor_change_time_start%3E%20%3Cprecision%3E0%3C%2Fprecision%3E%20%3Cprojection%3EXY%3C%2Fprojection%3E%20%3Cwidth%3E340%3C%2Fwidth%3E%20%3Cheight%3E250%3C%2Fheight%3E%20%3Cfont%3Etahoma%3C%2Ffont%3E%20%3Ctext_size%3E11%3C%2Ftext_size%3E%20%3Ctext_color%3E%23000000%3C%2Ftext_color%3E%20%3Cthousands_separator%3E%2C%3C%2Fthousands_separator%3E%20%20%3Cdecimals_separator%3E.%3C%2Fdecimals_separator%3E%20%3Czoom%3E%20%3Cenabled%3EFalse%3C%2Fenabled%3E%20%3Carrows_enabled%3EFalse%3C%2Farrows_enabled%3E%20%3Cmouse_wheel_enabled%3EFalse%3C%2Fmouse_wheel_enabled%3E%20%3Ccolor%3E%23AAAAAA%3C%2Fcolor%3E%20%3Ccolor_hover%3E%23CCCCCC%3C%2Fcolor_hover%3E%20%3Cx%3E10%3C%2Fx%3E%20%3Cy%3E%3C%2Fy%3E%20%3Cheight%3E75%3C%2Fheight%3E%20%3Cbackground_zooms_to_top%3ETrue%3C%2Fbackground_zooms_to_top%3E%3C%2Fzoom%3E%3Csmall_map%3E%20%3Cenabled%3EFalse%3C%2Fenabled%3E%3C%2Fsmall_map%3E%3Carea%3E%20%3Cballoon_text%3E%3C!%5BCDATA%5B%7Bvalue%7D%20total%20workers%20in%20%7Btitle%7D%5D%5D%3E%3C%2Fballoon_text%3E%20%3Cactive_only_if_value_set%3ETrue%3C%2Factive_only_if_value_set%3E%20%3Ccolor_solid%3E%23104e8b%3C%2Fcolor_solid%3E%20%3Ccolor_light%3E%23CDDAE9%3C%2Fcolor_light%3E%20%3Ccolor_hover%3E%23FF9933%3C%2Fcolor_hover%3E%20%3Ccolor_selected%3E%3C%2Fcolor_selected%3E%20%3Ccolor_unlisted%3E%23AAAAAA%3C%2Fcolor_unlisted%3E%20%3Ccolor_no_value%3E%23AAAAAA%3C%2Fcolor_no_value%3E%20%3Cdisable_when_clicked%3ETrue%3C%2Fdisable_when_clicked%3E%3C%2Farea%3E%3Clegend%3E%20%3Cenabled%3ETrue%3C%2Fenabled%3E%20%3Cx%3E150%3C%2Fx%3E%20%3Cy%3E185%3C%2Fy%3E%20%3Cwidth%3E%3C%2Fwidth%3E%20%3Cmax_columns%3E2%3C%2Fmax_columns%3E%20%3Ctext_size%3E8%3C%2Ftext_size%3E%20%3Cspacing%3E2%3C%2Fspacing%3E%20%3Cmargins%3E5%3C%2Fmargins%3E%3C%2Flegend%3E%3Cballoon%3E%20%3Cenabled%3ETrue%3C%2Fenabled%3E%20%3Ccolor%3E%23104e8b%3C%2Fcolor%3E%3C%2Fballoon%3E%3C%2Fsettings%3E&amp;loading_data=Loading Data...&amp;preloader_color=#999999" width="340" height="250"></div><script language="javascript">
 // <![CDATA[ 
@@ -1611,194 +1639,9 @@ so.write("ucSupplyView_amSupplyMiniStateHeatMap_pnlFlashContent");
     </div>  
 </div>  
    
-<!-- FancyBox Popup -->
+<!-- FancyBox Popup removed -->
 
 
-    <div style="width:1024px; height:603px;" id="FancyBoxDemographicsPopup"> <!-- this determines the width of FancyBox -->
-        <div id="FancyBoxBorderWrapper">
-            <div id="DemographicsTabsContent">
-                <h2>Demographics 
-                    <a title="Active Resumes|The data provided includes active jobs seekers from the entire CareerBuilder network including our niche sites.  An active job seeker is anyone who has completed at least one of the following in the time frame specified:&lt;ol&gt;&lt;li&gt;Created a new resume&lt;/li&gt;&lt;li&gt;Modified an existing resume&lt;/li&gt;&lt;li&gt;Applied to a job posting using a saved resume." class="titled_tips" href="#">&nbsp;</a>
-                  
-                
-                <div style="display: inline; float: right;">
-                    <a id="lnkDemoGraphicsToCareerBuilderRDB" class="lnkCareerBuilderRDB" href="#" style="font-size: 70%;">View These Resumes</a>
-                    <a title="CareerBuilder Resume Database Link|This link will take you out of the Supply &amp; Demand portal and over to the CareerBuilder Resume Database (RDB).  You will land on the search results page with the results currently displayed here.&lt;BR&gt;&lt;BR&gt;Note #1: Since CareerBuilder RDB product is only used when you perform an action on an individual resume you may browse the results on the RDB page as much as you like without using any of your RDB product until you choose to perform an action (such as viewing or emailing a specific resume).&lt;BR&gt;&lt;BR&gt;Note #2: Once in the RDB if you modify your search you will lose some of your Supply &amp; Demand search fields (such as Active Month Range) as they are not available on the RDB at this time.&lt;BR&gt;&lt;BR&gt;&lt;FONT COLOR='RED'&gt;Note #3: The CareerBuilder Demographics section includes EEO filters such as Race and Gender.  To be compliant with EEO regulations these filters can be utilized to show data in aggregate form only.  This means that any EEO filters you have selected will be dropped from your search when you cross over to the CareerBuilder Resume Database.&lt;/FONT&gt;" class="titled_tips" href="#">&nbsp;</a>
-                </div>
-                
-                </h2>         
-                
-                    <div id="DemographicsfacetSummary" class="facet-ui">
-                        <div id="searched-for" class="facet-ui inactive">
-                            <div class="header">Refine Your Search</div>
-                            <div class="content">
-                                <div class="searched-for-content">
-                                   <ul></ul>
-                                </div>
-                                <div class="clearAll">
-                                    Clear all filters
-                                </div>
-
-                                <div class="filter-content">
-                                    <ul class="facets">
-                                    </ul>
-                                </div>                    
-                            </div>
-                        </div>
-                        <div style="clear:right;"></div>
-                    </div>
-                
-
-                <div id="DemographicsChartsWrapper">
-                    <center>
-                    <div id="categories-bar">
-		               
-		                <table cellpadding="3" cellspacing="3">
-			                <tbody><tr>
-				                <td><div id="other-bar" class="category-bar category-selected"> Company </div> </td>
-				                <td><div id="location-bar" class="category-bar"> Location </div> </td>
-				                <td><div id="experience-bar" class="category-bar"> Experience </div> </td>
-				                <td><div id="demographics-bar" class="category-bar"> Demographics </div> </td>
-				                <td><div id="educaton-bar" class="category-bar"> Education </div> </td>
-			                </tr>
-		                </tbody></table>
-	                </div>
-	                </center>
-
-                    
-                    <div id="content-container" align="center">
-		                <div style="" id="companies-content" class="sub-content">
-                            <div id="EmployerViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Company Name</span>
-                                <div id="EmployerView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-
-                            <div id="IndustryViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Company Industry</span>
-                                <div id="IndustryView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-
-                            <div id="EmployeeSizeViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Company Size</span>
-                                <div id="EmployeeSizeView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-		                </div>
-		
-		                <div id="location-content" class="sub-content" style="display:none">
-			                
-                                <div id="StateViewWrapper" class="AllDemographicsWrapper">
-                                    <span class="header">State</span>
-                                    <div id="StateView" class="DemographicsView"></div>
-                                    <p class="chartDisclaimerText"></p>
-                                </div>
-                            
-					            <div id="MSAViewWrapper" class="AllDemographicsWrapper">
-                                    <span class="header">MSA</span>
-                                    <div id="MSAView" class="DemographicsView"></div>
-                                    <p class="chartDisclaimerText"></p>
-                                </div>
-                            
-					            <div id="CityStateViewWrapper" class="AllDemographicsWrapper">
-                                    <span class="header">City &amp; State</span>
-                                    <div id="CityStateView" class="DemographicsView"></div>
-                                    <p class="chartDisclaimerText"></p>
-                                </div>
-                            
-                                <div id="WillingToRelocateViewWrapper" class="AllDemographicsWrapper">
-                                    <span class="header">Willing to Relocate</span>
-                                    <div id="WillingToRelocateView" class="DemographicsView"></div>
-                                    <p class="chartDisclaimerText"></p>
-                                </div>
-                            
-		                </div>
-		
-		                <div id="experience-content" class="sub-content" style="display:none">
-			                 <div id="YearsExpViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Years Experience</span>
-                                <div id="YearsExpView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-
-                            <div id="JobTitleViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Most Recent Job Title</span>
-                                <div id="JobTitleView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-
-                            <div id="ManagementExperienceViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Management Experience</span>
-                                <div id="ManagementExperienceView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-                            <div id="OccupationViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Occupation</span>
-                                <div id="OccupationView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-		                </div>
-		
-		                <div id="education-content" class="sub-content" style="display:none">
-			                <div id="EducationViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Education</span>
-                                <div id="EducationView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-
-			                <div id="TopSchoolsViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Top Schools</span>
-                                <div id="TopSchoolsView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-
-			                <div id="TopMajorsViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Top Majors</span>
-                                <div id="TopMajorsView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-		                </div>
-
-                        <div id="demographics-content" class="sub-content" style="display:none">
-		                    <div id="RaceViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Ethnicity</span>
-                                <div id="RaceView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-
-		                    <div id="GenderViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Gender</span>
-                                <div id="GenderView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-                            
-                            <div id="MilitaryExperienceViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Military Experience</span>
-                                <div id="MilitaryExperienceView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-
-		                    <div id="USSecurityClearanceViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">US Security Clearance</span>
-                                <div id="USSecurityClearanceView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-
-                            <div id="LanguagesSpokenViewWrapper" class="AllDemographicsWrapper">
-                                <span class="header">Languages Spoken</span>
-                                <div id="LanguagesSpokenView" class="DemographicsView"></div>
-                                <p class="chartDisclaimerText"></p>
-                            </div>
-		                </div>
-	                </div>
-                
-                    
-                    <div style="border:none; clear:both;"></div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 <div id="drillDownReports" style="display:none;">
@@ -2604,7 +2447,7 @@ so.write("ucLaborPressureView_amActiveLaborMiniStateHeatMap_pnlFlashContent");
     <div id="labor-map">
         <div id="labor-map-module" class="module half only bottom">                    
             <div class="content">
-                <span class="header hasDesc" style="font-size:12px">Labor Pressure based on Total Workforce by State As of 02/29/2012</span>
+                <span class="header hasDesc" style="font-size:12px">Labor Pressure based on Total Workforce by State As of 02/29/2012)</span>
                 <div class="description">A lower number means more 
 difficult to fill a position and a higher number means less difficult to
  fill a position. Hover over a state to see exact total</div>
@@ -4120,7 +3963,7 @@ UserDIDOL : 'OIk6IuyctT8itJ0qcR4Ji/VHKtjDAcB3pFOmiWD1PafQ='
 		</div>
 	</div>
 	
-	<script type="text/javascript" src="ReportSummary_files/double-number-slam.js"></script>
+	<script type="text/javascript" src="1a_files/double-number-slam.js"></script>
 	
 	</body>
 </html>

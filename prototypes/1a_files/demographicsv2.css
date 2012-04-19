@@ -1,0 +1,269 @@
+@charset "utf-8";
+/* CSS Document */
+
+#SDTabs li .tabtitle
+{
+    background-image:url('http://img.icbdr.com/images/Personified/Tab_Sliver_Default.png');
+    background-repeat:repeat-x;
+    border-left:none;
+    border-right:none;
+    margin:0px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    text-align:left;
+    top:0px;
+    border-bottom:none;
+    color:#ee7f0c;
+}
+
+#SDTabs li .tabtitle em
+{
+    color:#757474;
+    font-size:10px;
+}
+
+#SDTabs li.selected .tabtitle
+{
+    background-image:url('http://img.icbdr.com/images/Personified/Tab_Sliver.png');
+    background-repeat:repeat-x;
+    border-left:none;
+    border-right:none;
+    margin:0px;
+    border: 1px solid #4c75cf;
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    text-align:left;
+    color:White;
+}
+#SDTabs li.selected .tabtitle em
+{
+    color:#c8c8c8;
+    font-size:10px;
+}
+#SDTabs ul.tabbedNavigation
+{
+    height:38px;
+}
+#SDTabs #YearlyView, #SDTabs #HourlyView, #SDTabs #BonusView, #SDTabs #CommissionView, #SDTabs #TotalPayView 
+{
+    width:163px;
+    margin-bottom:0px;
+}
+#SDTabs .tabImage
+{
+    float:left;
+    text-decoration:none;
+    border:none;
+    margin-right:6px;
+}
+div#search-body #SDTabs ul li.selected a
+{
+    background:transparent;
+    background-color:transparent;
+}
+
+/*
+.facet-ui .content .show-more {
+    color:#ee7f0c !IMPORTANT;
+    text-decoration:underline !IMPORTANT;
+    font-weight: bold !IMPORTANT;
+}
+*/
+
+.module .header, .detail_module .header
+{
+    color:Black;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.BoldDarkBlue
+{
+    color:#09609a !IMPORTANT;
+    font-weight:bold !IMPORTANT;
+}
+
+#searched-for .searched-for-content span, #Demographics-search-for .searched-for-content span
+{
+    color:#09609a !IMPORTANT;
+    font-weight:bold !IMPORTANT;
+}
+
+.cb_style select, .cb_style input, td {
+    color:#707070;
+    font-weight:bold;
+    font-size:11px !IMPORTANT;
+}
+.btnSubmit {
+    background:url("http://img.icbdr.com/images/Personified/button_bg.png") repeat-x left top;
+    border:none !IMPORTANT;
+    height: 22px;
+    width: 59px;
+}
+
+.sprites
+{
+    background-color: transparent;
+    background-image: url("http://img.icbdr.com/images/Personified/breakout_icons_green.png");
+    background-repeat: no-repeat;
+}
+div.barGraph {
+    background: url("http://img.icbdr.com/images/Personified/green_gradientbg.gif") repeat-y scroll 0 0 transparent;
+    border: 1px solid #78a2ad;
+    bottom: 0;
+    height: 100%;
+}
+
+#DemographicsfacetSummary .facet-ui .filter-content .toggle, #facetSummary .facet-ui .filter-content .toggle {
+    cursor: pointer;
+    float: right;
+    text-indent:0px;
+}
+
+.breakoutTitle.inactive
+{
+    background-image: url("http://img.icbdr.com/images/Personified/tab_breakout_background.png");
+    background-repeat: repeat-x;
+    background-color:white;
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    color:Black;
+    -webkit-border-bottom-left-radius: 0px;
+}
+
+.breakoutTitle.active
+{
+    background-image: url("http://img.icbdr.com/images/Personified/tab_breakout_background.png");
+background-repeat: repeat-x;
+background-color:white;
+border-radius: 5px 5px 0px 0px;
+-moz-border-radius: 5px 5px 0px 0px;
+-webkit-border-bottom-right-radius: 0px;
+-webkit-border-bottom-left-radius: 0px;
+color:Black;
+}
+#box-table-a td.rowTitle, div.breakouts table td.rowTitle
+{
+    font-family:Arial;
+    font-weight:bold;
+    font-size:11px;
+    color:#09609a;
+}
+#searched-for .searched-for-content, #Demographics-search-for .searched-for-content{
+    font-size: 80.5%;
+    min-height: 20px;
+}
+
+#categories-bar
+{
+	width: auto;
+	display: table;
+	
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: -16px;
+}
+
+/* UI Redesign Feb 2012 */
+.category-bar
+{
+    
+	font-size: 13px;
+	color: #EE7F0C;
+	font-weight: bold;
+	border: 1px solid #CCC;
+	background: #a2a2a2;
+	padding: 4px;
+	border-radius: 7px;
+	width: 115px;
+	text-align: center;
+	mouse: hand;
+	cursor: pointer;
+	margin-left: auto;
+    margin-right: auto;
+	
+	background-image: url('http://img.icbdr.com/images/Personified/Tab_Sliver_Default.png');
+	background-repeat: repeat-x;
+}
+
+.category-selected
+{
+	color: #fff;
+	background: #1E3E8C;
+	border: 1px solid #4C75CF;
+	
+	background-image: url('http://img.icbdr.com/images/Personified/Tab_Sliver.png');
+	background-repeat: repeat-x;
+}
+
+#categories-container
+{
+	width: auto;
+	display: table;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.sub-bar
+{
+	display:table-cell;
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: 8px;
+	border-radius: 7px;
+	width: 95px;
+	height: 50px;
+	min-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+	mouse: hand;
+	cursor: pointer;
+	margin-left: auto;
+    margin-right: auto;
+	
+	background-image: url('http://img.icbdr.com/images/Personified/Tab_Sliver_Default.png');
+	background-repeat: repeat-x;
+}
+
+.sub-selected
+{
+	font-weight: bold;
+	color: #fff;
+	background: #a1b7e9;
+	
+	background-image: url('http://i.imgur.com/3cmGe.png');
+	background-repeat: repeat-x;
+}
+
+.sub-disabled
+{
+    font-weight: bold;
+	color: #fff;
+	cursor: default;
+	mouse: default;
+	background: #ddd;
+	background-image: none;
+}
+
+.sub-content
+{
+	background: #fff;
+	width: 745px;
+	height: 587px;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+	padding: 5px;
+	margin-left:0px;
+}
+
+#content-container
+{
+    margin-left: 10px;
+    margin-top:-6px;
+}
