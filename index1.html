@@ -12,7 +12,7 @@
        More info: h5bp.com/b/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Supply and Demand Prototypes</title>
+  <title></title>
   <meta name="description" content="">
 
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
@@ -24,29 +24,62 @@
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
-  <!-- All JavaScript at the bottom, except this Modernizr build.
-       Modernizr enables HTML5 elements & feature detects for optimal performance.
-       Create your own custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 <body>
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <header>
-
+  <header id="prototype-header">
+		<h1>Prototype: Supply & Demand</h1>
   </header>
-  <div role="main">
-		<ul>
-			<li><a href="ReportSummary.html">Original</a></li>
-			<li><a href="redesign.html">My Redesign</a></li>
-			<li><a href="filterintegration1.html">Filter Integration 1</a></li>
-			<li><a href="1a_double-number-slam.html">Double Number SLAM!</a></li>
-			<li><a href="filterintegration2.html">Filter Integration 2</a></li>
-		</ul>
-  </div>
-  <footer>
-
+  <section id="main">
+		<!-- #jpHeader -->
+		<header>
+			<!-- #jpHeader_logo -->
+			<div id="header_logo"></div>
+			<!-- #jpHeader_security -->
+			<nav id="header_login">
+				<ol class="inline">
+					<li>Hello, Greeley Higgins <a>(not you?)</a></li><li><a>Site Security</a></li><li><a>Help</a></li><li><a>Sign Out</a></li>
+				</ol>
+			</nav>
+			<!-- #JobPosterNavBar -->
+			<nav id="jpNav">
+				<ol class="inline">
+					<li><a>Home</a></li><li><a>My CB</a></li><li><a>Products</a></li><li><a>Services</a></li><li><a>Resources</a></li><li><a>Shopping Cart</a></li>
+				</ol>
+			</nav>
+		</header>
+		
+		<!-- #JPTopNav -->
+		<nav>
+			<ol class="inline">
+				<li><a>Jobs &amp; Applications</a></li><li><a>Resume Search</a></li><li><a>Talent &amp; Intelligence Portal</a></li><li><a>Account Tools</a></li>
+			</ol>
+		</nav>
+		
+		<!-- #jpMainContent -->
+		<section id="portal">
+			<div id="portal-menu">
+				<div id="portal-menu-search"><h2>New Search</h2></div>
+				<div id="portal-menu-applied"><h2>Current Selections</h2></div>
+				<div id="portal-menu-filters"><h2>Refine Search By</h2></div>
+			</div>
+			<div id="portal-presentation">
+				<div id="portal-presentation-summary"><h2>Supply and Demand Summary</h2></div>
+				<div id="portal-presentation-detail"><h2>Supply and Demand Detail</h2></div>
+			</div>
+		</section>
+		
+		<div class="clearfix"></div>
+		<!-- #jpFooter -->
+		<footer>
+			<p>placeholder footer</p>
+		</footer>
+		
+  </section>
+  <footer id="prototype-footer">
+		<p><em>created by: Archana</em> for careerbuilder.com</p>
   </footer>
 
 
@@ -56,18 +89,7 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
-  <!-- scripts concatenated and minified via build script -->
-  <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
-  <!-- end scripts -->
 
-  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-       mathiasbynens.be/notes/async-analytics-snippet -->
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
 </body>
 </html>
