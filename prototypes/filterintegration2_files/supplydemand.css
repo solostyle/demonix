@@ -229,17 +229,17 @@ a.lnkCareerBuilderRDB:link,a.lnkStartOver:active,a.lnkStartOver:visited{
 .module.half.only.bar {border-right:solid 1px #dddddd;}
 .module{margin:auto;margin-top:12px;margin-bottom:12px;border-bottom:solid 1px #dddddd;}
 div.module.bottom{border:none;}
-.module .content {padding-top:8px;text-align:left; background: url('../../../../images/personified/250x50cbwatermark.png') 50% 50% no-repeat; }
+.module .content {padding-top:8px;text-align:left; background: url('http://www.careerbuilder.com/images/personified/250x50cbwatermark.png') 50% 50% no-repeat; }
 .module .header,  .detail_module .header{color:#777777; font-size:13px;font-weight:bold; padding-bottom:12px;float:left;}
 .module .header.hasDesc {padding-bottom:0px;}
 .detail_module .header{font-size:16px;}
 .module .viewReport{float:right;}
 .module.half .viewReport{float:left;}
 .module .chart{padding:0px;}
-.module .chart.legend {background: transparent url(../../../../images/personified/Heatmap_Legend.png) no-repeat 60% 95%; vertical-align:top;}
-.module .chart.LPlegend {background: transparent url(../../../../images/personified/LaborPressure_Legend.png) no-repeat 60% 95%; vertical-align:top;}
-.state-heatmap.legend{background: transparent url(../../../../images/personified/Heatmap_Legend.png) no-repeat 85% 95%; vertical-align:top;}
-.state-heatmap.LPlegend {background: transparent url(../../../../images/personified/LaborPressure_Legend.png) no-repeat 85% 95%; vertical-align:top;}
+.module .chart.legend {background: transparent url('http://www.careerbuilder.com/images/personified/Heatmap_Legend.png') no-repeat 60% 95%; vertical-align:top;}
+.module .chart.LPlegend {background: transparent url('http://www.careerbuilder.com/images/personified/LaborPressure_Legend.png') no-repeat 60% 95%; vertical-align:top;}
+.state-heatmap.legend{background: transparent url('http://www.careerbuilder.com/images/personified/Heatmap_Legend.png') no-repeat 85% 95%; vertical-align:top;}
+.state-heatmap.LPlegend {background: transparent url('http://www.careerbuilder.com/images/personified/LaborPressure_Legend.png') no-repeat 85% 95%; vertical-align:top;}
 .icon {clear:both;vertical-align:bottom; padding-right:5px;padding-top:1px;}
 .icon.label {font-size:10px; color:#666666;  padding-top:3px;}
 
@@ -514,7 +514,7 @@ table.detailView .msa.last {padding-right:25px;}
     cursor:hand;
     position:relative;
     z-index:2100;
-    background: url('750x300cblogo_watermark.png') -125px -25px no-repeat;
+    background: url('http://www.careerbuilder.com/images/personified/250x50cbwatermark.png') -125px -25px no-repeat;
 }
 
 /* Override Tab CSS */
@@ -620,7 +620,7 @@ table.detailView .msa.last {padding-right:25px;}
 .clearAll {font-size:10px; text-align:left; cursor:pointer; color:#EE7F0C; text-decoration:underline;}
 .clearAll.inactive {display:none;}
 
-.titled_tips {display:inline-block;background:url("question.png") no-repeat scroll 0 0 transparent;font-size:1em;min-height:16px;min-width:16px}
+.titled_tips {display:inline-block;background:url("../ReportSummary_files/question.png") no-repeat scroll 0 0 transparent;font-size:1em;min-height:16px;min-width:16px}
 .titled_tips:hover {cursor:help}
 
 .cluetip-cbTitledTip
