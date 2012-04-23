@@ -409,7 +409,7 @@ div.facetNav
 
 .catergoryHeader {float:right; font-weight:bold; padding-right:110px; padding-top:4px; font-size:12px;}
 .categoryContainer {padding-top:22px; }
-.detailBarChart {border-top:2px solid #808080; background: url('../../../../images/personified/250x50cbwatermark.png') 50% 40% no-repeat;}
+.detailBarChart {border-top:2px solid #808080; background: url('http://www.careerbuilder.com/images/personified/250x50cbwatermark.png') 50% 40% no-repeat;}
 .description {clear:both; font: normal 10px Arial, Verdana,Helvetica,sans-serif; color: #AAAAAA; padding-top:1px; *font-size:9px !important;}
 #demand-employer-detail-view table.detailView td {padding:0.30em !important; *padding:0.31em !important;}
 #demand-employer-detail-view table.detailView tr.bottomRow th  {min-width:60px; }
@@ -443,7 +443,7 @@ div.facetNav
 /* End Tab UI Changes CSS */
 
 /* Begin TableView CSS */
-.topCategoryTableView {background: url('../../../../images/personified/250x50cbwatermark.png') 50% 50% no-repeat; min-height:260px;}
+.topCategoryTableView {background: url('http://www.careerbuilder.com/images/personified/250x50cbwatermark.png') 50% 50% no-repeat; min-height:260px;}
 .SDdisclaimer {font-size:9px; color: #666666; padding-top:10px; }
 table.detailView {
     border-bottom:1px solid #CCCCCC;

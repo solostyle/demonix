@@ -520,7 +520,7 @@ table.detailView .msa.last {padding-right:25px;}
     cursor:hand;
     position:relative;
     z-index:2100;
-    background: url('../ReportSummary_Files/750x300cblogo_watermark.png') -125px -25px no-repeat;
+    background: url('http://www.careerbuilder.com/images/personified/750x300cblogo_watermark.png') -125px -25px no-repeat;
 }
 
 /* Override Tab CSS */
