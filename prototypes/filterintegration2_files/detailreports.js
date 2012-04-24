@@ -1326,13 +1326,15 @@ var ModulesManager = function () {
 
 var toggleTabs = function (tab) {
     $.each($('#SDTabs li'), function (i, val) {
-        if ($(this).hasClass("selected gradientTab") && (tab.attr('id') != $(this).attr('id'))) {
-            $(this).removeClass("selected gradientTab");
+        if ($(this).hasClass("selected gradientTabActive") && (tab.attr('id') != $(this).attr('id'))) {
+            $(this).removeClass("selected gradientTabActive");
+			$(this).addClass("gradientTab");
             $(('#' + $(this).attr('id') + 'Content')).removeClass("selected");
         }
     });
-    if (!tab.hasClass("selected gradientTab")) {
-        tab.addClass("selected gradientTab");
+    if (!tab.hasClass("selected gradientTabActive")) {
+        tab.addClass("selected gradientTabActive");
+		tab.removeClass("gradientTab");
         $(('#' + tab.attr('id') + 'Content')).addClass("selected");
     }
 	// added by archana
