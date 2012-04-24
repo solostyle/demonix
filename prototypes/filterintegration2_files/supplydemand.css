@@ -93,7 +93,7 @@ a.lnkCareerBuilderRDB:link,a.lnkStartOver:active,a.lnkStartOver:visited{
 }   
 .output  {
    float:right;
-   padding:0px 20px;
+   padding:0;
    margin:0px 1px;
    height:30px;
    line-height:30px;       
@@ -105,7 +105,7 @@ a.lnkCareerBuilderRDB:link,a.lnkStartOver:active,a.lnkStartOver:visited{
 /********* BEGIN Styles for Tabbed Navigation & Rounded Corners */
 #SDTabs {width:100%}
 #SDTabs ul {margin:0;padding:0}
-#SDTabs ul li {border-color:#aaa;border-radius:10px 10px 0 0;border-style:solid;border-width:1px;cursor:pointer;float:left;height:55px;margin-left:-1px;padding:10px;text-align:center;width:23%}
+#SDTabs ul li {border-color:#aaa;border-radius:10px 10px 0 0;border-style:solid;border-width:1px;cursor:pointer;float:left;height:45px;margin-left:-1px;padding:5px;text-align:center;width:23.9%}
 #SDTabs ul li:first-child {margin-left:0} /* nice clean lines */
 #SDTabs ul li.selected, .gradientTab {
 /*background-color:#ee7f0c;*/
@@ -121,17 +121,16 @@ background: linear-gradient(top,  #ff5500 18%,#ffaa00 99%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5500', endColorstr='#ffaa00',GradientType=0 ); /* IE6-8 */
 border-color:#ffa500
 }
-#SDTabs ul li span.tabtitle em {font-size:16px}
-#SDTabs ul li.selected a {color:white;background:;} /* gradient */
-#SDTabs ul a, #SDTabs ul a:visited {color:#000;display:block;font-size:20px;font-weight:bold;padding:5px;text-decoration:none}
+#SDTabs ul li span.tabtitle em {font-size:12px}
+#SDTabs ul li.selected a {color:white}
+#SDTabs ul a, #SDTabs ul a:visited {color:#000;display:block;font-size:16px;font-weight:bold;padding:5px;text-decoration:none}
 #SDTabs ul a * {display: block}
 #SDTabs ul a:hover, #SDTabs ul a:active {color:#000}
 
 #TabsContent
 {
     border:solid 1px #DDD;
-    margin:0px 0px 12px 15px;
-    width:853px;
+    margin:0;
     padding:5px;
     text-align:left;
 }
@@ -200,73 +199,54 @@ div.module.bottom{border:none;}
     float:left;
 } 
 
-div.facetNav
-{
+div.facetNav{
     float:left;
     font-family:Arial, Helvetica, sans-serif;
     width:205px;
     font-size:16px;
 }
-.facets li {margin-right:2%;margin-bottom:1%}
+#facets li {margin-right:2%;margin-bottom:1%}
 .facetNav li li {margin:4px 0px}
 
 .feedback {font-size:12px; font-family:Arial; padding-bottom:8px; padding-left:10px; text-decoration:none !important;}
-#search-content #dashboard 
-{
-    width:880px;
-    margin-left:5px;
-    height:100%;
-    overflow: hidden;
-}
-#search-header 
-{
+#search-content #dashboard {height:100%;overflow: hidden}
+#search-header {
 	background-color: #ddf3f8;
     border-radius:5px;
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
 	display:inline-block;
-	margin:0 15px 15px;
+	margin:0;
     padding:0;
-	width:850px;
+	width:100%;
 }
-#search-header .summary
-{
+#search-header .summary{
     margin-top:10px;
     min-height: 160px;
     clear:both;
 }
 #search-header h1 {font-size:16px; color:#262626; font-weight:bold;padding-left:5px;padding-top:3px;}
 #search-header h2,
-#search-header .header_dropdown
-{
+#search-header .header_dropdown{
     color:#5C5C5C;font-size:14px;font-weight:normal;display:inline;
 }
-#search-header .content
-{
+#search-header .content{
     margin-left:5px;
 }
-#search-header .count
-{
+#search-header .count{
     font-size:16px;
     font-weight:bold; 
     padding-left:5px;   
 }
-#search-header .label
-{
+#search-header .label{
     font-size:12px;
     padding-left:2px;
 }
-#total_supply_summary
-{
+#total_supply_summary{
     float:right;
     width:500px;
 }
-#SummaryViewContent
-{
-    padding-left:12px;
-}
-#summary_demand_active_supply
-{
+#summary_demand_active_supply{
     width:315px;
     margin-right:10px;
     float:left;
@@ -484,15 +464,12 @@ table.detailView .msa.last {padding-right:25px;}
     padding:6px 10px 4px;
     font-size:14px;
 }
-.facet-ui .content 
-{
+.facet-ui .content {
     border-style:solid;
     border-color:#ddd;
     border-width:0 1px 1px;
-    padding:5px 10px 10px;
     -moz-border-radius-bottomright:5px;
     -moz-border-radius-bottomleft:5px;
-    min-height:40px;
 }
 .facet-ui .content.full {border-top:1px solid #ddd; background-color:#FFF;min-height:20px;}
 .facet-ui .content.full span {font-size:10px; font-weight:bold; color:#06910A; }
@@ -537,7 +514,7 @@ table.detailView .msa.last {padding-right:25px;}
     margin-left:17px;   
     cursor:pointer;
 }
-.filter-content {font-size:80.5%;}
+.filter-content {font-size:80.5%}
 
 /*
 #filter-search .filter-content .show-more 
@@ -588,10 +565,8 @@ table.detailView .msa.last {padding-right:25px;}
     border-top:#7F7F7F solid 1px;
     font-family:Arial;
 }
-.section
-{
-    border:1px solid #dddddd;
-}
+.section {border:1px solid #dddddd;margin-top:5px}
+.section:first-child {margin-top:0}
 .section h2
 {
     text-align:left;
@@ -599,10 +574,7 @@ table.detailView .msa.last {padding-right:25px;}
     color:#000000;
     padding:10px;
 }
-.section.first
-{
-    margin-bottom:5px;
-}
+
 
 /* Timeline buttons CSS */
 .mmYYbuttons a{
@@ -836,21 +808,8 @@ img#dollarImg
     cursor: hand;
 }
 
-#faqsPDFLink
-{
-    float:none;
+.output a{
     margin-right: 16px;
-}
-#faqsPDFImg
-{
-    float:none;
-    margin-right:6px;
-    margin-top: 1px;
-}
-#faqsPDFText
-{
-    float:none;
-    padding-top: 1px;
 }
 
 #CompensationLinkText

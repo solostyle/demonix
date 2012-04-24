@@ -7,7 +7,7 @@
         <style type="text/css">
             .table { behavior: url(http://www.careerbuilder.com/display-table.min.htc); }
         </style>    
-    <link rel="stylesheet" type="text/css" href="ReportSummary_files/ussite.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/jobposter.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/jquery.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/jquery-ui-1.css"><link rel="stylesheet" type="text/css" href="filterintegration2_files/supplydemand.css"><link rel="stylesheet" type="text/css" href="filterintegration2_files/demographicsv2.css"><link rel="stylesheet" type="text/css" href="filterintegration2_files/demographics.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/demo_style.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/smart_wizard.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/jpnav.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/jpnestednavigation.css">
+    <link rel="stylesheet" type="text/css" href="ReportSummary_files/ussite.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/jobposter.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/jquery.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/jquery-ui-1.css"><link rel="stylesheet" type="text/css" href="filterintegration2_files/supplydemand.css"><link rel="stylesheet" type="text/css" href="filterintegration2_files/demographicsv2.css"><link rel="stylesheet" type="text/css" href="filterintegration2_files/demographics.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/demo_style.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/smart_wizard.css"><link rel="stylesheet" type="text/css" href="filterintegration2_files/jpnav.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/jpnestednavigation.css">
 	<script type="text/javascript">    var ScriptVariables = function(){
         var _vars = new Array();
             _vars['currentVer'] = 'v16.10';
@@ -328,8 +328,8 @@
             <div class="clearAll">Clear all filters</div>
 
 			<div class="filter-content">
-                <ul class="facets">
-					<li class="facetDemand">
+                <ul id="facets">
+					<li class="facetDemand facetBoth">
 						<div class="headerText">Occupation</div>
 						<div class="toggle"><img src="ReportSummary_files/expand.png" alt=""><img src="ReportSummary_files/collapse.png" alt="" style="display: none;"></div>
 						<div id="onetcode">
@@ -366,7 +366,7 @@
 							</ul>
 						</div>
 					</li>
-					<li class="facetDemand">
+					<li class="facetDemand facetBoth">
 						<div class="headerText">Company Name</div>
 						<div class="toggle"><img src="ReportSummary_files/expand.png" alt=""><img src="ReportSummary_files/collapse.png" alt="" style="display: none;"></div>
 						<div id="companyname">
@@ -394,9 +394,9 @@
 								<li><input type="checkbox" id="normalizedcompanynameverizon" value="normalizedcompanyname:verizon"><label for="normalizedcompanynameverizon">Verizon (21)</label></li>
 								<li><input type="checkbox" id="normalizedcompanynamebankofamericacorporation" value="normalizedcompanyname:bank of america corporation"><label for="normalizedcompanynamebankofamericacorporation">Bank Of America Corporation (14)</label></li>
 								<li><input type="checkbox" id="normalizedcompanynameverizoncommunicationsinc" value="normalizedcompanyname:verizon communications, inc."><label for="normalizedcompanynameverizoncommunicationsinc">Verizon Communications, Inc. (13)</label></li>
-								<li><input type="checkbox" id="normalizedcompanynameatamptinc" value="normalizedcompanyname:at&amp;t inc."><label for="normalizedcompanynameatamptinc">At&amp;Amp;T Inc. (10)</label></li>
+								<li><input type="checkbox" id="normalizedcompanynameatamptinc" value="normalizedcompanyname:at&amp;t inc."><label for="normalizedcompanynameatamptinc">At&amp;T Inc. (10)</label></li>
 								<li><input type="checkbox" id="normalizedcompanynamefreelance" value="normalizedcompanyname:freelance"><label for="normalizedcompanynamefreelance">Freelance (8)</label></li>
-								<li><input type="checkbox" id="normalizedcompanynamejpmorganchaseampco" value="normalizedcompanyname:jpmorgan chase &amp; co."><label for="normalizedcompanynamejpmorganchaseampco">Jpmorgan Chase &amp;Amp; Co. (8)</label></li>
+								<li><input type="checkbox" id="normalizedcompanynamejpmorganchaseampco" value="normalizedcompanyname:jpmorgan chase &amp; co."><label for="normalizedcompanynamejpmorganchaseampco">Jpmorgan Chase &amp; Co. (8)</label></li>
 								<li><input type="checkbox" id="normalizedcompanynameamericanairlinesfederalcreditunion" value="normalizedcompanyname:american airlines federal credit union"><label for="normalizedcompanynameamericanairlinesfederalcreditunion">American Airlines Federal Credit Union (6)</label></li>
 								<li><input type="checkbox" id="normalizedcompanynamemicrosoftcorporation" value="normalizedcompanyname:microsoft corporation"><label for="normalizedcompanynamemicrosoftcorporation">Microsoft Corporation (6)</label></li>
 								<li><input type="checkbox" id="normalizedcompanynameselfemployed" value="normalizedcompanyname:self employed"><label for="normalizedcompanynameselfemployed">Self Employed (6)</label></li>
@@ -404,10 +404,10 @@
 							</ul>
 						</div>
 					</li>
-					<li class="facetDemand">
+					<li class="facetDemand facetBoth">
 						<div class="headerText">Industry</div>
 						<div class="toggle"><img src="ReportSummary_files/expand.png" alt="" style="display: none;"><img src="ReportSummary_files/collapse.png" alt=""></div>
-						<div id="naics" style="display:none">
+						<div id="naics">
 							<ul>
 								<li><input value="naics" id="naics" checked="checked" type="checkbox"><label for="naics"><b>All Industries</b></label></li> 
 								<li><input value="naics:541512" id="naics541512" type="checkbox"><label for="naics541512">Computer Systems Design Services (7,916)</label></li> 
@@ -450,7 +450,7 @@
 					<li class="facetSupply">                    <div class="headerText">Education</div>                    <div class="toggle">                        <img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png">                        <img alt="" src="http://clib.icbdr.com/images/personified/collapse.png">                    </div>                    <div style="display:none" id="maxeducation">                        <ul>                            <li>                                <input type="checkbox" checked="checked" id="maxeducation" value="maxeducation">                                <label for="maxeducation"><b>All Education</b></label>                            </li>                             <li>                                <input type="checkbox" id="maxeducationCE31" value="maxeducation:CE31">                                <label for="maxeducationCE31">High School (29)</label>                            </li>                             <li>                                <input type="checkbox" id="maxeducationCE32" value="maxeducation:CE32">                                <label for="maxeducationCE32">Associate Degree (54)</label>                            </li>                             <li>                                <input type="checkbox" id="maxeducationCE321" value="maxeducation:CE321">                                <label for="maxeducationCE321">Bachelor's Degree (478)</label>                            </li>                             <li>                                <input type="checkbox" id="maxeducationCE3210" value="maxeducation:CE3210">                                <label for="maxeducationCE3210">Master's Degree (339)</label>                            </li>                             <li>                                <input type="checkbox" id="maxeducationCE3211" value="maxeducation:CE3211">                                <label for="maxeducationCE3211">Doctorate (10)</label>                            </li>                         </ul>                    </div>                </li>
 					<li class="facetSupply">                    <div class="headerText">Years Experience</div>                    <div class="toggle">                        <img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png">                        <img alt="" src="http://clib.icbdr.com/images/personified/collapse.png">                    </div>                    <div style="display:none" id="supplyexperienceyears">                        <ul>                            <li>                                <input type="checkbox" checked="checked" id="supplyexperienceyears" value="supplyexperienceyears">                                <label for="supplyexperienceyears"><b>All Years Experience</b></label>                            </li>                             <li>                                <input type="checkbox" id="supplyexperienceyears12" value="supplyexperienceyears:1 - 2">                                <label for="supplyexperienceyears12">1 - 2 years (56)</label>                            </li>                             <li>                                <input type="checkbox" id="supplyexperienceyears35" value="supplyexperienceyears:3 - 5">                                <label for="supplyexperienceyears35">3 - 5 years (181)</label>                            </li>                             <li>                                <input type="checkbox" id="supplyexperienceyears610" value="supplyexperienceyears:6 - 10">                                <label for="supplyexperienceyears610">6 - 10 years (470)</label>                            </li>                             <li>                                <input type="checkbox" id="supplyexperienceyears1115" value="supplyexperienceyears:11 - 15">                                <label for="supplyexperienceyears1115">11 - 15 years (174)</label>                            </li>                             <li>                                <input type="checkbox" id="supplyexperienceyears1620" value="supplyexperienceyears:16 - 20">                                <label for="supplyexperienceyears1620">16 - 20 years (105)</label>                            </li>                             <li>                                <input type="checkbox" id="supplyexperienceyears21" value="supplyexperienceyears:21+">                                <label for="supplyexperienceyears21">21+ years (61)</label>                            </li>                         </ul>                    </div>                </li>
 					<li class="facetSupply">                    <div class="headerText">Top Majors</div>                    <div class="toggle">                        <img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png">                        <img alt="" src="http://clib.icbdr.com/images/personified/collapse.png">                    </div>                    <div style="display:none" id="topmajors">                        <ul>                            <li>                                <input type="checkbox" checked="checked" id="topmajors" value="topmajors">                                <label for="topmajors"><b>All Top Majors</b></label>                            </li>                             <li>                                <input type="checkbox" id="topmajorscomputerscience" value="topmajors:computer science">                                <label for="topmajorscomputerscience">Computer Science (265)</label>                            </li>                             <li>                                <input type="checkbox" id="topmajorscomputerengineeringgeneral" value="topmajors:computer engineering, general">                                <label for="topmajorscomputerengineeringgeneral">Computer Engineering, General (66)</label>                            </li>                             <li>                                <input type="checkbox" id="topmajorsbusinessadministrationandmanagementgeneral" value="topmajors:business administration and management, general">                                <label for="topmajorsbusinessadministrationandmanagementgeneral">Business Administration And Management, General (50)</label>                            </li>                             <li>                                <input type="checkbox" id="topmajorsmanagementinformationsystemsgeneral" value="topmajors:management information systems, general">                                <label for="topmajorsmanagementinformationsystemsgeneral">Management Information Systems, General (42)</label>                            </li>                             <li>                                <input type="checkbox" id="topmajorsinformationtechnology" value="topmajors:information technology">                                <label for="topmajorsinformationtechnology">Information Technology (41)</label>                            </li>                             <li>                                <input type="checkbox" id="topmajorselectricalelectronicsandcommunicationsengineering" value="topmajors:electrical, electronics and communications engineering">                                <label for="topmajorselectricalelectronicsandcommunicationsengineering">Electrical, Electronics And Communications Engineering (35)</label>                            </li>                             <li>                                <input type="checkbox" id="topmajorscomputerinformationtechnologyservicesadministrationandmanagementother" value="topmajors:computer/information technology services administration andmanagement, other">                                <label for="topmajorscomputerinformationtechnologyservicesadministrationandmanagementother">Computer/Information Technology Services Administration Andmanagement, Other (28)</label>                            </li>                             <li>                                <input type="checkbox" id="topmajorsengineeringgeneral" value="topmajors:engineering, general">                                <label for="topmajorsengineeringgeneral">Engineering, General (20)</label>                            </li>                             <li>                                <input type="checkbox" id="topmajorscomputerprogrammingspecificapplications" value="topmajors:computer programming, specific applications">                                <label for="topmajorscomputerprogrammingspecificapplications">Computer Programming, Specific Applications (19)</label>                            </li>                         </ul>                    </div></li>
-					<li class="facetSupply">                    <div class="headerText">Top Schools</div>                    <div class="toggle">                        <img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png">                        <img alt="" src="http://clib.icbdr.com/images/personified/collapse.png">                    </div>                    <div style="display:none" id="topschools">                        <ul>                            <li>                                <input type="checkbox" checked="checked" id="topschools" value="topschools">                                <label for="topschools"><b>All Top Schools</b></label>                            </li>                             <li>                                <input type="checkbox" id="topschoolstheuniversityoftexasatdallas" value="topschools:the university of texas at dallas">                                <label for="topschoolstheuniversityoftexasatdallas">The University Of Texas At Dallas (88)</label>                            </li>                             <li>                                <input type="checkbox" id="topschoolstheuniversityoftexasatarlington" value="topschools:the university of texas at arlington">                                <label for="topschoolstheuniversityoftexasatarlington">The University Of Texas At Arlington (62)</label>                            </li>                             <li>                                <input type="checkbox" id="topschoolsuniversityofnorthtexas" value="topschools:university of north texas">                                <label for="topschoolsuniversityofnorthtexas">University Of North Texas (43)</label>                            </li>                             <li>                                <input type="checkbox" id="topschoolstheuniversityoftexasataustin" value="topschools:the university of texas at austin">                                <label for="topschoolstheuniversityoftexasataustin">The University Of Texas At Austin (23)</label>                            </li>                             <li>                                <input type="checkbox" id="topschoolstexasaampmuniversity" value="topschools:texas a &amp; m university">                                <label for="topschoolstexasaampmuniversity">Texas A &amp;Amp; M University (22)</label>                            </li>                             <li>                                <input type="checkbox" id="topschoolsdevrycollegeofnewyork" value="topschools:devry college of new york">                                <label for="topschoolsdevrycollegeofnewyork">Devry College Of New York (18)</label>                            </li>                             <li>                                <input type="checkbox" id="topschoolstarrantcountycollegedistrict" value="topschools:tarrant county college district">                                <label for="topschoolstarrantcountycollegedistrict">Tarrant County College District (18)</label>                            </li>                             <li>                                <input type="checkbox" id="topschoolscrescentcitybartendingschool" value="topschools:crescent city bartending school">                                <label for="topschoolscrescentcitybartendingschool">Crescent City Bartending School (17)</label>                            </li>                             <li>                                <input type="checkbox" id="topschoolsosmaniauniversity" value="topschools:osmania university">                                <label for="topschoolsosmaniauniversity">Osmania University (16)</label>                            </li>                         </ul>                    </div>                </li>
+					<li class="facetSupply">                    <div class="headerText">Top Schools</div>                    <div class="toggle">                        <img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png">                        <img alt="" src="http://clib.icbdr.com/images/personified/collapse.png">                    </div>                    <div style="display:none" id="topschools">                        <ul>                            <li>                                <input type="checkbox" checked="checked" id="topschools" value="topschools">                                <label for="topschools"><b>All Top Schools</b></label>                            </li>                             <li>                                <input type="checkbox" id="topschoolstheuniversityoftexasatdallas" value="topschools:the university of texas at dallas">                                <label for="topschoolstheuniversityoftexasatdallas">The University Of Texas At Dallas (88)</label>                            </li>                             <li>                                <input type="checkbox" id="topschoolstheuniversityoftexasatarlington" value="topschools:the university of texas at arlington">                                <label for="topschoolstheuniversityoftexasatarlington">The University Of Texas At Arlington (62)</label>                            </li>                             <li>                                <input type="checkbox" id="topschoolsuniversityofnorthtexas" value="topschools:university of north texas">                                <label for="topschoolsuniversityofnorthtexas">University Of North Texas (43)</label>                            </li>                             <li>                                <input type="checkbox" id="topschoolstheuniversityoftexasataustin" value="topschools:the university of texas at austin">                                <label for="topschoolstheuniversityoftexasataustin">The University Of Texas At Austin (23)</label>                            </li>                             <li>                                <input type="checkbox" id="topschoolstexasaampmuniversity" value="topschools:texas a &amp; m university">                                <label for="topschoolstexasaampmuniversity">Texas A &amp; M University (22)</label>                            </li>                             <li>                                <input type="checkbox" id="topschoolsdevrycollegeofnewyork" value="topschools:devry college of new york">                                <label for="topschoolsdevrycollegeofnewyork">Devry College Of New York (18)</label>                            </li>                             <li>                                <input type="checkbox" id="topschoolstarrantcountycollegedistrict" value="topschools:tarrant county college district">                                <label for="topschoolstarrantcountycollegedistrict">Tarrant County College District (18)</label>                            </li>                             <li>                                <input type="checkbox" id="topschoolscrescentcitybartendingschool" value="topschools:crescent city bartending school">                                <label for="topschoolscrescentcitybartendingschool">Crescent City Bartending School (17)</label>                            </li>                             <li>                                <input type="checkbox" id="topschoolsosmaniauniversity" value="topschools:osmania university">                                <label for="topschoolsosmaniauniversity">Osmania University (16)</label>                            </li>                         </ul>                    </div>                </li>
 					<li class="facetSupply">                    <div class="headerText">Race</div>                    <div class="toggle">                        <img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png">                        <img alt="" src="http://clib.icbdr.com/images/personified/collapse.png">                    </div>                    <div style="display:none" id="race">                        <ul>                            <li>                                <input type="checkbox" checked="checked" id="race" value="race">                                <label for="race"><b>All Race</b></label>                            </li>                             <li>                                <input type="checkbox" id="raceethaa" value="race:ethaa">                                <label for="raceethaa">Black or African American (Not Hispanic or Latino) (55)</label>                            </li>                             <li>                                <input type="checkbox" id="raceethas" value="race:ethas">                                <label for="raceethas">Asian (Not Hispanic or Latino) (196)</label>                            </li>                             <li>                                <input type="checkbox" id="raceethhs" value="race:ethhs">                                <label for="raceethhs">Hispanic or Latino (27)</label>                            </li>                             <li>                                <input type="checkbox" id="raceethna" value="race:ethna">                                <label for="raceethna">American Indian or Alaska Native (Not Hispanic or Latino) (4)</label>                            </li>                             <li>                                <input type="checkbox" id="raceethot" value="race:ethot">                                <label for="raceethot">Two or More Races (Not Hispanic or Latino) (9)</label>                            </li>                             <li>                                <input type="checkbox" id="raceethwh" value="race:ethwh">                                <label for="raceethwh">White (Not Hispanic or Latino) (201)</label>                            </li>                         </ul>                    </div>                </li>
 					<li class="facetSupply">                    <div class="headerText">Gender</div>                    <div class="toggle">                        <img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png">                        <img alt="" src="http://clib.icbdr.com/images/personified/collapse.png">                    </div>                    <div style="display:none" id="gender">                        <ul>                            <li>                                <input type="checkbox" checked="checked" id="gender" value="gender">                                <label for="gender"><b>All Gender</b></label>                            </li>                             <li>                                <input type="checkbox" id="genderf" value="gender:f">                                <label for="genderf">Female (120)</label>                            </li>                             <li>                                <input type="checkbox" id="genderm" value="gender:m">                                <label for="genderm">Male (418)</label>                            </li>                         </ul>                    </div>                </li>
 					<li class="facetSupply">                    <div class="headerText">Languages Spoken</div>                    <div class="toggle">                        <img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png">                        <img alt="" src="http://clib.icbdr.com/images/personified/collapse.png">                    </div>                    <div style="display:none" id="languagesspoken">                        <ul>                            <li>                                <input type="checkbox" checked="checked" id="languagesspoken" value="languagesspoken">                                <label for="languagesspoken"><b>All Languages Spoken</b></label>                            </li>                             <li>                                <input type="checkbox" id="languagesspokenenglish" value="languagesspoken:english">                                <label for="languagesspokenenglish">English (642)</label>                            </li>                             <li>                                <input type="checkbox" id="languagesspokenhindi" value="languagesspoken:hindi">                                <label for="languagesspokenhindi">Hindi (63)</label>                            </li>                             <li>                                <input type="checkbox" id="languagesspokenspanish" value="languagesspoken:spanish">                                <label for="languagesspokenspanish">Spanish (43)</label>                            </li>                             <li>                                <input type="checkbox" id="languagesspokenchinesemandarin" value="languagesspoken:chinese-mandarin">                                <label for="languagesspokenchinesemandarin">Chinese-Mandarin (23)</label>                            </li>                             <li>                                <input type="checkbox" id="languagesspokentelugu" value="languagesspoken:telugu">                                <label for="languagesspokentelugu">Telugu (19)</label>                            </li>                             <li>                                <input type="checkbox" id="languagesspokentamil" value="languagesspoken:tamil">                                <label for="languagesspokentamil">Tamil (15)</label>                            </li>                             <li>                                <input type="checkbox" id="languagesspokengujarati" value="languagesspoken:gujarati">                                <label for="languagesspokengujarati">Gujarati (10)</label>                            </li>                             <li>                                <input type="checkbox" id="languagesspokenarabic" value="languagesspoken:arabic">                                <label for="languagesspokenarabic">Arabic (9)</label>                            </li>                             <li>                                <input type="checkbox" id="languagesspokenfrench" value="languagesspoken:french">                                <label for="languagesspokenfrench">French (9)</label>                            </li>                             <li>                                <input type="checkbox" id="languagesspokenurdu" value="languagesspoken:urdu">                                <label for="languagesspokenurdu">Urdu (9)</label>                            </li>                         </ul>                    </div>                </li>
@@ -479,177 +479,93 @@
     <div id="pnlDashBoard">
 		<div id="search-content">
             <div id="dashboard">
-                <div id="search-header">
-                    <div id="blueHeading" style="color: #777;">
-                        
-                            <span id="viewInCompensation">
-                                        
-                                <a id="lnkCareerBuilderCompV2" class="lnkCareerBuilderRDB" href="#"><img id="dollarImg" src="ReportSummary_files/money-dollar-icon.png"><span id="CompensationLinkText">View In Compensation</span></a>
-                            </span>
-                        
-                        <div class="outputs clearfix">
-                            <div class="output">
-                            
-                                <img style="height: 22px;" src="ReportSummary_files/new_pdf_icon.png" id="Img6" border="0">
-                                <a href="#" id="myExportLink">One Page PDF</a>   
-                                <span style="display:none;">                                 
-                                    
-<style type="text/css">
-.loadScreen {
-            border-color: #C0C0C0 #999999 #999999 #C0C0C0;
-            border-style: solid;
-            border-width: 1px;
-            display: none;
-            font-family: Tahoma;
-            font-size: 17px;
-            padding: 15px 0;
-            text-align: center;
-            width: 280px;
-            z-index: 20000;
-        }
-        
-</style>
-<input id="hidden_ScriptVariable" value="{'linkClientId':'lnkExportPDFSummary_ExportToPDFLink', urlToGetHTML: 'http%3a%2f%2fwww.careerbuilder.com%2fPersonified%2fSupplyDemand%2fSupplyDemandPDF.aspx%3fdid%3dRSHM4SW6GBP41LKLMMTF','filename':'SupplyDemand','getParamsMethod':downloadManager.getPDFParams,'getParamsMethodParam':true,'method':'GET','getImageDataMethod':downloadManager.getPDFParams,'convertMessageId':'lnkExportPDFSummary_pdfExport','pdfContent':'HTMLString','downloadMessageId':'lnkExportPDFSummary_pdfDownload'}" type="hidden">
-
-<span>
-        <a href="http://www.careerbuilder.com/Personified/UserControls/#" id="lnkExportPDFSummary_ExportToPDFLink">
-        <img id="lnkExportPDFSummary_imgPDF" src="ReportSummary_files/new_pdf_icon.png" style="height: 22px;" border="0">&nbsp;
-        Export To PDF
-    </a>
-</span>
-
-
-
-
-                                </span>
-                                
-
-                                
-                                    <a href="http://img.icbdr.com/images/personified/faq%27sexternalsdportal12.21.11.pdf" style="border: medium none; text-decoration: none;" target="_blank" id="faqsPDFLink"><img style="height: 22px;" src="ReportSummary_files/new_pdf_icon.png" id="faqsPDFImg" border="0"><span id="faqsPDFText">FAQ's</span></a>
-                                    
-                                
-                            
-                                <span id="exportLink">
-                                    
-<style type="text/css">
-.loadScreen {
-            border-color: #C0C0C0 #999999 #999999 #C0C0C0;
-            border-style: solid;
-            border-width: 1px;
-            display: none;
-            font-family: Tahoma;
-            font-size: 17px;
-            padding: 15px 0;
-            text-align: center;
-            width: 280px;
-            z-index: 20000;
-        }
-        
-</style>
-<input id="hidden_ScriptVariable" value="{'linkClientId':'lnkPDFExport_ExportToPDFLink', urlToGetHTML: 'http%3a%2f%2fwww.careerbuilder.com%2fPersonified%2fSupplyDemand%2fReportSummaryPDF.aspx%3fdid%3dRSHM4SW6GBP41LKLMMTF','filename':'SupplyDemand','getParamsMethod':downloadManager.getPDFParams,'getParamsMethodParam':true,'method':'GET','getImageDataMethod':null,'convertMessageId':'lnkPDFExport_pdfExport','pdfContent':'HTMLString','downloadMessageId':'lnkPDFExport_pdfDownload'}" type="hidden">
-
-<span>
-        <a href="http://www.careerbuilder.com/Personified/UserControls/#" id="lnkPDFExport_ExportToPDFLink">
-        <img id="lnkPDFExport_imgPDF" src="ReportSummary_files/new_pdf_icon.png" style="height: 22px;" border="0">&nbsp;
-        Full PDF
-    </a>
-</span>
-
-
-
-
-                                    </span>
-                            
-                            
-                            
-                            
-                                <a id="ExportExcelLink" href="http://www.careerbuilder.com/Personified/SupplyDemand/ReportSummaryExcel.aspx?did=RSHM4SW6GBP41LKLMMTF"><img id="imgPDF" src="ReportSummary_files/sharp_excel_icon.png" style="height: 22px;" border="0">&nbsp;
-                                        Export To Excel</a>
-                            </div>		
-                        </div>  
-                    </div>
-                    <div id="contentWrapper">
-                        <h1>
-                            <span id="jobTitle">Web Developer</span>
-                            
-                            
-                        </h1>
-                                
-                        <div style="padding-left: 5px; padding-bottom:5px; float:left;">
-                            <a id="lnkStartOver" class="lnkStartOver" href="http://www.careerbuilder.com/Personified/SupplyDemand/Search.aspx">create a new report</a>
-                            |&nbsp;
-                            <a id="cbhlDPFeedback" class="lnkFeedback" href="mailto:SupplyDemandPortal@careerbuilder.com?subject=SupplyDemand%20Portal%20Feedback">provide your feedback</a>
-                        </div>
-                     
-                    
-                        <div id="dashboard-summary" class="summary">
-                            <div class="content">
-                                <div id="summary_demand_active_supply">
-                                    <h2 id="summary_header">
-                                        Data Summary for the
-                                        Last 6 Months
-                                    </h2>
-                                    
-                                    <div>
-                                        <label class="count">
-                                            <span id="lblActiveSupply">10,752</span></label>
-                                        <label class="label">
-                                             Active Resumes</label>
-                                        
-                                        
-                                        <a href="#" class="titled_tips" title="Active Resumes|The data provided includes active jobs seekers from the entire CareerBuilder network including our niche sites.  An active job seeker is anyone who has completed at least one of the following in the time frame specified:&lt;ol&gt;&lt;li&gt;Created a new resume&lt;/li&gt;&lt;li&gt;Modified an existing resume&lt;/li&gt;&lt;li&gt;Applied to a job posting using a saved resume.">&nbsp;</a>
-                                    </div>
-                                    <div style="text-indent: 20px; vertical-align: super;">
-                                        <a id="lnkCareerBuilderRDB" class="lnkCareerBuilderRDB" href="http://www.careerbuilder.com/JobPoster/Resumes/ResResultsV2.aspx?SrchHst=1&amp;cibookmark=1&amp;strcrit=QID%3dA6659194863435%3bst%3da%3brawWords%3dweb+developer%3bQT%3dN%3bUSE%3dADV%3bRPP%3d25%3bCAT%3dALL%3bRXPOST%3dALL%3bCF_FUNCTIONS%3dALL%3bRXSPEC%3dALL%3bFRE%3d792%3bCID%3d%3f%3bSID%3d%3f%3bRAD%3d30%3bLOCCID%3dUS%3bONET%3d15-1099.04%3bAHISTMIN%3d2011%2f09%3bAHISTMAX%3d2012%2f02%3bTDRV%3d0%3bEXP%3dALL%3bTVL%3dALL%3bEXCT%3dNO%3bPAY%3dALL%3bCMTP%3dSALR%3bPOY%3dNO%3bPAYL%3d0%3bPAYH%3d0%3bRPC%3dNS%3bWST%3dALL%3bGV%3dALL%3bMGE%3dALL%3bMGC%3d0%3bCE%3dALL%3bMC%3d0%3bWSC%3dALL%3bEI%3dEINO%3bQS%3dsid_unknown%3bSS%3dNO%3bCVT%3dFR%3bNLC%3dNLCNO%3bSFNMC%3dSFNMCNO%3bRIC%3dRICNO">View These Resumes</a>
-                                        <a href="#" class="titled_tips" title="CareerBuilder Resume Database Link|This link will take you out of the Supply &amp; Demand portal and over to the CareerBuilder Resume Database (RDB).  You will land on the search results page with the results currently displayed here.&lt;BR&gt;&lt;BR&gt;Note #1: Since CareerBuilder RDB product is only used when you perform an action on an individual resume you may browse the results on the RDB page as much as you like without using any of your RDB product until you choose to perform an action (such as viewing or emailing a specific resume).&lt;BR&gt;&lt;BR&gt;Note #2: Once in the RDB if you modify your search you will lose some of your Supply &amp; Demand search fields (such as Active Month Range) as they are not available on the RDB at this time.">&nbsp;</a>
-                                    </div>
-                                
-                                    <div>
-                                        <label class="count">
-                                            <span id="lblJobCount">145,280</span></label>
-                                        <label class="label">
-                                             Total Unique Job Postings
-                                        </label>
-                                        
-                                        <a href="#" class="titled_tips" title="Job Postings|This data is provided by Wanted Analytics that aggregates job postings across multiple websites covering 90% of the online market.  The data is deduplicated to provide the number of unique job  postings matching the keywords and timeframe specified.">&nbsp;</a>
-                                    </div>
-                                    <div id="active_labor_pressure_summary">
-                                    
-                                    
-                                        <label class="label">
-                                             There are </label>
-                                        <label class="count">
-                                            <span id="lblActiveLaborPressure">0.07</span></label>
-                                        <label class="label">
-                                             active job seekers for every job posted during the specified timeframe.</label>
-                                        <a href="#" class="titled_tips" title="Labor Pressure|This calculation represents the labor pressure for the title/keywords specified.  Labor Pressure is a calculation used to estimate the difficulty in acquiring talent by comparing the supply and demand for the position.  It is calculated by dividing the number of active job seekers by the number of unique job postings for the selected time frame.  The result is a number of active job seekers available to fill any given job posting.">&nbsp;</a>
-                                        
-                                    </div>
-                                </div>
-                                <div id="total_supply_summary">
-                                    <h2>
-                                        Total Available Workforce as of
-                                        02/29/2012</h2>
-                                    <a href="#" class="titled_tips" title="Total Available Talent|This data is provided by EMSI with access to approximately 135 million worker profiles categorized by Standard Occupation Classification (SOC), which is a standardized job title hierarchy developed by the Bureau of Labor Statistics.  It represents the total workforce in the specified occupation code(s) and the specified location.&lt;/p&gt;">&nbsp;</a>
-                                    <ul class="summaryItems">
-                                             <li>
-                                                <span id="EMSITop5__ctl1_lblTotalSupplyCount" class="count">226,955</span>
-                                                <span id="EMSITop5__ctl1_lblChosenSOC" class="label">Computer Specialists, All Other</span>
-                                             </li>
-                                        </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="clear: both">
-                        </div>
-                    </div>
-                </div>
                 <div id="search-body">
 <!-- sdtabs were here -->
                     <div id="TabsContent">
                         <div id="dummy">
                             <div id="AllViews">
-                                <div id="DemandViewContent" class="selected">
+							
+								<div id="SummaryViewContent">
+									<div id="blueHeading" style="color: #777;">
+										<span id="viewInCompensation">
+											<a id="lnkCareerBuilderCompV2" class="lnkCareerBuilderRDB" href="#"><img id="dollarImg" src="ReportSummary_files/money-dollar-icon.png"><span id="CompensationLinkText">&nbsp;View In Compensation</span></a>
+										</span>
+										<div class="outputs clearfix">
+											<div class="output">
+								
+												<a href="#" id="myExportLink"><img style="height: 22px;" src="ReportSummary_files/new_pdf_icon.png" id="Img6" border="0"/>&nbsp;One Page PDF</a>   
+												<a href="http://www.careerbuilder.com/Personified/UserControls/#" id="lnkExportPDFSummary_ExportToPDFLink"><img id="lnkExportPDFSummary_imgPDF" src="ReportSummary_files/new_pdf_icon.png" style="height: 22px;" border="0" />&nbsp;Export To PDF</a>
+												<a href="http://img.icbdr.com/images/personified/faq%27sexternalsdportal12.21.11.pdf" style="border: medium none; text-decoration: none;" target="_blank" id="faqsPDFLink"><img style="height: 22px;" src="ReportSummary_files/new_pdf_icon.png" id="faqsPDFImg" border="0"><span id="faqsPDFText"/>&nbsp;FAQs</span></a>
+
+												<a href="http://www.careerbuilder.com/Personified/UserControls/#" id="lnkPDFExport_ExportToPDFLink"><img id="lnkPDFExport_imgPDF" src="ReportSummary_files/new_pdf_icon.png" style="height: 22px;" border="0"/>&nbsp;Full PDF</a>
+												<a id="ExportExcelLink" href="http://www.careerbuilder.com/Personified/SupplyDemand/ReportSummaryExcel.aspx?did=RSHM4SW6GBP41LKLMMTF"><img id="imgPDF" src="ReportSummary_files/sharp_excel_icon.png" style="height: 22px;" border="0"/>&nbsp;Export To Excel</a>
+											</div>
+										</div>  
+									</div>
+									<div id="contentWrapper">
+										<h1><span id="jobTitle">Web Developer</span></h1>
+										<div id="dashboard-summary" class="summary">
+										<div class="content">
+											<div id="summary_demand_active_supply">
+												<h2 id="summary_header">
+													Data Summary for the
+													Last 6 Months
+												</h2>
+												
+												<div>
+													<label class="count">
+														<span id="lblActiveSupply">10,752</span></label>
+													<label class="label">
+														 Active Resumes</label>
+													
+													
+													<a href="#" class="titled_tips" title="Active Resumes|The data provided includes active jobs seekers from the entire CareerBuilder network including our niche sites.  An active job seeker is anyone who has completed at least one of the following in the time frame specified:&lt;ol&gt;&lt;li&gt;Created a new resume&lt;/li&gt;&lt;li&gt;Modified an existing resume&lt;/li&gt;&lt;li&gt;Applied to a job posting using a saved resume.">&nbsp;</a>
+												</div>
+												<div style="text-indent: 20px; vertical-align: super;">
+													<a id="lnkCareerBuilderRDB" class="lnkCareerBuilderRDB" href="http://www.careerbuilder.com/JobPoster/Resumes/ResResultsV2.aspx?SrchHst=1&amp;cibookmark=1&amp;strcrit=QID%3dA6659194863435%3bst%3da%3brawWords%3dweb+developer%3bQT%3dN%3bUSE%3dADV%3bRPP%3d25%3bCAT%3dALL%3bRXPOST%3dALL%3bCF_FUNCTIONS%3dALL%3bRXSPEC%3dALL%3bFRE%3d792%3bCID%3d%3f%3bSID%3d%3f%3bRAD%3d30%3bLOCCID%3dUS%3bONET%3d15-1099.04%3bAHISTMIN%3d2011%2f09%3bAHISTMAX%3d2012%2f02%3bTDRV%3d0%3bEXP%3dALL%3bTVL%3dALL%3bEXCT%3dNO%3bPAY%3dALL%3bCMTP%3dSALR%3bPOY%3dNO%3bPAYL%3d0%3bPAYH%3d0%3bRPC%3dNS%3bWST%3dALL%3bGV%3dALL%3bMGE%3dALL%3bMGC%3d0%3bCE%3dALL%3bMC%3d0%3bWSC%3dALL%3bEI%3dEINO%3bQS%3dsid_unknown%3bSS%3dNO%3bCVT%3dFR%3bNLC%3dNLCNO%3bSFNMC%3dSFNMCNO%3bRIC%3dRICNO">View These Resumes</a>
+													<a href="#" class="titled_tips" title="CareerBuilder Resume Database Link|This link will take you out of the Supply &amp; Demand portal and over to the CareerBuilder Resume Database (RDB).  You will land on the search results page with the results currently displayed here.&lt;BR&gt;&lt;BR&gt;Note #1: Since CareerBuilder RDB product is only used when you perform an action on an individual resume you may browse the results on the RDB page as much as you like without using any of your RDB product until you choose to perform an action (such as viewing or emailing a specific resume).&lt;BR&gt;&lt;BR&gt;Note #2: Once in the RDB if you modify your search you will lose some of your Supply &amp; Demand search fields (such as Active Month Range) as they are not available on the RDB at this time.">&nbsp;</a>
+												</div>
+											
+												<div>
+													<label class="count">
+														<span id="lblJobCount">145,280</span></label>
+													<label class="label">
+														 Total Unique Job Postings
+													</label>
+													
+													<a href="#" class="titled_tips" title="Job Postings|This data is provided by Wanted Analytics that aggregates job postings across multiple websites covering 90% of the online market.  The data is deduplicated to provide the number of unique job  postings matching the keywords and timeframe specified.">&nbsp;</a>
+												</div>
+												<div id="active_labor_pressure_summary">
+												
+												
+													<label class="label">
+														 There are </label>
+													<label class="count">
+														<span id="lblActiveLaborPressure">0.07</span></label>
+													<label class="label">
+														 active job seekers for every job posted during the specified timeframe.</label>
+													<a href="#" class="titled_tips" title="Labor Pressure|This calculation represents the labor pressure for the title/keywords specified.  Labor Pressure is a calculation used to estimate the difficulty in acquiring talent by comparing the supply and demand for the position.  It is calculated by dividing the number of active job seekers by the number of unique job postings for the selected time frame.  The result is a number of active job seekers available to fill any given job posting.">&nbsp;</a>
+													
+												</div>
+											</div>
+											<div id="total_supply_summary">
+												<h2>
+													Total Available Workforce as of
+													02/29/2012</h2>
+												<a href="#" class="titled_tips" title="Total Available Talent|This data is provided by EMSI with access to approximately 135 million worker profiles categorized by Standard Occupation Classification (SOC), which is a standardized job title hierarchy developed by the Bureau of Labor Statistics.  It represents the total workforce in the specified occupation code(s) and the specified location.&lt;/p&gt;">&nbsp;</a>
+												<ul class="summaryItems">
+														 <li>
+															<span id="EMSITop5__ctl1_lblTotalSupplyCount" class="count">226,955</span>
+															<span id="EMSITop5__ctl1_lblChosenSOC" class="label">Computer Specialists, All Other</span>
+														 </li>
+													</ul>
+											</div>
+										</div>
+									</div>
+										<div style="clear: both"></div>
+									</div>
+								</div>
+								<div id="DemandViewContent">
                                     
 
 <div id="job-volume-module" class="module full">                                
@@ -1290,8 +1206,9 @@ so.write("ucDemandView_ucHeatMapSimple_amStateHeapMap_pnlFlashContent");
         </div>
     </div>
 </div>
-                                </div>
-                                <div id="SupplyViewContent">
+</div>
+
+<div id="SupplyViewContent" class="selected">
                                     
 
 <div id="ActiveSupplySection" class="section first">
@@ -1396,13 +1313,11 @@ so.write("ucSupplyView_amSupplyMiniStateHeatMap_pnlFlashContent");
 </div>  
    
 <!-- FancyBox Popup -->
-
-
-    <div style="width:1024px; height:603px;" id="FancyBoxDemographicsPopup"> <!-- this determines the width of FancyBox -->
+    <div id="FancyBoxDemographicsPopup" class="section">
         <div id="FancyBoxBorderWrapper">
             <div id="DemographicsTabsContent">
                 <h2>Demographics 
-                    <a title="Active Resumes|The data provided includes active jobs seekers from the entire CareerBuilder network including our niche sites.  An active job seeker is anyone who has completed at least one of the following in the time frame specified:&lt;ol&gt;&lt;li&gt;Created a new resume&lt;/li&gt;&lt;li&gt;Modified an existing resume&lt;/li&gt;&lt;li&gt;Applied to a job posting using a saved resume." class="titled_tips" href="#">&nbsp;</a>
+					<a title="Active Resumes|The data provided includes active jobs seekers from the entire CareerBuilder network including our niche sites.  An active job seeker is anyone who has completed at least one of the following in the time frame specified:&lt;ol&gt;&lt;li&gt;Created a new resume&lt;/li&gt;&lt;li&gt;Modified an existing resume&lt;/li&gt;&lt;li&gt;Applied to a job posting using a saved resume." class="titled_tips" href="#">&nbsp;</a>
                   
                 
                 <div style="display: inline; float: right;">
@@ -1411,45 +1326,15 @@ so.write("ucSupplyView_amSupplyMiniStateHeatMap_pnlFlashContent");
                 </div>
                 
                 </h2>         
-                
-                    <div id="DemographicsfacetSummary" class="facet-ui">
-                        <div id="searched-for" class="facet-ui inactive">
-                            <div class="header">Refine Your Search</div>
-                            <div class="content">
-                                <div class="searched-for-content">
-                                   <ul></ul>
-                                </div>
-                                <div class="clearAll">
-                                    Clear all filters
-                                </div>
+				<div id="DemographicsChartsWrapper">
+						<ol id="categories-bar">
+							<li><span id="other-bar" class="category-bar category-selected">Company</span></li>
+							<li><span id="location-bar" class="category-bar">Location</span></li>
+							<li><span id="experience-bar" class="category-bar">Experience</span></li>
+							<li><span id="demographics-bar" class="category-bar">Demographics</span></li>
+							<li><span id="educaton-bar" class="category-bar">Education</span></li>
+						</ol>
 
-                                <div class="filter-content">
-                                    <ul class="facets">
-                                    </ul>
-                                </div>                    
-                            </div>
-                        </div>
-                        <div style="clear:right;"></div>
-                    </div>
-                
-
-                <div id="DemographicsChartsWrapper">
-                    <center>
-                    <div id="categories-bar">
-		               
-		                <table cellpadding="3" cellspacing="3">
-			                <tbody><tr>
-				                <td><div id="other-bar" class="category-bar category-selected"> Company </div> </td>
-				                <td><div id="location-bar" class="category-bar"> Location </div> </td>
-				                <td><div id="experience-bar" class="category-bar"> Experience </div> </td>
-				                <td><div id="demographics-bar" class="category-bar"> Demographics </div> </td>
-				                <td><div id="educaton-bar" class="category-bar"> Education </div> </td>
-			                </tr>
-		                </tbody></table>
-	                </div>
-	                </center>
-
-                    
                     <div id="content-container" align="center">
 		                <div style="" id="companies-content" class="sub-content">
                             <div id="EmployerViewWrapper" class="AllDemographicsWrapper">
@@ -1577,7 +1462,6 @@ so.write("ucSupplyView_amSupplyMiniStateHeatMap_pnlFlashContent");
 		                </div>
 	                </div>
                 
-                    
                     <div style="border:none; clear:both;"></div>
                 </div>
             </div>

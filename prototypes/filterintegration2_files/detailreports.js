@@ -381,7 +381,9 @@ var ReportFilters = function (wrapperID) {
     function clearAllFilters() {
         parentWrapper = $("#" + wrapperID);
         cacheDictionary = new Dictionary();
-        parentWrapper.find("#searched-for").attr("class", "facet-ui inactive");
+        //parentWrapper.find("#searched-for").attr("class", "facet-ui inactive");
+		parentWrapper.find("#searched-for .searched-for-content").hide();
+		parentWrapper.find("#searched-for .clearAll").hide();
     };
     return {
         set_numericDataType: function (value) { isNumericDataType = value; },
@@ -1138,7 +1140,7 @@ var ModulesManager = function () {
             searchedFilter.attr('checked', false);
             searchedFilter.trigger("click");
         });
-        facetsummaryWrapper.find('.facets>li>.headerText').click(function () {
+        facetsummaryWrapper.find('#facets>li>.headerText').click(function () {
             $(this).next().toggle();
         });
     };
@@ -1216,7 +1218,7 @@ var ModulesManager = function () {
         }
     };
     function updateFacetAndOtherSummary(results) {
-        facetsummaryWrapper.find(".filter-content .facets").html(results.FacetSummaryHTML);
+        facetsummaryWrapper.find("#facets").html(results.FacetSummaryHTML);
         facetsummaryWrapper.find(".searched-for-content").html(results.FacetAppliedFilterHTML);
         facetsummaryWrapper.find("#searched-for .clearAll").attr("class", "clearAll");
         ofilterManager.persistSearchedFilters();
@@ -1338,17 +1340,20 @@ var toggleTabs = function (tab) {
 	switch (jQuery('#SDTabs UL LI.selected').attr('id')) {
 		case "DemandView":
 			jQuery(".facetSupply").hide();
+			jQuery(".facetBoth").hide();
 			jQuery(".facetDemand").show();
 			break;
 		case "SupplyView":
 			jQuery(".facetDemand").hide();
+			jQuery(".facetBoth").hide();
 			jQuery(".facetSupply").show();
 			break;
 		default:
-			jQuery(".facetDemand, .facetSupply").show(); //weird
+			jQuery(".facetDemand, .facetSupply").hide();
+			jQuery(".facetBoth").show();
 	}
-	jQuery(".facets>li:not(:hidden)").css({"clear":"none","margin-right":"2%"});
-	jQuery(".facets>li:not(:hidden)").each(function(index) {
+	jQuery("#facets>li:not(:hidden)").css({"clear":"none","margin-right":"2%"});
+	jQuery("#facets>li:not(:hidden)").each(function(index) {
 		if ((index+1)%3==0) {
 			jQuery(this).css("margin-right","0");
 		}

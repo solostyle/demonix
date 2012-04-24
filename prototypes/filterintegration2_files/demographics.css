@@ -10,11 +10,6 @@ body
 {
     position:relative;
 }
-#TabsContent
-{
-	padding-left:3px;
-	float:left;
-}
 #SupplyViewContent .module.half.end {
     display: none;
     float: none;
@@ -109,52 +104,26 @@ body
 #Demographics_Tab li.selected .round3 { border-width: 0 1px; }
 #Demographics_Tab .round4 { margin: 0 0px; }
 
-#DemographicsTabsContent
-{
-    width:1004px;
-    padding:0px;
-    text-align:left;
-	float:left;
-	height:600px;
-	overflow-y:auto;
-    position:relative;
-}
-
-#DemographicsTabsContent h2
-{
+#DemographicsTabsContent h2{
 	background-color: #F2F2F2;
     color: #000000;
-    padding: 10px;
     text-align: left;
 	margin: 0 0 10px;
 }
-#FancyBoxBorderWrapper
-{
-	border: 1px solid #DDDDDD;
-    float: left;
-    height:600px;
-    padding-top: 0px;
-    width: 1004px;
-}	
-
-#FancyBoxDemographicsPopup .module
-{
+#FancyBoxDemographicsPopup .module{
 	border-bottom:none;	
 }
 
-#FancyBoxDemographicsPopup .module.half
-{
+#FancyBoxDemographicsPopup .module.half{
 	margin-left:2px;
 	margin-right:2px;	
 }
 
-#DemographicsTabsContent .DemographicsView
-{
+#DemographicsTabsContent .DemographicsView{
     width:360px;
 }
 
-#DemographicsTabsContent .header
-{
+#DemographicsTabsContent .header{
     color: black;
     float:none;
     font-size: 13px;
@@ -164,16 +133,14 @@ body
     display:table;
 }
 
-div#DemographicsTabsContent div#DemographicsChartsWrapper > div
-{
+div#DemographicsTabsContent div#DemographicsChartsWrapper > div{
     float:left;
     width:360px;
     min-height:80px;
     padding-right:14px;
     padding-top:10px;
 }
-div#DemographicsTabsContent div.AllDemographicsWrapper
-{
+div#DemographicsTabsContent div.AllDemographicsWrapper{
     display:none;
 }
 
@@ -184,8 +151,7 @@ div#DemographicsTabsContent div.AllDemographicsWrapper
     padding:0px;
 }*/
 #DemographicsfacetSummary .facet-ui.inactive {display:none;} 
-#DemographicsfacetSummary .facet-ui 
-{
+#DemographicsfacetSummary .facet-ui {
     width:165px;
     color:#000000;
     font:89.5% Arial,Helvetica;  
@@ -199,8 +165,7 @@ div#DemographicsTabsContent div.AllDemographicsWrapper
     background:url("http://img.cbdr.com/images/Personified/blueHeader_bg.png") no-repeat scroll 0 0 transparent;
     width: 165px;
 }
-#DemographicsfacetSummary .facet-ui .content 
-{
+#DemographicsfacetSummary .facet-ui .content {
     border:none;
     padding:5px 10px 10px;
     width: 183px;
@@ -219,8 +184,7 @@ div#DemographicsTabsContent div.AllDemographicsWrapper
     display:inline;
 }
 */
-#DemographicsfacetSummary .facet-ui .content .keep-filters
-{
+#DemographicsfacetSummary .facet-ui .content .keep-filters{
     font-size:10px;
     text-decoration:none;
     display:inline;
@@ -243,8 +207,7 @@ div#DemographicsTabsContent div.AllDemographicsWrapper
 }
 #DemographicsfacetSummary .filter-content {font-size:80.5%;}
 /*
-#DemographicsfacetSummary #filter-search .filter-content .show-more 
-{
+#DemographicsfacetSummary #filter-search .filter-content .show-more {
     padding-bottom:5px;
     border-bottom:dashed 1px #ddd;
     display:block;
@@ -261,8 +224,7 @@ div#DemographicsTabsContent div.AllDemographicsWrapper
     text-indent:0px;
 }
 
-#DemographicsfacetSummary
-{
+#DemographicsfacetSummary{
     width:205px !IMPORTANT;
     border:none !IMPORTANT;
     /* padding-bottom:1205px;
@@ -272,8 +234,7 @@ div#DemographicsTabsContent div.AllDemographicsWrapper
     
 }
 
-.chartDisclaimerText
-{
+.chartDisclaimerText{
     display:table;
     font-size:12px;
     color:black;
@@ -283,11 +244,4 @@ div#DemographicsTabsContent div.AllDemographicsWrapper
     font-weight:bold;
     font-style:italic;
 }
-
-#DemographicsTabsContent div#DemographicsChartsWrapper
-{
-    width:750px !IMPORTANT;
-    float:left;
-    border-left:1px solid #DDDDDD;
-    margin-top: 10px;
 }
