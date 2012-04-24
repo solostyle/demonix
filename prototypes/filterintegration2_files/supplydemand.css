@@ -103,90 +103,17 @@ a.lnkCareerBuilderRDB:link,a.lnkStartOver:active,a.lnkStartOver:visited{
 .output img  {vertical-align:middle;}  
 
 /********* BEGIN Styles for Tabbed Navigation & Rounded Corners */
-#SDTabs {width:850px; margin:0px 15px;}
-#SDTabs #DemandView, #SDTabs #SupplyView { width: 175px;}
-#SDTabs #LaborPressureView { width: 175px;}
-#SDTabs ul.tabbedNavigation {
-    margin: 0;
-    padding: 0;
-    list-style: none none outside;
-    border: 0;
-    padding-left: 12px;
-    /*background: #FFF url(../../../../images/js/tab_nav_grad.jpg) repeat-x;*/
-    background-position: bottom;
-    height:43px;
-}
-#SDTabs ul.tabbedNavigation li {
-    margin: 0;
-    margin-bottom: -1px;
-    padding: 0;
-    display: block;
-    float: left;
-}
-#SDTabs ul.tabbedNavigation #DemandView {margin-bottom: 1px;}
-#SDTabs ul.tabbedNavigation li.selected {border: none; padding: 0;}
-#SDTabs ul.tabbedNavigation a {font-size: 12px; font-weight: bold; color: #000000; cursor: pointer;}
-#SDTabs ul.tabbedNavigation li span:hover {text-decoration:none;}
-#SDTabs ul.tabbedNavigation li.selected span:hover {text-decoration:none;}
-#SDTabs ul.tabbedNavigation li.selected a {color: #EE7F0C; font-size: 13px; background: #FFF;}
-#SDTabs ul.tabbedNavigation a * { display: block; }
-#SDTabs ul.tabbedNavigation a:hover{text-decoration:none;color:#000000}
+#SDTabs {width:100%}
+#SDTabs ul {margin:0;padding:0}
+#SDTabs ul li {border-color:#aaa;border-radius:10px 10px 0 0;border-style:solid;border-width:1px;cursor:pointer;float:left;height:55px;margin-left:-1px;padding:10px;text-align:center;width:23%}
+#SDTabs ul li:first-child {margin-left:0} /* nice clean lines */
+#SDTabs ul li.selected {background-color:#ee7f0c;border-color:#ffa500}
+#SDTabs ul li span.tabtitle em {font-size:16px}
+#SDTabs ul li.selected a {color:white;background:;} /* gradient */
+#SDTabs ul a, #SDTabs ul a:visited {color:#000;display:block;font-size:20px;font-weight:bold;padding:5px;text-decoration:none}
+#SDTabs ul a * {display: block}
+#SDTabs ul a:hover, #SDTabs ul a:active {color:#000}
 
-#SDTabs .pad,
-#SDTabs .round1,
-#SDTabs .round2,
-#SDTabs .round3,
-#SDTabs .round4 {
-    background: #FFF;
-    background: transparent;
-    /* hide overflow:hidden from IE5/Mac */ 
-    /* \*/ 
-    overflow: hidden; 
-    /* */
-}
-#SDTabs .pad { height: 4px; }
-#SDTabs li.selected .pad { height: 1px; }
-
-#SDTabs .tabtitle {
-    padding: 5px 7px;
-    margin: 0;
-    position: relative;
-    top: -3px;
-    border-left: solid 1px #DDD;
-    border-right: solid 1px #DDD;
-    border-top:solid 1px #DDD;
-    text-align: center;
-    margin: 0px;
-}
-#SDTabs li.selected .tabtitle {
-    padding: 4px 5px 6px 5px;
-    background: #FFF;
-    margin: 0px -1px;
-    border-left: solid 2px #DDD;
-    border-right: solid 2px #DDD;
-    /*** I need the top for a lil bit so... border-top:none; ***/
-    top: 0px;
-}
-#SDTabs li.selected .tabbottom
-{
-    border-bottom:1px solid #ffffff;
-    position:relative;
-    top:1px;
-}
-
-#SDTabs .round1, #SDTabs .round2, #SDTabs .round3, #SDTabs .round4 {font-size: 1px; height:1px;}
-
-#SDTabs li.selected .round2,
-#SDTabs li.selected .round3,
-#SDTabs li.selected .round4 { border-left: 1px solid #CCC; border-right: 1px solid #CCC; }
-
-#SDTabs .round1 { margin:0 2px; }
-#SDTabs li.selected .round1 { background: #CCC; }
-#SDTabs .round2 { margin:0 1px; }
-#SDTabs li.selected .round2 { border-width: 0 1px; }
-#SDTabs .round3 { margin:0 0px; }
-#SDTabs li.selected .round3 { border-width: 0 1px; }
-#SDTabs .round4 { margin: 0 0px; }
 #TabsContent
 {
     border:solid 1px #DDD;
