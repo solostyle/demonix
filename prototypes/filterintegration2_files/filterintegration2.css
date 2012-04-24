@@ -9,7 +9,7 @@ ul.facets {overflow:hidden!important;padding:0;margin:0 1%}
 #dashboard, #search-header, #SDTabs, #TabsContent
 {width:100%!important}
 
-#search-body {overflow:auto}
+#search-body {overflow:hidden}
 #newReportHeader, #refineSearchHeader {cursor:pointer}
 #newReportHeader, #refineSearchHeader, .gradient {
     background: #6b8acf; /* Old browsers */
