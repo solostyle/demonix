@@ -1,4 +1,4 @@
-.facetNav {float:none!important;padding-bottom:10px;width:100%!important}
+.facetNav {float:none!important;margin-bottom:10px;width:100%!important}
 .facet-ui {width:100%!important}
 #facets {overflow:hidden!important;padding:0;margin:1%}
 #facets>li {width:32%;float:left;display:block;clear:none}
@@ -6,6 +6,8 @@
 #facets .headerText:hover {background-color:#ffa500}
 #facets>li>div>ul {border-top:0;border-right:1px solid #cdf;border-bottom:1px solid #cdf;border-left:1px solid #cdf;border-radius:0 0 5px 5px;padding:5px!important}
 
+#refine-search {width:200px!important}
+#refine-search ul {padding:0 5px}
 #search-body {overflow:hidden}
 #newReportHeader, #refineSearchHeader {cursor:pointer}
 #newReportHeader, #refineSearchHeader, .gradient {

@@ -266,23 +266,12 @@
 
 			
 	<script src="ReportSummary_files/swfobject_002.js" type="text/javascript"></script>
-	<div id="SDTabs">
-		<ul class="clearfix tabbedNavigation">
-			<li id="SummaryView"><a href="#"><span class="tabtitle">Summary</span></a></li>
-			<li id="SupplyView" class="selected gradientTab"><a href="#"><span class="tabtitle">Supply<em>Active and Total Workforce</em></span></a></li>
-			<li id="DemandView"><a href="#"><span class="tabtitle">Demand<em>Job Postings</em></span></a></li>
-			<li id="LaborPressureView"><a href="#"><span class="tabtitle">Labor Pressure<em>Supply Over Demand</em></span></a></li>
-		</ul>
-	</div>
-	<div class="facetNav">
-        <div id="facetSummary_pnlFacets" language="javascript" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'facetSummary_btnSubmit')">
-				
- <div id="facetSummary" class="facet-ui">
-    <div id="refine-search" class="facet-ui">
-       <div id="newReportHeader" class="header gradient">Create a New Report</div>
-        <div class="content">
-            <div class="search-content">
-                <ul>    
+	<div id="toolbar">
+		<div id="refine-search" class="facet-ui" style="width:200px">
+			<div id="newReportHeader" class="header gradient">Create a New Report</div>
+			<div class="content">
+				<div class="search-content">
+					<ul>    
                     <li>
                         <label>Title, Keyword, or Skill:</label>
                         <input name="facetSummary:txtKeyword" value="web developer" maxlength="128" id="facetSummary_txtKeyword" class="keyword" type="text">
@@ -308,17 +297,29 @@
 				</select>  
                     </li>
                 </ul>
-                <p>
+					<p>
                     <input name="facetSummary:btnSubmit" value="Search" id="facetSummary_btnSubmit" class="btnSubmit" type="submit">
                     
                       <a href="http://img.icbdr.com/images/personified/booleancheatsheet-compensation.pdf" style="border: medium none; text-decoration: none;" target="_blank" id="searchTipsLink"><img style="height: 22px;" src="ReportSummary_files/new_pdf_icon.png" id="searchTipsPDF" border="0"><span id="searchTipsText">Search Tips</span></a>
                     
                 </p>
-                <div style="clear: both; height: 1px; margin: 0; padding: 0; width: 1px;">&nbsp;</div>
-            </div>                    
-        </div>
-    </div>    
-    <div style="height:10px"></div>
+					<div style="clear: both; height: 1px; margin: 0; padding: 0; width: 1px;">&nbsp;</div>
+				</div>                    
+			</div>
+		</div> 	
+	</div>
+	<div id="SDTabs">
+		<ul class="clearfix tabbedNavigation">
+			<li id="SummaryView"><a href="#"><span class="tabtitle">Summary</span></a></li>
+			<li id="SupplyView" class="selected gradientTab"><a href="#"><span class="tabtitle">Supply<em>Active and Total Workforce</em></span></a></li>
+			<li id="DemandView"><a href="#"><span class="tabtitle">Demand<em>Job Postings</em></span></a></li>
+			<li id="LaborPressureView"><a href="#"><span class="tabtitle">Labor Pressure<em>Supply Over Demand</em></span></a></li>
+		</ul>
+	</div>
+	<div class="facetNav">
+        <div id="facetSummary_pnlFacets" language="javascript" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'facetSummary_btnSubmit')">
+				
+ <div id="facetSummary" class="facet-ui">
     <div id="searched-for" class="facet-ui">        
         <div id="refineSearchHeader" class="header gradient">Refine Your Search</div>
         <div class="content">
@@ -436,8 +437,8 @@
 
 					<li class="facetSupply">
 						<div class="headerText">State</div>
-						<div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png">                        <img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div>
-						<div style="display:none" id="statename">
+						<div class="toggle"><img style="display:none" alt="" src="http://clib.icbdr.com/images/personified/expand.png">                        <img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div>
+						<div id="statename">
 							<ul>
 								<li><input type="checkbox" checked="checked" id="statename" value="statename"><label for="statename"><b>All States</b></label></li>
 								<li><input type="checkbox" id="statenameTexas" value="statename:Texas"><label for="statenameTexas">Texas (1,170)</label></li>

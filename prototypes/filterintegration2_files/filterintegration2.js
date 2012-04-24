@@ -23,6 +23,15 @@ jQuery("#facets>li:not(:hidden)").each(function(index) {
 	if ((index+1)%3==0) jQuery(this).css("margin-right","0");
 	if (index%3==0) jQuery(this).css("clear","left");
 });
+
+jQuery("#facets").hide();
+
 jQuery("#refineSearchHeader").click(function() {
-	jQuery("#facets").slideToggle("slow");
+	jQuery("#facets").slideToggle("slow", function() {
+		if (jQuery("#facets").css("display")=="block") {
+			jQuery(".clearAll, .searched-for-content").slideUp("slow");
+		} else {
+			jQuery(".clearAll, .searched-for-content").slideDown("slow");
+		}
+	});
 });
