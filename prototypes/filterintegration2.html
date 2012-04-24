@@ -267,7 +267,7 @@
 			
 	<script src="ReportSummary_files/swfobject_002.js" type="text/javascript"></script>
 	<div id="toolbar">
-		<div id="refine-search" class="facet-ui" style="width:200px">
+		<div id="refine-search" class="tool" style="float:left;width:200px">
 			<div id="newReportHeader" class="header gradient">Create a New Report</div>
 			<div class="content">
 				<div class="search-content">
@@ -306,8 +306,24 @@
 					<div style="clear: both; height: 1px; margin: 0; padding: 0; width: 1px;">&nbsp;</div>
 				</div>                    
 			</div>
-		</div> 	
+		</div>
+		<div id="viewInCompensation" class="tool">
+			<a id="lnkCareerBuilderCompV2" class="lnkCareerBuilderRDB" href="#"><img id="dollarImg" src="ReportSummary_files/money-dollar-icon.png"><span id="CompensationLinkText">&nbsp;Switch to Talent Compensation</span></a>
+		</div>
+		<div id="export" class="tool" style="float:left!important;width:200px!important">
+			<div id="exportHeader" class="header gradient">Export</div>
+			<div class="content">
+
+				<a href="#" id="myExportLink"><img style="height: 22px;" src="ReportSummary_files/new_pdf_icon.png" id="Img6" border="0"/>&nbsp;One Page PDF</a>   
+				<a href="http://www.careerbuilder.com/Personified/UserControls/#" id="lnkExportPDFSummary_ExportToPDFLink"><img id="lnkExportPDFSummary_imgPDF" src="ReportSummary_files/new_pdf_icon.png" style="height: 22px;" border="0" />&nbsp;Export To PDF</a>
+				<a href="http://img.icbdr.com/images/personified/faq%27sexternalsdportal12.21.11.pdf" style="border: medium none; text-decoration: none;" target="_blank" id="faqsPDFLink"><img style="height: 22px;" src="ReportSummary_files/new_pdf_icon.png" id="faqsPDFImg" border="0"><span id="faqsPDFText"/>&nbsp;FAQs</span></a>
+
+				<a href="http://www.careerbuilder.com/Personified/UserControls/#" id="lnkPDFExport_ExportToPDFLink"><img id="lnkPDFExport_imgPDF" src="ReportSummary_files/new_pdf_icon.png" style="height: 22px;" border="0"/>&nbsp;Full PDF</a>
+				<a id="ExportExcelLink" href="http://www.careerbuilder.com/Personified/SupplyDemand/ReportSummaryExcel.aspx?did=RSHM4SW6GBP41LKLMMTF"><img id="imgPDF" src="ReportSummary_files/sharp_excel_icon.png" style="height: 22px;" border="0"/>&nbsp;Export To Excel</a>
+			</div>
+		</div>
 	</div>
+	
 	<div id="SDTabs">
 		<ul class="clearfix tabbedNavigation">
 			<li id="SummaryView" class="gradientTab"><a href="#" style="line-height:35px"><span class="tabtitle">Summary</span></a></li>
@@ -488,20 +504,7 @@
 							
 								<div id="SummaryViewContent">
 									<div id="blueHeading" style="color: #777;">
-										<span id="viewInCompensation">
-											<a id="lnkCareerBuilderCompV2" class="lnkCareerBuilderRDB" href="#"><img id="dollarImg" src="ReportSummary_files/money-dollar-icon.png"><span id="CompensationLinkText">&nbsp;View In Compensation</span></a>
-										</span>
-										<div class="outputs clearfix">
-											<div class="output">
-								
-												<a href="#" id="myExportLink"><img style="height: 22px;" src="ReportSummary_files/new_pdf_icon.png" id="Img6" border="0"/>&nbsp;One Page PDF</a>   
-												<a href="http://www.careerbuilder.com/Personified/UserControls/#" id="lnkExportPDFSummary_ExportToPDFLink"><img id="lnkExportPDFSummary_imgPDF" src="ReportSummary_files/new_pdf_icon.png" style="height: 22px;" border="0" />&nbsp;Export To PDF</a>
-												<a href="http://img.icbdr.com/images/personified/faq%27sexternalsdportal12.21.11.pdf" style="border: medium none; text-decoration: none;" target="_blank" id="faqsPDFLink"><img style="height: 22px;" src="ReportSummary_files/new_pdf_icon.png" id="faqsPDFImg" border="0"><span id="faqsPDFText"/>&nbsp;FAQs</span></a>
-
-												<a href="http://www.careerbuilder.com/Personified/UserControls/#" id="lnkPDFExport_ExportToPDFLink"><img id="lnkPDFExport_imgPDF" src="ReportSummary_files/new_pdf_icon.png" style="height: 22px;" border="0"/>&nbsp;Full PDF</a>
-												<a id="ExportExcelLink" href="http://www.careerbuilder.com/Personified/SupplyDemand/ReportSummaryExcel.aspx?did=RSHM4SW6GBP41LKLMMTF"><img id="imgPDF" src="ReportSummary_files/sharp_excel_icon.png" style="height: 22px;" border="0"/>&nbsp;Export To Excel</a>
-											</div>
-										</div>  
+										Summary
 									</div>
 									<div id="contentWrapper">
 										<h1><span id="jobTitle">Web Developer</span></h1>

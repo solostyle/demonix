@@ -103,7 +103,7 @@ a.lnkCareerBuilderRDB:link,a.lnkStartOver:active,a.lnkStartOver:visited{
 .output img  {vertical-align:middle;}  
 
 /********* BEGIN Styles for Tabbed Navigation & Rounded Corners */
-#SDTabs {width:100%}
+#SDTabs {clear:left;width:100%}
 #SDTabs ul {margin:0;padding:0}
 #SDTabs ul li, .gradientTab {border-color:#aaa;border-radius:10px 10px 0 0;border-style:solid;border-width:1px;cursor:pointer;float:left;height:45px;padding:5px;text-align:center;width:23.9%;
 
@@ -767,7 +767,6 @@ table.detailView .msa.last {padding-right:25px;}
 }
 #viewInCompensation .lnkCareerBuilderRDB
 {
-    color:White;
     text-decoration: none;
     font: 11px arial,helvetica;
     font-weight:bold
