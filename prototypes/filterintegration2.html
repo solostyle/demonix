@@ -7,7 +7,8 @@
         <style type="text/css">
             .table { behavior: url(http://www.careerbuilder.com/display-table.min.htc); }
         </style>    
-    <link rel="stylesheet" type="text/css" href="ReportSummary_files/ussite.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/jobposter.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/jquery.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/jquery-ui-1.css"><link rel="stylesheet" type="text/css" href="filterintegration2_files/supplydemand.css"><link rel="stylesheet" type="text/css" href="filterintegration2_files/demographicsv2.css"><link rel="stylesheet" type="text/css" href="filterintegration2_files/demographics.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/demo_style.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/smart_wizard.css"><link rel="stylesheet" type="text/css" href="filterintegration2_files/jpnav.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/jpnestednavigation.css">
+    <!-- <link rel="stylesheet" type="text/css" href="ReportSummary_files/style.css">-->
+	<link rel="stylesheet" type="text/css" href="ReportSummary_files/ussite.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/jobposter.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/jquery.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/jquery-ui-1.css"><link rel="stylesheet" type="text/css" href="filterintegration2_files/supplydemand.css"><link rel="stylesheet" type="text/css" href="filterintegration2_files/demographicsv2.css"><link rel="stylesheet" type="text/css" href="filterintegration2_files/demographics.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/demo_style.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/smart_wizard.css"><link rel="stylesheet" type="text/css" href="filterintegration2_files/jpnav.css"><link rel="stylesheet" type="text/css" href="ReportSummary_files/jpnestednavigation.css">
 	<script type="text/javascript">    var ScriptVariables = function(){
         var _vars = new Array();
             _vars['currentVer'] = 'v16.10';
@@ -267,12 +268,12 @@
 			
 	<script src="ReportSummary_files/swfobject_002.js" type="text/javascript"></script>
 	<div id="toolbar">
-		<div id="refine-search" class="tool" style="float:left;width:200px">
+		<div id="newReport" class="tool">
 			<div id="newReportHeader" class="header gradient">Create a New Report</div>
 			<div class="content">
 				<div class="search-content">
 					<ul>    
-                    <li>
+						<li>
                         <label>Title, Keyword, or Skill:</label>
                         <input name="facetSummary:txtKeyword" value="web developer" maxlength="128" id="facetSummary_txtKeyword" class="keyword" type="text">
                         <div class="desc_wrapper">
@@ -281,11 +282,11 @@
                             <div class="titleDesc"></div>
                         </div>
                     </li>
-                    <li>
+						<li>
                         <label>Location:</label>
                         <input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" name="facetSummary:txtLocation" maxlength="128" id="facetSummary_txtLocation" class="location ui-autocomplete" type="text">
                     </li>
-                    <li>
+						<li>
                         <label>Timeframe:</label>
                         <select name="facetSummary:dropdownDateFilter" id="facetSummary_dropdownDateFilter">
 					<option value="1">Last Month</option>
@@ -296,30 +297,36 @@
 
 				</select>  
                     </li>
-                </ul>
-					<p>
-                    <input name="facetSummary:btnSubmit" value="Search" id="facetSummary_btnSubmit" class="btnSubmit" type="submit">
+					</ul>
+					<p><input name="facetSummary:btnSubmit" value="Search" id="facetSummary_btnSubmit" class="btnSubmit" type="submit">
                     
                       <a href="http://img.icbdr.com/images/personified/booleancheatsheet-compensation.pdf" style="border: medium none; text-decoration: none;" target="_blank" id="searchTipsLink"><img style="height: 22px;" src="ReportSummary_files/new_pdf_icon.png" id="searchTipsPDF" border="0"><span id="searchTipsText">Search Tips</span></a>
                     
-                </p>
-					<div style="clear: both; height: 1px; margin: 0; padding: 0; width: 1px;">&nbsp;</div>
+					</p>
 				</div>                    
 			</div>
 		</div>
-		<div id="viewInCompensation" class="tool">
+		<div id="compensationLink" class="tool">
 			<a id="lnkCareerBuilderCompV2" class="lnkCareerBuilderRDB" href="#"><img id="dollarImg" src="ReportSummary_files/money-dollar-icon.png"><span id="CompensationLinkText">&nbsp;Switch to Talent Compensation</span></a>
 		</div>
-		<div id="export" class="tool" style="float:left!important;width:200px!important">
+		<div id="export" class="tool">
 			<div id="exportHeader" class="header gradient">Export</div>
 			<div class="content">
 
 				<a href="#" id="myExportLink"><img style="height: 22px;" src="ReportSummary_files/new_pdf_icon.png" id="Img6" border="0"/>&nbsp;One Page PDF</a>   
 				<a href="http://www.careerbuilder.com/Personified/UserControls/#" id="lnkExportPDFSummary_ExportToPDFLink"><img id="lnkExportPDFSummary_imgPDF" src="ReportSummary_files/new_pdf_icon.png" style="height: 22px;" border="0" />&nbsp;Export To PDF</a>
-				<a href="http://img.icbdr.com/images/personified/faq%27sexternalsdportal12.21.11.pdf" style="border: medium none; text-decoration: none;" target="_blank" id="faqsPDFLink"><img style="height: 22px;" src="ReportSummary_files/new_pdf_icon.png" id="faqsPDFImg" border="0"><span id="faqsPDFText"/>&nbsp;FAQs</span></a>
-
 				<a href="http://www.careerbuilder.com/Personified/UserControls/#" id="lnkPDFExport_ExportToPDFLink"><img id="lnkPDFExport_imgPDF" src="ReportSummary_files/new_pdf_icon.png" style="height: 22px;" border="0"/>&nbsp;Full PDF</a>
 				<a id="ExportExcelLink" href="http://www.careerbuilder.com/Personified/SupplyDemand/ReportSummaryExcel.aspx?did=RSHM4SW6GBP41LKLMMTF"><img id="imgPDF" src="ReportSummary_files/sharp_excel_icon.png" style="height: 22px;" border="0"/>&nbsp;Export To Excel</a>
+			</div>
+		</div>
+		<div id="help" class="tool">
+			<div id="helpHeader" class="header gradient">Help</div>
+			<div class="content">
+				<ol>
+					<li><a href="http://img.icbdr.com/images/personified/faq%27sexternalsdportal12.21.11.pdf" style="border: medium none; text-decoration: none;" target="_blank" id="faqsPDFLink"><img style="height: 22px;" src="ReportSummary_files/new_pdf_icon.png" id="faqsPDFImg" border="0"><span id="faqsPDFText"/>&nbsp;FAQs</span></a></li>
+					<li><a href="#"><img style="height:22px;width:15px" src="ReportSummary_files/oo_float_icon.gif">&nbsp;Provide your Feedback</a></li>
+					<li></li>
+				</ol>
 			</div>
 		</div>
 	</div>
