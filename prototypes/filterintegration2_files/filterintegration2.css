@@ -9,13 +9,24 @@
 #search-body {overflow:hidden}
 
 /* Top Toolbar */
-#toolbar {height:20px}
-.tool {float:left}
+#toolbar {height:29px;position:relative}
+#toolbar>div {height:29px}
+#toolbar .content {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 5px 5px #666666;
+    display: block;
+    padding: 5px;
+    position: absolute;
+	z-index: 9999;
+}
 #newReport {width:200px!important}
 #newReport ul {padding:0 5px}
-#compensationLink {}
-#export {}
+#compensationLink, #newReport {float:left}
+#newReport .content {width: 188px}
+#export, #help {float:right}
+#export .content, #help .content {right:0}
 
 /* Header Styles */
-#newReportHeader, #exportHeader, #helpHeader, .gradient {background:#eee;border:1px solid #ccc;border-radius:5px 5px 0 0;color:#666;cursor:pointer;font-size:12px;font-weight:bold;padding:6px 10px}
-#newReportHeader:hover, #exportHeader:hover, #helpHeader:hover, .gradient:hover {background:#fff;color:#333}
+#compLinkHeader, #newReportHeader, #exportHeader, #helpHeader, .gradient {background:#eee;border:1px solid #ccc;border-radius:5px 5px 0 0;color:#666;cursor:pointer;font-size:12px;font-weight:bold;padding:6px 10px}
+#compLinkHeader:hover, #newReportHeader:hover, #exportHeader:hover, #helpHeader:hover, .gradient:hover {background:#fff;color:#333}

@@ -735,14 +735,7 @@ table.detailView .msa.last {padding-right:25px;}
     font: 11px arial,helvetica;
     font-weight:bold
 }
-img#dollarImg
-{
-    border:0 none;
-    float:left;
-    display:block;
-    padding-left: 6px;
-    padding-top: 7px;
-}
+img#dollarImg {float:left}
 
 #searchTipsLink
 {
@@ -788,13 +781,6 @@ img#dollarImg
 
 .output a{
     margin-right: 16px;
-}
-
-#CompensationLinkText
-{
-    padding-top:8px;
-    display:block;
-    float:left;
 }
 
 /***** Detail Heat Map *****/

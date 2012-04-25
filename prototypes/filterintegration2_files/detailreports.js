@@ -1608,9 +1608,4 @@ $(document).ready(function () {
         CB.Tally('SupplyDemand', 'Screen', cScreen);
     }
 
-    //makes the create new report tab expandable
-    $('#newReportHeader').click(function () {
-        $(this).next().slideToggle("slow");
-    });
-
 });                 //end $(document).ready
