@@ -30,3 +30,7 @@
 /* Header Styles */
 #compLinkHeader, #newReportHeader, #exportHeader, #helpHeader, .gradient {background:#eee;border:1px solid #ccc;border-radius:5px 5px 0 0;color:#666;cursor:pointer;font-size:12px;font-weight:bold;padding:6px 10px}
 #compLinkHeader:hover, #newReportHeader:hover, #exportHeader:hover, #helpHeader:hover, .gradient:hover {background:#fff;color:#333}
+
+#refineSearchHeader {float:left}
+#pnlDashBoard {clear:left}
+#searched-for .content {background:white;box-shadow:0 5px 5px #000;position:absolute;top:272px;width:1102px}
