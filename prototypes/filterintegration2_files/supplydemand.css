@@ -105,38 +105,8 @@ a.lnkCareerBuilderRDB:link,a.lnkStartOver:active,a.lnkStartOver:visited{
 /********* BEGIN Styles for Tabbed Navigation & Rounded Corners */
 #SDTabs {clear:left;width:100%}
 #SDTabs ul {margin:0;padding:0}
-#SDTabs ul li, .gradientTab {border-color:#aaa;border-radius:10px 10px 0 0;border-style:solid;border-width:1px;cursor:pointer;float:left;height:45px;padding:5px;text-align:center;width:23.9%;
-
-background: #a0d8ef; /* Old browsers */
-/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2EwZDhlZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY1JSIgc3RvcC1jb2xvcj0iI2RkZjFmOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZWZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-background: -moz-linear-gradient(top,  #a0d8ef 0%, #ddf1f9 65%, #feffff 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a0d8ef), color-stop(65%,#ddf1f9), color-stop(100%,#feffff)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #a0d8ef 0%,#ddf1f9 65%,#feffff 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #a0d8ef 0%,#ddf1f9 65%,#feffff 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #a0d8ef 0%,#ddf1f9 65%,#feffff 100%); /* IE10+ */
-background: linear-gradient(top,  #a0d8ef 0%,#ddf1f9 65%,#feffff 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0d8ef', endColorstr='#feffff',GradientType=0 ); /* IE6-8 */
-
-
-}
-#SDTabs ul li.selected, .gradientTabActive {
-/*background-color:#ee7f0c;*/
-background: #ff5500; /* Old browsers */
-/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxOCUiIHN0b3AtY29sb3I9IiNmZjU1MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI5OSUiIHN0b3AtY29sb3I9IiNmZmFhMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+');
-background: -moz-linear-gradient(center top , #FF5500 0%, #FFAA00 50%, #FFFFFF 99%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff5500), color-stop(50%,#ffaa00), color-stop(99%,#fff)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #ff5500 0%,#ffaa00 50%, #fff 99%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #ff5500 0%,#ffaa00 50%,#fff 99%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #ff5500 0%,#ffaa00 50%,#fff 99%); /* IE10+ */
-background: linear-gradient(top,  #ff5500 0%,#ffaa00 50%,#fff 99%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5500', endColorstr='#ffaa00',GradientType=0 ); /* IE6-8 */
-border-color:#f50 #f50 #fff;
--webkit-box-shadow: -6px 4px 5px -6px #cc8800,6px 4px 5px -6px #cc8800;
--moz-box-shadow: -6px 4px 5px -6px #cc8800,6px 4px 5px -6px #cc8800;
-box-shadow: -6px 4px 5px -6px #cc8800,6px 4px 5px -6px #cc8800;
-}
+#SDTabs ul li, .gradientTab {background-color:#eee;border-color:#aaa;border-radius:10px 10px 0 0;border-style:solid;border-width:1px;color:#999;cursor:pointer;float:left;height:45px;padding:5px;text-align:center;width:23.9%}
+#SDTabs ul li.selected, .gradientTabActive {background: #fff;border-color:#666;-webkit-box-shadow: -6px 4px 5px -6px #000,6px 4px 5px -6px #000;-moz-box-shadow: -6px 4px 5px -6px #000,6px 4px 5px -6px #000;box-shadow: -6px 4px 5px -6px #000,6px 4px 5px -6px #000;position:relative}
 #SDTabs ul li span.tabtitle em {font-size:12px}
 #SDTabs ul a, #SDTabs ul a:visited {color:#333;display:block;font-size:16px;font-weight:bold;padding:5px;text-decoration:none}
 #SDTabs ul a * {display: block}
