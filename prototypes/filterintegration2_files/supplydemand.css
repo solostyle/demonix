@@ -1,6 +1,8 @@
 ﻿/* ensure override site stuff and ensure they are not affected by site changes */
 .cb_style {font: 11px arial,helvetica;text-align: left;}
+.cb_main {padding-top:0}
 #_ctl0__ctl1_hgcPri, .nav .pri {overflow:hidden;padding:0;width:100%}
+ul, ol {list-style:none outside none;padding:0;margin:0}
 
 input[type="checkbox"] {
     margin-right: 5px;

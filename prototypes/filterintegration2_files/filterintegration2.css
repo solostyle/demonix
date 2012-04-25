@@ -1,4 +1,3 @@
-.cb_main {padding-top:0}
 .facetNav {float:none!important;margin-bottom:10px;width:100%!important}
 .facet-ui {width:100%!important}
 #facets {overflow:hidden!important;padding:0;margin:1%}
@@ -18,6 +17,5 @@
 #export {}
 
 /* Header Styles */
-#newReportHeader, #exportHeader {cursor:pointer;font-size:12px;font-weight:bold;padding:6px 10px}
-#newReportHeader, #exportHeader, .gradient {background: #eee}
-#newReportHeader:hover, #exportHeader:hover, .gradient:hover {background: #fff}
+#newReportHeader, #exportHeader, #helpHeader, .gradient {background:#eee;border:1px solid #ccc;border-radius:5px 5px 0 0;color:#666;cursor:pointer;font-size:12px;font-weight:bold;padding:6px 10px}
+#newReportHeader:hover, #exportHeader:hover, #helpHeader:hover, .gradient:hover {background:#fff;color:#333}
