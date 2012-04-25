@@ -107,15 +107,16 @@ a.lnkCareerBuilderRDB:link,a.lnkStartOver:active,a.lnkStartOver:visited{
 /********* BEGIN Styles for Tabbed Navigation & Rounded Corners */
 #SDTabs {clear:left;width:100%}
 #SDTabs ul {margin:0;padding:0}
-#SDTabs ul li, .gradientTab {background-color:#eee;border-color:#aaa;border-radius:10px 10px 0 0;border-style:solid;border-width:1px;-webkit-box-shadow:0 -4px 5px -4px #000000 inset;-moz-box-shadow:0 -4px 5px -4px #000000 inset;box-shadow:0 -4px 5px -4px #000000 inset;color:#999;cursor:pointer;float:left;height:45px;padding:5px;text-align:center;width:23.9%}
-#SDTabs ul li.selected, .gradientTabActive {background: #fff;border-color:#666;-webkit-box-shadow: -6px 1px 5px -6px #000,6px 1px 5px -6px #000;-moz-box-shadow: -6px 1px 5px -6px #000,6px 1px 5px -6px #000;box-shadow: -6px 1px 5px -6px #000,6px 1px 5px -6px #000;position:relative}
+#SDTabs ul li, .gradientTab {background-color:#eee;border-color:#aaa;border-radius:10px 10px 0 0;border-style:solid;border-width:1px;-webkit-box-shadow:0 -4px 5px -4px #000000 inset;-moz-box-shadow:0 -4px 5px -4px #000000 inset;box-shadow:0 -4px 5px -4px #000000 inset;cursor:pointer;float:left;height:45px;padding:5px;text-align:center;width:23.9%}
+#SDTabs ul li a, .gradientTab a {color:#999}
+#SDTabs ul li.selected, .gradientTabActive {background:#fff;border-color:#666;-webkit-box-shadow:-6px 1px 5px -6px #000,6px 1px 5px -6px #000;-moz-box-shadow:-6px 1px 5px -6px #000,6px 1px 5px -6px #000;box-shadow:-6px 1px 5px -6px #000,6px 1px 5px -6px #000;position:relative}
+#SDTabs ul li.selected a, .gradientTabActive a {color:#333}
 #SDTabs ul li span.tabtitle em {font-size:12px}
-#SDTabs ul a, #SDTabs ul a:visited {color:#333;display:block;font-size:16px;font-weight:bold;padding:5px;text-decoration:none}
-#SDTabs ul a * {display: block}
+#SDTabs ul a, #SDTabs ul a:visited {display:block;font-size:16px;font-weight:bold;padding:5px;text-decoration:none}
 #SDTabs ul a:hover, #SDTabs ul a:active {color:#000}
+#SDTabs ul a * {display: block}
 
-#TabsContent
-{
+#TabsContent {
     border:solid 1px #DDD;
     margin:0;
     padding:5px;
@@ -475,25 +476,20 @@ table.detailView .msa.last {padding-right:25px;}
 .search-content li input {width: 170px; } 
 .search-content li select {margin-top:4px;}
 
-#searched-for .searched-for-content, #Demographics-searched-for .search-for-content {font-size:80.5%;}
-#searched-for .searched-for-content li, #Demographics-searched-for .searched-for-content li{
-    background-image: url(../../../../images/personified/remove_selection.gif);
+#searched-for-content {font-size:80.5%;}
+#searched-for-content li {
+    background-image: url('http://www.careerbuilder.com/images/personified/remove_selection.gif');
     background-repeat: no-repeat;
-    background-position: 0 -.3em;
     margin-bottom:5px !important;
     /*height:18px;*/
 }
-/*
-#searched-for .searched-for-content li.longText, #Demographics-searched-for .searched-for-content li.longText{height:28px;}
-#searched-for .searched-for-content li.extraLongText, #Demographics-searched-for .searched-for-content li.extraLongText{height:40px;}
-#searched-for .searched-for-content li.superLongText, #Demographics-searched-for .searched-for-content li.superLongText{height:50px;}
-*/
-#searched-for .searched-for-content span, #Demographics-searched-for .searched-for-content span{
-    vertical-align:bottom;
-    margin-left:17px;   
-    cursor:pointer;
-}
-.filter-content {font-size:80.5%}
+
+#searched-for-content span {color:#09609A;cursor:pointer;font-weight:bold;padding-left:18px}
+.filter-content, #searched-for-content span {font-size:80.5%}
+.filter-content label {color:#09609a;cursor:pointer;font-size:11px;font-weight:normal}
+.filter-content label:hover, #searched-for-content span:hover {color:#333}
+#clearAll {font-size:11px;cursor:pointer;color:#EE7F0C}
+#clearAll.inactive {display:none}
 
 /*
 #filter-search .filter-content .show-more 
@@ -513,8 +509,6 @@ table.detailView .msa.last {padding-right:25px;}
     margin-top:-18px;
     float:right;
 }
-.clearAll {font-size:10px; text-align:left; cursor:pointer; color:#EE7F0C; text-decoration:underline;}
-.clearAll.inactive {display:none;}
 
 .titled_tips {display:inline-block;background:url("../ReportSummary_files/question.png") no-repeat scroll 0 0 transparent;font-size:1em;min-height:16px;min-width:16px}
 .titled_tips:hover {cursor:help}

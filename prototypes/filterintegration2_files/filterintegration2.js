@@ -39,9 +39,9 @@ jQuery("#facets").hide();
 jQuery("#refineSearchHeader").click(function() {
 	jQuery("#facets").slideToggle("slow", function() {
 		if (jQuery("#facets").css("display")=="block") {
-			jQuery(".clearAll, .searched-for-content").slideUp("slow");
+			jQuery("#clearAll, #searched-for-content").slideUp("slow");
 		} else {
-			jQuery(".clearAll, .searched-for-content").slideDown("slow");
+			jQuery("#clearAll, #searched-for-content").slideDown("slow");
 		}
 	});
 });

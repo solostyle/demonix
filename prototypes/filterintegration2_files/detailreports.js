@@ -382,7 +382,7 @@ var ReportFilters = function (wrapperID) {
         parentWrapper = $("#" + wrapperID);
         cacheDictionary = new Dictionary();
         //parentWrapper.find("#searched-for").attr("class", "facet-ui inactive");
-		parentWrapper.find("#searched-for .searched-for-content, #searched-for .clearAll").hide();
+		parentWrapper.find("#searched-for-content, #clearAll").hide();
     };
     return {
         set_numericDataType: function (value) { isNumericDataType = value; },
@@ -979,8 +979,8 @@ var AjaxProgressBar = function () {
             var parentWrapper = $("#" + parentID);
             var selectedFacetToggle = obj.parent().parent().prev(".toggle");
             var selectedToggleHTML = selectedFacetToggle.html();
-            parentWrapper.find("#searched-for .clearAll").attr("class", "clearAll inactive");
-            parentWrapper.find(".searched-for-content").html($("#searchedForLoading").html());
+            parentWrapper.find("#clearAll").attr("class", "inactive");
+            parentWrapper.find("#searched-for-content").html($("#searchedForLoading").html());
             parentWrapper.find(".toggle").html($("#nonFilteredLoading").html());
             parentWrapper.find("#feature-tips").attr("class", "facet-ui");
             selectedFacetToggle.html(selectedToggleHTML);
@@ -1218,8 +1218,8 @@ var ModulesManager = function () {
     };
     function updateFacetAndOtherSummary(results) {
         facetsummaryWrapper.find("#facets").html(results.FacetSummaryHTML);
-        facetsummaryWrapper.find(".searched-for-content").html(results.FacetAppliedFilterHTML);
-        facetsummaryWrapper.find("#searched-for .clearAll").attr("class", "clearAll");
+        facetsummaryWrapper.find("#searched-for-content").html(results.FacetAppliedFilterHTML);
+        facetsummaryWrapper.find("#clearAll");
         ofilterManager.persistSearchedFilters();
         initializeModuleHandlers();
 
@@ -1292,7 +1292,7 @@ var ModulesManager = function () {
     return {
         Initialization: function (results) {
             initializeModuleHandlers();
-            facetsummaryWrapper.find("#searched-for .clearAll").click(function () {
+            facetsummaryWrapper.find("#clearAll").click(function () {
                 //AjaxProgressBar.showFacetUpdate($(this).parent(), facetSummaryWrapperID);
                 ofilterManager.clearFilters();
                 requestData();

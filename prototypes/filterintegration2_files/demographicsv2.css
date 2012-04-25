@@ -1,12 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-#searched-for .searched-for-content li, #Demographics-search-for .searched-for-content li{
-    background-image: url("http://img.icbdr.com/images/Personified/Remove_SelectedV2_07.gif ") !IMPORTANT;
-    background-position: 0 0 !IMPORTANT;
-    margin-bottom:5px !important;
-}
-
 /*
 .facet-ui .content .show-more {
     color:#ee7f0c !IMPORTANT;
@@ -14,9 +8,6 @@
     font-weight: bold !IMPORTANT;
 }
 */
-.filter-content label {color:#09609a;cursor:pointer;font-size:11px;font-weight:normal}
-.filter-content label:hover {color:#333}
-
 .module .header, .detail_module .header
 {
     color:Black;
@@ -25,12 +16,6 @@
 }
 
 .BoldDarkBlue
-{
-    color:#09609a !IMPORTANT;
-    font-weight:bold !IMPORTANT;
-}
-
-#searched-for .searched-for-content span, #Demographics-search-for .searched-for-content span
 {
     color:#09609a !IMPORTANT;
     font-weight:bold !IMPORTANT;
@@ -96,10 +81,6 @@ color:Black;
     font-weight:bold;
     font-size:11px;
     color:#09609a;
-}
-#searched-for .searched-for-content, #Demographics-search-for .searched-for-content{
-    font-size: 80.5%;
-    min-height: 20px;
 }
 
 #categories-bar {
