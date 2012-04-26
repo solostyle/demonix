@@ -8,6 +8,7 @@
 .facetNumberTitle .facetCountDemandWrapper {text-align:right}
 
 .filterCheckboxWrapper {width:87px;padding:0 2px!important}
+#facetsSupply .filterCheckboxWrapper, #facetsDemand .filterCheckboxWrapper {width:131px;padding:0 2px!important}
 .filterCheckbox {display:none!important}
 
 .facetCountDemand, .facetCountSupply {color:#b70;display:inline}
