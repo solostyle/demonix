@@ -1,25 +1,43 @@
 // Toggle events on click
 jQuery('#facetsBothHeader, #LaborPressureView').click(function() {
-	jQuery('#facetsBothHeader').next().slideToggle('slow', function() {
-		// Animation complete
+	if ((jQuery('#facetsBothHeader').next().css("display")=="none" && jQuery(this).attr("id")=="LaborPressureView") || jQuery(this).attr("id")=="facetsBothHeader") {
+		jQuery('#facetsBothHeader').next().slideToggle('slow', function() {
+			// Animation complete
+		});
+		jQuery('#facetsBothHeader span').toggle();
+	}
+	jQuery('#facetsSupply,#facetsDemand').each(function() {
+		jQuery(this).hide();
+		jQuery(this).prev().find('.expandedInd').hide();
+		jQuery(this).prev().find('.collapsedInd').show();
 	});
-	jQuery('#facetsBothHeader span').toggle();
-	jQuery('#facetsSupply,#facetsDemand').toggle(false);
 });
 
 jQuery('#facetsSupplyHeader, #SupplyView').click(function() {
-	jQuery('#facetsSupplyHeader').next().slideToggle('slow', function() {
-		// Animation complete
+	if ((jQuery('#facetsSupplyHeader').next().css("display")=="none" && jQuery(this).attr("id")=="SupplyView") || jQuery(this).attr("id")=="facetsSupplyHeader") {
+		jQuery('#facetsSupplyHeader').next().slideToggle('slow', function() {
+			// Animation complete
+		});
+		jQuery('#facetsSupplyHeader span').toggle();
+	}
+	jQuery('#facetsBoth,#facetsDemand').each(function() {
+		jQuery(this).hide();
+		jQuery(this).prev().find('.expandedInd').hide();
+		jQuery(this).prev().find('.collapsedInd').show();
 	});
-	jQuery('#facetsSupplyHeader span').toggle();
-	jQuery('#facetsBoth,#facetsDemand').toggle(false);
 });
 jQuery('#facetsDemandHeader, #DemandView').click(function() {
-	jQuery('#facetsDemandHeader').next().slideToggle('slow', function() {
+	if ((jQuery('#facetsDemandHeader').next().css("display")=="none" && jQuery(this).attr("id")=="DemandView") || jQuery(this).attr("id")=="facetsDemandHeader") {
+		jQuery('#facetsDemandHeader').next().slideToggle('slow', function() {
 		// Animation complete
+		});
+		jQuery('#facetsDemandHeader span').toggle();
+	}
+	jQuery('#facetsBoth,#facetsSupply').each(function() {
+		jQuery(this).hide();
+		jQuery(this).prev().find('.expandedInd').hide();
+		jQuery(this).prev().find('.collapsedInd').show();
 	});
-	jQuery('#facetsDemandHeader span').toggle();
-	jQuery('#facetsBoth,#facetsSupply').toggle(false);
 });
 jQuery('#newReportHeader').click(function() {
     jQuery(this).next().slideToggle("slow");
@@ -87,10 +105,12 @@ jQuery(".searched-for-content").click( function toggleFilters(e) {
 });
 
 // Close to begin with
-jQuery('#facetsSupply,#facetsDemand').toggle(false);
-jQuery('#facetsSupplyHeader .expandedInd,#facetsDemandHeader .expandedInd').toggle(false);
+jQuery('#facetsBoth,#facetsDemand').hide();
+jQuery('#facetsBothHeader .expandedInd,#facetsDemandHeader .expandedInd').hide();
+jQuery('#facetsBothHeader .collapsedInd,#facetsDemandHeader .collapsedInd').show();
 // Open to begin with
-jQuery('#facetsBothHeader .collapsedInd,#newReportHeader .collapsedInd').toggle(false);
+jQuery('#facetsSupplyHeader .collapsedInd,#newReportHeader .collapsedInd').hide();
+jQuery('#facetsSupplyHeader .expandedInd,#newReportHeader .expandedInd').show();
 
 // Mouseover events
 jQuery('#facetsBothHeader,#facetsSupplyHeader,#facetsDemandHeader,#newReportHeader').mouseover(function() {
