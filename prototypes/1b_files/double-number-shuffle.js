@@ -20,11 +20,12 @@ jQuery('#facetsSupplyHeader, #SupplyView').click(function() {
 		});
 		jQuery('#facetsSupplyHeader span').toggle();
 	}
-	jQuery('#facetsBoth,#facetsDemand').each(function() {
-		jQuery(this).hide();
-		jQuery(this).prev().find('.expandedInd').hide();
-		jQuery(this).prev().find('.collapsedInd').show();
-	});
+	jQuery('#facetsDemand').hide();
+	jQuery('#facetsDemandHeader .expandedInd').hide();
+	jQuery('#facetsDemandHeader .collapsedInd').show();
+	
+	jQuery('#facetsBoth').show();
+	
 });
 jQuery('#facetsDemandHeader, #DemandView').click(function() {
 	if ((jQuery('#facetsDemandHeader').next().css("display")=="none" && jQuery(this).attr("id")=="DemandView") || jQuery(this).attr("id")=="facetsDemandHeader") {
@@ -33,11 +34,12 @@ jQuery('#facetsDemandHeader, #DemandView').click(function() {
 		});
 		jQuery('#facetsDemandHeader span').toggle();
 	}
-	jQuery('#facetsBoth,#facetsSupply').each(function() {
-		jQuery(this).hide();
-		jQuery(this).prev().find('.expandedInd').hide();
-		jQuery(this).prev().find('.collapsedInd').show();
-	});
+	jQuery('#facetsSupply').hide();
+	jQuery('#facetsSupply .expandedInd').hide();
+	jQuery('#facetsSupply .collapsedInd').show();
+
+	jQuery('#facetsBoth').show();
+	
 });
 jQuery('#newReportHeader').click(function() {
     jQuery(this).next().slideToggle("slow");
@@ -105,12 +107,17 @@ jQuery(".searched-for-content").click( function toggleFilters(e) {
 });
 
 // Close to begin with
-jQuery('#facetsBoth,#facetsDemand').hide();
-jQuery('#facetsBothHeader .expandedInd,#facetsDemandHeader .expandedInd').hide();
-jQuery('#facetsBothHeader .collapsedInd,#facetsDemandHeader .collapsedInd').show();
+jQuery('#facetsDemand').hide();
+//jQuery('#facetsBothHeader .expandedInd,#facetsDemandHeader .expandedInd').hide();
+//jQuery('#facetsBothHeader .collapsedInd,#facetsDemandHeader .collapsedInd').show();
+jQuery('#facetsDemandHeader .expandedInd').hide();
+jQuery('#facetsDemandHeader .collapsedInd').show();
 // Open to begin with
+jQuery('#facetsBoth').show();
 jQuery('#facetsSupplyHeader .collapsedInd,#newReportHeader .collapsedInd').hide();
 jQuery('#facetsSupplyHeader .expandedInd,#newReportHeader .expandedInd').show();
+jQuery('#facetsBothHeader .expandedInd').hide();
+jQuery('#facetsBothHeader .collapsedInd').show();
 
 // Mouseover events
 jQuery('#facetsBothHeader,#facetsSupplyHeader,#facetsDemandHeader,#newReportHeader').mouseover(function() {
