@@ -1,21 +1,21 @@
 // Toggle events on click
-jQuery('#facetsBothHeader').click(function() {
-	jQuery(this).next().slideToggle('slow', function() {
+jQuery('#facetsBothHeader, #LaborPressureView').click(function() {
+	jQuery('#facetsBothHeader').next().slideToggle('slow', function() {
 		// Animation complete
 	});
 	jQuery('#facetsBothHeader span').toggle();
 	jQuery('#facetsSupply,#facetsDemand').toggle(false);
 });
 
-jQuery('#facetsSupplyHeader').click(function() {
-	jQuery(this).next().slideToggle('slow', function() {
+jQuery('#facetsSupplyHeader, #SupplyView').click(function() {
+	jQuery('#facetsSupplyHeader').next().slideToggle('slow', function() {
 		// Animation complete
 	});
 	jQuery('#facetsSupplyHeader span').toggle();
 	jQuery('#facetsBoth,#facetsDemand').toggle(false);
 });
-jQuery('#facetsDemandHeader').click(function() {
-	jQuery(this).next().slideToggle('slow', function() {
+jQuery('#facetsDemandHeader, #DemandView').click(function() {
+	jQuery('#facetsDemandHeader').next().slideToggle('slow', function() {
 		// Animation complete
 	});
 	jQuery('#facetsDemandHeader span').toggle();
