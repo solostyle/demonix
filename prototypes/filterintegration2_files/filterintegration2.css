@@ -33,4 +33,5 @@
 
 #refineSearchHeader {float:left}
 #pnlDashBoard {clear:left}
-#searched-for .content {background:white;box-shadow:0 5px 5px #000;position:absolute;top:272px;width:1102px}
+#searched-for .content {background:white;top:272px;width:1102px}
+#searched-for .content.expanded {box-shadow:0 5px 5px #000;position:absolute;}

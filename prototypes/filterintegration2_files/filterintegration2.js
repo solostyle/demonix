@@ -38,11 +38,14 @@ jQuery("#facets").hide();
 /* Facet Header Actions */
 jQuery("#refineSearchHeader").click(function() {
 	jQuery("#facets").slideToggle("slow", function() {
-		if (jQuery("#facets").css("display")=="block") {
+		// Toggle the applied filters
+		if (jQuery(this).css("display")=="block") {
 			jQuery("#clearAll, #searched-for-content").slideUp("slow");
 		} else {
 			jQuery("#clearAll, #searched-for-content").slideDown("slow");
 		}
+		// Toggle the positioning of #searched-for .content
+		jQuery(this).parent().parent().toggleClass('expanded');
 	});
 });
 
