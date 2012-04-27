@@ -2,7 +2,7 @@
 	var supplyText = {}, demandText = {};
 
 	// Store all the labels in each facet, in the total object "supplyText"
-	jQuery('#facetsSupply .facets>li').each(function capture() {
+	jQuery('#facetsSupply .facets>li[class!="ignore"]').each(function capture() {
 		var facetTitle = jQuery(this).children().filter(':last').attr('id');
 		supplyText[facetTitle] = [];
 		jQuery('#'+facetTitle).find('label').each(function() {
@@ -11,10 +11,10 @@
 	});
 
 	// Remove all the uls
-	jQuery('#facetsSupply .facets>li div:last-child ul').remove();
+	jQuery('#facetsSupply .facets>li[class!="ignore"] div:last-child ul').remove();
 	
 	// Populate the uls
-	jQuery('#facetsSupply .facets>li div:last-child').each(function populate() {
+	jQuery('#facetsSupply .facets>li[class!="ignore"]>div:last-child').each(function populate() {
 		jQuery(this).append("<ul></ul>");
 		var currentFacet = supplyText[jQuery(this).attr('id')]
 		for (var i=0;i<currentFacet.length;i++) {
@@ -32,7 +32,7 @@
 	
 	/* DEMAND */
 	// Store all the labels in each facet, in the total object "demandText"
-	jQuery('#facetsDemand .facets>li').each(function capture() {
+	jQuery('#facetsDemand .facets>li[class!="ignore"]').each(function capture() {
 		var facetTitle = jQuery(this).children().filter(':last').attr('id');
 		demandText[facetTitle] = [];
 		jQuery('#'+facetTitle).find('label').each(function() {
@@ -41,10 +41,10 @@
 	});
 
 	// Remove all the uls
-	jQuery('#facetsDemand .facets>li div:last-child ul').remove();
+	jQuery('#facetsDemand .facets>li[class!="ignore"] div:last-child ul').remove();
 	
 	// Populate the uls
-	jQuery('#facetsDemand .facets>li div:last-child').each(function populate() {
+	jQuery('#facetsDemand .facets>li[class!="ignore"]>div:last-child').each(function populate() {
 		jQuery(this).append("<ul></ul>");
 		var currentFacet = demandText[jQuery(this).attr('id')]
 		for (var i=0;i<currentFacet.length;i++) {
