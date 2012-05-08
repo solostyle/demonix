@@ -3,12 +3,12 @@
 .facets li li:hover {background-color:#def}
 .facets li li.selected {background-color:#def;border-color:#acf}
 
-.facetCountSupplyWrapper, .facetCountDemandWrapper {font-weight:bold;width:45px;text-align:right}
+.facetCountSupplyWrapper, .facetCountDemandWrapper {font-weight:bold;width:50px;text-align:right}
 .facetNumberTitle .facetCountSupplyWrapper {text-align:left}
 .facetNumberTitle .facetCountDemandWrapper {text-align:right}
 
-.filterCheckboxWrapper {width:87px;padding:0 2px!important}
-#facetsSupply .filterCheckboxWrapper, #facetsDemand .filterCheckboxWrapper {width:131px;padding:0 2px!important}
+.filterCheckboxWrapper {width:163px;padding:0 2px!important}
+#facetsSupply .filterCheckboxWrapper, #facetsDemand .filterCheckboxWrapper {width:210px;padding:0 2px!important}
 .filterCheckbox {display:none!important}
 
 .facetCountDemand, .facetCountSupply {color:#369;display:inline}
