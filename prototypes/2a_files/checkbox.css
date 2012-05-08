@@ -4,8 +4,8 @@
 .facets li li.selected {background-color:#def;border-color:#acf}
 
 .facetCountSupplyWrapper, .facetCountDemandWrapper {font-weight:bold;width:50px;text-align:right}
-.facetNumberTitle .facetCountSupplyWrapper {text-align:left}
-.facetNumberTitle .facetCountDemandWrapper {text-align:right}
+.facetNumberTitle .facetCountSupplyWrapper {margin-left:14px}
+.facetNumberTitle .facetCountSupplyWrapper, .facetNumberTitle .facetCountDemandWrapper {text-align:right}
 
 .filterCheckboxWrapper {width:163px;padding:0 2px!important}
 #facetsSupply .filterCheckboxWrapper, #facetsDemand .filterCheckboxWrapper {width:210px;padding:0 2px!important}
