@@ -43,6 +43,11 @@ jQuery(".facets li li").click(function toggleFilters() {
 	
 	// toggle selected class
 	jQuery(this).toggleClass("selected");
+	if (jQuery(this).hasClass("selected")) {
+		jQuery(this).find(':checkbox').attr('checked','checked');
+	} else {
+		jQuery(this).find(':checkbox').removeAttr('checked');
+	}
 	
 	// change what shows in applied filters
 	var slctdWords = jQuery(this).find(".filterCheckboxWrapper").html();
