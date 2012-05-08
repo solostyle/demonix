@@ -149,7 +149,7 @@ jQuery('#facetsBothHeader .expandedInd').show();
 // Mouseover events
 jQuery('#facetsBothHeader,#facetsSupplyHeader,#facetsDemandHeader,#newReportHeader').mouseover(function() {
 	//if(console.log) {console.log(this);}
-	jQuery(this).css('background',"url('ReportSummary_files/bg_jpTopNav-button.png') no-repeat scroll -2px -34px transparent");
+	jQuery(this).css('background',"url('ReportSummary_files/orangeHeaderBg.png') repeat-x scroll 0 0 transparent");
 	// if (jQuery(this).next().css('display')=="none") {
 		// jQuery(this).append('<span style="float:right">+</span>');
 	// } else {

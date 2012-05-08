@@ -543,7 +543,7 @@ table.detailView .msa.last {padding-right:25px;}
 }
 .facet-ui ol, ul  { list-style-type:none; list-style:none outside none; }
 .facet-ui .header {
-    background:url("http://img.cbdr.com/images/Personified/blueHeader_bg.png") no-repeat scroll 0 0 transparent;
+    background:url("../ReportSummary_files/blueHeaderBg.png") repeat-x scroll 0 0 transparent;
 	color:#fff;
 	font-weight:bold;
     padding:6px 10px 4px;
