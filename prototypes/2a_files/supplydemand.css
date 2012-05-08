@@ -527,7 +527,7 @@ table.detailView .msa.last {padding-right:25px;}
 .facet-ui.inactive {display:none;} 
 .facet-ui 
 {
-    width:305px;
+    width:255px;
     color:#000000;
     font:89.5% Arial,Helvetica;  
 }

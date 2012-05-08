@@ -3,11 +3,11 @@
 .facets li li:hover {background-color:#def}
 .facets li li.selected {background-color:#def;border-color:#acf}
 
-.facetCountSupplyWrapper, .facetCountDemandWrapper {font-weight:bold;width:50px;text-align:right}
+.facetCountSupplyWrapper, .facetCountDemandWrapper {font-weight:bold;text-align:right;width:50px}
 .facetNumberTitle .facetCountSupplyWrapper {margin-left:14px}
 .facetNumberTitle .facetCountSupplyWrapper, .facetNumberTitle .facetCountDemandWrapper {text-align:right}
 
-.filterCheckboxWrapper {width:163px;padding:0 2px!important}
+.filterCheckboxWrapper {width:113px;padding:0 2px!important}
 #facetsSupply .filterCheckboxWrapper, #facetsDemand .filterCheckboxWrapper {width:210px;padding:0 2px!important}
 .filterCheckbox {display:none!important}
 
