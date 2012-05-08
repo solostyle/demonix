@@ -525,8 +525,7 @@ table.detailView .msa.last {padding-right:25px;}
     padding:0px;
 }
 .facet-ui.inactive {display:none;} 
-.facet-ui 
-{
+.facet-ui {
     width:255px;
     color:#000000;
     font:89.5% Arial,Helvetica;  
@@ -571,8 +570,9 @@ table.detailView .msa.last {padding-right:25px;}
     text-decoration:none;
     display:inline;
 }
-.search-content li input {width: 170px; } 
-.search-content li select {margin-top:4px;}
+.search-content li * {float:left}
+.search-content li input {clear:left;width:225px}
+.search-content li select {margin-top:4px}
 
 #searched-for .searched-for-content, #Demographics-searched-for .search-for-content {font-size:80.5%;}
 #searched-for .searched-for-content li, #Demographics-searched-for .searched-for-content li{
