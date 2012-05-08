@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html id="HTMLTag" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>2a Checkbox</title>
+<title>2 Shuffle</title>
 <meta http-equiv="Content-Language" content="en-US"><meta name="google-site-verification" content="FPWKt6e3SsrSwYTgl1vezPZmueP1qMcox7KlaIk1s3A"><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
         <style type="text/css">
             .table { behavior: url(http://www.careerbuilder.com/display-table.min.htc); }
@@ -10,14 +10,14 @@
 	<link rel="stylesheet" type="text/css" href="ReportSummary_files/jobposter.css">
 	<link rel="stylesheet" type="text/css" href="ReportSummary_files/jquery.css">
 	<link rel="stylesheet" type="text/css" href="ReportSummary_files/jquery-ui-1.css">
-	<link rel="stylesheet" type="text/css" href="2a_files/supplydemand.css">
-	<link rel="stylesheet" type="text/css" href="2a_files/demographicsv2.css">
-	<link rel="stylesheet" type="text/css" href="2a_files/demographics.css">
+	<link rel="stylesheet" type="text/css" href="2_shuffle_files/supplydemand.css">
+	<link rel="stylesheet" type="text/css" href="2_shuffle_files/demographicsv2.css">
+	<link rel="stylesheet" type="text/css" href="2_shuffle_files/demographics.css">
 	<link rel="stylesheet" type="text/css" href="ReportSummary_files/demo_style.css">
 	<link rel="stylesheet" type="text/css" href="ReportSummary_files/smart_wizard.css">
-	<link rel="stylesheet" type="text/css" href="2a_files/jpnav.css">
+	<link rel="stylesheet" type="text/css" href="2_shuffle_files/jpnav.css">
 	<link rel="stylesheet" type="text/css" href="ReportSummary_files/jpnestednavigation.css">
-	<link rel="stylesheet" type="text/css" href="2a_files/checkbox.css">
+	<link rel="stylesheet" type="text/css" href="2_shuffle_files/double-number-shuffle.css">
 	<script type="text/javascript">    var ScriptVariables = function(){
         var _vars = new Array();
             _vars['currentVer'] = 'v16.10';
@@ -73,7 +73,7 @@
 <script type="text/javascript" src="ReportSummary_files/datacollections.js"></script>
 <script type="text/javascript" src="ReportSummary_files/locationautocomplete.js"></script>
 <script type="text/javascript" src="ReportSummary_files/moment.js"></script>
-<script type="text/javascript" src="2a_files/detailreports.js"></script>
+<script type="text/javascript" src="2_shuffle_files/detailreports.js"></script>
 <script type="text/javascript" src="ReportSummary_files/search.js"></script>
 <script type="text/javascript" src="ReportSummary_files/demographics_popup.js"></script>
 <script type="text/javascript" src="ReportSummary_files/jquery_003.js"></script>
@@ -404,7 +404,7 @@
 	</div>
 	<div id="AllFilters" class="">
 		<!-- Filters start here -->
-		<div id="facetsBothHeader" class="header">Supply &amp; Demand Filters<span class="collapsedInd" style="float:right;display:none">+</span><span class="expandedInd" style="float:right;margin-top:-7px">_</span></div>
+		<div id="facetsBothHeader" class="header">Supply &amp; Demand Filters<span class="collapsedInd" style="float:right">+</span><span class="expandedInd" style="float:right;margin-top:-7px">_</span></div>
 		<div id="facetsBoth" class="content">
 			<div class="filter-content">
                 <ul class="facets">
@@ -469,7 +469,6 @@
 							</ul>
 						</div>
 					</li>
-
 					<li>
 						<div class="headerText">Company Name</div>
 						<div class="toggle"><img src="ReportSummary_files/expand.png" style="display:none"><img src="ReportSummary_files/collapse.png"></div>
@@ -592,6 +591,7 @@
 							</ul>
 						</div>
 					</li>
+					
 					<li>
 						<div class="headerText">State</div>
 						<div class="toggle"><img src="http://clib.icbdr.com/images/personified/expand.png" alt="" style="display:none;"><img src="http://clib.icbdr.com/images/personified/collapse.png" alt=""></div>
@@ -677,7 +677,6 @@
 			</div>
 		</div>
 		<div id="facetsSupplyHeader" class="header">Supply Filters<span class="collapsedInd" style="float:right">+</span><span class="expandedInd" style="float:right;margin-top:-7px">_</span></div>
-		
 		<div id="facetsSupply" class="content">
 			<div class="filter-content">
                 <ul class="facets">
@@ -685,117 +684,121 @@
 						<div class="headerText">Willing To Relocate</div>
 						<div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div>
 						<div style="display:none" id="willingtorelocate">
-							
-						<ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(12711)</span></div><div class="filterCheckboxWrapper">All Willing To Relocate</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(869)</span></div><div class="filterCheckboxWrapper">No </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(301)</span></div><div class="filterCheckboxWrapper">Yes </div></li></ul></div>
+							<ul>
+								<li><input type="checkbox" checked="checked" id="willingtorelocate" value="willingtorelocate"><label for="willingtorelocate"><b>All Willing To Relocate</b></label></li>
+								<li><input type="checkbox" id="willingtorelocateno" value="willingtorelocate:no"><label for="willingtorelocateno">No (869)</label></li>
+								<li><input type="checkbox" id="willingtorelocateyes" value="willingtorelocate:yes"><label for="willingtorelocateyes">Yes (301)</label></li>
+							</ul>
+						</div>
 					</li>
 					<li>
-						<div class="headerText">Education</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none;" id="maxeducation"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(67423)</span></div><div class="filterCheckboxWrapper">All Education</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(29)</span></div><div class="filterCheckboxWrapper">High School </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(54)</span></div><div class="filterCheckboxWrapper">Associate Degree </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(478)</span></div><div class="filterCheckboxWrapper">Bachelor's Degree </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(339)</span></div><div class="filterCheckboxWrapper">Master's Degree </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(10)</span></div><div class="filterCheckboxWrapper">Doctorate </div></li></ul></div></li>
+						<div class="headerText">Education</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none" id="maxeducation"><ul><li><input type="checkbox" checked="checked" id="maxeducation" value="maxeducation"><label for="maxeducation"><b>All Education</b></label></li>
+ <li><input type="checkbox" id="maxeducationCE31" value="maxeducation:CE31"><label for="maxeducationCE31">High School (29)</label></li>
+ <li><input type="checkbox" id="maxeducationCE32" value="maxeducation:CE32"><label for="maxeducationCE32">Associate Degree (54)</label></li>
+ <li><input type="checkbox" id="maxeducationCE321" value="maxeducation:CE321"><label for="maxeducationCE321">Bachelor's Degree (478)</label></li>
+ <li><input type="checkbox" id="maxeducationCE3210" value="maxeducation:CE3210"><label for="maxeducationCE3210">Master's Degree (339)</label></li>
+ <li><input type="checkbox" id="maxeducationCE3211" value="maxeducation:CE3211"><label for="maxeducationCE3211">Doctorate (10)</label></li>
+ </ul></div></li>
 					<li>
-					<div class="headerText">Years Experience</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img style="display: inline;" alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none;" id="supplyexperienceyears"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(14208)</span></div><div class="filterCheckboxWrapper">All Years Experience</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(56)</span></div><div class="filterCheckboxWrapper">1 - 2 years </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(181)</span></div><div class="filterCheckboxWrapper">3 - 5 years </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(470)</span></div><div class="filterCheckboxWrapper">6 - 10 years </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(174)</span></div><div class="filterCheckboxWrapper">11 - 15 years </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(105)</span></div><div class="filterCheckboxWrapper">16 - 20 years </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(61)</span></div><div class="filterCheckboxWrapper">21+ years </div></li></ul></div></li>
+					<div class="headerText">Years Experience</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none" id="supplyexperienceyears"><ul><li><input type="checkbox" checked="checked" id="supplyexperienceyears" value="supplyexperienceyears"><label for="supplyexperienceyears"><b>All Years Experience</b></label></li>
+ <li><input type="checkbox" id="supplyexperienceyears12" value="supplyexperienceyears:1 - 2"><label for="supplyexperienceyears12">1 - 2 years (56)</label></li>
+ <li><input type="checkbox" id="supplyexperienceyears35" value="supplyexperienceyears:3 - 5"><label for="supplyexperienceyears35">3 - 5 years (181)</label></li>
+ <li><input type="checkbox" id="supplyexperienceyears610" value="supplyexperienceyears:6 - 10"><label for="supplyexperienceyears610">6 - 10 years (470)</label></li>
+ <li><input type="checkbox" id="supplyexperienceyears1115" value="supplyexperienceyears:11 - 15"><label for="supplyexperienceyears1115">11 - 15 years (174)</label></li>
+ <li><input type="checkbox" id="supplyexperienceyears1620" value="supplyexperienceyears:16 - 20"><label for="supplyexperienceyears1620">16 - 20 years (105)</label></li>
+ <li><input type="checkbox" id="supplyexperienceyears21" value="supplyexperienceyears:21+"><label for="supplyexperienceyears21">21+ years (61)</label></li>
+ </ul></div></li>
 					<li>
-					<div class="headerText">Top Majors</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none" id="topmajors"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(31857)</span></div><div class="filterCheckboxWrapper">All Top Majors</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(265)</span></div><div class="filterCheckboxWrapper">Computer Science </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(66)</span></div><div class="filterCheckboxWrapper">Computer Engineering, General </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(50)</span></div><div class="filterCheckboxWrapper">Business Administration And Management, General </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(42)</span></div><div class="filterCheckboxWrapper">Management Information Systems, General </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(41)</span></div><div class="filterCheckboxWrapper">Information Technology </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(35)</span></div><div class="filterCheckboxWrapper">Electrical, Electronics And Communications Engineering </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(28)</span></div><div class="filterCheckboxWrapper">Computer/Information Technology Services Administration Andmanagement, Other </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(20)</span></div><div class="filterCheckboxWrapper">Engineering, General </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(19)</span></div><div class="filterCheckboxWrapper">Computer Programming, Specific Applications </div></li></ul></div></li>
+					<div class="headerText">Top Majors</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none" id="topmajors"><ul><li><input type="checkbox" checked="checked" id="topmajors" value="topmajors"><label for="topmajors"><b>All Top Majors</b></label></li>
+ <li><input type="checkbox" id="topmajorscomputerscience" value="topmajors:computer science"><label for="topmajorscomputerscience">Computer Science (265)</label></li>
+ <li><input type="checkbox" id="topmajorscomputerengineeringgeneral" value="topmajors:computer engineering, general"><label for="topmajorscomputerengineeringgeneral">Computer Engineering, General (66)</label></li>
+ <li><input type="checkbox" id="topmajorsbusinessadministrationandmanagementgeneral" value="topmajors:business administration and management, general"><label for="topmajorsbusinessadministrationandmanagementgeneral">Business Administration And Management, General (50)</label></li>
+ <li><input type="checkbox" id="topmajorsmanagementinformationsystemsgeneral" value="topmajors:management information systems, general"><label for="topmajorsmanagementinformationsystemsgeneral">Management Information Systems, General (42)</label></li>
+ <li><input type="checkbox" id="topmajorsinformationtechnology" value="topmajors:information technology"><label for="topmajorsinformationtechnology">Information Technology (41)</label></li>
+ <li><input type="checkbox" id="topmajorselectricalelectronicsandcommunicationsengineering" value="topmajors:electrical, electronics and communications engineering"><label for="topmajorselectricalelectronicsandcommunicationsengineering">Electrical, Electronics And Communications Engineering (35)</label></li>
+ <li><input type="checkbox" id="topmajorscomputerinformationtechnologyservicesadministrationandmanagementother" value="topmajors:computer/information technology services administration andmanagement, other"><label for="topmajorscomputerinformationtechnologyservicesadministrationandmanagementother">Computer/Information Technology Services Administration Andmanagement, Other (28)</label></li>
+ <li><input type="checkbox" id="topmajorsengineeringgeneral" value="topmajors:engineering, general"><label for="topmajorsengineeringgeneral">Engineering, General (20)</label></li>
+ <li><input type="checkbox" id="topmajorscomputerprogrammingspecificapplications" value="topmajors:computer programming, specific applications"><label for="topmajorscomputerprogrammingspecificapplications">Computer Programming, Specific Applications (19)</label></li>
+ </ul></div></li>
 					<li>
-					<div class="headerText">Top Schools</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none" id="topschools"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(35081)</span></div><div class="filterCheckboxWrapper">All Top Schools</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(88)</span></div><div class="filterCheckboxWrapper">The University Of Texas At Dallas </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(62)</span></div><div class="filterCheckboxWrapper">The University Of Texas At Arlington </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(43)</span></div><div class="filterCheckboxWrapper">University Of North Texas </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(23)</span></div><div class="filterCheckboxWrapper">The University Of Texas At Austin </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(22)</span></div><div class="filterCheckboxWrapper">Texas A &amp;Amp; M University </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(18)</span></div><div class="filterCheckboxWrapper">Devry College Of New York </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(18)</span></div><div class="filterCheckboxWrapper">Tarrant County College District </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(17)</span></div><div class="filterCheckboxWrapper">Crescent City Bartending School </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(16)</span></div><div class="filterCheckboxWrapper">Osmania University </div></li></ul></div></li>
+					<div class="headerText">Top Schools</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none" id="topschools"><ul><li><input type="checkbox" checked="checked" id="topschools" value="topschools"><label for="topschools"><b>All Top Schools</b></label></li>
+<li><input type="checkbox" id="topschoolstheuniversityoftexasatdallas" value="topschools:the university of texas at dallas"><label for="topschoolstheuniversityoftexasatdallas">The University Of Texas At Dallas (88)</label></li>
+<li><input type="checkbox" id="topschoolstheuniversityoftexasatarlington" value="topschools:the university of texas at arlington"><label for="topschoolstheuniversityoftexasatarlington">The University Of Texas At Arlington (62)</label></li>
+<li><input type="checkbox" id="topschoolsuniversityofnorthtexas" value="topschools:university of north texas"><label for="topschoolsuniversityofnorthtexas">University Of North Texas (43)</label></li>
+<li><input type="checkbox" id="topschoolstheuniversityoftexasataustin" value="topschools:the university of texas at austin"><label for="topschoolstheuniversityoftexasataustin">The University Of Texas At Austin (23)</label></li>
+<li><input type="checkbox" id="topschoolstexasaampmuniversity" value="topschools:texas a &amp; m university"><label for="topschoolstexasaampmuniversity">Texas A &amp;Amp; M University (22)</label></li>
+<li><input type="checkbox" id="topschoolsdevrycollegeofnewyork" value="topschools:devry college of new york"><label for="topschoolsdevrycollegeofnewyork">Devry College Of New York (18)</label></li>
+<li><input type="checkbox" id="topschoolstarrantcountycollegedistrict" value="topschools:tarrant county college district"><label for="topschoolstarrantcountycollegedistrict">Tarrant County College District (18)</label></li>
+<li><input type="checkbox" id="topschoolscrescentcitybartendingschool" value="topschools:crescent city bartending school"><label for="topschoolscrescentcitybartendingschool">Crescent City Bartending School (17)</label></li>
+<li><input type="checkbox" id="topschoolsosmaniauniversity" value="topschools:osmania university"><label for="topschoolsosmaniauniversity">Osmania University (16)</label></li> </ul></div></li>
 					<li>
-					<div class="headerText">Race</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none;" id="race"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(10742)</span></div><div class="filterCheckboxWrapper">All Race</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(Not Hispanic or Latino) </span></div><div class="filterCheckboxWrapper">Black or African American </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(Not Hispanic or Latino) </span></div><div class="filterCheckboxWrapper">Asian </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(27)</span></div><div class="filterCheckboxWrapper">Hispanic or Latino </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(Not Hispanic or Latino) </span></div><div class="filterCheckboxWrapper">American Indian or Alaska Native </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(Not Hispanic or Latino) </span></div><div class="filterCheckboxWrapper">Two or More Races </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(Not Hispanic or Latino) </span></div><div class="filterCheckboxWrapper">White </div></li></ul></div></li>
+					<div class="headerText">Race</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none" id="race"><ul><li><input type="checkbox" checked="checked" id="race" value="race"><label for="race"><b>All Race</b></label></li>
+<li><input type="checkbox" id="raceethaa" value="race:ethaa"><label for="raceethaa">Black or African American (Not Hispanic or Latino) (55)</label></li>
+<li><input type="checkbox" id="raceethas" value="race:ethas"><label for="raceethas">Asian (Not Hispanic or Latino) (196)</label></li>
+<li><input type="checkbox" id="raceethhs" value="race:ethhs"><label for="raceethhs">Hispanic or Latino (27)</label></li>
+<li><input type="checkbox" id="raceethna" value="race:ethna"><label for="raceethna">American Indian or Alaska Native (Not Hispanic or Latino) (4)</label></li>
+<li><input type="checkbox" id="raceethot" value="race:ethot"><label for="raceethot">Two or More Races (Not Hispanic or Latino) (9)</label></li>
+<li><input type="checkbox" id="raceethwh" value="race:ethwh"><label for="raceethwh">White (Not Hispanic or Latino) (201)</label></li> </ul></div></li>
 					<li>
-					<div class="headerText">Gender</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none" id="gender"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(67750)</span></div><div class="filterCheckboxWrapper">All Gender</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(120)</span></div><div class="filterCheckboxWrapper">Female </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(418)</span></div><div class="filterCheckboxWrapper">Male </div></li></ul></div></li>
+					<div class="headerText">Gender</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none" id="gender"><ul><li><input type="checkbox" checked="checked" id="gender" value="gender"><label for="gender"><b>All Gender</b></label></li>
+<li><input type="checkbox" id="genderf" value="gender:f"><label for="genderf">Female (120)</label></li>
+<li><input type="checkbox" id="genderm" value="gender:m"><label for="genderm">Male (418)</label></li> </ul></div></li>
 					<li>
-					<div class="headerText">Languages Spoken</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none;" id="languagesspoken"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(72392)</span></div><div class="filterCheckboxWrapper">All Languages Spoken</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(642)</span></div><div class="filterCheckboxWrapper">English </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(63)</span></div><div class="filterCheckboxWrapper">Hindi </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(43)</span></div><div class="filterCheckboxWrapper">Spanish </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(23)</span></div><div class="filterCheckboxWrapper">Chinese-Mandarin </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(19)</span></div><div class="filterCheckboxWrapper">Telugu </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(15)</span></div><div class="filterCheckboxWrapper">Tamil </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(10)</span></div><div class="filterCheckboxWrapper">Gujarati </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(9)</span></div><div class="filterCheckboxWrapper">Arabic </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(9)</span></div><div class="filterCheckboxWrapper">French </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(9)</span></div><div class="filterCheckboxWrapper">Urdu </div></li></ul></div></li>
+					<div class="headerText">Languages Spoken</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none" id="languagesspoken"><ul><li><input type="checkbox" checked="checked" id="languagesspoken" value="languagesspoken"><label for="languagesspoken"><b>All Languages Spoken</b></label></li>
+<li><input type="checkbox" id="languagesspokenenglish" value="languagesspoken:english"><label for="languagesspokenenglish">English (642)</label></li>
+<li><input type="checkbox" id="languagesspokenhindi" value="languagesspoken:hindi"><label for="languagesspokenhindi">Hindi (63)</label></li>
+<li><input type="checkbox" id="languagesspokenspanish" value="languagesspoken:spanish"><label for="languagesspokenspanish">Spanish (43)</label></li>
+<li><input type="checkbox" id="languagesspokenchinesemandarin" value="languagesspoken:chinese-mandarin"><label for="languagesspokenchinesemandarin">Chinese-Mandarin (23)</label></li>
+<li><input type="checkbox" id="languagesspokentelugu" value="languagesspoken:telugu"><label for="languagesspokentelugu">Telugu (19)</label></li>
+<li><input type="checkbox" id="languagesspokentamil" value="languagesspoken:tamil"><label for="languagesspokentamil">Tamil (15)</label></li>
+<li><input type="checkbox" id="languagesspokengujarati" value="languagesspoken:gujarati"><label for="languagesspokengujarati">Gujarati (10)</label></li>
+<li><input type="checkbox" id="languagesspokenarabic" value="languagesspoken:arabic"><label for="languagesspokenarabic">Arabic (9)</label></li>
+<li><input type="checkbox" id="languagesspokenfrench" value="languagesspoken:french"><label for="languagesspokenfrench">French (9)</label></li>
+<li><input type="checkbox" id="languagesspokenurdu" value="languagesspoken:urdu"><label for="languagesspokenurdu">Urdu (9)</label></li> </ul></div></li>
 					<li>
-					<div class="headerText">Management Experience</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none" id="managementexperience"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(27525)</span></div><div class="filterCheckboxWrapper">All Management Experience</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(604)</span></div><div class="filterCheckboxWrapper">No </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(426)</span></div><div class="filterCheckboxWrapper">Yes </div></li></ul></div></li>
+					<div class="headerText">Management Experience</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none" id="managementexperience"><ul><li><input type="checkbox" checked="checked" id="managementexperience" value="managementexperience"><label for="managementexperience"><b>All Management Experience</b></label></li>
+<li><input type="checkbox" id="managementexperienceno" value="managementexperience:no"><label for="managementexperienceno">No (604)</label></li>
+<li><input type="checkbox" id="managementexperienceyes" value="managementexperience:yes"><label for="managementexperienceyes">Yes (426)</label></li> </ul></div></li>
 					<li>
-					<div class="headerText">Military Experience</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none" id="militaryexperience"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(31005)</span></div><div class="filterCheckboxWrapper">All Military Experience</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(42)</span></div><div class="filterCheckboxWrapper">Veteran </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(10)</span></div><div class="filterCheckboxWrapper">I Have Not An Obligation </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(4)</span></div><div class="filterCheckboxWrapper">Retired Military </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(3)</span></div><div class="filterCheckboxWrapper">Active Duty </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(2)</span></div><div class="filterCheckboxWrapper">Reservist-Drilling </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(1)</span></div><div class="filterCheckboxWrapper">Fulfilled </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(1)</span></div><div class="filterCheckboxWrapper">Inactive Reserve </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(1)</span></div><div class="filterCheckboxWrapper">Unfulfilled </div></li></ul></div></li>
+					<div class="headerText">Military Experience</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none" id="militaryexperience"><ul><li><input type="checkbox" checked="checked" id="militaryexperience" value="militaryexperience"><label for="militaryexperience"><b>All Military Experience</b></label></li>
+<li><input type="checkbox" id="militaryexperienceveteran" value="militaryexperience:veteran"><label for="militaryexperienceveteran">Veteran (42)</label></li>
+<li><input type="checkbox" id="militaryexperienceihavenotanobligation" value="militaryexperience:i have not an obligation"><label for="militaryexperienceihavenotanobligation">I Have Not An Obligation (10)</label></li>
+<li><input type="checkbox" id="militaryexperienceretiredmilitary" value="militaryexperience:retired military"><label for="militaryexperienceretiredmilitary">Retired Military (4)</label></li>
+<li><input type="checkbox" id="militaryexperienceactiveduty" value="militaryexperience:active duty"><label for="militaryexperienceactiveduty">Active Duty (3)</label></li>
+<li><input type="checkbox" id="militaryexperiencereservistdrilling" value="militaryexperience:reservist-drilling"><label for="militaryexperiencereservistdrilling">Reservist-Drilling (2)</label></li>
+<li><input type="checkbox" id="militaryexperiencefulfilled" value="militaryexperience:fulfilled"><label for="militaryexperiencefulfilled">Fulfilled (1)</label></li>
+<li><input type="checkbox" id="militaryexperienceinactivereserve" value="militaryexperience:inactive reserve"><label for="militaryexperienceinactivereserve">Inactive Reserve (1)</label></li>
+<li><input type="checkbox" id="militaryexperienceunfulfilled" value="militaryexperience:unfulfilled"><label for="militaryexperienceunfulfilled">Unfulfilled (1)</label></li> </ul></div></li>
 					<li>
-					<div class="headerText">US Security Clearance</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none;" id="ussecurityclearance"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(18129)</span></div><div class="filterCheckboxWrapper">All US Security Clearance</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(1,012)</span></div><div class="filterCheckboxWrapper">No </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(32)</span></div><div class="filterCheckboxWrapper">Yes </div></li></ul></div></li>
+					<div class="headerText">US Security Clearance</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none" id="ussecurityclearance"><ul><li><input type="checkbox" checked="checked" id="ussecurityclearance" value="ussecurityclearance"><label for="ussecurityclearance"><b>All US Security Clearance</b></label></li>
+<li><input type="checkbox" id="ussecurityclearanceno" value="ussecurityclearance:no"><label for="ussecurityclearanceno">No (1,012)</label></li>
+<li><input type="checkbox" id="ussecurityclearanceyes" value="ussecurityclearance:yes"><label for="ussecurityclearanceyes">Yes (32)</label></li> </ul></div></li>
 					<li>
-					<div class="headerText">Company Size</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none" id="companysize"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(46663)</span></div><div class="filterCheckboxWrapper">All Company Size</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(136)</span></div><div class="filterCheckboxWrapper">1 - 9 </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(49)</span></div><div class="filterCheckboxWrapper">10 - 49 </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(42)</span></div><div class="filterCheckboxWrapper">50 - 199 </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(64)</span></div><div class="filterCheckboxWrapper">200 - 599 </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(57)</span></div><div class="filterCheckboxWrapper">600 - 1999 </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(45)</span></div><div class="filterCheckboxWrapper">2000 - 4999 </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(58)</span></div><div class="filterCheckboxWrapper">5000 - 19999 </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(49)</span></div><div class="filterCheckboxWrapper">20000 - 49999 </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(112)</span></div><div class="filterCheckboxWrapper">50000+ </div></li></ul></div></li>
+					<div class="headerText">Company Size</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none" id="companysize"><ul><li><input type="checkbox" checked="checked" id="companysize" value="companysize"><label for="companysize"><b>All Company Size</b></label></li>
+<li><input type="checkbox" id="companysize19" value="companysize:1 - 9"><label for="companysize19">1 - 9 (136)</label></li>
+<li><input type="checkbox" id="companysize1049" value="companysize:10 - 49"><label for="companysize1049">10 - 49 (49)</label></li>
+<li><input type="checkbox" id="companysize50199" value="companysize:50 - 199"><label for="companysize50199">50 - 199 (42)</label></li>
+<li><input type="checkbox" id="companysize200599" value="companysize:200 - 599"><label for="companysize200599">200 - 599 (64)</label></li>
+<li><input type="checkbox" id="companysize6001999" value="companysize:600 - 1999"><label for="companysize6001999">600 - 1999 (57)</label></li>
+<li><input type="checkbox" id="companysize20004999" value="companysize:2000 - 4999"><label for="companysize20004999">2000 - 4999 (45)</label></li>
+<li><input type="checkbox" id="companysize500019999" value="companysize:5000 - 19999"><label for="companysize500019999">5000 - 19999 (58)</label></li>
+<li><input type="checkbox" id="companysize2000049999" value="companysize:20000 - 49999"><label for="companysize2000049999">20000 - 49999 (49)</label></li>
+<li><input type="checkbox" id="companysize50000" value="companysize:50000+"><label for="companysize50000">50000+ (112)</label></li> </ul></div></li>
 					<li>
-					<div class="headerText">Job Title</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none" id="mostrecentjobtitle"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(65808)</span></div><div class="filterCheckboxWrapper">All Job Titles</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(56)</span></div><div class="filterCheckboxWrapper">Web Developer </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(33)</span></div><div class="filterCheckboxWrapper">Software Developer </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(32)</span></div><div class="filterCheckboxWrapper">Net Developer </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(29)</span></div><div class="filterCheckboxWrapper">Developer </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(20)</span></div><div class="filterCheckboxWrapper">Java Developer </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(14)</span></div><div class="filterCheckboxWrapper">Senior .Net Developer </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(14)</span></div><div class="filterCheckboxWrapper">Web Designer </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(10)</span></div><div class="filterCheckboxWrapper">Application Developer </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(9)</span></div><div class="filterCheckboxWrapper">Programmer Analyst </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(8)</span></div><div class="filterCheckboxWrapper">Consultant </div></li></ul></div></li>
+					<div class="headerText">Job Title</div><div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div><div style="display:none" id="mostrecentjobtitle"><ul><li><input type="checkbox" checked="checked" id="mostrecentjobtitle" value="mostrecentjobtitle"><label for="mostrecentjobtitle"><b>All Job Titles</b></label></li>
+<li><input type="checkbox" id="mostrecentjobtitlewebdeveloper" value="mostrecentjobtitle:web developer"><label for="mostrecentjobtitlewebdeveloper">Web Developer (56)</label></li>
+<li><input type="checkbox" id="mostrecentjobtitlesoftwaredeveloper" value="mostrecentjobtitle:software developer"><label for="mostrecentjobtitlesoftwaredeveloper">Software Developer (33)</label></li>
+<li><input type="checkbox" id="mostrecentjobtitlenetdeveloper" value="mostrecentjobtitle:net developer"><label for="mostrecentjobtitlenetdeveloper">Net Developer (32)</label></li>
+<li><input type="checkbox" id="mostrecentjobtitledeveloper" value="mostrecentjobtitle:developer"><label for="mostrecentjobtitledeveloper">Developer (29)</label></li>
+<li><input type="checkbox" id="mostrecentjobtitlejavadeveloper" value="mostrecentjobtitle:java developer"><label for="mostrecentjobtitlejavadeveloper">Java Developer (20)</label></li>
+<li><input type="checkbox" id="mostrecentjobtitleseniornetdeveloper" value="mostrecentjobtitle:senior .net developer"><label for="mostrecentjobtitleseniornetdeveloper">Senior .Net Developer (14)</label></li>
+<li><input type="checkbox" id="mostrecentjobtitlewebdesigner" value="mostrecentjobtitle:web designer"><label for="mostrecentjobtitlewebdesigner">Web Designer (14)</label></li>
+<li><input type="checkbox" id="mostrecentjobtitleapplicationdeveloper" value="mostrecentjobtitle:application developer"><label for="mostrecentjobtitleapplicationdeveloper">Application Developer (10)</label></li>
+<li><input type="checkbox" id="mostrecentjobtitleprogrammeranalyst" value="mostrecentjobtitle:programmer analyst"><label for="mostrecentjobtitleprogrammeranalyst">Programmer Analyst (9)</label></li>
+<li><input type="checkbox" id="mostrecentjobtitleconsultant" value="mostrecentjobtitle:consultant"><label for="mostrecentjobtitleconsultant">Consultant (8)</label></li> </ul></div></li>
                 </ul>
             </div>                    
 		</div>
-		
 		<div id="facetsDemandHeader" class="header">Demand Filters<span class="collapsedInd" style="float:right">+</span><span class="expandedInd" style="float:right;margin-top:-7px">_</span></div>
 		<div id="facetsDemand" class="content">
 			<div class="filter-content">
@@ -803,7 +806,7 @@
 					<li>
 						<div class="headerText">Include Staffing</div>
 						<div class="toggle"><img src="ReportSummary_files/expand.png" alt="" style="display:none;"><img src="ReportSummary_files/collapse.png" alt=""></div>
-						<div id="isstaffing" style="display:none;">
+						<div id="isstaffing" style="display:none">
 							<ul>
 								<li>
 									<div class="filterCheckboxWrapper">All Staffing and Non-Staffing</div>
@@ -823,7 +826,6 @@
 				</ul>
 			</div>
 		</div>
-		
     </div>
 </div>
 
@@ -4090,8 +4092,8 @@ UserDIDOL : 'OIk6IuyctT8itJ0qcR4Ji/VHKtjDAcB3pFOmiWD1PafQ='
 		</div>
 	</div>
 	
-	<script type="text/javascript" src="2a_files/load-chkbx-html.js"></script>
-	<script type="text/javascript" src="2a_files/checkbox.js"></script>
+	<script type="text/javascript" src="1_slam_files/load-filter-html.js"></script>
+	<script type="text/javascript" src="2_shuffle_files/double-number-shuffle.js"></script>
 	
 	</body>
 </html>
