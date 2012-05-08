@@ -50,7 +50,7 @@ body { background-color:sienna; color:bisque;margin: 0 1em; font-size: 1em; line
    Links
    ========================================================================== */
 
-a { color: sandybrown }
+a { color: lightsalmon }
 a:visited { color: lightcoral; }
 a:hover { color: lightgoldenrodyellow; }
 a:focus { outline: thin dotted; }
