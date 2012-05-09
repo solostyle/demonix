@@ -7,10 +7,18 @@ jQuery('#numOnRight').click( function() {
 	if (jQuery('#numOnRight').attr('checked') == 'checked') {
 		jQuery('.facetCountSupplyWrapper').each(function() {
 			jQuery(this).insertAfter(jQuery(this).next('.filterCheckboxWrapper'));
+			if (jQuery(this).next('.facetCountDemandWrapper').length > 0) {
+				jQuery(this).find('span').html(jQuery(this).find('span').html().split(')')[0]);
+				jQuery(this).next('.facetCountDemandWrapper').find('span').html(jQuery(this).next('.facetCountDemandWrapper').find('span').html().split('(')[1]);
+			}
 		});
 	} else {
 		jQuery('.facetCountSupplyWrapper').each(function() {
 			jQuery(this).insertBefore(jQuery(this).prev('.filterCheckboxWrapper'));
+			if (jQuery(this).next().next('.facetCountDemandWrapper').length > 0) {
+				jQuery(this).find('span').html( jQuery(this).find('span').html() + ')' );
+				jQuery(this).next().next('.facetCountDemandWrapper').find('span').html( '(' + jQuery(this).next().next('.facetCountDemandWrapper').find('span').html() );
+			}
 		});
 	}
 });
