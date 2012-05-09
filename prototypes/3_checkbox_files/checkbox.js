@@ -85,6 +85,7 @@ jQuery(".searched-for-content").click( function toggleFilters(e) {
 	jQuery("#AllFilters div.content:not[:hidden] li li.selected div.filterCheckboxWrapper").each(function(i, el) {
 		if (jQuery(el).html()==slctdWords) {
 			jQuery(el).parent().removeClass("selected");
+			jQuery(this).parent().find(':checkbox').removeAttr('checked');
 		}
 	});
 	
