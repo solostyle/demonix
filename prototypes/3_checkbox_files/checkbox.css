@@ -1,7 +1,8 @@
 .facets li li {display:table!important;border-radius:4px;border:1px solid transparent;cursor:pointer}
 .facetNumberTitle>div, .facets li li>* {display:block;float:left;clear:none!important}
 .facets li li:hover {background-color:#def}
-.facets li li.selected {background-color:#def;border-color:#acf}
+.facets li li.selected {background-color:#ffe0aa;border-color:#dca}
+.facets li li.selected:hover {background-color:#fea;border-color:#dca}
 
 .facetCountSupplyWrapper, .facetCountDemandWrapper {font-weight:bold;text-align:right;width:50px}
 .facetNumberTitle .facetCountSupplyWrapper {margin-left:14px}
