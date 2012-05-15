@@ -1,5 +1,5 @@
 jQuery('body')
-.append('<div id="controlpanel" style="position:fixed;top:0;right:0;background-color:rgba(250,250,250,.5)"></div>')
+.append('<div id="controlpanel" style="position:fixed;top:0;right:0;background-color:rgba(250,250,250,.8)"></div>')
 .find('#controlpanel')
 .append('<ul style="padding:0;list-style:none"></ul>')
 .find('ul')
