@@ -5,7 +5,7 @@ jQuery('#facetsSupply .facets>li>div:last-child ul, #facetsBoth .facets>li>div:l
 	jQuery(this)
 	.children()
 	.each(function () {
-		jQuery(this).prepend('<div class="facetCheckbox"><input id="chkbx_'+facet+'_'+jQuery(this).find('.filterCheckboxWrapper').html().replace(/\s/g,"")+'_'+section+'" type="checkbox" /></div>');
+		jQuery(this).prepend('<div class="facetCheckbox"><input id="chkbx_'+facet+'_'+jQuery(this).find('.filterCheckboxWrapper').html().replace(/\s/g,"").replace(/(<b>)/g,"").replace(/(<\/b>)/g,"")+'_'+section+'" type="checkbox" /></div>');
 	});
 });
 	
