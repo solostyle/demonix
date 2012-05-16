@@ -402,138 +402,140 @@
             <div class="clearAll">Clear all filters</div>
 		</div>
 	</div>
-	<div id="AllFilters" class="">
+
+
+	<div id="AllFilters">
 		<!-- Filters start here -->
-		<div id="facetsBothHeader" class="header">Supply &amp; Demand Filters<span class="collapsedInd" style="float:right;display:none">+</span><span class="expandedInd" style="float:right;margin-top:-7px">_</span></div>
-		<div id="facetsBoth" class="content">
+		<div class="header" id="facetsBothHeader">Supply &amp; Demand Filters<span style="float:right;display:none" class="collapsedInd">+</span><span style="float: right; margin-top: -7px;" class="expandedInd">_</span></div>
+		<div class="content" id="facetsBoth">
 			<div class="filter-content">
                 <ul class="facets">
 					<li>
 						<div class="headerText">Occupation</div>
-						<div class="toggle"><img src="ReportSummary_files/expand.png" alt=""><img src="ReportSummary_files/collapse.png" alt="" style="display:none;"></div>
+						<div class="toggle"><img alt="" src="ReportSummary_files/expand.png"><img style="display:none;" alt="" src="ReportSummary_files/collapse.png"></div>
 						<div class="facetNumberTitle">
-							<div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
-							<div class="filterCheckboxWrapper">&nbsp;</div>
+							
+							<div class="filterCheckboxWrapper">&nbsp;</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
 							<div class="facetCountDemandWrapper"><span class="facetCountDemand">Demand</span></div>
 						</div>
 						<div id="onetcode">
 							<ul>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(311,830)</span></div>
-									<div class="filterCheckboxWrapper"><b>All Occupations</b></div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(979,386)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_onetcode_AllOccupations_Both"></div>
+									
+									<div class="filterCheckboxWrapper"><b>All Occupations</b></div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">311,830</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">979,386</span></div>
 								</li>
-								<li class="selected">
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(1,170)</span></div>
-									<div class="filterCheckboxWrapper">Web Developers</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(145,280)</span></div></li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(531)</span></div>
-									<div class="filterCheckboxWrapper">Computer Software Engineers, Applications</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(35,960)</span></div>
+								<li class="selected"><div class="facetCheckbox"><input type="checkbox" id="chkbx_onetcode_WebDevelopers_Both" checked="checked"></div>
+									
+									<div class="filterCheckboxWrapper">Web Developers</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">1,170</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">145,280</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_onetcode_ComputerSoftwareEngineers,Applications_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Computer Software Engineers, Applications</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">531</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">35,960</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(1,227)</span></div>
-									<div class="filterCheckboxWrapper">Computer Systems Analysts</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(24,327)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_onetcode_ComputerSystemsAnalysts_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Computer Systems Analysts</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">1,227</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">24,327</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(465)</span></div>
-									<div class="filterCheckboxWrapper">Computer Programmers</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(18,470)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_onetcode_ComputerProgrammers_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Computer Programmers</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">465</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">18,470</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(709)</span></div>
-									<div class="filterCheckboxWrapper">Software Quality Assurance Engineers and Testers</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(6,667)</span></div></li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(404)</span></div>
-									<div class="filterCheckboxWrapper">Network and Computer Systems Administrators</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(4,979)</span></div></li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(459)</span></div>
-									<div class="filterCheckboxWrapper">Database Administrators</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(4,405)</span></div></li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(457)</span></div>
-									<div class="filterCheckboxWrapper">Computer Systems Engineers/Architects</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(2,821)</span></div></li> 
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(506)</span></div>
-									<div class="filterCheckboxWrapper">Marketing Managers</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(2,400)</span></div></li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(391)</span></div>
-									<div class="filterCheckboxWrapper">Information Technology Project Managers</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(2,377)</span></div></li> 
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_onetcode_SoftwareQualityAssuranceEngineersandTesters_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Software Quality Assurance Engineers and Testers</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">709</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">6,667</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_onetcode_NetworkandComputerSystemsAdministrators_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Network and Computer Systems Administrators</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">404</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">4,979</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_onetcode_DatabaseAdministrators_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Database Administrators</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">459</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">4,405</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_onetcode_ComputerSystemsEngineers/Architects_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Computer Systems Engineers/Architects</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">457</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">2,821</span></div></li> 
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_onetcode_MarketingManagers_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Marketing Managers</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">506</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">2,400</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_onetcode_InformationTechnologyProjectManagers_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Information Technology Project Managers</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">391</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">2,377</span></div></li> 
 							</ul>
 						</div>
 					</li>
 
 					<li>
 						<div class="headerText">Company Name</div>
-						<div class="toggle"><img src="ReportSummary_files/expand.png" style="display:none"><img src="ReportSummary_files/collapse.png"></div>
-						<div class="facetNumberTitle" style="display:none">
-							<div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
-							<div class="filterCheckboxWrapper">&nbsp;</div>
+						<div class="toggle"><img style="display:none" src="ReportSummary_files/expand.png"><img src="ReportSummary_files/collapse.png"></div>
+						<div style="display:none" class="facetNumberTitle">
+							
+							<div class="filterCheckboxWrapper">&nbsp;</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
 							<div class="facetCountDemandWrapper"><span class="facetCountDemand">Demand</span></div>
 						</div>
-						<div id="companyname" style="display:none">
+						<div style="display:none" id="companyname">
 							<ul>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(98)</span></div>
-									<div class="filterCheckboxWrapper">All Company Names</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(979,386)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companyname_AllCompanyNames_Both"></div>
+									
+									<div class="filterCheckboxWrapper">All Company Names</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">98</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">979,386</span></div>
 								</li> 
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(97)</span></div>
-									<div class="filterCheckboxWrapper">Atlantic Tele-Network, Inc.</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(3,976)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companyname_AtlanticTele-Network,Inc._Both"></div>
+									
+									<div class="filterCheckboxWrapper">Atlantic Tele-Network, Inc.</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">97</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">3,976</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(96)</span></div>
-									<div class="filterCheckboxWrapper">Booz Allen Hamilton Inc.</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(537)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companyname_BoozAllenHamiltonInc._Both"></div>
+									
+									<div class="filterCheckboxWrapper">Booz Allen Hamilton Inc.</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">96</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">537</span></div>
 								</li> 
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(86)</span></div>
-									<div class="filterCheckboxWrapper">International Business Machines Corporation</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(446)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companyname_InternationalBusinessMachinesCorporation_Both"></div>
+									
+									<div class="filterCheckboxWrapper">International Business Machines Corporation</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">86</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">446</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(85)</span></div>
-									<div class="filterCheckboxWrapper">Creative Circle</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(369)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companyname_CreativeCircle_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Creative Circle</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">85</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">369</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(84)</span></div>
-									<div class="filterCheckboxWrapper">Maxim Integrated Products, Inc.</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(362)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companyname_MaximIntegratedProducts,Inc._Both"></div>
+									
+									<div class="filterCheckboxWrapper">Maxim Integrated Products, Inc.</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">84</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">362</span></div>
 								</li> 
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(82)</span></div>
-									<div class="filterCheckboxWrapper">Saic, Inc.</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(290)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companyname_Saic,Inc._Both"></div>
+									
+									<div class="filterCheckboxWrapper">Saic, Inc.</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">82</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">290</span></div>
 								</li> 
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(80)</span></div>
-									<div class="filterCheckboxWrapper">Hewlett- Packard Company</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(287)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companyname_Hewlett-PackardCompany_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Hewlett- Packard Company</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">80</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">287</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(79)</span></div>
-									<div class="filterCheckboxWrapper">Computer Sciences Corporation</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(197)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companyname_ComputerSciencesCorporation_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Computer Sciences Corporation</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">79</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">197</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(75)</span></div>
-									<div class="filterCheckboxWrapper">Northrop Grumman Corporation</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(196)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companyname_NorthropGrummanCorporation_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Northrop Grumman Corporation</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">75</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">196</span></div>
 								</li> 
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(73)</span></div>
-									<div class="filterCheckboxWrapper">Amtex Systems, Inc.</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(177)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companyname_AmtexSystems,Inc._Both"></div>
+									
+									<div class="filterCheckboxWrapper">Amtex Systems, Inc.</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">73</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">177</span></div>
 								</li>
 							</ul>
 						</div>
@@ -541,154 +543,154 @@
 
 					<li>
 						<div class="headerText">Industry</div>
-						<div class="toggle"><img src="ReportSummary_files/expand.png" alt="" style="display:none;"><img src="ReportSummary_files/collapse.png" alt=""></div>
-						<div class="facetNumberTitle" style="display:none">
-							<div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
-							<div class="filterCheckboxWrapper">&nbsp;</div>
+						<div class="toggle"><img style="display:none;" alt="" src="ReportSummary_files/expand.png"><img alt="" src="ReportSummary_files/collapse.png"></div>
+						<div style="display:none" class="facetNumberTitle">
+							
+							<div class="filterCheckboxWrapper">&nbsp;</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
 							<div class="facetCountDemandWrapper"><span class="facetCountDemand">Demand</span></div>
 						</div>
-						<div id="naics" style="display:none">
+						<div style="display:none" id="naics">
 							<ul>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(311,830)</span></div>
-									<div class="filterCheckboxWrapper">All Industries</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(979,386)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_naics_AllIndustries_Both"></div>
+									
+									<div class="filterCheckboxWrapper">All Industries</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">311,830</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">979,386</span></div>
 								</li> 
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(18)</span></div>
-									<div class="filterCheckboxWrapper">Computer Systems Design Services</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(7,916)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_naics_ComputerSystemsDesignServices_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Computer Systems Design Services</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">18</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">7,916</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(28)</span></div>
-									<div class="filterCheckboxWrapper">Custom Computer Programming Services</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(5,548)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_naics_CustomComputerProgrammingServices_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Custom Computer Programming Services</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">28</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">5,548</span></div>
 								</li> 
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(24)</span></div>
-									<div class="filterCheckboxWrapper">Telecommunications Resellers</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(4,257)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_naics_TelecommunicationsResellers_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Telecommunications Resellers</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">24</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">4,257</span></div>
 								</li> 
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(13)</span></div>
-									<div class="filterCheckboxWrapper">Software Publishers</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(1,536)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_naics_SoftwarePublishers_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Software Publishers</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">13</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">1,536</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(14)</span></div>
-									<div class="filterCheckboxWrapper">Administrative Management and General Management Consulting Services</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(1,498)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_naics_AdministrativeManagementandGeneralManagementConsultingServices_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Administrative Management and General Management Consulting Services</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">14</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">1,498</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(311,830)</span></div>
-									<div class="filterCheckboxWrapper">Employment Placement Agencies</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(1,326)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_naics_EmploymentPlacementAgencies_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Employment Placement Agencies</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">311,830</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">1,326</span></div>
 								</li> 
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(14)</span></div>
-									<div class="filterCheckboxWrapper">All Other Business Support Services</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(1,194)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_naics_AllOtherBusinessSupportServices_Both"></div>
+									
+									<div class="filterCheckboxWrapper">All Other Business Support Services</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">14</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">1,194</span></div>
 								</li> 
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(311,830)</span></div>
-									<div class="filterCheckboxWrapper">Other Management Consulting Services</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(1,075)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_naics_OtherManagementConsultingServices_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Other Management Consulting Services</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">311,830</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">1,075</span></div>
 								</li> 
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(13)</span></div>
-									<div class="filterCheckboxWrapper">Colleges, Universities, and Professional Schools</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(996)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_naics_Colleges,Universities,andProfessionalSchools_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Colleges, Universities, and Professional Schools</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">13</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">996</span></div>
 								</li> 
 							</ul>
 						</div>
 					</li>
 					<li>
 						<div class="headerText">State</div>
-						<div class="toggle"><img src="http://clib.icbdr.com/images/personified/expand.png" alt="" style="display:none;"><img src="http://clib.icbdr.com/images/personified/collapse.png" alt=""></div>
-						<div class="facetNumberTitle" style="display:none">
-							<div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
-							<div class="filterCheckboxWrapper">&nbsp;</div>
+						<div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div>
+						<div style="display:none" class="facetNumberTitle">
+							
+							<div class="filterCheckboxWrapper">&nbsp;</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
 							<div class="facetCountDemandWrapper"><span class="facetCountDemand">Demand</span></div>
 						</div>
-						<div id="statename" style="display:none">
+						<div style="display:none" id="statename">
 							<ul>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(66,260)</span></div>
-									<div class="filterCheckboxWrapper">All States</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(62,342)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_statename_AllStates_Both"></div>
+									
+									<div class="filterCheckboxWrapper">All States</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">66,260</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">62,342</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(1,170)</span></div>
-									<div class="filterCheckboxWrapper">Texas</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(9,472)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_statename_Texas_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Texas</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">1,170</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">9,472</span></div>
 								</li>
 							</ul>
 						</div>
 					</li>
 					<li>
 						<div class="headerText">Metro Area (MSA)</div>
-						<div class="toggle"><img src="http://clib.icbdr.com/images/personified/expand.png" alt="" style="display:none"><img src="http://clib.icbdr.com/images/personified/collapse.png" alt=""></div>
-						<div class="facetNumberTitle" style="display:none">
-							<div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
-							<div class="filterCheckboxWrapper">&nbsp;</div>
+						<div class="toggle"><img style="display:none" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div>
+						<div style="display:none" class="facetNumberTitle">
+							
+							<div class="filterCheckboxWrapper">&nbsp;</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
 							<div class="facetCountDemandWrapper"><span class="facetCountDemand">Demand</span></div>
 						</div>
-						<div id="metroareas" style="display:none">
+						<div style="display:none" id="metroareas">
 							<ul>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(34,985)</span></div>
-									<div class="filterCheckboxWrapper">All Metro Areas</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(79,472)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_metroareas_AllMetroAreas_Both"></div>
+									
+									<div class="filterCheckboxWrapper">All Metro Areas</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">34,985</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">79,472</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(231)</span></div>
-									<div class="filterCheckboxWrapper">Greater New York City Area</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(5,732)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_metroareas_GreaterNewYorkCityArea_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Greater New York City Area</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">231</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">5,732</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(180)</span></div>
-									<div class="filterCheckboxWrapper">Greater Chicago Area</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(4,473)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_metroareas_GreaterChicagoArea_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Greater Chicago Area</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">180</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">4,473</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(92)</span></div>
-									<div class="filterCheckboxWrapper">Washington D.C. Metro Area</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(234)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_metroareas_WashingtonD.C.MetroArea_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Washington D.C. Metro Area</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">92</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">234</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(86)</span></div>
-									<div class="filterCheckboxWrapper">Dallas/Fort Worth Area</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(345)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_metroareas_Dallas/FortWorthArea_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Dallas/Fort Worth Area</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">86</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">345</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(52)</span></div>
-									<div class="filterCheckboxWrapper">Greater Los Angeles Area</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(123)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_metroareas_GreaterLosAngelesArea_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Greater Los Angeles Area</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">52</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">123</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(51)</span></div>
-									<div class="filterCheckboxWrapper">Greater Atlanta Area</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(12)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_metroareas_GreaterAtlantaArea_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Greater Atlanta Area</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">51</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">12</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(48)</span></div>
-									<div class="filterCheckboxWrapper">Miami/Fort Lauderdale Area</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(34)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_metroareas_Miami/FortLauderdaleArea_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Miami/Fort Lauderdale Area</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">48</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">34</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(35)</span></div>
-									<div class="filterCheckboxWrapper">Greater Philadelphia Area</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(23)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_metroareas_GreaterPhiladelphiaArea_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Greater Philadelphia Area</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">35</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">23</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(33)</span></div>
-									<div class="filterCheckboxWrapper">Greater Houston Area</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(9)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_metroareas_GreaterHoustonArea_Both"></div>
+									
+									<div class="filterCheckboxWrapper">Greater Houston Area</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">33</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">9</span></div>
 								</li>
-								<li>
-									<div class="facetCountSupplyWrapper"><span class="facetCountSupply">(29)</span></div>
-									<div class="filterCheckboxWrapper">San Francisco Bay Area</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(4)</span></div>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_metroareas_SanFranciscoBayArea_Both"></div>
+									
+									<div class="filterCheckboxWrapper">San Francisco Bay Area</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">29</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">4</span></div>
 								</li>
 							</ul>
 						</div>
@@ -696,230 +698,230 @@
 				</ul>
 			</div>
 		</div>
-		<div id="facetsSupplyHeader" class="header">Supply Filters<span class="collapsedInd" style="float:right">+</span><span class="expandedInd" style="float:right;margin-top:-7px">_</span></div>
+		<div class="header" id="facetsSupplyHeader">Supply Filters<span style="float: right;" class="collapsedInd">+</span><span style="float: right; margin-top: -7px; display: none;" class="expandedInd">_</span></div>
 		
-		<div id="facetsSupply" class="content">
+		<div class="content" id="facetsSupply" style="display: none;">
 			<div class="filter-content">
                 <ul class="facets">
 					<li>
 						<div class="headerText">Willing To Relocate</div>
-						<div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div>
-						<div class="facetNumberTitle" style="display:none">
-							<div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
-							<div class="filterCheckboxWrapper">&nbsp;</div>
-						</div>
-						<div style="display:none" id="willingtorelocate">
+						<div class="toggle"><img src="http://clib.icbdr.com/images/personified/expand.png" alt="" style="display:none;"><img src="http://clib.icbdr.com/images/personified/collapse.png" alt=""></div>
+						<div style="display:none" class="facetNumberTitle">
 							
-						<ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(12,711)</span></div><div class="filterCheckboxWrapper">All Willing To Relocate</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(869)</span></div><div class="filterCheckboxWrapper">No </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(301)</span></div><div class="filterCheckboxWrapper">Yes </div></li></ul></div>
+							<div class="filterCheckboxWrapper">&nbsp;</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
+						</div>
+						<div id="willingtorelocate" style="display:none">
+							
+						<ul><li><div class="facetCheckbox"><input type="checkbox" id="chkbx_willingtorelocate_AllWillingToRelocate_Supply"></div><div class="filterCheckboxWrapper">All Willing To Relocate</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">12,711</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_willingtorelocate_No_Supply"></div><div class="filterCheckboxWrapper">No </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">869</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_willingtorelocate_Yes_Supply"></div><div class="filterCheckboxWrapper">Yes </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">301</span></div></li></ul></div>
 					</li>
 					<li>
 						<div class="headerText">Education</div>
-						<div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div>
-						<div class="facetNumberTitle" style="display:none">
-							<div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
-							<div class="filterCheckboxWrapper">&nbsp;</div>
+						<div class="toggle"><img src="http://clib.icbdr.com/images/personified/expand.png" alt="" style="display:none;"><img src="http://clib.icbdr.com/images/personified/collapse.png" alt=""></div>
+						<div style="display:none" class="facetNumberTitle">
+							
+							<div class="filterCheckboxWrapper">&nbsp;</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
 						</div>
-						<div style="display:none;" id="maxeducation">
+						<div id="maxeducation" style="display:none;">
 							<ul>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(67,423)</span></div><div class="filterCheckboxWrapper">All Education</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(29)</span></div><div class="filterCheckboxWrapper">High School </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(54)</span></div><div class="filterCheckboxWrapper">Associate Degree </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(478)</span></div><div class="filterCheckboxWrapper">Bachelor's Degree </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(339)</span></div><div class="filterCheckboxWrapper">Master's Degree </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(10)</span></div><div class="filterCheckboxWrapper">Doctorate </div></li></ul></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_maxeducation_AllEducation_Supply"></div><div class="filterCheckboxWrapper">All Education</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">67,423</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_maxeducation_HighSchool_Supply"></div><div class="filterCheckboxWrapper">High School </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">29</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_maxeducation_AssociateDegree_Supply"></div><div class="filterCheckboxWrapper">Associate Degree </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">54</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_maxeducation_Bachelor'sDegree_Supply"></div><div class="filterCheckboxWrapper">Bachelor's Degree </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">478</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_maxeducation_Master'sDegree_Supply"></div><div class="filterCheckboxWrapper">Master's Degree </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">339</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_maxeducation_Doctorate_Supply"></div><div class="filterCheckboxWrapper">Doctorate </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">10</span></div></li></ul></div></li>
 					<li>
 						<div class="headerText">Years Experience</div>
-						<div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img style="display: inline;" alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div>
-						<div class="facetNumberTitle" style="display:none">
-							<div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
-							<div class="filterCheckboxWrapper">&nbsp;</div>
+						<div class="toggle"><img src="http://clib.icbdr.com/images/personified/expand.png" alt="" style="display:none;"><img src="http://clib.icbdr.com/images/personified/collapse.png" alt="" style="display: inline;"></div>
+						<div style="display:none" class="facetNumberTitle">
+							
+							<div class="filterCheckboxWrapper">&nbsp;</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
 						</div>
-						<div style="display:none;" id="supplyexperienceyears">
+						<div id="supplyexperienceyears" style="display:none;">
 							<ul>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(14,208)</span></div><div class="filterCheckboxWrapper">All Years Experience</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(56)</span></div><div class="filterCheckboxWrapper">1 - 2 years </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(181)</span></div><div class="filterCheckboxWrapper">3 - 5 years </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(470)</span></div><div class="filterCheckboxWrapper">6 - 10 years </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(174)</span></div><div class="filterCheckboxWrapper">11 - 15 years </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(105)</span></div><div class="filterCheckboxWrapper">16 - 20 years </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(61)</span></div><div class="filterCheckboxWrapper">21+ years </div></li></ul></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_supplyexperienceyears_AllYearsExperience_Supply"></div><div class="filterCheckboxWrapper">All Years Experience</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">14,208</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_supplyexperienceyears_1-2years_Supply"></div><div class="filterCheckboxWrapper">1 - 2 years </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">56</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_supplyexperienceyears_3-5years_Supply"></div><div class="filterCheckboxWrapper">3 - 5 years </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">181</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_supplyexperienceyears_6-10years_Supply"></div><div class="filterCheckboxWrapper">6 - 10 years </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">470</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_supplyexperienceyears_11-15years_Supply"></div><div class="filterCheckboxWrapper">11 - 15 years </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">174</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_supplyexperienceyears_16-20years_Supply"></div><div class="filterCheckboxWrapper">16 - 20 years </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">105</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_supplyexperienceyears_21+years_Supply"></div><div class="filterCheckboxWrapper">21+ years </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">61</span></div></li></ul></div></li>
 					<li>
 						<div class="headerText">Top Majors</div>
-						<div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div>
-						<div class="facetNumberTitle" style="display:none">
-							<div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
-							<div class="filterCheckboxWrapper">&nbsp;</div>
+						<div class="toggle"><img src="http://clib.icbdr.com/images/personified/expand.png" alt="" style="display:none;"><img src="http://clib.icbdr.com/images/personified/collapse.png" alt=""></div>
+						<div style="display:none" class="facetNumberTitle">
+							
+							<div class="filterCheckboxWrapper">&nbsp;</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
 						</div>
-						<div style="display:none" id="topmajors"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(31,857)</span></div><div class="filterCheckboxWrapper">All Top Majors</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(265)</span></div><div class="filterCheckboxWrapper">Computer Science </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(66)</span></div><div class="filterCheckboxWrapper">Computer Engineering, General </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(50)</span></div><div class="filterCheckboxWrapper">Business Administration And Management, General </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(42)</span></div><div class="filterCheckboxWrapper">Management Information Systems, General </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(41)</span></div><div class="filterCheckboxWrapper">Information Technology </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(35)</span></div><div class="filterCheckboxWrapper">Electrical, Electronics And Communications Engineering </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(28)</span></div><div class="filterCheckboxWrapper">Computer/Information Technology Services Administration Andmanagement, Other </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(20)</span></div><div class="filterCheckboxWrapper">Engineering, General </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(19)</span></div><div class="filterCheckboxWrapper">Computer Programming, Specific Applications </div></li></ul></div></li>
+						<div id="topmajors" style="display:none"><ul><li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topmajors_AllTopMajors_Supply"></div><div class="filterCheckboxWrapper">All Top Majors</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">31,857</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topmajors_ComputerScience_Supply"></div><div class="filterCheckboxWrapper">Computer Science </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">265</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topmajors_ComputerEngineering,General_Supply"></div><div class="filterCheckboxWrapper">Computer Engineering, General </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">66</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topmajors_BusinessAdministrationAndManagement,General_Supply"></div><div class="filterCheckboxWrapper">Business Administration And Management, General </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">50</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topmajors_ManagementInformationSystems,General_Supply"></div><div class="filterCheckboxWrapper">Management Information Systems, General </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">42</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topmajors_InformationTechnology_Supply"></div><div class="filterCheckboxWrapper">Information Technology </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">41</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topmajors_Electrical,ElectronicsAndCommunicationsEngineering_Supply"></div><div class="filterCheckboxWrapper">Electrical, Electronics And Communications Engineering </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">35</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topmajors_Computer/InformationTechnologyServicesAdministrationAndmanagement,Other_Supply"></div><div class="filterCheckboxWrapper">Computer/Information Technology Services Administration Andmanagement, Other </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">28</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topmajors_Engineering,General_Supply"></div><div class="filterCheckboxWrapper">Engineering, General </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">20</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topmajors_ComputerProgramming,SpecificApplications_Supply"></div><div class="filterCheckboxWrapper">Computer Programming, Specific Applications </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">19</span></div></li></ul></div></li>
 					<li>
 						<div class="headerText">Top Schools</div>
-						<div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div>
-						<div class="facetNumberTitle" style="display:none">
-							<div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
-							<div class="filterCheckboxWrapper">&nbsp;</div>
+						<div class="toggle"><img src="http://clib.icbdr.com/images/personified/expand.png" alt="" style="display:none;"><img src="http://clib.icbdr.com/images/personified/collapse.png" alt=""></div>
+						<div style="display:none" class="facetNumberTitle">
+							
+							<div class="filterCheckboxWrapper">&nbsp;</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
 						</div>
-						<div style="display:none" id="topschools"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(35,081)</span></div><div class="filterCheckboxWrapper">All Top Schools</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(88)</span></div><div class="filterCheckboxWrapper">The University Of Texas At Dallas </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(62)</span></div><div class="filterCheckboxWrapper">The University Of Texas At Arlington </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(43)</span></div><div class="filterCheckboxWrapper">University Of North Texas </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(23)</span></div><div class="filterCheckboxWrapper">The University Of Texas At Austin </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(22)</span></div><div class="filterCheckboxWrapper">Texas A &amp; M University </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(18)</span></div><div class="filterCheckboxWrapper">Devry College Of New York </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(18)</span></div><div class="filterCheckboxWrapper">Tarrant County College District </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(17)</span></div><div class="filterCheckboxWrapper">Crescent City Bartending School </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(16)</span></div><div class="filterCheckboxWrapper">Osmania University </div></li></ul></div></li>
+						<div id="topschools" style="display:none"><ul><li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topschools_AllTopSchools_Supply"></div><div class="filterCheckboxWrapper">All Top Schools</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">35,081</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topschools_TheUniversityOfTexasAtDallas_Supply"></div><div class="filterCheckboxWrapper">The University Of Texas At Dallas </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">88</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topschools_TheUniversityOfTexasAtArlington_Supply"></div><div class="filterCheckboxWrapper">The University Of Texas At Arlington </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">62</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topschools_UniversityOfNorthTexas_Supply"></div><div class="filterCheckboxWrapper">University Of North Texas </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">43</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topschools_TheUniversityOfTexasAtAustin_Supply"></div><div class="filterCheckboxWrapper">The University Of Texas At Austin </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">23</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topschools_TexasA&amp;MUniversity_Supply"></div><div class="filterCheckboxWrapper">Texas A &amp; M University </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">22</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topschools_DevryCollegeOfNewYork_Supply"></div><div class="filterCheckboxWrapper">Devry College Of New York </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">18</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topschools_TarrantCountyCollegeDistrict_Supply"></div><div class="filterCheckboxWrapper">Tarrant County College District </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">18</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topschools_CrescentCityBartendingSchool_Supply"></div><div class="filterCheckboxWrapper">Crescent City Bartending School </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">17</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_topschools_OsmaniaUniversity_Supply"></div><div class="filterCheckboxWrapper">Osmania University </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">16</span></div></li></ul></div></li>
 					<li>
 						<div class="headerText">Race</div>
-						<div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div>
-						<div class="facetNumberTitle" style="display:none">
-							<div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
-							<div class="filterCheckboxWrapper">&nbsp;</div>
+						<div class="toggle"><img src="http://clib.icbdr.com/images/personified/expand.png" alt="" style="display:none;"><img src="http://clib.icbdr.com/images/personified/collapse.png" alt=""></div>
+						<div style="display:none" class="facetNumberTitle">
+							
+							<div class="filterCheckboxWrapper">&nbsp;</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
 						</div>
-						<div style="display:none;" id="race"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(10,742)</span></div><div class="filterCheckboxWrapper">All Race</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(Not Hispanic or Latino) </span></div><div class="filterCheckboxWrapper">Black or African American </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(Not Hispanic or Latino) </span></div><div class="filterCheckboxWrapper">Asian </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(27)</span></div><div class="filterCheckboxWrapper">Hispanic or Latino </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(Not Hispanic or Latino) </span></div><div class="filterCheckboxWrapper">American Indian or Alaska Native </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(Not Hispanic or Latino) </span></div><div class="filterCheckboxWrapper">Two or More Races </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(Not Hispanic or Latino) </span></div><div class="filterCheckboxWrapper">White </div></li></ul></div></li>
+						<div id="race" style="display:none;"><ul><li><div class="facetCheckbox"><input type="checkbox" id="chkbx_race_AllRace_Supply"></div><div class="filterCheckboxWrapper">All Race</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">10,742</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_race_BlackorAfricanAmerican_Supply"></div><div class="filterCheckboxWrapper">Black or African American </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Not Hispanic or Latino </span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_race_Asian_Supply"></div><div class="filterCheckboxWrapper">Asian </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Not Hispanic or Latino </span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_race_HispanicorLatino_Supply"></div><div class="filterCheckboxWrapper">Hispanic or Latino </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">27</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_race_AmericanIndianorAlaskaNative_Supply"></div><div class="filterCheckboxWrapper">American Indian or Alaska Native </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Not Hispanic or Latino </span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_race_TwoorMoreRaces_Supply"></div><div class="filterCheckboxWrapper">Two or More Races </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Not Hispanic or Latino </span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_race_White_Supply"></div><div class="filterCheckboxWrapper">White </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Not Hispanic or Latino </span></div></li></ul></div></li>
 					<li>
 						<div class="headerText">Gender</div>
-						<div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div>
-						<div class="facetNumberTitle" style="display:none">
-							<div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
-							<div class="filterCheckboxWrapper">&nbsp;</div>
+						<div class="toggle"><img src="http://clib.icbdr.com/images/personified/expand.png" alt="" style="display:none;"><img src="http://clib.icbdr.com/images/personified/collapse.png" alt=""></div>
+						<div style="display:none" class="facetNumberTitle">
+							
+							<div class="filterCheckboxWrapper">&nbsp;</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
 						</div>
-						<div style="display:none" id="gender"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(67,750)</span></div><div class="filterCheckboxWrapper">All Gender</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(120)</span></div><div class="filterCheckboxWrapper">Female </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(418)</span></div><div class="filterCheckboxWrapper">Male </div></li></ul></div></li>
+						<div id="gender" style="display:none"><ul><li><div class="facetCheckbox"><input type="checkbox" id="chkbx_gender_AllGender_Supply"></div><div class="filterCheckboxWrapper">All Gender</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">67,750</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_gender_Female_Supply"></div><div class="filterCheckboxWrapper">Female </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">120</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_gender_Male_Supply"></div><div class="filterCheckboxWrapper">Male </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">418</span></div></li></ul></div></li>
 					<li>
 						<div class="headerText">Languages Spoken</div>
-						<div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div>
-						<div class="facetNumberTitle" style="display:none">
-							<div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
-							<div class="filterCheckboxWrapper">&nbsp;</div>
+						<div class="toggle"><img src="http://clib.icbdr.com/images/personified/expand.png" alt="" style="display:none;"><img src="http://clib.icbdr.com/images/personified/collapse.png" alt=""></div>
+						<div style="display:none" class="facetNumberTitle">
+							
+							<div class="filterCheckboxWrapper">&nbsp;</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
 						</div>
-						<div style="display:none;" id="languagesspoken"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(72,392)</span></div><div class="filterCheckboxWrapper">All Languages Spoken</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(642)</span></div><div class="filterCheckboxWrapper">English </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(63)</span></div><div class="filterCheckboxWrapper">Hindi </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(43)</span></div><div class="filterCheckboxWrapper">Spanish </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(23)</span></div><div class="filterCheckboxWrapper">Chinese-Mandarin </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(19)</span></div><div class="filterCheckboxWrapper">Telugu </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(15)</span></div><div class="filterCheckboxWrapper">Tamil </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(10)</span></div><div class="filterCheckboxWrapper">Gujarati </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(9)</span></div><div class="filterCheckboxWrapper">Arabic </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(9)</span></div><div class="filterCheckboxWrapper">French </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(9)</span></div><div class="filterCheckboxWrapper">Urdu </div></li></ul></div></li>
+						<div id="languagesspoken" style="display:none;"><ul><li><div class="facetCheckbox"><input type="checkbox" id="chkbx_languagesspoken_AllLanguagesSpoken_Supply"></div><div class="filterCheckboxWrapper">All Languages Spoken</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">72,392</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_languagesspoken_English_Supply"></div><div class="filterCheckboxWrapper">English </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">642</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_languagesspoken_Hindi_Supply"></div><div class="filterCheckboxWrapper">Hindi </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">63</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_languagesspoken_Spanish_Supply"></div><div class="filterCheckboxWrapper">Spanish </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">43</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_languagesspoken_Chinese-Mandarin_Supply"></div><div class="filterCheckboxWrapper">Chinese-Mandarin </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">23</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_languagesspoken_Telugu_Supply"></div><div class="filterCheckboxWrapper">Telugu </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">19</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_languagesspoken_Tamil_Supply"></div><div class="filterCheckboxWrapper">Tamil </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">15</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_languagesspoken_Gujarati_Supply"></div><div class="filterCheckboxWrapper">Gujarati </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">10</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_languagesspoken_Arabic_Supply"></div><div class="filterCheckboxWrapper">Arabic </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">9</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_languagesspoken_French_Supply"></div><div class="filterCheckboxWrapper">French </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">9</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_languagesspoken_Urdu_Supply"></div><div class="filterCheckboxWrapper">Urdu </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">9</span></div></li></ul></div></li>
 					<li>
 						<div class="headerText">Management Experience</div>
-						<div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div>
-						<div class="facetNumberTitle" style="display:none">
-							<div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
-							<div class="filterCheckboxWrapper">&nbsp;</div>
+						<div class="toggle"><img src="http://clib.icbdr.com/images/personified/expand.png" alt="" style="display:none;"><img src="http://clib.icbdr.com/images/personified/collapse.png" alt=""></div>
+						<div style="display:none" class="facetNumberTitle">
+							
+							<div class="filterCheckboxWrapper">&nbsp;</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
 						</div>
-						<div style="display:none" id="managementexperience"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(27,525)</span></div><div class="filterCheckboxWrapper">All Management Experience</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(604)</span></div><div class="filterCheckboxWrapper">No </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(426)</span></div><div class="filterCheckboxWrapper">Yes </div></li></ul></div></li>
+						<div id="managementexperience" style="display:none"><ul><li><div class="facetCheckbox"><input type="checkbox" id="chkbx_managementexperience_AllManagementExperience_Supply"></div><div class="filterCheckboxWrapper">All Management Experience</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">27,525</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_managementexperience_No_Supply"></div><div class="filterCheckboxWrapper">No </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">604</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_managementexperience_Yes_Supply"></div><div class="filterCheckboxWrapper">Yes </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">426</span></div></li></ul></div></li>
 					<li>
 						<div class="headerText">Military Experience</div>
-						<div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div>
-						<div class="facetNumberTitle" style="display:none">
-							<div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
-							<div class="filterCheckboxWrapper">&nbsp;</div>
+						<div class="toggle"><img src="http://clib.icbdr.com/images/personified/expand.png" alt="" style="display:none;"><img src="http://clib.icbdr.com/images/personified/collapse.png" alt=""></div>
+						<div style="display:none" class="facetNumberTitle">
+							
+							<div class="filterCheckboxWrapper">&nbsp;</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
 						</div>
-						<div style="display:none" id="militaryexperience"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(31,005)</span></div><div class="filterCheckboxWrapper">All Military Experience</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(42)</span></div><div class="filterCheckboxWrapper">Veteran </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(10)</span></div><div class="filterCheckboxWrapper">I Have Not An Obligation </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(4)</span></div><div class="filterCheckboxWrapper">Retired Military </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(3)</span></div><div class="filterCheckboxWrapper">Active Duty </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(2)</span></div><div class="filterCheckboxWrapper">Reservist-Drilling </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(1)</span></div><div class="filterCheckboxWrapper">Fulfilled </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(1)</span></div><div class="filterCheckboxWrapper">Inactive Reserve </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(1)</span></div><div class="filterCheckboxWrapper">Unfulfilled </div></li></ul></div></li>
+						<div id="militaryexperience" style="display:none"><ul><li><div class="facetCheckbox"><input type="checkbox" id="chkbx_militaryexperience_AllMilitaryExperience_Supply"></div><div class="filterCheckboxWrapper">All Military Experience</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">31,005</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_militaryexperience_Veteran_Supply"></div><div class="filterCheckboxWrapper">Veteran </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">42</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_militaryexperience_IHaveNotAnObligation_Supply"></div><div class="filterCheckboxWrapper">I Have Not An Obligation </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">10</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_militaryexperience_RetiredMilitary_Supply"></div><div class="filterCheckboxWrapper">Retired Military </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">4</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_militaryexperience_ActiveDuty_Supply"></div><div class="filterCheckboxWrapper">Active Duty </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">3</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_militaryexperience_Reservist-Drilling_Supply"></div><div class="filterCheckboxWrapper">Reservist-Drilling </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">2</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_militaryexperience_Fulfilled_Supply"></div><div class="filterCheckboxWrapper">Fulfilled </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">1</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_militaryexperience_InactiveReserve_Supply"></div><div class="filterCheckboxWrapper">Inactive Reserve </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">1</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_militaryexperience_Unfulfilled_Supply"></div><div class="filterCheckboxWrapper">Unfulfilled </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">1</span></div></li></ul></div></li>
 					<li>
 						<div class="headerText">US Security Clearance</div>
-						<div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div>
-						<div class="facetNumberTitle" style="display:none">
-							<div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
-							<div class="filterCheckboxWrapper">&nbsp;</div>
+						<div class="toggle"><img src="http://clib.icbdr.com/images/personified/expand.png" alt="" style="display:none;"><img src="http://clib.icbdr.com/images/personified/collapse.png" alt=""></div>
+						<div style="display:none" class="facetNumberTitle">
+							
+							<div class="filterCheckboxWrapper">&nbsp;</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
 						</div>
-						<div style="display:none;" id="ussecurityclearance"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(18,129)</span></div><div class="filterCheckboxWrapper">All US Security Clearance</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(1,012)</span></div><div class="filterCheckboxWrapper">No </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(32)</span></div><div class="filterCheckboxWrapper">Yes </div></li></ul></div></li>
+						<div id="ussecurityclearance" style="display:none;"><ul><li><div class="facetCheckbox"><input type="checkbox" id="chkbx_ussecurityclearance_AllUSSecurityClearance_Supply"></div><div class="filterCheckboxWrapper">All US Security Clearance</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">18,129</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_ussecurityclearance_No_Supply"></div><div class="filterCheckboxWrapper">No </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">1,012</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_ussecurityclearance_Yes_Supply"></div><div class="filterCheckboxWrapper">Yes </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">32</span></div></li></ul></div></li>
 					<li>
 						<div class="headerText">Company Size</div>
-						<div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div>
-						<div class="facetNumberTitle" style="display:none">
-							<div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
-							<div class="filterCheckboxWrapper">&nbsp;</div>
+						<div class="toggle"><img src="http://clib.icbdr.com/images/personified/expand.png" alt="" style="display:none;"><img src="http://clib.icbdr.com/images/personified/collapse.png" alt=""></div>
+						<div style="display:none" class="facetNumberTitle">
+							
+							<div class="filterCheckboxWrapper">&nbsp;</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
 						</div>
-						<div style="display:none" id="companysize"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(46,663)</span></div><div class="filterCheckboxWrapper">All Company Size</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(136)</span></div><div class="filterCheckboxWrapper">1 - 9 </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(49)</span></div><div class="filterCheckboxWrapper">10 - 49 </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(42)</span></div><div class="filterCheckboxWrapper">50 - 199 </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(64)</span></div><div class="filterCheckboxWrapper">200 - 599 </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(57)</span></div><div class="filterCheckboxWrapper">600 - 1999 </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(45)</span></div><div class="filterCheckboxWrapper">2000 - 4999 </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(58)</span></div><div class="filterCheckboxWrapper">5000 - 19999 </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(49)</span></div><div class="filterCheckboxWrapper">20000 - 49999 </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(112)</span></div><div class="filterCheckboxWrapper">50000+ </div></li></ul></div></li>
+						<div id="companysize" style="display:none"><ul><li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companysize_AllCompanySize_Supply"></div><div class="filterCheckboxWrapper">All Company Size</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">46,663</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companysize_1-9_Supply"></div><div class="filterCheckboxWrapper">1 - 9 </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">136</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companysize_10-49_Supply"></div><div class="filterCheckboxWrapper">10 - 49 </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">49</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companysize_50-199_Supply"></div><div class="filterCheckboxWrapper">50 - 199 </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">42</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companysize_200-599_Supply"></div><div class="filterCheckboxWrapper">200 - 599 </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">64</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companysize_600-1999_Supply"></div><div class="filterCheckboxWrapper">600 - 1999 </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">57</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companysize_2000-4999_Supply"></div><div class="filterCheckboxWrapper">2000 - 4999 </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">45</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companysize_5000-19999_Supply"></div><div class="filterCheckboxWrapper">5000 - 19999 </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">58</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companysize_20000-49999_Supply"></div><div class="filterCheckboxWrapper">20000 - 49999 </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">49</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_companysize_50000+_Supply"></div><div class="filterCheckboxWrapper">50000+ </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">112</span></div></li></ul></div></li>
 					<li>
 						<div class="headerText">Job Title</div>
-						<div class="toggle"><img style="display:none;" alt="" src="http://clib.icbdr.com/images/personified/expand.png"><img alt="" src="http://clib.icbdr.com/images/personified/collapse.png"></div>
-						<div class="facetNumberTitle" style="display:none">
-							<div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
-							<div class="filterCheckboxWrapper">&nbsp;</div>
+						<div class="toggle"><img src="http://clib.icbdr.com/images/personified/expand.png" alt="" style="display:none;"><img src="http://clib.icbdr.com/images/personified/collapse.png" alt=""></div>
+						<div style="display:none" class="facetNumberTitle">
+							
+							<div class="filterCheckboxWrapper">&nbsp;</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">Supply</span></div>
 						</div>
-						<div style="display:none" id="mostrecentjobtitle"><ul><li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(65,808)</span></div><div class="filterCheckboxWrapper">All Job Titles</div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(56)</span></div><div class="filterCheckboxWrapper">Web Developer </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(33)</span></div><div class="filterCheckboxWrapper">Software Developer </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(32)</span></div><div class="filterCheckboxWrapper">Net Developer </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(29)</span></div><div class="filterCheckboxWrapper">Developer </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(20)</span></div><div class="filterCheckboxWrapper">Java Developer </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(14)</span></div><div class="filterCheckboxWrapper">Senior .Net Developer </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(14)</span></div><div class="filterCheckboxWrapper">Web Designer </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(10)</span></div><div class="filterCheckboxWrapper">Application Developer </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(9)</span></div><div class="filterCheckboxWrapper">Programmer Analyst </div></li>
-								<li><div class="facetCountSupplyWrapper"><span class="facetCountSupply">(8)</span></div><div class="filterCheckboxWrapper">Consultant </div></li></ul></div></li>
+						<div id="mostrecentjobtitle" style="display:none"><ul><li><div class="facetCheckbox"><input type="checkbox" id="chkbx_mostrecentjobtitle_AllJobTitles_Supply"></div><div class="filterCheckboxWrapper">All Job Titles</div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">65,808</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_mostrecentjobtitle_WebDeveloper_Supply"></div><div class="filterCheckboxWrapper">Web Developer </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">56</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_mostrecentjobtitle_SoftwareDeveloper_Supply"></div><div class="filterCheckboxWrapper">Software Developer </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">33</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_mostrecentjobtitle_NetDeveloper_Supply"></div><div class="filterCheckboxWrapper">Net Developer </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">32</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_mostrecentjobtitle_Developer_Supply"></div><div class="filterCheckboxWrapper">Developer </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">29</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_mostrecentjobtitle_JavaDeveloper_Supply"></div><div class="filterCheckboxWrapper">Java Developer </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">20</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_mostrecentjobtitle_Senior.NetDeveloper_Supply"></div><div class="filterCheckboxWrapper">Senior .Net Developer </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">14</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_mostrecentjobtitle_WebDesigner_Supply"></div><div class="filterCheckboxWrapper">Web Designer </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">14</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_mostrecentjobtitle_ApplicationDeveloper_Supply"></div><div class="filterCheckboxWrapper">Application Developer </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">10</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_mostrecentjobtitle_ProgrammerAnalyst_Supply"></div><div class="filterCheckboxWrapper">Programmer Analyst </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">9</span></div></li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_mostrecentjobtitle_Consultant_Supply"></div><div class="filterCheckboxWrapper">Consultant </div><div class="facetCountSupplyWrapper"><span class="facetCountSupply">8</span></div></li></ul></div></li>
                 </ul>
             </div>                    
 		</div>
 		
-		<div id="facetsDemandHeader" class="header">Demand Filters<span class="collapsedInd" style="float:right">+</span><span class="expandedInd" style="float:right;margin-top:-7px">_</span></div>
-		<div id="facetsDemand" class="content">
+		<div class="header" id="facetsDemandHeader">Demand Filters<span style="float: right;" class="collapsedInd">+</span><span style="float: right; margin-top: -7px; display: none;" class="expandedInd">_</span></div>
+		<div class="content" id="facetsDemand" style="display: none;">
 			<div class="filter-content">
                 <ul class="facets">
 					<li>
 						<div class="headerText">Include Staffing</div>
-						<div class="toggle"><img src="ReportSummary_files/expand.png" alt="" style="display:none;"><img src="ReportSummary_files/collapse.png" alt=""></div>
-						<div class="facetNumberTitle" style="display:none">
+						<div class="toggle"><img style="display:none;" alt="" src="ReportSummary_files/expand.png"><img alt="" src="ReportSummary_files/collapse.png"></div>
+						<div style="display:none" class="facetNumberTitle">
 							<div class="filterCheckboxWrapper">&nbsp;</div>
 							<div class="facetCountDemandWrapper"><span class="facetCountDemand">Demand</span></div>
 						</div>
-						<div id="isstaffing" style="display:none;">
+						<div style="display:none;" id="isstaffing">
 							<ul>
-								<li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_isstaffing_AllStaffingandNon-Staffing_Demand"></div>
 									<div class="filterCheckboxWrapper">All Staffing and Non-Staffing</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(186,997)</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">186,997</span></div>
 								</li>
-								<li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_isstaffing_No_Demand"></div>
 									<div class="filterCheckboxWrapper">No</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(100,334)</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">100,334</span></div>
 								</li>
-								<li>
+								<li><div class="facetCheckbox"><input type="checkbox" id="chkbx_isstaffing_Yes_Demand"></div>
 									<div class="filterCheckboxWrapper">Yes</div>
-									<div class="facetCountDemandWrapper"><span class="facetCountDemand">(44,946)</span></div>
+									<div class="facetCountDemandWrapper"><span class="facetCountDemand">44,946</span></div>
 								</li>
 							</ul>
 						</div>
@@ -929,6 +931,7 @@
 		</div>
 		
     </div>
+
 </div>
 
 		</div>
@@ -4156,7 +4159,6 @@ UserDIDOL : 'OIk6IuyctT8itJ0qcR4Ji/VHKtjDAcB3pFOmiWD1PafQ='
 		</div>
 	</div>
 	
-	<script type="text/javascript" src="3_checkbox_files/load-chkbx-html.js"></script>
 	<script type="text/javascript" src="3_checkbox_files/checkbox.js"></script>
 	<script type="text/javascript" src="3_checkbox_files/control-panel.js"></script>
 	

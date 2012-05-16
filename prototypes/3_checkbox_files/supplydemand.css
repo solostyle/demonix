@@ -571,7 +571,7 @@ table.detailView .msa.last {padding-right:25px;}
     display:inline;
 }
 .search-content li * {float:left}
-.search-content li input {clear:left;width:225px}
+.search-content li input {clear:left;width:97%}
 .search-content li select {margin-top:4px}
 
 #searched-for .searched-for-content, #Demographics-searched-for .search-for-content {font-size:80.5%;}
