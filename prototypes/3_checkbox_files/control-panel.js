@@ -24,8 +24,8 @@ jQuery('#numOnRight').click( function moveNumbersToRight() {
 			jQuery('.facetCountSupplyWrapper').each(function() {
 				jQuery(this).insertBefore(jQuery(this).prev('.filterCheckboxWrapper'));
 				if (jQuery(this).next().next('.facetCountDemandWrapper').length > 0) {
-					jQuery(this).find('span').html( jQuery(this).find('span').html() + ')' );
-					jQuery(this).next().next('.facetCountDemandWrapper').find('span').html( '(' + jQuery(this).next().next('.facetCountDemandWrapper').find('span').html() );
+					jQuery(this).find('span').html( jQuery(this).find('span').html().replace(/([0-9,]+)$/g, '$1)') );
+					jQuery(this).next().next('.facetCountDemandWrapper').find('span').html( jQuery(this).next().next('.facetCountDemandWrapper').find('span').html().replace(/^([0-9,]+)/g, '($1') );
 				}
 			});
 		}
