@@ -543,7 +543,7 @@ table.detailView .msa.last {padding-right:25px;}
     border-style:solid;
     border-color:#ddd;
     border-width:0 1px 1px;
-    padding:5px 10px 10px;
+    padding:0px 10px 10px;
     -moz-border-radius-bottomright:5px;
     -moz-border-radius-bottomleft:5px;
     min-height:40px;
@@ -574,11 +574,10 @@ table.detailView .msa.last {padding-right:25px;}
 .search-content li input {clear:left;width:97%}
 .search-content li select {margin-top:4px}
 
-#searched-for .searched-for-content, #Demographics-searched-for .search-for-content {font-size:80.5%;}
-#searched-for .searched-for-content li, #Demographics-searched-for .searched-for-content li{
+#searched-for .searched-for-content li{
     background-image: url('http://www.careerbuilder.com/images/personified/remove_selection.gif');
     background-repeat: no-repeat;
-    background-position: 0 -.15em;
+    background-position: 0 -.3em;
     margin-bottom:5px !important;
     min-height:18px;
 	cursor:pointer;
@@ -588,7 +587,7 @@ table.detailView .msa.last {padding-right:25px;}
 #searched-for .searched-for-content li.extraLongText, #Demographics-searched-for .searched-for-content li.extraLongText{height:40px;}
 #searched-for .searched-for-content li.superLongText, #Demographics-searched-for .searched-for-content li.superLongText{height:50px;}
 */
-#searched-for .searched-for-content span, #Demographics-searched-for .searched-for-content span{
+#searched-for .searched-for-content span{
     vertical-align:bottom;
     margin-left:17px;
 }

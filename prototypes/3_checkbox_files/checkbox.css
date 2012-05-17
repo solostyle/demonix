@@ -20,7 +20,8 @@
 .facetsSupply {}
 .facetsDemand {}
 
-.filter-content {color:#333!important;cursor:pointer;font-size:10px;font-weight:bold}
+.filter-content, .searched-for-content {color:#333!important;cursor:pointer;font-size:10px}
+.searched-for-content {padding:5px 0!important;}
 .headerText {color:#09609a}
 #searched-for {margin-bottom:10px}
 

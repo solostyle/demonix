@@ -145,25 +145,42 @@ jQuery('#wideMenu').click( function widenMenu() {
 	}
 });
 
+	// functions
+	var shuffleDemand = function() {
+		jQuery('#facetsSupplyHeader, #facetsDemandHeader, #facetsSupply').hide();
+		jQuery('#facetsBoth').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
+		jQuery('#facetsDemand').show();
+	},
+	shuffleSupply = function() {
+		jQuery('#facetsSupplyHeader, #facetsDemandHeader, #facetsDemand').hide();
+		jQuery('#facetsBoth').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
+		jQuery('#facetsSupply').show();
+	},
+	shuffleBoth = function() {
+		jQuery('#facetsSupplyHeader, #facetsSupply, #facetsDemandHeader, #facetsDemand').hide();
+	};
+
 jQuery('#shuffleYes, #shuffleNo').click( function shuffle() {
 	if (jQuery('#shuffleYes:checked').length) {
 		// change the header
 		jQuery('#facetsBothHeader').html( 'Refine Your Search<'+jQuery('#facetsBothHeader').html().split(/<(.+)/)[1] );
-		if (jQuery('#SupplyView.selected').length) {
-			jQuery('#facetsSupplyHeader, #facetsDemandHeader, #facetsDemand').hide();
-			jQuery('#facetsBoth').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
-			jQuery('#facetsSupply').css('padding-top','0').show();
-		} else if (jQuery('#DemandView.selected').length) {
-			jQuery('#facetsSupplyHeader, #facetsDemandHeader, #facetsSupply').hide();
-			jQuery('#facetsBoth').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
-			jQuery('#facetsDemand').css('padding-top','0').show();
-		} else {
-			jQuery('#facetsSupplyHeader, #facetsSupply, #facetsDemandHeader, #facetsDemand').hide();
-		}
+		// change appearance of the filters
+		if (jQuery('#SupplyView.selected').length) shuffleSupply();
+		else if (jQuery('#DemandView.selected').length) shuffleDemand();
+		else shuffleBoth();
+		// bind click events for tabs
+		jQuery('#SupplyView').bind('click', shuffleSupply);
+		jQuery('#DemandView').bind('click', shuffleDemand);
+		jQuery('#LaborPressureView').bind('click', shuffleBoth);
 	} else {
 		// undo all the above
 		jQuery('#facetsBothHeader').html( 'Supply &amp; Demand Filters<'+jQuery('#facetsBothHeader').html().split(/<(.+)/)[1] );
-		jQuery('#facetsSupplyHeader, #facetsDemandHeader').show().next().hide();
-		jQUery('#facetsBoth, #facetsSupply, #facetsDemand').removeAttr('style');
+		jQuery('#facetsSupplyHeader, #facetsDemandHeader').show();
+		jQuery('#facetsSupply, #facetsDemand').hide();
+		jQuery('#facetsBoth').removeAttr('style');
+		// unbind click events for tabs
+		jQuery('#SupplyView').unbind('click', shuffleSupply);
+		jQuery('#DemandView').unbind('click', shuffleDemand);
+		jQuery('#LaborPressureView').unbind('click', shuffleBoth);
 	}
 });
