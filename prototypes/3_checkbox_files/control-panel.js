@@ -76,7 +76,7 @@ jQuery('#noParens').click( function removeParens() {
 jQuery('#chkbx').click( function addCheckbox() {
 	if (jQuery(this).filter(':checked').length) {
 		// Re-align the facet number titles to the right
-		jQuery('.facetNumberTitle .facetCountSupplyWrapper').css('margin-left','14px');
+		jQuery('.facetNumberTitle .facetCountSupplyWrapper, #facetsDemand .facetNumberTitle .facetCountDemandWrapper').css('margin-left','14px');
 		// if the left pane is widened, make the filterlabel wider
 		if (jQuery('#wideMenu').filter(':checked').length) {
 			jQuery('.filterCheckboxWrapper').width( '113px' );
@@ -104,7 +104,7 @@ jQuery('#chkbx').click( function addCheckbox() {
 		// remove checkboxes
 		jQuery('#AllFilters .facetCheckbox').remove();
 		// Re-align the facet number titles to the left
-		jQuery('.facetNumberTitle .facetCountSupplyWrapper').css('margin-left','0');
+		jQuery('.facetNumberTitle .facetCountSupplyWrapper, #facetsDemand .facetNumberTitle .facetCountDemandWrapper').css('margin-left','0');
 		// if the left pane is widened, make the filterlabel wider
 		if (jQuery('#wideMenu').filter(':checked').length) {
 			jQuery('.filterCheckboxWrapper').width( '127px' );
