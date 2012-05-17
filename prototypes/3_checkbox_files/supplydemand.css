@@ -616,36 +616,6 @@ table.detailView .msa.last {padding-right:25px;}
 
 .titled_tips {display:inline-block;background:url("../ReportSummary_files/question.png") no-repeat scroll 0 0 transparent;font-size:1em;min-height:16px;min-width:16px}
 .titled_tips:hover {cursor:help}
-
-.cluetip-cbTitledTip
-{
-    position:relative;
-    z-index:100000;
-}
-.cluetip-cbTitledTip #cluetip-outer
-{
-    color:White;
-    background:#6296dd;
-    border:#7F7F7F solid 1px;
-}
-.cluetip-cbTitledTip #cluetip-title
-{
-    margin:0px;
-    padding:7px;
-}
-.cluetip-cbTitledTip #cluetip-inner
-{
-    color:black;
-    font-size:12px;
-    background:#fffffe;
-    padding:7px;
-    border-top:#7F7F7F solid 1px;
-    font-family:Arial;
-}
-.section
-{
-    border:1px solid #dddddd;
-}
 .section h2
 {
     text-align:left;
