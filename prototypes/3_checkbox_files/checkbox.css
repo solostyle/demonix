@@ -4,7 +4,7 @@
 .facets li li.selected {background-color:#ffe0aa;border-color:#dca}
 .facets li li.selected:hover {background-color:#fea;border-color:#dca}
 
-.facetCountSupplyWrapper, .facetCountDemandWrapper {font-weight:bold;text-align:right;width:50px}
+.facetCountSupplyWrapper, .facetCountDemandWrapper {text-align:right;width:50px}
 .facetNumberTitle .facetCountSupplyWrapper, #facetsDemand .facetNumberTitle .facetCountDemandWrapper {margin-left:14px}
 .facetNumberTitle .facetCountSupplyWrapper, .facetNumberTitle .facetCountDemandWrapper {text-align:right}
 
