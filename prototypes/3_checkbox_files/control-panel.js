@@ -12,8 +12,7 @@ jQuery('body')
 .append('<h1>Filters Behavior</h1>')
 .append('<ul></ul>')
 .find('ul:last-child')
-.append('<li><input type="radio" name="shuffleBhvr" id="shuffleYes"><label for="shuffleYes">Shuffle</label></li>')
-.append('<li><input type="radio" name="shuffleBhvr" id="shuffleNo" checked="checked"><label for="shuffleNo">Don&#8217;t Shuffle</label></li>');
+.append('<li><input type="checkbox" id="shuffleBhvr"><label for="shuffleBhvr">Shuffle</label></li>')
 
 
 jQuery('#numOnRight').click( function moveNumbersToRight() {
@@ -160,8 +159,8 @@ jQuery('#wideMenu').click( function widenMenu() {
 		jQuery('#facetsSupplyHeader, #facetsSupply, #facetsDemandHeader, #facetsDemand').hide();
 	};
 
-jQuery('#shuffleYes, #shuffleNo').click( function shuffle() {
-	if (jQuery('#shuffleYes:checked').length) {
+jQuery('#shuffleBhvr').click( function shuffle() {
+	if (jQuery(this).filter(':checked').length) {
 		// change the header
 		jQuery('#facetsBothHeader').html( 'Refine Your Search<'+jQuery('#facetsBothHeader').html().split(/<(.+)/)[1] );
 		// change appearance of the filters
