@@ -1,12 +1,19 @@
 jQuery('body')
-.append('<div id="controlpanel" style="position:fixed;top:0;right:0;background-color:rgba(250,250,250,.7);border-radius:7px;font:normal normal 12px/16px arial,sans-serif"></div>')
+.append('<div id="controlpanel"></div>')
 .find('#controlpanel')
-.append('<ul style="padding:0;margin:5px;list-style:none"></ul>')
+.append('<h1>Filters Appearance</h1>')
+.append('<ul></ul>')
 .find('ul')
 .append('<li><input type="checkbox" id="numOnRight" checked="checked"><label for="numOnRight">Numbers on right</label></li>')
 .append('<li><input type="checkbox" id="noParens" checked="checked"><label for="noParens">No parentheses</label></li>')
 .append('<li><input type="checkbox" id="chkbx" checked="checked"><label for="chkbx">Checkbox</label></li>')
-.append('<li><input type="checkbox" id="wideMenu" checked="checked"><label for="wideMenu">Wide menu</label></li>');
+.append('<li><input type="checkbox" id="wideMenu" checked="checked"><label for="wideMenu">Wide menu</label></li>')
+.end()
+.append('<h1>Filters Behavior</h1>')
+.append('<ul></ul>')
+.find('ul:last-child')
+.append('<li><input type="radio" name="shuffle" id="shuffleBhvr"><label for="shuffleBhvr">Shuffle</label></li>')
+.append('<li><input type="radio" name="shuffle" id="noShuffleBhvr" checked="checked"><label for="noShuffleBhvr">Don&#8217;t Shuffle</label></li>');
 
 
 jQuery('#numOnRight').click( function moveNumbersToRight() {
