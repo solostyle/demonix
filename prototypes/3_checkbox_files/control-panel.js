@@ -20,8 +20,8 @@ jQuery('#numOnRight').click( function moveNumbersToRight() {
 		jQuery('.facetCountSupplyWrapper').each(function() {
 			jQuery(this).insertAfter(jQuery(this).next('.filterCheckboxWrapper'));
 			if (jQuery(this).next('.facetCountDemandWrapper').length > 0) {
-				jQuery(this).find('span').html(jQuery(this).find('span').html().split(')')[0]);
-				jQuery(this).next('.facetCountDemandWrapper').find('span').html(jQuery(this).next('.facetCountDemandWrapper').find('span').html().split('(')[1]);
+				jQuery(this).find('span').html(jQuery(this).find('span').html().replace(')',''));
+				jQuery(this).next('.facetCountDemandWrapper').find('span').html(jQuery(this).next('.facetCountDemandWrapper').find('span').html().replace('(',''));
 			}
 		});
 	} else {
@@ -33,8 +33,8 @@ jQuery('#numOnRight').click( function moveNumbersToRight() {
 			jQuery('.facetCountSupplyWrapper').each(function() {
 				jQuery(this).insertBefore(jQuery(this).prev('.filterCheckboxWrapper'));
 				if (jQuery(this).next().next('.facetCountDemandWrapper').length > 0) {
-					jQuery(this).find('span').html( jQuery(this).find('span').html().replace(/([0-9,]+)$/g, '$1)') );
-					jQuery(this).next().next('.facetCountDemandWrapper').find('span').html( jQuery(this).next().next('.facetCountDemandWrapper').find('span').html().replace(/^([0-9,]+)/g, '($1') );
+					jQuery(this).find('span').html( jQuery(this).find('span').html().replace(/([0-9,]+)/g, '$1)') );
+					jQuery(this).next().next('.facetCountDemandWrapper').find('span').html( jQuery(this).next().next('.facetCountDemandWrapper').find('span').html().replace(/([0-9,]+)/g, '($1') );
 				}
 			});
 		}
@@ -51,22 +51,22 @@ jQuery('#noParens').click( function removeParens() {
 		if (jQuery('#numOnRight').filter(':checked').length) {
 			// only put the beginning parens back. if there is no sibling after, put both parens back
 			jQuery('.facetCountSupplyWrapper').each(function() {
-				jQuery(this).find('span').html( jQuery(this).find('span').html().replace(/^([0-9,]+)/g, '($1') );
+				jQuery(this).find('span').html( jQuery(this).find('span').html().replace(/([0-9,]+)/g, '($1') );
 				if (jQuery(this).next().length == 0) {
-					jQuery(this).find('span').html( jQuery(this).find('span').html().replace(/([0-9,]+)$/g, '$1)') );
+					jQuery(this).find('span').html( jQuery(this).find('span').html().replace(/([0-9,]+)/g, '$1)') );
 				}
 			});
 			// only put the ending parens back. if there is no Supply sibling before, put both parens back
 			jQuery('.facetCountDemandWrapper').each(function() {
-				jQuery(this).find('span').html( jQuery(this).find('span').html().replace(/([0-9,]+)$/g, '$1)') );
+				jQuery(this).find('span').html( jQuery(this).find('span').html().replace(/([0-9,]+)/g, '$1)') );
 				if (jQuery(this).prev('.facetCountSupplyWrapper').length == 0) {
-					jQuery(this).find('span').html( jQuery(this).find('span').html().replace(/^([0-9,]+)/g, '($1') );
+					jQuery(this).find('span').html( jQuery(this).find('span').html().replace(/([0-9,]+)/g, '($1') );
 				}
 			});
 		} else {
 		// put all the parens back
 			jQuery('.facetCountSupplyWrapper, .facetCountDemandWrapper').each(function() {
-				jQuery(this).find('span').html( jQuery(this).find('span').html().replace(/^([0-9,]+)$/g, '($1)') );
+				jQuery(this).find('span').html( jQuery(this).find('span').html().replace(/([0-9,]+)/g, '($1)') );
 			});
 		}
 	}
