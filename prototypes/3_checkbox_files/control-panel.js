@@ -12,8 +12,8 @@ jQuery('body')
 .append('<h1>Filters Behavior</h1>')
 .append('<ul></ul>')
 .find('ul:last-child')
-.append('<li><input type="radio" name="shuffle" id="shuffleBhvr"><label for="shuffleBhvr">Shuffle</label></li>')
-.append('<li><input type="radio" name="shuffle" id="noShuffleBhvr" checked="checked"><label for="noShuffleBhvr">Don&#8217;t Shuffle</label></li>');
+.append('<li><input type="radio" name="shuffleBhvr" id="shuffleYes"><label for="shuffleYes">Shuffle</label></li>')
+.append('<li><input type="radio" name="shuffleBhvr" id="shuffleNo" checked="checked"><label for="shuffleNo">Don&#8217;t Shuffle</label></li>');
 
 
 jQuery('#numOnRight').click( function moveNumbersToRight() {
@@ -116,7 +116,7 @@ jQuery('#chkbx').click( function addCheckbox() {
 	}
 });
 
-jQuery('#wideMenu').click( function addCheckbox() {
+jQuery('#wideMenu').click( function widenMenu() {
 	if (jQuery(this).filter(':checked').length) {
 		jQuery('.facet-ui').width('255px');
 		jQuery('.facetCountSupplyWrapper, .facetCountDemandWrapper').width('50px');
@@ -142,5 +142,28 @@ jQuery('#wideMenu').click( function addCheckbox() {
 			jQuery('.filterCheckboxWrapper').width( '87px' );
 			jQuery('#facetsSupply .filterCheckboxWrapper, #facetsDemand .filterCheckboxWrapper').width( '131px' );
 		}
+	}
+});
+
+jQuery('#shuffleYes, #shuffleNo').click( function shuffle() {
+	if (jQuery('#shuffleYes:checked').length) {
+		// change the header
+		jQuery('#facetsBothHeader').html( 'Refine Your Search<'+jQuery('#facetsBothHeader').html().split(/<(.+)/)[1] );
+		if (jQuery('#SupplyView.selected').length) {
+			jQuery('#facetsSupplyHeader, #facetsDemandHeader, #facetsDemand').hide();
+			jQuery('#facetsBoth').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
+			jQuery('#facetsSupply').css('padding-top','0').show();
+		} else if (jQuery('#DemandView.selected').length) {
+			jQuery('#facetsSupplyHeader, #facetsDemandHeader, #facetsSupply').hide();
+			jQuery('#facetsBoth').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
+			jQuery('#facetsDemand').css('padding-top','0').show();
+		} else {
+			jQuery('#facetsSupplyHeader, #facetsSupply, #facetsDemandHeader, #facetsDemand').hide();
+		}
+	} else {
+		// undo all the above
+		jQuery('#facetsBothHeader').html( 'Supply &amp; Demand Filters<'+jQuery('#facetsBothHeader').html().split(/<(.+)/)[1] );
+		jQuery('#facetsSupplyHeader, #facetsDemandHeader').show().next().hide();
+		jQUery('#facetsBoth, #facetsSupply, #facetsDemand').removeAttr('style');
 	}
 });
