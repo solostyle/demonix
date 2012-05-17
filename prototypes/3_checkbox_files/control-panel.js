@@ -144,7 +144,7 @@ jQuery('#wideMenu').click( function widenMenu() {
 	}
 });
 
-	// functions
+	// functions -- SO BAD!!! GLOBALS!! AGH!
 	var shuffleDemand = function() {
 		jQuery('#facetsSupplyHeader, #facetsDemandHeader, #facetsSupply').hide();
 		jQuery('#facetsBoth').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
