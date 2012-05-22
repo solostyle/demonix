@@ -385,6 +385,7 @@ var ReportFilters = function (wrapperID) {
 		jQuery(".facets li li.selected").find(':checkbox').removeAttr("checked");
 		jQuery(".facets li li.selected").removeClass("selected");
 		jQuery("#searched-for .searched-for-content ul").empty();
+		Prototypes.updateSummary();
     };
     return {
         set_numericDataType: function (value) { isNumericDataType = value; },

@@ -21,6 +21,7 @@ this.Prototypes = this.Prototypes || function() {
 		// gather all the selected filters
 		var slctd = jQuery('#AllFilters').find('li.selected'),supplySum=0, demandSum=0;
 		// add up the supply and demand counts
+
 		if (jQuery(slctd).length) {
 			jQuery(slctd).find('.facetCountSupply').each(function() {
 				supplySum += parseInt(jQuery(this).html().replace(/\D/g,''));
@@ -30,11 +31,20 @@ this.Prototypes = this.Prototypes || function() {
 			});
 		} else {
 			// nothing is selected. auto select "all"
+			// jQuery('#AllFilters').find('.facets').find('ul').find('li:first-child').each(function() {
+				// jQuery(this).addClass('selected');
+			// });
 		}
 		
 		// replace the summary counts
 		jQuery('#lblActiveSupply').html( addCommas(supplySum.toString()) );
 		jQuery('#lblJobCount').html( addCommas(demandSum.toString()) );
+		// if something is zero, make sure this is zero
+		if (!supplySum) {
+			jQuery('#lblActiveLaborPressure').html('0');
+		} else {
+			jQuery('#lblActiveLaborPressure').html( (supplySum/demandSum).toFixed(2) );
+		}
 	};
 	
 	var addCommas = function (nStr) {
