@@ -73,6 +73,9 @@ jQuery(".facets li li").click(function toggleFilters() {
 		jQuery("#searched-for .searched-for-content ul").append(searchFor);
 		jQuery("#searched-for").removeClass("inactive");
 	}
+	
+	//update summary counts
+	Prototypes.updateSummary();
 });
 
 // what happens when applied filter is clicked
@@ -102,6 +105,9 @@ jQuery(".searched-for-content").click( function toggleFilters(e) {
 	} else {
 		jQuery("#searched-for").removeClass("inactive");
 	}
+	
+	//update summary counts
+	Prototypes.updateSummary();
 });
 
 // Close to begin with

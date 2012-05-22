@@ -144,33 +144,18 @@ jQuery('#wideMenu').click( function widenMenu() {
 	}
 });
 
-	// functions -- SO BAD!!! GLOBALS!! AGH!
-	var shuffleDemand = function() {
-		jQuery('#facetsSupplyHeader, #facetsDemandHeader, #facetsSupply').hide();
-		jQuery('#facetsBoth').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
-		jQuery('#facetsDemand').show();
-	},
-	shuffleSupply = function() {
-		jQuery('#facetsSupplyHeader, #facetsDemandHeader, #facetsDemand').hide();
-		jQuery('#facetsBoth').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
-		jQuery('#facetsSupply').show();
-	},
-	shuffleBoth = function() {
-		jQuery('#facetsSupplyHeader, #facetsSupply, #facetsDemandHeader, #facetsDemand').hide();
-	};
-
 jQuery('#shuffleBhvr').click( function shuffle() {
 	if (jQuery(this).filter(':checked').length) {
 		// change the header
 		jQuery('#facetsBothHeader').html( 'Refine Your Search<'+jQuery('#facetsBothHeader').html().split(/<(.+)/)[1] );
 		// change appearance of the filters
-		if (jQuery('#SupplyView.selected').length) shuffleSupply();
-		else if (jQuery('#DemandView.selected').length) shuffleDemand();
-		else shuffleBoth();
+		if (jQuery('#SupplyView.selected').length) Prototypes.shuffleSupply();
+		else if (jQuery('#DemandView.selected').length) Prototypes.shuffleDemand();
+		else Prototypes.shuffleBoth();
 		// bind click events for tabs
-		jQuery('#SupplyView').bind('click', shuffleSupply);
-		jQuery('#DemandView').bind('click', shuffleDemand);
-		jQuery('#LaborPressureView').bind('click', shuffleBoth);
+		jQuery('#SupplyView').bind('click', Prototypes.shuffleSupply);
+		jQuery('#DemandView').bind('click', Prototypes.shuffleDemand);
+		jQuery('#LaborPressureView').bind('click', Prototypes.shuffleBoth);
 	} else {
 		// undo all the above
 		jQuery('#facetsBothHeader').html( 'Supply &amp; Demand Filters<'+jQuery('#facetsBothHeader').html().split(/<(.+)/)[1] );
@@ -178,8 +163,8 @@ jQuery('#shuffleBhvr').click( function shuffle() {
 		jQuery('#facetsSupply, #facetsDemand').hide();
 		jQuery('#facetsBoth').removeAttr('style');
 		// unbind click events for tabs
-		jQuery('#SupplyView').unbind('click', shuffleSupply);
-		jQuery('#DemandView').unbind('click', shuffleDemand);
-		jQuery('#LaborPressureView').unbind('click', shuffleBoth);
+		jQuery('#SupplyView').unbind('click', Prototypes.shuffleSupply);
+		jQuery('#DemandView').unbind('click', Prototypes.shuffleDemand);
+		jQuery('#LaborPressureView').unbind('click', Prototypes.shuffleBoth);
 	}
 });
