@@ -45,6 +45,52 @@ this.Prototypes = this.Prototypes || function() {
 		} else {
 			jQuery('#lblActiveLaborPressure').html( (supplySum/demandSum).toFixed(2) );
 		}
+	},
+	changeWidth = function() {
+		if (jQuery('#noNum').filter(':checked').length
+			&& jQuery('#chkbx').filter(':checked').length
+			&& !jQuery('#wideMenu').filter(':checked').length) {
+			jQuery('.filterCheckboxWrapper').css('width','163px'); //non wide menu, checkbox, no numbers
+		}
+		if (jQuery('#noNum').filter(':checked').length
+			&& jQuery('#chkbx').filter(':checked').length
+			&& jQuery('#wideMenu').filter(':checked').length) {
+			jQuery('.filterCheckboxWrapper').css('width','213px'); //wide menu, checkbox, no numbers
+		}
+		if (jQuery('#noNum').filter(':checked').length
+			&& !jQuery('#chkbx').filter(':checked').length
+			&& !jQuery('#wideMenu').filter(':checked').length) {
+			jQuery('.filterCheckboxWrapper').css('width','177px'); //non wide menu, no checkbox, no numbers
+		}
+		if (jQuery('#noNum').filter(':checked').length
+			&& !jQuery('#chkbx').filter(':checked').length
+			&& jQuery('#wideMenu').filter(':checked').length) {
+			jQuery('.filterCheckboxWrapper').css('width','227px'); //wide menu, no checkbox, no numbers
+		}
+		if (!jQuery('#noNum').filter(':checked').length
+			&& jQuery('#chkbx').filter(':checked').length
+			&& !jQuery('#wideMenu').filter(':checked').length) {
+			jQuery('.filterCheckboxWrapper').width( '73px' );
+			jQuery('#facetsSupply .filterCheckboxWrapper, #facetsDemand .filterCheckboxWrapper').width( '117px' ); //non wide menu, checkbox, numbers
+		}
+		if (!jQuery('#noNum').filter(':checked').length
+			&& jQuery('#chkbx').filter(':checked').length
+			&& jQuery('#wideMenu').filter(':checked').length) {
+			jQuery('.filterCheckboxWrapper').width( '113px' );
+			jQuery('#facetsSupply .filterCheckboxWrapper, #facetsDemand .filterCheckboxWrapper').width( '160px' ); //wide menu, checkbox, numbers
+		}
+		if (!jQuery('#noNum').filter(':checked').length
+			&& !jQuery('#chkbx').filter(':checked').length
+			&& !jQuery('#wideMenu').filter(':checked').length) {
+			jQuery('.filterCheckboxWrapper').width( '87px' );
+			jQuery('#facetsSupply .filterCheckboxWrapper, #facetsDemand .filterCheckboxWrapper').width( '131px' ); //non wide menu, no checkbox, numbers
+		}
+		if (!jQuery('#noNum').filter(':checked').length
+			&& !jQuery('#chkbx').filter(':checked').length
+			&& jQuery('#wideMenu').filter(':checked').length) {
+			jQuery('.filterCheckboxWrapper').width( '127px' );
+			jQuery('#facetsSupply .filterCheckboxWrapper, #facetsDemand .filterCheckboxWrapper').width( '174px' ); //wide menu, no checkbox, numbers
+		}
 	};
 	
 	var addCommas = function (nStr) {
@@ -63,7 +109,8 @@ this.Prototypes = this.Prototypes || function() {
 		updateSummary: updateSummary,
 		shuffleDemand: shuffleDemand,
 		shuffleSupply: shuffleSupply,
-		shuffleBoth: shuffleBoth
+		shuffleBoth: shuffleBoth,
+		changeWidth: changeWidth
 	};
 
 }();

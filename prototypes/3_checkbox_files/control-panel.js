@@ -4,6 +4,7 @@ jQuery('body')
 .append('<h1>Filters Appearance</h1>')
 .append('<ul></ul>')
 .find('ul')
+.append('<li><input type="checkbox" id="noNum"><label for="noNum">No numbers</label></li>')
 .append('<li><input type="checkbox" id="numOnRight" checked="checked"><label for="numOnRight">Numbers on right</label></li>')
 .append('<li><input type="checkbox" id="noParens" checked="checked"><label for="noParens">No parentheses</label></li>')
 .append('<li><input type="checkbox" id="chkbx" checked="checked"><label for="chkbx">Checkbox</label></li>')
@@ -12,8 +13,21 @@ jQuery('body')
 .append('<h1>Filters Behavior</h1>')
 .append('<ul></ul>')
 .find('ul:last-child')
-.append('<li><input type="checkbox" id="shuffleBhvr"><label for="shuffleBhvr">Shuffle</label></li>')
+.append('<li><input type="checkbox" id="shuffleBhvr"><label for="shuffleBhvr">Shuffle</label></li>');
 
+
+
+jQuery('#noNum').click( function removeNumbers() {
+	if (jQuery(this).filter(':checked').length) {
+		jQuery('.facetCountSupplyWrapper, .facetCountDemandWrapper').hide();
+		// change the width
+		Prototypes.changeWidth();
+	} else {
+		jQuery('.facetCountSupplyWrapper, .facetCountDemandWrapper').show();
+		// change the width
+		Prototypes.changeWidth();
+	}
+});
 
 jQuery('#numOnRight').click( function moveNumbersToRight() {
 	if (jQuery(this).filter(':checked').length) {
@@ -76,14 +90,10 @@ jQuery('#chkbx').click( function addCheckbox() {
 	if (jQuery(this).filter(':checked').length) {
 		// Re-align the facet number titles to the right
 		jQuery('.facetNumberTitle .facetCountSupplyWrapper, #facetsDemand .facetNumberTitle .facetCountDemandWrapper').css('margin-left','14px');
-		// if the left pane is widened, make the filterlabel wider
-		if (jQuery('#wideMenu').filter(':checked').length) {
-			jQuery('.filterCheckboxWrapper').width( '113px' );
-			jQuery('#facetsSupply .filterCheckboxWrapper, #facetsDemand .filterCheckboxWrapper').width( '160px' );
-		} else {
-			jQuery('.filterCheckboxWrapper').width( '73px' );
-			jQuery('#facetsSupply .filterCheckboxWrapper, #facetsDemand .filterCheckboxWrapper').width( '117px' );
-		}		
+		
+		// adjust the widths
+		Prototypes.changeWidth();		
+		
 		// Add the checkbox
 		jQuery('#facetsSupply .facets>li>div:last-child ul, #facetsBoth .facets>li>div:last-child ul, #facetsDemand .facets>li>div:last-child ul').each(function insert() {
 			var facet = jQuery(this).parent().attr('id'),
@@ -102,16 +112,12 @@ jQuery('#chkbx').click( function addCheckbox() {
 	} else {
 		// remove checkboxes
 		jQuery('#AllFilters .facetCheckbox').remove();
+		
 		// Re-align the facet number titles to the left
 		jQuery('.facetNumberTitle .facetCountSupplyWrapper, #facetsDemand .facetNumberTitle .facetCountDemandWrapper').css('margin-left','0');
-		// if the left pane is widened, make the filterlabel wider
-		if (jQuery('#wideMenu').filter(':checked').length) {
-			jQuery('.filterCheckboxWrapper').width( '127px' );
-			jQuery('#facetsSupply .filterCheckboxWrapper, #facetsDemand .filterCheckboxWrapper').width( '174px' );
-		} else {
-			jQuery('.filterCheckboxWrapper').width( '87px' );
-			jQuery('#facetsSupply .filterCheckboxWrapper, #facetsDemand .filterCheckboxWrapper').width( '131px' );
-		}
+		
+		// adjust the widths
+		Prototypes.changeWidth();
 	}
 });
 
@@ -120,27 +126,18 @@ jQuery('#wideMenu').click( function widenMenu() {
 		jQuery('.facet-ui').width('255px');
 		jQuery('.facetCountSupplyWrapper, .facetCountDemandWrapper').width('50px');
 		jQuery('body div#jpHeader div#jpHeader_inner, body div#JobPosterNavBar div.priwrapper, body div#pnlOuterWrapper div#JPTopNav ul, body div#pnlOuterWrapper div#JPBreadcrumb, body div#pnlOuterWrapper div#jpMainContent div#pnlInnerWrapper, body div#pnlOuterWrapper div#jpMainContent').width('1155px');
-		// facet label width depends on whether there is a checkbox or not
-		if (jQuery('#chkbx').filter(':checked').length) {
-			jQuery('.filterCheckboxWrapper').width( '113px' );
-			jQuery('#facetsSupply .filterCheckboxWrapper, #facetsDemand .filterCheckboxWrapper').width( '160px' );
-		} else {
-			jQuery('.filterCheckboxWrapper').width( '127px' );
-			jQuery('#facetsSupply .filterCheckboxWrapper, #facetsDemand .filterCheckboxWrapper').width( '174px' );
-		}
+		
+		// adjust the widths
+		Prototypes.changeWidth();
 		
 	} else {
 		jQuery('.facet-ui').width('205px');
 		jQuery('.facetCountSupplyWrapper, .facetCountDemandWrapper').width('45px');
 		jQuery('body div#jpHeader div#jpHeader_inner, body div#JobPosterNavBar div.priwrapper, body div#pnlOuterWrapper div#JPTopNav ul, body div#pnlOuterWrapper div#JPBreadcrumb, body div#pnlOuterWrapper div#jpMainContent div#pnlInnerWrapper, body div#pnlOuterWrapper div#jpMainContent').width('1105px');
-		// facet label width depends on whether there is a checkbox or not
-		if (jQuery('#chkbx').filter(':checked').length) {
-			jQuery('.filterCheckboxWrapper').width( '73px' );
-			jQuery('#facetsSupply .filterCheckboxWrapper, #facetsDemand .filterCheckboxWrapper').width( '117px' );
-		} else {
-			jQuery('.filterCheckboxWrapper').width( '87px' );
-			jQuery('#facetsSupply .filterCheckboxWrapper, #facetsDemand .filterCheckboxWrapper').width( '131px' );
-		}
+		
+		// adjust the widths
+		Prototypes.changeWidth();
+
 	}
 });
 
