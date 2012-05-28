@@ -1,17 +1,37 @@
 this.Prototypes = this.Prototypes || function() {
 	
 	var shuffleDemand = function() {
-		jQuery('#facetsSupplyHeader, #facetsDemandHeader, #facetsSupply').hide();
-		jQuery('#facetsBoth').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
-		jQuery('#facetsDemand').show();
+		jQuery('#facetsSupplyHeader, #facetsDemandHeader').hide();
+		jQuery('#facetsSupply').find('.facets').each( function() {
+			jQuery(this).find('li').css('color','#ccc');
+			jQuery(this).find('.headerText').css('color','#ccc');
+		});
+		jQuery('#facetsBoth, #facetsSupply').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
+		jQuery('#facetsDemand').show().find('.facets').each( function() {
+			jQuery(this).find('li').removeAttr('style');
+			jQuery(this).find('.headerText').removeAttr('style');
+		});
 	},
 	shuffleSupply = function() {
-		jQuery('#facetsSupplyHeader, #facetsDemandHeader, #facetsDemand').hide();
-		jQuery('#facetsBoth').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
-		jQuery('#facetsSupply').show();
+		jQuery('#facetsSupplyHeader, #facetsDemandHeader').hide();
+		jQuery('#facetsDemand').find('.facets').each( function() {
+			jQuery(this).find('li').css('color','#ccc');
+			jQuery(this).find('.headerText').css('color','#ccc');
+		});
+		jQuery('#facetsBoth, #facetsSupply').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
+		jQuery('#facetsSupply').show().find('.facets').each( function() {
+			jQuery(this).find('li').removeAttr('style');
+			jQuery(this).find('.headerText').removeAttr('style');
+		});
 	},
 	shuffleBoth = function() {
-		jQuery('#facetsSupplyHeader, #facetsSupply, #facetsDemandHeader, #facetsDemand').hide();
+		jQuery('#facetsSupplyHeader, #facetsDemandHeader').hide();
+		jQuery('#facetsSupply, #facetsDemand').find('.facets').each( function() {
+			jQuery(this).find('li').css('color','#ccc');
+			jQuery(this).find('.headerText').css('color','#ccc');
+		});
+		jQuery('#facetsBoth, #facetsSupply').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
+		jQuery('#facetsSupply, #facetsDemand').show();
 	},
 	/* Update the Summary Box numbers based on the selected filters.
 	 * This code runs whenever a filter is applied or unapplied.
