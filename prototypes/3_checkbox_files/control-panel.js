@@ -20,7 +20,6 @@ jQuery('body')
 .append('<li><input type="radio" name="shuffleType" checked="checked" id="hiding"><label for="hiding">By Hiding</label></li>')
 .append('<li><input type="radio" name="shuffleType" id="disabling"><label for="disabling">By Disabling</label></li>');
 
-// Hide the shuffle menu if it is not checked
 
 jQuery('#noNum').click( function removeNumbers() {
 	if (jQuery(this).filter(':checked').length) {
@@ -146,8 +145,8 @@ jQuery('#wideMenu').click( function widenMenu() {
 	}
 });
 
-jQuery('#shuffleBhvr').click( function shuffle() {
-	if (jQuery(this).filter(':checked').length) {
+jQuery('#shuffleBhvr').click( function shuffle(force) {
+	if (jQuery(this).filter(':checked').length || force) {
 		// show the shuffle menu
 		jQuery('#shuffleMenu').show();
 			
@@ -181,3 +180,7 @@ jQuery('#disabling, #hiding').click( function shuffleBy() {
 	Prototypes.unshuffleWhenShuffleOptionSelected();
 	Prototypes.shuffleWhenShuffleOptionSelected();
 });
+
+// Do these things by default
+// Check the Shuffle box, run the code to shuffle
+jQuery('#shuffleBhvr').trigger('click', [true]);
