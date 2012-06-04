@@ -110,6 +110,8 @@ jQuery(".searched-for-content").click( function toggleFilters(e) {
 	Prototypes.updateSummary();
 });
 
+/* On Load, how to set up the page */
+
 // Close to begin with
 jQuery('#facetsSupply,#facetsDemand').hide();
 jQuery('#facetsSupplyHeader .expandedInd,#facetsDemandHeader .expandedInd').hide();

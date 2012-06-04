@@ -1,17 +1,101 @@
 this.Prototypes = this.Prototypes || function() {
 	
-	var shuffleDemand = function() {
+	var shuffleDemandByHiding = function() {
 		jQuery('#facetsSupplyHeader, #facetsDemandHeader, #facetsSupply').hide();
 		jQuery('#facetsBoth').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
 		jQuery('#facetsDemand').show();
 	},
-	shuffleSupply = function() {
+	shuffleSupplyByHiding = function() {
 		jQuery('#facetsSupplyHeader, #facetsDemandHeader, #facetsDemand').hide();
 		jQuery('#facetsBoth').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
 		jQuery('#facetsSupply').show();
 	},
-	shuffleBoth = function() {
+	shuffleBothByHiding = function() {
 		jQuery('#facetsSupplyHeader, #facetsSupply, #facetsDemandHeader, #facetsDemand').hide();
+	},
+	shuffleDemandByDisabling = function() {
+		jQuery('#facetsSupplyHeader, #facetsDemandHeader').hide();
+		jQuery('#facetsSupply').show().find('.facets').each( function() {
+			jQuery(this).find('li').css('color','#ccc');
+			jQuery(this).find('.headerText').css('color','#ccc');
+		});
+		jQuery('#facetsBoth, #facetsSupply').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
+		jQuery('#facetsDemand').show().find('.facets').each( function() {
+			jQuery(this).find('li').removeAttr('style');
+			jQuery(this).find('.headerText').removeAttr('style');
+		});
+	},
+	shuffleSupplyByDisabling = function() {
+		jQuery('#facetsSupplyHeader, #facetsDemandHeader').hide();
+		jQuery('#facetsDemand').show().find('.facets').each( function() {
+			jQuery(this).find('li').css('color','#ccc');
+			jQuery(this).find('.headerText').css('color','#ccc');
+		});
+		jQuery('#facetsBoth, #facetsSupply').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
+		jQuery('#facetsSupply').show().find('.facets').each( function() {
+			jQuery(this).find('li').removeAttr('style');
+			jQuery(this).find('.headerText').removeAttr('style');
+		});
+	},
+	shuffleBothByDisabling = function() {
+		jQuery('#facetsSupplyHeader, #facetsDemandHeader').hide();
+		jQuery('#facetsSupply, #facetsDemand').find('.facets').each( function() {
+			jQuery(this).find('li').css('color','#ccc');
+			jQuery(this).find('.headerText').css('color','#ccc');
+		});
+		jQuery('#facetsBoth, #facetsSupply').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
+		jQuery('#facetsSupply, #facetsDemand').show();
+	},
+	bindTabClickForShuffle = function() {
+		if (jQuery('#hiding').filter(':checked').length) {
+			jQuery('#SupplyView').bind('click', shuffleSupplyByHiding);
+			jQuery('#DemandView').bind('click', shuffleDemandByHiding);
+			jQuery('#LaborPressureView').bind('click', shuffleBothByHiding);
+		}
+		else {
+			jQuery('#SupplyView').bind('click', shuffleSupplyByDisabling);
+			jQuery('#DemandView').bind('click', shuffleDemandByDisabling);
+			jQuery('#LaborPressureView').bind('click', shuffleBothByDisabling);
+		}
+	},
+	unbindTabClickForShuffle = function() {
+		jQuery('#SupplyView').unbind('click', shuffleSupplyByHiding);
+		jQuery('#DemandView').unbind('click', shuffleDemandByHiding);
+		jQuery('#LaborPressureView').unbind('click', shuffleBothByHiding);
+		jQuery('#SupplyView').unbind('click', shuffleSupplyByDisabling);
+		jQuery('#DemandView').unbind('click', shuffleDemandByDisabling);
+		jQuery('#LaborPressureView').unbind('click', shuffleBothByDisabling);
+	},
+	shuffleWhenShuffleOptionSelected = function() {
+		// rename the both header
+		jQuery('#facetsBothHeader').html( 'Refine Your Search<'+jQuery('#facetsBothHeader').html().split(/<(.+)/)[1] );
+		// shuffle based on what tab is selected
+		if (jQuery('#SupplyView.selected').length) {
+			if (jQuery('#hiding').filter(':checked').length) shuffleSupplyByHiding();
+			else shuffleSupplyByDisabling();
+			
+		} else if (jQuery('#DemandView.selected').length) {
+			if (jQuery('#hiding').filter(':checked').length) shuffleDemandByHiding();
+			else shuffleDemandByDisabling();
+			
+		} else {
+			if (jQuery('#hiding').filter(':checked').length) shuffleBothByHiding();
+			else shuffleBothByDisabling();
+		}	
+	},
+	unshuffleWhenShuffleOptionSelected = function() {
+		// rename the both header
+		jQuery('#facetsBothHeader').html( 'Supply &amp; Demand Filters<'+jQuery('#facetsBothHeader').html().split(/<(.+)/)[1] );
+		// show the other headers
+		jQuery('#facetsSupplyHeader, #facetsDemandHeader').show();
+		// show filters for "both", hide other filters
+		jQuery('#facetsSupply, #facetsDemand').hide();
+		jQuery('#facetsBoth').show().removeAttr('style');
+		// remove the disabled look, enable
+		jQuery('#facetsDemand, #facetsSupply, #facetsBoth').find('.facets').each( function() {
+			jQuery(this).find('li').removeAttr('style');
+			jQuery(this).find('.headerText').removeAttr('style');
+		});
 	},
 	/* Update the Summary Box numbers based on the selected filters.
 	 * This code runs whenever a filter is applied or unapplied.
@@ -107,9 +191,10 @@ this.Prototypes = this.Prototypes || function() {
 	
 	return {
 		updateSummary: updateSummary,
-		shuffleDemand: shuffleDemand,
-		shuffleSupply: shuffleSupply,
-		shuffleBoth: shuffleBoth,
+		bindTabClickForShuffle: bindTabClickForShuffle,
+		unbindTabClickForShuffle: unbindTabClickForShuffle,
+		shuffleWhenShuffleOptionSelected: shuffleWhenShuffleOptionSelected,
+		unshuffleWhenShuffleOptionSelected: unshuffleWhenShuffleOptionSelected,
 		changeWidth: changeWidth
 	};
 

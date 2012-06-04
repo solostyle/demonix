@@ -13,9 +13,14 @@ jQuery('body')
 .append('<h1>Filters Behavior</h1>')
 .append('<ul></ul>')
 .find('ul:last-child')
-.append('<li><input type="checkbox" id="shuffleBhvr"><label for="shuffleBhvr">Shuffle</label></li>');
+.append('<li><input type="checkbox" id="shuffleBhvr"><label for="shuffleBhvr">Shuffle</label></li>')
+.end()
+.append('<ul id="shuffleMenu"></ul>')
+.find('ul:last-child')
+.append('<li><input type="radio" name="shuffleType" checked="checked" id="hiding"><label for="hiding">By Hiding</label></li>')
+.append('<li><input type="radio" name="shuffleType" id="disabling"><label for="disabling">By Disabling</label></li>');
 
-
+// Hide the shuffle menu if it is not checked
 
 jQuery('#noNum').click( function removeNumbers() {
 	if (jQuery(this).filter(':checked').length) {
@@ -143,25 +148,36 @@ jQuery('#wideMenu').click( function widenMenu() {
 
 jQuery('#shuffleBhvr').click( function shuffle() {
 	if (jQuery(this).filter(':checked').length) {
-		// change the header
-		jQuery('#facetsBothHeader').html( 'Refine Your Search<'+jQuery('#facetsBothHeader').html().split(/<(.+)/)[1] );
+		// show the shuffle menu
+		jQuery('#shuffleMenu').show();
+			
 		// change appearance of the filters
-		if (jQuery('#SupplyView.selected').length) Prototypes.shuffleSupply();
-		else if (jQuery('#DemandView.selected').length) Prototypes.shuffleDemand();
-		else Prototypes.shuffleBoth();
+		Prototypes.shuffleWhenShuffleOptionSelected();
+		
 		// bind click events for tabs
-		jQuery('#SupplyView').bind('click', Prototypes.shuffleSupply);
-		jQuery('#DemandView').bind('click', Prototypes.shuffleDemand);
-		jQuery('#LaborPressureView').bind('click', Prototypes.shuffleBoth);
+		Prototypes.bindTabClickForShuffle();
+		
 	} else {
 		// undo all the above
-		jQuery('#facetsBothHeader').html( 'Supply &amp; Demand Filters<'+jQuery('#facetsBothHeader').html().split(/<(.+)/)[1] );
-		jQuery('#facetsSupplyHeader, #facetsDemandHeader').show();
-		jQuery('#facetsSupply, #facetsDemand').hide();
-		jQuery('#facetsBoth').removeAttr('style');
-		// unbind click events for tabs
-		jQuery('#SupplyView').unbind('click', Prototypes.shuffleSupply);
-		jQuery('#DemandView').unbind('click', Prototypes.shuffleDemand);
-		jQuery('#LaborPressureView').unbind('click', Prototypes.shuffleBoth);
+		// hide the shuffle menu
+		jQuery('#shuffleMenu').hide();
+		
+		// change appearance of filters
+		Prototypes.unshuffleWhenShuffleOptionSelected();
+		
+		// unbind click events for tabs, both hiding and disabling
+		Prototypes.unbindTabClickForShuffle();
 	}
+});
+
+jQuery('#disabling, #hiding').click( function shuffleBy() {
+	// unbind click events for tabs, both hiding and disabling
+	Prototypes.unbindTabClickForShuffle();
+	
+	// bind the pertaining events only
+	Prototypes.bindTabClickForShuffle();
+	
+	// change appearance of the filters now
+	Prototypes.unshuffleWhenShuffleOptionSelected();
+	Prototypes.shuffleWhenShuffleOptionSelected();
 });
