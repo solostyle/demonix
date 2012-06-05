@@ -17,8 +17,9 @@ jQuery('body')
 .end()
 .append('<ul id="shuffleMenu"></ul>')
 .find('ul:last-child')
-.append('<li><input type="radio" name="shuffleType" checked="checked" id="hiding"><label for="hiding">By Hiding</label></li>')
-.append('<li><input type="radio" name="shuffleType" id="disabling"><label for="disabling">By Disabling</label></li>');
+.append('<li><input type="radio" name="shuffleType" checked="checked" id="hiding"><label for="hiding">By hiding</label></li>')
+.append('<li><input type="radio" name="shuffleType" id="disabling"><label for="disabling">By disabling</label></li>')
+.append('<li><input type="checkbox" id="keepHeaders"><label for="keepHeaders">Keep headers</label></li>');
 
 
 jQuery('#noNum').click( function removeNumbers() {
@@ -180,6 +181,12 @@ jQuery('#disabling, #hiding').click( function shuffleBy() {
 	Prototypes.unshuffleWhenShuffleOptionSelected();
 	Prototypes.shuffleWhenShuffleOptionSelected();
 });
+
+jQuery('#keepHeaders').click( function keepHeaders() {
+	Prototypes.showOrHideHeaders();
+	
+});
+
 
 // Do these things by default
 // Check the Shuffle box, run the code to shuffle

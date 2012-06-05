@@ -104,6 +104,13 @@ this.Prototypes = this.Prototypes || function() {
 			jQuery(this).find('.headerText').removeAttr('style');
 		});
 	},
+	showOrHideHeaders = function() {
+		if (jQuery('#keepHeaders').filter(':checked').length) {
+			jQuery('#facetsSupplyHeader, #facetsDemandHeader').show();
+		} else {
+			jQuery('#facetsSupplyHeader, #facetsDemandHeader').hide();
+		}
+	},
 	/* Update the Summary Box numbers based on the selected filters.
 	 * This code runs whenever a filter is applied or unapplied.
 	 * Called from checkbox.js
@@ -206,6 +213,7 @@ this.Prototypes = this.Prototypes || function() {
 		unbindTabClickForShuffle: unbindTabClickForShuffle,
 		shuffleWhenShuffleOptionSelected: shuffleWhenShuffleOptionSelected,
 		unshuffleWhenShuffleOptionSelected: unshuffleWhenShuffleOptionSelected,
+		showOrHideHeaders: showOrHideHeaders,
 		changeWidth: changeWidth
 	};
 
