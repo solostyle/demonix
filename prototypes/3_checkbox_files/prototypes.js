@@ -1,5 +1,8 @@
 this.Prototypes = this.Prototypes || function() {
 	
+	/*********************************************************
+	/*              Private functions
+	/********************************************************/
 	var shuffleDemandByHiding = function() {
 		jQuery('#facetsSupplyHeader, #facetsDemandHeader, #facetsSupply').hide();
 		jQuery('#facetsBoth').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
@@ -45,8 +48,12 @@ this.Prototypes = this.Prototypes || function() {
 		});
 		jQuery('#facetsBoth, #facetsSupply').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
 		jQuery('#facetsSupply, #facetsDemand').show();
-	},
-	bindTabClickForShuffle = function() {
+	};
+	
+	/*********************************************************
+	/*              Public functions
+	/********************************************************/
+	var bindTabClickForShuffle = function() {
 		if (jQuery('#hiding').filter(':checked').length) {
 			jQuery('#SupplyView').bind('click', shuffleSupplyByHiding);
 			jQuery('#DemandView').bind('click', shuffleDemandByHiding);
@@ -130,6 +137,7 @@ this.Prototypes = this.Prototypes || function() {
 			jQuery('#lblActiveLaborPressure').html( (supplySum/demandSum).toFixed(2) );
 		}
 	},
+	
 	changeWidth = function() {
 		if (jQuery('#noNum').filter(':checked').length
 			&& jQuery('#chkbx').filter(':checked').length
@@ -177,6 +185,9 @@ this.Prototypes = this.Prototypes || function() {
 		}
 	};
 	
+	/*********************************************************
+	/*              Utilities (private)
+	/********************************************************/
 	var addCommas = function (nStr) {
 		nStr += '';
 		var x = nStr.split('.'),
