@@ -156,7 +156,19 @@ this.Prototypes = this.Prototypes || function() {
 		}
 	},
 	
-	changeWidth = function() {
+	changePageWidth = function() {
+		if (jQuery('#wideMenu').filter(':checked').length) {
+			jQuery('.facet-ui').width('255px');
+			jQuery('.facetCountSupplyWrapper, .facetCountDemandWrapper').width('50px');
+			jQuery('body div#jpHeader div#jpHeader_inner, body div#JobPosterNavBar div.priwrapper, body div#pnlOuterWrapper div#JPTopNav ul, body div#pnlOuterWrapper div#JPBreadcrumb, body div#pnlOuterWrapper div#jpMainContent div#pnlInnerWrapper, body div#pnlOuterWrapper div#jpMainContent').width('1155px');	
+		} else {
+			jQuery('.facet-ui').width('205px');
+			jQuery('.facetCountSupplyWrapper, .facetCountDemandWrapper').width('45px');
+			jQuery('body div#jpHeader div#jpHeader_inner, body div#JobPosterNavBar div.priwrapper, body div#pnlOuterWrapper div#JPTopNav ul, body div#pnlOuterWrapper div#JPBreadcrumb, body div#pnlOuterWrapper div#jpMainContent div#pnlInnerWrapper, body div#pnlOuterWrapper div#jpMainContent').width('1105px');
+		}
+	},
+	
+	changeFilterLabelWidth = function() {
 		if (jQuery('#noNum').filter(':checked').length
 			&& jQuery('#chkbx').filter(':checked').length
 			&& !jQuery('#wideMenu').filter(':checked').length) {
@@ -226,7 +238,8 @@ this.Prototypes = this.Prototypes || function() {
 		unshuffleWhenShuffleOptionSelected: unshuffleWhenShuffleOptionSelected,
 		showOrHideHeaders: showOrHideHeaders,
 		showOrHideKeepHeadersOption: showOrHideKeepHeadersOption,
-		changeWidth: changeWidth
+		changeFilterLabelWidth: changeFilterLabelWidth,
+		changePageWidth: changePageWidth
 	};
 
 }();
