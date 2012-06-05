@@ -287,7 +287,6 @@ div.facetNav li
 }
 #search-header .summary
 {
-    margin-top:10px;
     min-height: 160px;
     clear:both;
 }
@@ -303,27 +302,21 @@ div.facetNav li
 }
 #search-header .count
 {
+	float:left;
+	clear:both;
     font-size:16px;
-    font-weight:bold; 
-    padding-left:5px;   
+    font-weight:bold 
 }
 #search-header .label
 {
     font-size:12px;
     padding-left:2px;
 }
-#total_supply_summary
-{
-    float:right;
-    width:500px;
-}
-#SummaryViewContent
-{
-    padding-left:12px;
-}
+#total_supply_summary {float:left;padding-left:10px}
+#SummaryViewContent {padding-left:12px}
 #summary_demand_active_supply
 {
-    width:315px;
+    width:380px;
     margin-right:10px;
     float:left;
     border-right: solid 1px #777;
@@ -337,7 +330,7 @@ div.facetNav li
 }
 #summary_demand_active_supply div
 {
-    padding-bottom:7px;
+    padding:1% 1% 7px 1%;
     clear:both;
 }
 .total_supply_summary_Section
