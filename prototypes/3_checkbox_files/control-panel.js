@@ -157,6 +157,11 @@ jQuery('#shuffleBhvr').click( function shuffle(event, force) {
 		// bind click events for tabs
 		Prototypes.bindTabClickForShuffle();
 		
+		// show or hide the keep headers option
+		Prototypes.showOrHideKeepHeadersOption();
+		// show or hide the headers based on this option
+		Prototypes.showOrHideHeaders();
+		
 	} else {
 		// undo all the above
 		// hide the shuffle menu
@@ -180,6 +185,12 @@ jQuery('#disabling, #hiding').click( function shuffleBy() {
 	// change appearance of the filters now
 	Prototypes.unshuffleWhenShuffleOptionSelected();
 	Prototypes.shuffleWhenShuffleOptionSelected();
+
+	// show or hide the keep headers option
+	Prototypes.showOrHideKeepHeadersOption();
+	// show or hide the headers based on this option
+	Prototypes.showOrHideHeaders();
+
 });
 
 jQuery('#keepHeaders').click( function keepHeaders() {

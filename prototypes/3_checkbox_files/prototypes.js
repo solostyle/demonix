@@ -105,10 +105,21 @@ this.Prototypes = this.Prototypes || function() {
 		});
 	},
 	showOrHideHeaders = function() {
-		if (jQuery('#keepHeaders').filter(':checked').length) {
+		// if keep headers option is not disabled and is checked
+		if (jQuery('#keepHeaders').filter(':checked').length && !jQuery('#keepHeaders').filter(':disabled').length) {
 			jQuery('#facetsSupplyHeader, #facetsDemandHeader').show();
 		} else {
 			jQuery('#facetsSupplyHeader, #facetsDemandHeader').hide();
+		}
+	},
+	showOrHideKeepHeadersOption = function() {
+		// show or hide the keep headers option
+		if (jQuery('#hiding').filter(':checked').length) {
+			jQuery('#keepHeaders').attr('disabled', 'disabled');
+			jQuery('#keepHeaders').next().css('color','#aaa');
+		} else {
+			jQuery('#keepHeaders').removeAttr('disabled');
+			jQuery('#keepHeaders').next().removeAttr('style');
 		}
 	},
 	/* Update the Summary Box numbers based on the selected filters.
@@ -214,6 +225,7 @@ this.Prototypes = this.Prototypes || function() {
 		shuffleWhenShuffleOptionSelected: shuffleWhenShuffleOptionSelected,
 		unshuffleWhenShuffleOptionSelected: unshuffleWhenShuffleOptionSelected,
 		showOrHideHeaders: showOrHideHeaders,
+		showOrHideKeepHeadersOption: showOrHideKeepHeadersOption,
 		changeWidth: changeWidth
 	};
 
