@@ -15,7 +15,8 @@ this.Prototypes = this.Prototypes || function() {
 	},
 	shuffleBothByHiding = function() {
 		jQuery('#facetsBoth, #facetsSupply').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
-		jQuery('#facetsSupplyHeader, #facetsSupply, #facetsDemandHeader, #facetsDemand').show(); // used to be hide()
+		jQuery('#facetsSupply, #facetsDemand').show(); // used to be hide()
+		jQuery('#facetsSupplyHeader, #facetsDemandHeader').hide();
 	},
 	shuffleDemandByDisabling = function() {
 		// checks if the show headers option is selected
