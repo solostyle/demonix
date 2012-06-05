@@ -1,38 +1,6 @@
 // Toggle events on click
-jQuery('#facetsBothHeader').click(function() {
-	jQuery(this).next().slideToggle('slow', function() {
-		// Animation complete
-	});
-	jQuery('#facetsBothHeader span').toggle();
-	jQuery('#facetsSupply,#facetsDemand').each(function() {
-		jQuery(this).hide();
-		jQuery(this).prev().find('.expandedInd').hide();
-		jQuery(this).prev().find('.collapsedInd').show();
-	});
-});
+Prototypes.bindHeaderClickAutocollapse();
 
-jQuery('#facetsSupplyHeader').click(function() {
-	jQuery(this).next().slideToggle('slow', function() {
-		// Animation complete
-	});
-	jQuery('#facetsSupplyHeader span').toggle();
-	jQuery('#facetsBoth,#facetsDemand').each(function() {
-		jQuery(this).hide();
-		jQuery(this).prev().find('.expandedInd').hide();
-		jQuery(this).prev().find('.collapsedInd').show();
-	});
-});
-jQuery('#facetsDemandHeader').click(function() {
-	jQuery(this).next().slideToggle('slow', function() {
-	// Animation complete
-	});
-	jQuery('#facetsDemandHeader span').toggle();
-	jQuery('#facetsBoth,#facetsSupply').each(function() {
-		jQuery(this).hide();
-		jQuery(this).prev().find('.expandedInd').hide();
-		jQuery(this).prev().find('.collapsedInd').show();
-	});
-});
 jQuery('#newReportHeader').click(function() {
     jQuery(this).next().slideToggle("slow");
 	jQuery('#newReportHeader span').toggle();

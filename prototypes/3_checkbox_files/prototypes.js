@@ -52,6 +52,39 @@ this.Prototypes = this.Prototypes || function() {
 		});
 		jQuery('#facetsBoth, #facetsSupply').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
 		jQuery('#facetsSupply, #facetsDemand').show();
+	},
+	autocollapseDemand = function() {
+		jQuery('#facetsDemandHeader').next().slideToggle('slow', function() {
+			// Animation complete
+		});
+		jQuery('#facetsDemandHeader span').toggle();
+		jQuery('#facetsBoth,#facetsSupply').each(function() {
+			jQuery(this).hide();
+			jQuery(this).prev().find('.expandedInd').hide();
+			jQuery(this).prev().find('.collapsedInd').show();
+		});
+	},
+	autocollapseSupply = function() {
+		jQuery('#facetsSupplyHeader').next().slideToggle('slow', function() {
+			// Animation complete
+		});
+		jQuery('#facetsSupplyHeader span').toggle();
+		jQuery('#facetsBoth,#facetsDemand').each(function() {
+			jQuery(this).hide();
+			jQuery(this).prev().find('.expandedInd').hide();
+			jQuery(this).prev().find('.collapsedInd').show();
+		});
+	},
+	autocollapseBoth = function() {
+		jQuery('#facetsBothHeader').next().slideToggle('slow', function() {
+			// Animation complete
+		});
+		jQuery('#facetsBothHeader span').toggle();
+		jQuery('#facetsSupply,#facetsDemand').each(function() {
+			jQuery(this).hide();
+			jQuery(this).prev().find('.expandedInd').hide();
+			jQuery(this).prev().find('.collapsedInd').show();
+		});
 	};
 	
 	/*********************************************************
@@ -76,6 +109,16 @@ this.Prototypes = this.Prototypes || function() {
 		jQuery('#SupplyView').unbind('click', shuffleSupplyByDisabling);
 		jQuery('#DemandView').unbind('click', shuffleDemandByDisabling);
 		jQuery('#LaborPressureView').unbind('click', shuffleBothByDisabling);
+	},
+	bindHeaderClickAutocollapse = function() {
+		jQuery('#facetsBothHeader').bind('click', autocollapseBoth);
+		jQuery('#facetsSupplyHeader').bind('click', autocollapseSupply);
+		jQuery('#facetsDemandHeader').bind('click', autocollapseDemand);
+	},
+	unbindHeaderClickAutocollapse = function() {
+		jQuery('#facetsBothHeader').unbind('click', autocollapseBoth);
+		jQuery('#facetsSupplyHeader').unbind('click', autocollapseSupply);
+		jQuery('#facetsDemandHeader').unbind('click', autocollapseDemand);
 	},
 	shuffleWhenShuffleOptionSelected = function() {
 		// rename the both header
@@ -242,6 +285,8 @@ this.Prototypes = this.Prototypes || function() {
 		updateSummary: updateSummary,
 		bindTabClickForShuffle: bindTabClickForShuffle,
 		unbindTabClickForShuffle: unbindTabClickForShuffle,
+		bindHeaderClickAutocollapse: bindHeaderClickAutocollapse,
+		unbindHeaderClickAutocollapse: unbindHeaderClickAutocollapse,
 		shuffleWhenShuffleOptionSelected: shuffleWhenShuffleOptionSelected,
 		unshuffleWhenShuffleOptionSelected: unshuffleWhenShuffleOptionSelected,
 		showOrHideHeaders: showOrHideHeaders,

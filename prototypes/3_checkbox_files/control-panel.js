@@ -150,6 +150,14 @@ jQuery('#shuffleBhvr').click( function shuffle(event, force) {
 		// show or hide the headers based on this option
 		Prototypes.showOrHideHeaders();
 		
+		// decide whether to bind or unbind autocollapse events
+		Prototypes.unbindHeaderClickAutocollapse();
+		if (jQuery('#shuffleBhvr').filter(':checked').length
+			&& jQuery('#disabling').filter(':checked').length
+			&& jQuery('#keepHeaders').filter(':checked').length
+			&& !jQuery('#keepHeaders').filter(':disabled').length) {
+		} else Prototypes.bindHeaderClickAutocollapse();
+		
 	} else {
 		// undo all the above
 		// hide the shuffle menu
@@ -160,6 +168,14 @@ jQuery('#shuffleBhvr').click( function shuffle(event, force) {
 		
 		// unbind click events for tabs, both hiding and disabling
 		Prototypes.unbindTabClickForShuffle();
+		
+		// decide whether to bind or unbind autocollapse events
+		Prototypes.unbindHeaderClickAutocollapse();
+		if (jQuery('#shuffleBhvr').filter(':checked').length
+			&& jQuery('#disabling').filter(':checked').length
+			&& jQuery('#keepHeaders').filter(':checked').length
+			&& !jQuery('#keepHeaders').filter(':disabled').length) {
+		} else Prototypes.bindHeaderClickAutocollapse();
 	}
 });
 
@@ -179,10 +195,25 @@ jQuery('#disabling, #hiding').click( function shuffleBy() {
 	// show or hide the headers based on this option
 	Prototypes.showOrHideHeaders();
 
+	// decide whether to bind or unbind autocollapse events
+	Prototypes.unbindHeaderClickAutocollapse();
+	if (jQuery('#shuffleBhvr').filter(':checked').length
+		&& jQuery('#disabling').filter(':checked').length
+		&& jQuery('#keepHeaders').filter(':checked').length
+		&& !jQuery('#keepHeaders').filter(':disabled').length) {
+	} else Prototypes.bindHeaderClickAutocollapse();
 });
 
 jQuery('#keepHeaders').click( function keepHeaders() {
 	Prototypes.showOrHideHeaders();
+	
+	// decide whether to bind or unbind autocollapse events
+	Prototypes.unbindHeaderClickAutocollapse();
+	if (jQuery('#shuffleBhvr').filter(':checked').length
+		&& jQuery('#disabling').filter(':checked').length
+		&& jQuery('#keepHeaders').filter(':checked').length
+		&& !jQuery('#keepHeaders').filter(':disabled').length) {
+	} else Prototypes.bindHeaderClickAutocollapse();
 });
 
 
