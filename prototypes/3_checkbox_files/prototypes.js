@@ -17,7 +17,8 @@ this.Prototypes = this.Prototypes || function() {
 		jQuery('#facetsSupplyHeader, #facetsSupply, #facetsDemandHeader, #facetsDemand').hide();
 	},
 	shuffleDemandByDisabling = function() {
-		jQuery('#facetsSupplyHeader, #facetsDemandHeader').hide();
+		// checks if the show headers option is selected
+		showOrHideHeaders();
 		jQuery('#facetsSupply').show().find('.facets').each( function() {
 			jQuery(this).find('li').css('color','#ccc');
 			jQuery(this).find('.headerText').css('color','#ccc');
@@ -29,7 +30,8 @@ this.Prototypes = this.Prototypes || function() {
 		});
 	},
 	shuffleSupplyByDisabling = function() {
-		jQuery('#facetsSupplyHeader, #facetsDemandHeader').hide();
+		// checks if the show headers option is selected
+		showOrHideHeaders();
 		jQuery('#facetsDemand').show().find('.facets').each( function() {
 			jQuery(this).find('li').css('color','#ccc');
 			jQuery(this).find('.headerText').css('color','#ccc');
@@ -41,7 +43,8 @@ this.Prototypes = this.Prototypes || function() {
 		});
 	},
 	shuffleBothByDisabling = function() {
-		jQuery('#facetsSupplyHeader, #facetsDemandHeader').hide();
+		// checks if the show headers option is selected
+		showOrHideHeaders();
 		jQuery('#facetsSupply, #facetsDemand').find('.facets').each( function() {
 			jQuery(this).find('li').css('color','#ccc');
 			jQuery(this).find('.headerText').css('color','#ccc');
