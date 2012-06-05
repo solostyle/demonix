@@ -108,8 +108,12 @@ this.Prototypes = this.Prototypes || function() {
 		// if keep headers option is not disabled and is checked
 		if (jQuery('#keepHeaders').filter(':checked').length && !jQuery('#keepHeaders').filter(':disabled').length) {
 			jQuery('#facetsSupplyHeader, #facetsDemandHeader').show();
+			// rename the both header
+			jQuery('#facetsBothHeader').html( 'Supply &amp; Demand Filters<'+jQuery('#facetsBothHeader').html().split(/<(.+)/)[1] );
 		} else {
 			jQuery('#facetsSupplyHeader, #facetsDemandHeader').hide();
+			// rename the both header
+			jQuery('#facetsBothHeader').html( 'Refine Your Search<'+jQuery('#facetsBothHeader').html().split(/<(.+)/)[1] );
 		}
 	},
 	showOrHideKeepHeadersOption = function() {
