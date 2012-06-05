@@ -145,7 +145,7 @@ jQuery('#wideMenu').click( function widenMenu() {
 	}
 });
 
-jQuery('#shuffleBhvr').click( function shuffle(force) {
+jQuery('#shuffleBhvr').click( function shuffle(event, force) {
 	if (jQuery(this).filter(':checked').length || force) {
 		// show the shuffle menu
 		jQuery('#shuffleMenu').show();
