@@ -141,6 +141,8 @@ jQuery('#shuffleBhvr').click( function shuffle(event, force) {
 			
 		// change appearance of the filters
 		Prototypes.shuffleWhenShuffleOptionSelected();
+		// open supply and demand filters only when switching options, not when switching tabs
+		jQuery('#facetsDemand, #facetsSupply').show();
 		
 		// bind click events for tabs
 		Prototypes.bindTabClickForShuffle();
@@ -189,6 +191,8 @@ jQuery('#disabling, #hiding').click( function shuffleBy() {
 	// change appearance of the filters now
 	Prototypes.unshuffleWhenShuffleOptionSelected();
 	Prototypes.shuffleWhenShuffleOptionSelected();
+	// open supply and demand filters only when switching options, not when switching tabs
+	jQuery('#facetsDemand, #facetsSupply').show();
 
 	// show or hide the keep headers option
 	Prototypes.showOrHideKeepHeadersOption();

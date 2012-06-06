@@ -1,4 +1,5 @@
 // Toggle events on click
+Prototypes.bindHeaderClickCollapse();
 Prototypes.bindHeaderClickAutocollapse();
 
 jQuery('#newReportHeader').click(function() {

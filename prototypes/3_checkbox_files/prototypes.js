@@ -21,12 +21,12 @@ this.Prototypes = this.Prototypes || function() {
 	shuffleDemandByDisabling = function() {
 		// checks if the show headers option is selected
 		showOrHideHeaders();
-		jQuery('#facetsSupply').show().find('.facets').each( function() {
+		jQuery('#facetsSupply').find('.facets').each( function() {
 			jQuery(this).find('li').css('color','#ccc');
 			jQuery(this).find('.headerText').css('color','#ccc');
 		});
-		jQuery('#facetsBoth, #facetsSupply').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
-		jQuery('#facetsDemand').show().find('.facets').each( function() {
+		jQuery('#facetsBoth, #facetsSupply').css({'border-bottom':'0','border-radius':'0','padding-bottom':'0'});
+		jQuery('#facetsDemand').find('.facets').each( function() {
 			jQuery(this).find('li').removeAttr('style');
 			jQuery(this).find('.headerText').removeAttr('style');
 		});
@@ -34,12 +34,12 @@ this.Prototypes = this.Prototypes || function() {
 	shuffleSupplyByDisabling = function() {
 		// checks if the show headers option is selected
 		showOrHideHeaders();
-		jQuery('#facetsDemand').show().find('.facets').each( function() {
+		jQuery('#facetsDemand').find('.facets').each( function() {
 			jQuery(this).find('li').css('color','#ccc');
 			jQuery(this).find('.headerText').css('color','#ccc');
 		});
-		jQuery('#facetsBoth, #facetsSupply').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
-		jQuery('#facetsSupply').show().find('.facets').each( function() {
+		jQuery('#facetsBoth, #facetsSupply').css({'border-bottom':'0','border-radius':'0','padding-bottom':'0'});
+		jQuery('#facetsSupply').find('.facets').each( function() {
 			jQuery(this).find('li').removeAttr('style');
 			jQuery(this).find('.headerText').removeAttr('style');
 		});
@@ -51,36 +51,42 @@ this.Prototypes = this.Prototypes || function() {
 			jQuery(this).find('li').removeAttr('style'); // used to be css('color','#ccc');
 			jQuery(this).find('.headerText').removeAttr('style'); // used to be css('color','#ccc');
 		});
-		jQuery('#facetsBoth, #facetsSupply').css({'border-bottom':'0','border-radius':'0','display':'block','padding-bottom':'0'});
-		jQuery('#facetsSupply, #facetsDemand').show();
+		jQuery('#facetsBoth, #facetsSupply').css({'border-bottom':'0','border-radius':'0','padding-bottom':'0'});
+		//jQuery('#facetsSupply, #facetsDemand').show();
 	},
-	autocollapseDemand = function() {
+	collapseDemand = function() {
 		jQuery('#facetsDemandHeader').next().slideToggle('slow', function() {
 			// Animation complete
 		});
 		jQuery('#facetsDemandHeader span').toggle();
+	},
+	autocollapseDemand = function() {
 		jQuery('#facetsBoth,#facetsSupply').each(function() {
 			jQuery(this).hide();
 			jQuery(this).prev().find('.expandedInd').hide();
 			jQuery(this).prev().find('.collapsedInd').show();
 		});
 	},
-	autocollapseSupply = function() {
+	collapseSupply = function() {
 		jQuery('#facetsSupplyHeader').next().slideToggle('slow', function() {
 			// Animation complete
 		});
 		jQuery('#facetsSupplyHeader span').toggle();
+	},
+	autocollapseSupply = function() {
 		jQuery('#facetsBoth,#facetsDemand').each(function() {
 			jQuery(this).hide();
 			jQuery(this).prev().find('.expandedInd').hide();
 			jQuery(this).prev().find('.collapsedInd').show();
 		});
 	},
-	autocollapseBoth = function() {
+	collapseBoth = function() {
 		jQuery('#facetsBothHeader').next().slideToggle('slow', function() {
 			// Animation complete
 		});
 		jQuery('#facetsBothHeader span').toggle();
+	},
+	autocollapseBoth = function() {
 		jQuery('#facetsSupply,#facetsDemand').each(function() {
 			jQuery(this).hide();
 			jQuery(this).prev().find('.expandedInd').hide();
@@ -110,6 +116,11 @@ this.Prototypes = this.Prototypes || function() {
 		jQuery('#SupplyView').unbind('click', shuffleSupplyByDisabling);
 		jQuery('#DemandView').unbind('click', shuffleDemandByDisabling);
 		jQuery('#LaborPressureView').unbind('click', shuffleBothByDisabling);
+	},
+	bindHeaderClickCollapse = function() {
+		jQuery('#facetsBothHeader').bind('click', collapseBoth);
+		jQuery('#facetsSupplyHeader').bind('click', collapseSupply);
+		jQuery('#facetsDemandHeader').bind('click', collapseDemand);
 	},
 	bindHeaderClickAutocollapse = function() {
 		jQuery('#facetsBothHeader').bind('click', autocollapseBoth);
@@ -286,6 +297,7 @@ this.Prototypes = this.Prototypes || function() {
 		updateSummary: updateSummary,
 		bindTabClickForShuffle: bindTabClickForShuffle,
 		unbindTabClickForShuffle: unbindTabClickForShuffle,
+		bindHeaderClickCollapse: bindHeaderClickCollapse,
 		bindHeaderClickAutocollapse: bindHeaderClickAutocollapse,
 		unbindHeaderClickAutocollapse: unbindHeaderClickAutocollapse,
 		shuffleWhenShuffleOptionSelected: shuffleWhenShuffleOptionSelected,
