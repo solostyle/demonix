@@ -17,19 +17,20 @@ jQuery('body')
 .end()
 .append('<ul id="shuffleMenu"></ul>')
 .find('ul:last-child')
-.append('<li><input type="radio" name="shuffleType" checked="checked" id="hiding"><label for="hiding">By Hiding</label></li>')
-.append('<li><input type="radio" name="shuffleType" id="disabling"><label for="disabling">By Disabling</label></li>');
+.append('<li><input type="radio" name="shuffleType" checked="checked" id="hiding"><label for="hiding">By hiding</label></li>')
+.append('<li><input type="radio" name="shuffleType" id="disabling"><label for="disabling">By disabling</label></li>')
+.append('<li><input type="checkbox" id="keepHeaders"><label for="keepHeaders">Keep headers</label></li>');
 
 
 jQuery('#noNum').click( function removeNumbers() {
 	if (jQuery(this).filter(':checked').length) {
 		jQuery('.facetCountSupplyWrapper, .facetCountDemandWrapper').hide();
 		// change the width
-		Prototypes.changeWidth();
+		Prototypes.changeFilterLabelWidth();
 	} else {
 		jQuery('.facetCountSupplyWrapper, .facetCountDemandWrapper').show();
 		// change the width
-		Prototypes.changeWidth();
+		Prototypes.changeFilterLabelWidth();
 	}
 });
 
@@ -96,7 +97,7 @@ jQuery('#chkbx').click( function addCheckbox() {
 		jQuery('.facetNumberTitle .facetCountSupplyWrapper, #facetsDemand .facetNumberTitle .facetCountDemandWrapper').css('margin-left','14px');
 		
 		// adjust the widths
-		Prototypes.changeWidth();		
+		Prototypes.changeFilterLabelWidth();		
 		
 		// Add the checkbox
 		jQuery('#facetsSupply .facets>li>div:last-child ul, #facetsBoth .facets>li>div:last-child ul, #facetsDemand .facets>li>div:last-child ul').each(function insert() {
@@ -121,31 +122,19 @@ jQuery('#chkbx').click( function addCheckbox() {
 		jQuery('.facetNumberTitle .facetCountSupplyWrapper, #facetsDemand .facetNumberTitle .facetCountDemandWrapper').css('margin-left','0');
 		
 		// adjust the widths
-		Prototypes.changeWidth();
+		Prototypes.changeFilterLabelWidth();
 	}
 });
 
 jQuery('#wideMenu').click( function widenMenu() {
-	if (jQuery(this).filter(':checked').length) {
-		jQuery('.facet-ui').width('255px');
-		jQuery('.facetCountSupplyWrapper, .facetCountDemandWrapper').width('50px');
-		jQuery('body div#jpHeader div#jpHeader_inner, body div#JobPosterNavBar div.priwrapper, body div#pnlOuterWrapper div#JPTopNav ul, body div#pnlOuterWrapper div#JPBreadcrumb, body div#pnlOuterWrapper div#jpMainContent div#pnlInnerWrapper, body div#pnlOuterWrapper div#jpMainContent').width('1155px');
-		
-		// adjust the widths
-		Prototypes.changeWidth();
-		
-	} else {
-		jQuery('.facet-ui').width('205px');
-		jQuery('.facetCountSupplyWrapper, .facetCountDemandWrapper').width('45px');
-		jQuery('body div#jpHeader div#jpHeader_inner, body div#JobPosterNavBar div.priwrapper, body div#pnlOuterWrapper div#JPTopNav ul, body div#pnlOuterWrapper div#JPBreadcrumb, body div#pnlOuterWrapper div#jpMainContent div#pnlInnerWrapper, body div#pnlOuterWrapper div#jpMainContent').width('1105px');
-		
-		// adjust the widths
-		Prototypes.changeWidth();
-
-	}
+	// adjust the width of the page
+	Prototypes.changePageWidth();
+	
+	// adjust the width of the checkboxwrapper guy, the filter label
+	Prototypes.changeFilterLabelWidth();
 });
 
-jQuery('#shuffleBhvr').click( function shuffle(force) {
+jQuery('#shuffleBhvr').click( function shuffle(event, force) {
 	if (jQuery(this).filter(':checked').length || force) {
 		// show the shuffle menu
 		jQuery('#shuffleMenu').show();
@@ -155,6 +144,19 @@ jQuery('#shuffleBhvr').click( function shuffle(force) {
 		
 		// bind click events for tabs
 		Prototypes.bindTabClickForShuffle();
+		
+		// show or hide the keep headers option
+		Prototypes.showOrHideKeepHeadersOption();
+		// show or hide the headers based on this option
+		Prototypes.showOrHideHeaders();
+		
+		// decide whether to bind or unbind autocollapse events
+		Prototypes.unbindHeaderClickAutocollapse();
+		if (jQuery('#shuffleBhvr').filter(':checked').length
+			&& jQuery('#disabling').filter(':checked').length
+			&& jQuery('#keepHeaders').filter(':checked').length
+			&& !jQuery('#keepHeaders').filter(':disabled').length) {
+		} else Prototypes.bindHeaderClickAutocollapse();
 		
 	} else {
 		// undo all the above
@@ -166,6 +168,14 @@ jQuery('#shuffleBhvr').click( function shuffle(force) {
 		
 		// unbind click events for tabs, both hiding and disabling
 		Prototypes.unbindTabClickForShuffle();
+		
+		// decide whether to bind or unbind autocollapse events
+		Prototypes.unbindHeaderClickAutocollapse();
+		if (jQuery('#shuffleBhvr').filter(':checked').length
+			&& jQuery('#disabling').filter(':checked').length
+			&& jQuery('#keepHeaders').filter(':checked').length
+			&& !jQuery('#keepHeaders').filter(':disabled').length) {
+		} else Prototypes.bindHeaderClickAutocollapse();
 	}
 });
 
@@ -179,7 +189,33 @@ jQuery('#disabling, #hiding').click( function shuffleBy() {
 	// change appearance of the filters now
 	Prototypes.unshuffleWhenShuffleOptionSelected();
 	Prototypes.shuffleWhenShuffleOptionSelected();
+
+	// show or hide the keep headers option
+	Prototypes.showOrHideKeepHeadersOption();
+	// show or hide the headers based on this option
+	Prototypes.showOrHideHeaders();
+
+	// decide whether to bind or unbind autocollapse events
+	Prototypes.unbindHeaderClickAutocollapse();
+	if (jQuery('#shuffleBhvr').filter(':checked').length
+		&& jQuery('#disabling').filter(':checked').length
+		&& jQuery('#keepHeaders').filter(':checked').length
+		&& !jQuery('#keepHeaders').filter(':disabled').length) {
+	} else Prototypes.bindHeaderClickAutocollapse();
 });
+
+jQuery('#keepHeaders').click( function keepHeaders() {
+	Prototypes.showOrHideHeaders();
+	
+	// decide whether to bind or unbind autocollapse events
+	Prototypes.unbindHeaderClickAutocollapse();
+	if (jQuery('#shuffleBhvr').filter(':checked').length
+		&& jQuery('#disabling').filter(':checked').length
+		&& jQuery('#keepHeaders').filter(':checked').length
+		&& !jQuery('#keepHeaders').filter(':disabled').length) {
+	} else Prototypes.bindHeaderClickAutocollapse();
+});
+
 
 // Do these things by default
 // Check the Shuffle box, run the code to shuffle
