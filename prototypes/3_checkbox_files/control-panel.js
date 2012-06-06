@@ -117,7 +117,7 @@ jQuery('#chkbx').click( function addCheckbox() {
 		// remove checkboxes
 		jQuery('#AllFilters .facetCheckbox').remove();
 		
-		// Re-align the facet number titles to the left
+		// Re-align the facet number titles to the left (inefficient)
 		jQuery('.facetNumberTitle .facetCountSupplyWrapper, #facetsDemand .facetNumberTitle .facetCountDemandWrapper').css('margin-left','0');
 		
 		// adjust the widths
