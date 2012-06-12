@@ -1,0 +1,144 @@
+﻿/* JP Left Navigation Styles 
+#JPLeftNav {width:auto;float:left;margin: 1% 1% 0 1%; /*margin: 2% 0 0 2%;*/ /* }
+#JPLeftNav ul {list-style-type:none;text-align:left;width:auto; /*padding:2px;*//*margin:0; padding:0;}
+#JPLeftNav ul li {background-color:#FF8E00;border:1px solid #FF6600; padding: 10px;}
+#JPLeftNav ul li a{color:White;font-weight:bold; text-decoration:none;font-family:Arial;font-size:12px;}
+#JPLeftNav ul li a.activeitem{color:#FF6600;}*/
+
+/* JP Breadcrumb Navigation Styles 
+#JPBreadcrumb { background-color:#CCCCCC; /*width:750px; margin:10px auto;font-size:12px;padding:3px 10px; width: 100%; text-align:center; font-family:Arial;font-size:11px;}
+#JPBreadcrumb #marker {font-weight:bold;float:left;}
+#JPBreadcrumb UL {list-style:none; padding:0px 5px;margin:0px;  }
+#JPBreadcrumb UL LI {float:left; white-space:nowrap ;padding:0px 3px;}*/
+
+/* JP Top Navigation Styles 
+#JPTopNav {margin:auto;width:670px;}
+#JPTopNav ul {list-style-type:none;text-align:center;margin: 0 auto;}
+#JPTopNav ul li {float:left;padding:10px 30px;margin:10px 20px;background-color:#102C6B;border:1px solid #102C6B;}
+#JPTopNav ul li a{color:White;font-weight:bold; text-decoration:none;font-family:Arial;font-size:12px;}
+#JPTopNav ul li a.activeitem{color:#FF6600;}*/
+
+#jpHeader {
+	background: #132f6e url(navarrays_final.jpg) no-repeat bottom center;
+	height:150px !important;
+	margin:0 auto;
+}
+.bounds {
+	width:960px;
+}
+/* hides menus */
+
+/*==== Job Poster Top Nav =======*/
+#JPTopNav {
+	background: url(bg_JPTopNav.jpg) left bottom repeat-x;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 6px 0;
+	font-family:Arial;
+	width: 100%;
+	position: relative;
+}
+#JPTopNav ul {
+	list-style-type:none;
+	margin:0 auto;
+	width: 960px;
+	padding: 0;
+	position: relative;
+}
+#JPTopNav ul li {
+	display: block;
+	float: left;
+	padding:0;
+	margin: 0;
+	background: url(bg_jpTobNav-button-r.png) 100% 0 no-repeat;
+	margin-left: 2px;
+	padding-right: 5px;
+}
+
+#JPTopNav ul li a {
+	color: #fff;
+	text-decoration:none;
+	padding:9px 12px 8px 18px;
+	display: block;
+	margin-right: 0px;
+	background: url(bg_jpTopNav-button.png) 0 0 no-repeat;
+}
+#JPTopNav ul li a:hover {
+	color: #FFFFCC;
+}
+#JPTopNav ul li a.activeitem {
+	background-position: 100% -32px;
+
+}
+#JPTopNav ul li a.activeitem {
+	background-position: 0 -32px;
+}
+
+#JPTopNav ul li.activeitem {
+            background-position: 100% -32px;
+}
+
+/*====== Breadcrumbs ======*/
+#JPBreadcrumb {
+	margin:10px auto;
+	font-size:11px;
+	font-family:Arial;
+	padding:3px 10px;
+	color: rgb(0, 0, 0);
+	padding-left:0px;
+	width:960px;
+}
+#JPBreadcrumb #marker {
+	font-weight:bold;
+	float:left;
+	color: #000;
+}
+#JPBreadcrumb ul {
+	list-style:none;
+	
+	padding:0px 5px;
+	margin:0px;
+}
+#JPBreadcrumb ul li {
+	display: inline;
+	white-space:nowrap;
+	padding:0px 3px;
+	list-style:none;
+}
+
+/*==== Job Poster Left Nav =======*/
+#JPLeftNav {
+	float:left;
+	font-size: 12px;
+	font-weight: bold;
+	font-family:Arial;
+	width: 160px;
+}
+#JPLeftNav ul {
+	list-style:none;
+	text-align:left;
+	margin:0;
+	padding: 0;
+	
+}
+#JPLeftNav ul li {
+	float: left;
+	padding:0;
+	margin: 0;
+	width: 160px;
+}
+#JPLeftNav ul li a {
+	color: #183C8D;
+	text-decoration:none;
+	padding: 6px 8px 6px 12px;
+	background: url(../../images/jp/jpnestednav/bg_jpLeftNav-bullet.png) 2px 8px no-repeat;
+	display: block;
+	border-bottom: 1px dotted #EAEAEA;
+}
+#JPLeftNav ul li a:hover {
+	text-decoration: underline;
+}
+#JPLeftNav ul li a.activeitem {
+	background-color: #FFFFCC;
+}
+
