@@ -1,0 +1,937 @@
+﻿/* ensure override site stuff and ensure they are not affected by site changes */
+.cb_style {font: 11px arial,helvetica;text-align: left;}
+#pnlInnerWrapper {margin-left:4px!important;margin-top:10px}
+#_ctl0__ctl1_hgcPri, .nav .pri {overflow:hidden;padding:0;width:100%}
+
+input[type="checkbox"] {
+    margin-right: 1px;
+}
+
+/* fix job poster header and footer woes */
+body div#jpHeader div#jpHeader_inner,
+body div#JobPosterNavBar div.priwrapper,
+body div#pnlOuterWrapper div#JPTopNav ul,
+body div#pnlOuterWrapper div#JPBreadcrumb,
+body div#pnlOuterWrapper div#jpMainContent
+{
+	margin-left: auto;
+	margin-right: auto;
+	width:1155px
+}
+
+div.nav
+{
+    z-index:25;
+}
+
+body div#pnlOuterWrapper div#JPLeftNav
+{
+    display:none;
+}
+/* end of hacking job poster header footer */
+
+body div#pnlOuterWrapper.pnlOuterWrapper div#JPLeftNav, 
+#jpMainContent div.custom_nav
+{
+    display:none;
+}
+#pnlOuterWrapper {background: #FFFFFF !important;}
+#jpMainContent {margin-bottom:30px;overflow:hidden}
+#pnlOuterWrapper div#JPLeftNav{width:0px;display:none;}
+#filterErrorMsg {display:none;}
+/* Begin AutoComplete CSS */
+.jobtitle, .location {font-size:14px !important; color:#111111; }
+.ui-autocomplete {font-size:14px !important;}
+.ui-menu-item {font-size:12px !important; border:none;	border-bottom:1px solid #e8e8e8;}
+.ui-menu-item .ui-state-hover{font-weight: normal; color: #212121 !important; border: none !important; }
+.ui-corner-all {-moz-border-radius: 0px !important; -webkit-border-radius: 0px !important; border-radius: 0px !important; }
+/* End AutoComplete CSS */
+
+#retrievingData,#errorDialog,#natSearch
+{
+    font-size:13px;
+    width:450px;
+    border-left:1px solid #c0c0c0;
+    border-top: 1px solid #c0c0c0;
+    border-bottom:1px solid #999999;
+    border-right: 1px solid #999999;
+    text-align:center;
+    padding:15px 10px;
+    z-index:9999;
+    display:none;
+}
+#filterLoading {display:none;}
+
+a.lnkStartOver:link,a.lnkStartOver:active,a.lnkStartOver:visited{
+    text-decoration: underline;
+    color:#336699;
+    font-weight:bold;
+}
+a.lnkFeedback:link,a.lnkFeedback:active,a.lnkFeedback:visited{
+    text-decoration: underline;
+    color:#EE7F0C;
+    font-weight:bold;
+}
+a.lnkStartOver, a.lnkFeedback{font-size:10px;vertical-align:top; padding-right:5px; text-transform:lowercase;}
+
+a.lnkCareerBuilderRDB:link,a.lnkStartOver:active,a.lnkStartOver:visited{
+    text-decoration: underline;
+    color:#336699;
+    font-weight:bold;
+}
+.outputs  {
+    float: right;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    width:600px;
+}   
+.output  {
+   float:right;
+   padding:0px 20px;
+   margin:0px 1px;
+   height:30px;
+   line-height:30px;       
+}
+.output A  {color:white; font-weight:bold; text-decoration:none;}
+.output A:hover  {text-decoration:none;}   
+.output img  {vertical-align:middle;}  
+
+/********* BEGIN Styles for Tabbed Navigation & Rounded Corners */
+#SDTabs {width:850px; margin:0px 15px;}
+#SDTabs #DemandView, #SDTabs #SupplyView { width: 175px;}
+#SDTabs #LaborPressureView { width: 175px;}
+#SDTabs ul.tabbedNavigation {
+    margin: 0;
+    padding: 0;
+    list-style: none none outside;
+    border: 0;
+    padding-left: 12px;
+    /*background: #FFF url(../../../../images/js/tab_nav_grad.jpg) repeat-x;*/
+    background-position: bottom;
+    height:43px;
+}
+#SDTabs ul.tabbedNavigation li {
+    margin: 0;
+    margin-bottom: -1px;
+    padding: 0;
+    display: block;
+    float: left;
+}
+#SDTabs ul.tabbedNavigation #DemandView {margin-bottom: 1px;}
+#SDTabs ul.tabbedNavigation li.selected {border: none; padding: 0;}
+#SDTabs ul.tabbedNavigation a {font-size: 12px; font-weight: bold; color: #000000; cursor: pointer;}
+#SDTabs ul.tabbedNavigation li span:hover {text-decoration:none;}
+#SDTabs ul.tabbedNavigation li.selected span:hover {text-decoration:none;}
+#SDTabs ul.tabbedNavigation li.selected a {color: #EE7F0C; font-size: 13px; background: #FFF;}
+#SDTabs ul.tabbedNavigation a * { display: block; }
+#SDTabs ul.tabbedNavigation a:hover{text-decoration:none;color:#000000}
+
+#SDTabs .pad,
+#SDTabs .round1,
+#SDTabs .round2,
+#SDTabs .round3,
+#SDTabs .round4 {
+    background: #FFF;
+    background: transparent;
+    /* hide overflow:hidden from IE5/Mac */ 
+    /* \*/ 
+    overflow: hidden; 
+    /* */
+}
+#SDTabs .pad { height: 4px; }
+#SDTabs li.selected .pad { height: 1px; }
+
+#SDTabs .tabtitle {
+    padding: 5px 7px;
+    margin: 0;
+    position: relative;
+    top: -3px;
+    border-left: solid 1px #DDD;
+    border-right: solid 1px #DDD;
+    border-top:solid 1px #DDD;
+    text-align: center;
+    margin: 0px;
+}
+#SDTabs li.selected .tabtitle {
+    padding: 4px 5px 6px 5px;
+    background: #FFF;
+    margin: 0px -1px;
+    border-left: solid 2px #DDD;
+    border-right: solid 2px #DDD;
+    /*** I need the top for a lil bit so... border-top:none; ***/
+    top: 0px;
+}
+#SDTabs li.selected .tabbottom
+{
+    border-bottom:1px solid #ffffff;
+    position:relative;
+    top:1px;
+}
+
+#SDTabs .round1, #SDTabs .round2, #SDTabs .round3, #SDTabs .round4 {font-size: 1px; height:1px;}
+
+#SDTabs li.selected .round2,
+#SDTabs li.selected .round3,
+#SDTabs li.selected .round4 { border-left: 1px solid #CCC; border-right: 1px solid #CCC; }
+
+#SDTabs .round1 { margin:0 2px; }
+#SDTabs li.selected .round1 { background: #CCC; }
+#SDTabs .round2 { margin:0 1px; }
+#SDTabs li.selected .round2 { border-width: 0 1px; }
+#SDTabs .round3 { margin:0 0px; }
+#SDTabs li.selected .round3 { border-width: 0 1px; }
+#SDTabs .round4 { margin: 0 0px; }
+#TabsContent
+{
+    border:solid 1px #DDD;
+    margin:0px 0px 12px 15px;
+    width:853px;
+    padding:5px;
+    text-align:left;
+}
+.module.bottombar{float:none; border-bottom:solid 1px #dddddd; padding-bottom:15px; }
+.module.full{padding-bottom:15px;width:820px;}
+.module.half
+{
+    width:410px;overflow:hidden; 
+    float:left; display:inline-block;
+    margin-top:6px;
+    *margin-top:0px;
+    margin-left:7px;
+    margin-right:7px;
+    padding-bottom:20px;
+    height:305px;
+}
+.module.half.end
+{
+    *margin-top:6px;
+    *padding-left:7px;
+    float:none;
+}
+.module.half.only
+{
+    float:none;
+    margin:6px 0px 12px 15px;
+}
+.moduleHalfSplitter
+{
+    float:left;
+    width:1px;
+    height:320px;
+    background-color:#DDDDDD;
+}
+.module.half.only.bar {border-right:solid 1px #dddddd;}
+.module{margin:auto;margin-top:12px;margin-bottom:12px;border-bottom:solid 1px #dddddd;}
+div.module.bottom{border:none;}
+.module .content {padding-top:8px;text-align:left; background: url('http://www.careerbuilder.com/images/personified/250x50cbwatermark.png') 50% 50% no-repeat; }
+.module .header,  .detail_module .header{color:#777777; font-size:13px;font-weight:bold; padding-bottom:12px;float:left;}
+.module .header.hasDesc {padding-bottom:0px;}
+.detail_module .header{font-size:16px;}
+.module .viewReport{float:right;}
+.module.half .viewReport{float:left;}
+.module .chart{padding:0px;}
+.module .chart.legend {background: transparent url('http://www.careerbuilder.com/images/personified/Heatmap_Legend.png') no-repeat 60% 95%; vertical-align:top;}
+.module .chart.LPlegend {background: transparent url('http://www.careerbuilder.com/images/personified/LaborPressure_Legend.png') no-repeat 60% 95%; vertical-align:top;}
+.state-heatmap.legend{background: transparent url('http://www.careerbuilder.com/images/personified/Heatmap_Legend.png') no-repeat 85% 95%; vertical-align:top;}
+.state-heatmap.LPlegend {background: transparent url('http://www.careerbuilder.com/images/personified/LaborPressure_Legend.png') no-repeat 85% 95%; vertical-align:top;}
+.icon {clear:both;vertical-align:bottom; padding-right:5px;padding-top:1px;}
+.icon.label {font-size:10px; color:#666666;  padding-top:3px;}
+
+
+#SummaryViewContent, #DemandViewContent, #SupplyViewContent, #LaborPressureViewContent{display:none;}
+#SummaryViewContent.selected, #DemandViewContent.selected, #SupplyViewContent.selected, #LaborPressureViewContent.selected {display:block;}
+/********* END Styles for Tabbed Navigation & Rounded Corners */
+
+.btnSubmit {
+	background: #CCCCCC;
+	font-size:12px;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #333333;
+	border: 1px outset #DDDDDD;
+	cursor:hand;
+	padding:2px;
+    float:left;
+} 
+
+div.facetNav
+{
+    float:left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+}
+div.facetNav li
+{
+    margin:4px 0px;
+}
+
+.feedback {font-size:12px; font-family:Arial; padding-bottom:8px; padding-left:10px; text-decoration:none !important;}
+#search-content #dashboard 
+{
+    width:880px;
+    margin-left:5px;
+    height:100%;
+    overflow: hidden;
+}
+#search-header 
+{
+	background-color: #ddf3f8;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+	display:inline-block;
+	margin:0 15px 15px;
+    padding:0;
+	width:850px;
+}
+#search-header .summary
+{
+    min-height: 160px;
+    clear:both;
+}
+#search-header h1 {font-size:16px; color:#262626; font-weight:bold;padding-left:5px;padding-top:3px;}
+#search-header h2,
+#search-header .header_dropdown
+{
+    color:#5C5C5C;font-size:14px;font-weight:normal;display:inline;
+}
+#search-header .content
+{
+    margin-left:5px;
+}
+#search-header .count
+{
+	float:left;
+	clear:both;
+    font-size:16px;
+    font-weight:bold 
+}
+#search-header .label
+{
+    font-size:12px;
+    padding-left:2px;
+}
+#total_supply_summary {float:left;padding-left:10px}
+#SummaryViewContent {padding-left:12px}
+#summary_demand_active_supply
+{
+    width:380px;
+    margin-right:10px;
+    float:left;
+    border-right: solid 1px #777;
+    height:140px;
+    clear:left;
+}
+#active_labor_pressure_summary 
+{
+    border-top: dashed 1px #777;
+    padding-top:5px;
+}
+#summary_demand_active_supply div
+{
+    padding:1% 1% 7px 1%;
+    clear:both;
+}
+.total_supply_summary_Section
+{
+    width:510px;
+    padding-top: 3px;  
+}
+.total_supply_summary_SOC_Count
+{    
+    float:left;
+    padding-right:4px;
+    text-align:right;
+}
+.total_supply_summary_SOC_Name
+{      
+    padding-top:3px; 
+}   
+#total_supply_summary ul, #total_supply_summary ul li {clear:both; margin:0; padding:0;}
+#total_supply_summary .label {padding-left:5px;}
+.module-ui  
+{
+    width:100%;
+    height:100%;
+}
+#dashboard .module-ui.summary .header
+{
+   color:#777777; font-size:13px;font-weight:bold; padding-left:25px; margin-top:22px;
+}
+#dashboard #drillDownReports {position:absolute; left:-1000px; overflow:auto; height:100px; z-index:2000;} 
+
+#dashboard #job-volume-module, #dashboard #supply-volume-module, #dashboard #labor-volume-module, #dashboard #rdb-volume-module
+{
+    width: 825px; 
+    overflow:hidden;
+}
+
+#dashboard .download { vertical-align:baseline; margin:0px; cursor:pointer;}
+#dashboard #supply-volume-module .topOccupation, #labor-volume-module .topOccupation {float:right; padding-top:2px;padding-right:30px; width:260px;vertical-align:bottom;}
+.Occupation {margin:0px; padding:0px; background:#E6F2FA; height:20px;  border:1px solid #CCCCCC !important; width: 280px;color:#333333; }
+.Occupation option {border-bottom:1px solid #CCCCCC !important; padding:2px;font-size:11px;font-family:arial;}
+
+#demand-map-employer, #supply-map, #labor-map, #rdb-demographic{margin-left:0px;text-align:left;}
+
+.stateLabels { background-color: #ddd;}
+.HeatMapsWrapper .stateLabels { background-color:Transparent; }
+.mmYYbuttons {width:720px; padding-left:8px;}
+.state-heatmap {clear:both; margin:0px; padding-top:10px;}
+.msa-heatmap {padding-left:0px; }
+.heatmap-desc {clear:both; font: normal 11px Verdana,Helvetica,sans-serif; color: #666666; padding:8px 0px 3px 2px; margin-bottom:6px;}
+.mapView {width:750px; height:100%; border:solid 1px #ddd;}
+.topCategoryView {height:100%;width:780px; border:solid 1px #ddd;}
+.tableView,.trendView {width:800px; height:100%;}
+
+.TrendYOYtabs {width:750px; height:100%; font-size:12px;}
+.TrendYOYtabs ul {clear:both; padding:0px; margin:0px;}
+.TrendYOYtabs ul li{padding:0px; margin:0px;}
+.TrendYOYtabs .TrendViewTab, .TrendYOYtabs .YOYViewTab, .TrendYOYtabs .TableViewTab {padding:10px; height: 350px;}
+.TrendYOYtabs .TableViewTab .tableContent {padding-top: 5px;}
+.TrendYOYtabs .title, .HeatMapsWrapper .title {color: #064189; font-size: 12px; padding:5px; padding-left:10px; font-weight:bold;}
+.TrendYOYtabs .title span, .HeatMapsWrapper .title span{vertical-align:top;}
+.TrendYOYtabs .desc,  .HeatMapsWrapper .desc { margin-left: 20px; margin-top:-5px; padding-bottom:5px; font: normal 10px Verdana,Helvetica,sans-serif; color: #3C3D3E; }
+.YOYfilterNote {display:none;font-size:10px; color:#999999; width:710px;}
+.YOYfilterNote.show{display:block;}
+.TrendfilterNote {display:inline-block;font-size:10px; color:Red; width:750px;}
+
+.catergoryHeader {float:right; font-weight:bold; padding-right:110px; padding-top:4px; font-size:12px;}
+.categoryContainer {padding-top:22px; }
+.detailBarChart {border-top:2px solid #808080; background: url('http://www.careerbuilder.com/images/personified/250x50cbwatermark.png') 50% 40% no-repeat;}
+.description {clear:both; font: normal 10px Arial, Verdana,Helvetica,sans-serif; color: #AAAAAA; padding-top:1px; *font-size:9px !important;}
+#demand-employer-detail-view table.detailView td {padding:0.30em !important; *padding:0.31em !important;}
+#demand-employer-detail-view table.detailView tr.bottomRow th  {min-width:60px; }
+#demand-employer-detail-view table.detailView td.rowTitle {width:310px !important;}
+
+/* Tab UI dialog Changes CSS */
+.ui-dialog {z-index:9999 !important;}
+.ui-widget-overlay {z-index:9999 !important;}
+.TrendYOYtabs.ui-widget-content{border:none;}
+.TrendYOYtabs .ui-widget-content{border:1px solid #bbbbbb;}
+.detail_module .ui-widget-header{border:none;}
+.ui-corner-all {-moz-border-radius:0 0 0 0 !important;}
+.ui-tabs-nav .ui-helper-reset .ui-helper-clearfix .ui-widget-header .ui-corner-all {padding:0px; margin:0px;}
+.ui-tabs .ui-tabs-nav {
+    margin:0;
+    padding:0.2em 0.2em 0;
+}
+.TrendYOYtabs .ui-widget-header, .MapsTabs .ui-widget-header {
+    border-color:-moz-use-text-color -moz-use-text-color #AAAAAA;
+    border-style:none none solid;
+    border-width:0 0 1px;
+}
+.TrendYOYtabs .ui-widget-header, .MapsTabs .ui-widget-header {
+    background:#FFF !important;   
+    color:#222222;
+    font-weight:bold;
+}
+.ui-corner-all {
+    -moz-border-radius:0 0 0 0 !important;
+}
+/* End Tab UI Changes CSS */
+
+/* Begin TableView CSS */
+.topCategoryTableView {background: url('http://www.careerbuilder.com/images/personified/250x50cbwatermark.png') 50% 50% no-repeat; min-height:260px;}
+.SDdisclaimer {font-size:9px; color: #666666; padding-top:10px; }
+table.detailView {
+    border-bottom:1px solid #CCCCCC;
+    font-size:11px;
+    text-align:left;
+    width:100%;
+    border:1px solid #CCCCCC;
+    font-size:12px;
+    color: #333333;    
+}
+table.detailView tr.bottomRow th {
+    -moz-background-clip:border;
+    -moz-background-inline-policy:continuous;
+    -moz-background-origin:padding;
+    border-bottom:2px solid #808080;
+    color:#333333;
+    font-size:12px;
+    padding:3px;
+    text-align:center;
+}
+table.detailView .selected {background-color:#dddddd;}
+table.detailView td.rowTitle {color:#666666;text-align:left;}
+table.detailView td {
+    -moz-background-clip:border;
+    -moz-background-inline-policy:continuous;
+    -moz-background-origin:padding;
+    border-top:1px solid #E6E6E6;
+    padding: 3px;
+    text-align:center;
+}
+table.detailView .average {font-weight:bold; width:45px;}
+table.detailView .data {background-color:#EEEEEE;color:#808080; width:45x; text-align:right;}
+table.detailView .NoData {color: #FF0000; height:300px; text-align:center; padding:10px; margin-top:70px; font: 12px Verdana,Helvetica;}
+table.detailView .rank {width:5%; text-align:left; color: #333333;padding-left:10px;}
+
+#StateDetailWrapper table.detailView tr.bottomRow th {text-align:right !important;}
+#StateDetailWrapper table.detailView tr.bottomRow th.stateLabel {text-align:left !important;}
+table.detailView .stateLabel {width:35%; text-align:left; color: #333333;}
+table.detailView .state {width:20%; color: #333333; text-align:right;padding-left:15px;}
+table.detailView .state.No {color:#333333; font-weight:bold; padding-right:10px;width:20%;*padding-right:25px;}
+table.detailView .state.In {color:#008000; font-weight:bold; padding-right:10px;width:20%;*padding-right:25px;}
+table.detailView .state.De {color:#aa0033; font-weight:bold; padding-right:10px;width:20%;*padding-right:25px;}
+table.detailView .state.last {padding-right:25px;}
+
+#MSADetailWrapper table.detailView tr.bottomRow th {text-align:right !important;}
+#MSADetailWrapper table.detailView tr.bottomRow th.msaLabel{text-align:left !important;}
+table.detailView .msaLabel {width:35%; text-align:left; color: #333333;}
+table.detailView .msa {width:20%; color: #333333; text-align:right;padding-left:15px;}
+table.detailView .msa.No {color:#333333; font-weight:bold; padding-right:5px;width:20%;*padding-right:25px;}
+table.detailView .msa.In {color:#008000; font-weight:bold; padding-right:5px;width:20%;*padding-right:25px;}
+table.detailView .msa.De {color:#aa0033; font-weight:bold; padding-right:5px;width:20%;*padding-right:25px;}
+table.detailView .msa.last {padding-right:25px;}
+/* End TableView CSS */
+
+.GraphsWrapper .title {color: #064189; font-size: 12px; padding:5px; font-weight:bold; }
+.GraphsWrapper .title span{vertical-align:top;}
+.GraphsWrapper .desc { margin-left: 15px; margin-top:-5px; font: normal 10px Verdana,Helvetica,sans-serif; color: #3C3D3E; }
+.GraphsWrapper .viewContent{background: #fff;}
+.GraphsWrapper .filters {z-index:100; position:relative; top:10px; left:-6px;}
+
+.stateDetailContent table.detailView td.rowTitle, .msaDetailContent table.detailView td.rowTitle {width:450px;}
+.stateDetailContent table.detailView .data, .msaDetailContent table.detailView .data {width:100x;}
+.stateDetailContent, .msaDetailContent 
+{
+    overflow-x:hidden;
+    overflow-y:auto;
+    height:220px;
+    cursor:hand;
+    position:relative;
+    z-index:2100;
+    background: url('http://www.careerbuilder.com/images/personified/750x300cblogo_watermark.png') -125px -25px no-repeat;
+}
+
+/* Override Tab CSS */
+.MapsTabs  {font-size:12px;}
+.MapsTabs .ui-tabs ui-widget ui-widget-content ui-corner-all {border:solid 1px #cccccc !important; }
+
+/* Facets CSS */
+.facet-ui  div, .facet-ui p, .facet-ui span, .facet-ui h3, .facet-ui h4, .facet-ui ol, .facet-ui ul, .facet-ui li {
+    border:0 none;  
+    clear:both;
+    margin:0px;
+    padding:0px;
+}
+.facet-ui.inactive {display:none;} 
+.facet-ui {
+    width:255px;
+    color:#000000;
+    font:89.5% Arial,Helvetica;  
+}
+.facet-ui ol, ul  { list-style-type:none; list-style:none outside none; }
+.facet-ui .header {
+    background:url("../ReportSummary_files/blueHeaderBg.png") repeat-x scroll 0 0 transparent;
+	color:#fff;
+	font-weight:bold;
+    padding:6px 10px 4px;
+    font-size:14px;
+}
+.facet-ui .content 
+{
+    border-style:solid;
+    border-color:#ddd;
+    border-width:0 1px 1px;
+    padding:0px 10px 10px;
+    -moz-border-radius-bottomright:5px;
+    -moz-border-radius-bottomleft:5px;
+    min-height:40px;
+}
+.facet-ui .content.full {border-top:1px solid #ddd; background-color:#FFF;min-height:20px;}
+.facet-ui .content.full span {font-size:10px; font-weight:bold; color:#06910A; }
+.facet-ui .content.full img {vertical-align:middle; width:18px;}
+.facet-ui .more-filters {display:none;}
+.facet-ui .more-filters.active {display:block;}
+
+/*
+.facet-ui .content .show-more
+{
+    color:#064189;
+    font-size:10px;
+    text-decoration:none;
+    display:inline;
+}
+*/
+
+.facet-ui .content .keep-filters
+{
+    font-size:10px;
+    text-decoration:none;
+    display:inline;
+}
+.search-content li * {float:left}
+.search-content li input {clear:left;width:97%}
+.search-content li select {margin-top:4px}
+
+#searched-for .searched-for-content li{
+    background-image: url('http://www.careerbuilder.com/images/personified/remove_selection.gif');
+    background-repeat: no-repeat;
+    background-position: 0 -.3em;
+    margin-bottom:5px !important;
+    min-height:18px;
+	cursor:pointer;
+}
+/*
+#searched-for .searched-for-content li.longText, #Demographics-searched-for .searched-for-content li.longText{height:28px;}
+#searched-for .searched-for-content li.extraLongText, #Demographics-searched-for .searched-for-content li.extraLongText{height:40px;}
+#searched-for .searched-for-content li.superLongText, #Demographics-searched-for .searched-for-content li.superLongText{height:50px;}
+*/
+#searched-for .searched-for-content span{
+    vertical-align:bottom;
+    margin-left:17px;
+}
+.filter-content {font-size:80.5%;}
+
+/*
+#filter-search .filter-content .show-more 
+{
+    padding-bottom:5px;
+    border-bottom:dashed 1px #ddd;
+    display:block;
+}
+*/
+
+.filter-content .headerText{font-size:12px; font-weight:bold; padding-top:5px; padding-bottom:5px;}
+.filter-content li input {
+   float:left;
+   margin-top:-1px;
+}
+.filter-content .toggle {
+    margin-top:-18px;
+    float:right;
+}
+.clearAll {font-size:10px; text-align:left; cursor:pointer; color:#EE7F0C; text-decoration:underline;}
+.clearAll.inactive {display:none;}
+
+.titled_tips {display:inline-block;background:url("../ReportSummary_files/question.png") no-repeat scroll 0 0 transparent;font-size:1em;min-height:16px;min-width:16px}
+.titled_tips:hover {cursor:help}
+.section h2
+{
+    text-align:left;
+    background-color:#f2f2f2;
+    color:#000000;
+    padding:10px;
+}
+.section.first
+{
+    margin-bottom:5px;
+}
+
+/* Timeline buttons CSS */
+.mmYYbuttons a{
+    display:block;
+    float:left;
+    margin:0 1px 1px 0;
+    background-color:#f5f5f5;
+    border-left:1px solid #ddd;
+    border:1px solid #bbb;
+    border-top:1px solid #ddd;
+    color:#565656;
+    cursor:pointer;
+    padding:5px 5px 5px 5px; 
+    font-family:Tahoma, Arial, Verdana, sans-serif;
+    font-size:9px;
+    line-height:130%;
+    text-decoration:none;
+    font-weight:bold;
+}
+.mmYYbuttons a.skin{
+    color:#336699;
+}
+.mmYYbuttons a.skin.active{
+    background-color:#6299C5;
+    color: #fff;
+}
+.mmYYbuttons a.skin.inactive{
+    opacity:.45;
+    filter: alpha(opacity = 45);
+
+}
+.mmYYbuttons a.skin:hover, button.skin:hover{
+    background-color:#dff4ff;
+    border:1px solid #c2e1ef;
+    color:#336699;
+}
+.mmYYbuttons a.skin:active{
+    background-color:#6299c5;
+    border:1px solid #6299c5;
+    color:#fff;
+}
+
+#JPBreadcrumb
+{
+    display:none;
+}
+
+#newreport
+{
+    cursor: pointer;
+}
+
+.output #lnkPDFExport_ExportToPDFLink
+{
+	margin-right:10px;
+}
+
+/* ***** Trend Table ********/
+.trendYOYTable thead th{text-align:right;border-bottom:2px solid #777;font-weight:normal; width:auto;}
+.trendYOYTable thead tr.mainHeading th{width:auto;text-align:center;border-bottom:none;border-top:2px solid #777;padding:4px;font-size:1.2em;}
+.trendYOYTable thead tr.mainHeading th, .trendYOYTable thead th.first, .trendYOYTable thead tr.mainHeading	{border-right:1px dashed #777;}
+.trendYOYTable thead tr th{text-align:right; width:80px;  clear:both; }
+.trendYOYTable tbody td{text-align:right;width:auto;color:#505050;padding-top:3px;padding-bottom:3px;font-size:.8em;}
+.trendYOYTable tbody td.first, .trendYOYTable tbody td.lastForDataSet, .trendYOYTable thead th.lastForDataSet	{border-right:1px dashed #777;padding-right:10px;}
+.trendYOYTable .first{text-align:left;padding-left:10px; }
+.trendYOYTable table tbody tr.total td, .trendYOYTable table tbody tr.average td{font-weight:normal;color:#000;font-size:1em; text-align:right;}
+.trendYOYTable .totalStats td{border-top:2px solid #777 !important;}
+.trendYOYTable .average td{border-bottom:2px solid #777;}
+.trendYOYTable .average.end td{border-top:2px solid #777 !important;}
+.trendYOYTable .alternatingItem td{background:#eee;}
+.trendYOYTable .last{border-right:none !important;}
+.trendYOYTable .hideme{display:none;}
+
+.HeatMapsWrapper .select-timeframe
+{
+    clear: both;
+    color: #666666;
+    font: 11px Verdana,Helvetica,sans-serif;
+    padding-bottom: 3px;
+}
+.HeatMapsWrapper .XOverY
+{
+    margin-bottom:6px;
+}
+
+.YOYchartContent
+{
+   background: url('http://img.icbdr.com/images/personified/640x480cblogo_watermark.png') 0 -25px no-repeat;
+   padding-top:10px;
+}
+.swMain
+{
+    float:none !IMPORTANT;
+}
+.swMain .stepContainer {
+    min-height:300px !IMPORTANT;
+    height:auto !IMPORTANT;
+}
+.swMain .stepContainer div.content
+{
+    position:relative !IMPORTANT;
+    min-height:300px !IMPORTANT;
+    height:auto !IMPORTANT;
+}
+#step-1 DIV.stepOneDescription UL, #step-2 DIV.stepTwoDescription UL
+{
+    list-style:decimal outside none;
+}
+#step-2 DIV.stepTwoDescription
+{
+    clear:both;
+    color: #666666;
+    font: 11px Verdana,Helvetica,sans-serif;
+    position:absolute;
+    bottom:10px;
+    left:10px;
+}
+#step-1 DIV.stepOneDescription
+{
+   /* position:absolute;
+    bottom:10px;
+    left:10px; JD */
+}
+.ddlTimePeriod
+{
+    margin-left:8px;
+}
+
+#search-header #viewInCompensation
+{
+    display: block;
+    float: left;
+    font-size: 10px;
+    height: 30px;
+    vertical-align: middle;
+    width: 150px;
+}
+
+#search-header h2#summary_header
+{
+    display:block;
+    margin-bottom:7px;
+    float:left;
+}
+
+#blueHeading
+{
+    background-image: url("http://img.icbdr.com/images/Personified/Tab_Sliver.png");
+    background-repeat:repeat-x;
+    color:white !IMPORTANT;
+    height:30px;
+    width:100%;
+    -moz-border-radius: 5px 5px 0px 0px;
+    font-size:11px;
+    font-weight:bold;
+    
+}
+
+#blueHeadingText
+{
+    color:white !IMPORTANT;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+    padding-top: 6px;
+}
+
+#search-header #contentWrapper
+{
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-top: 2px;
+}
+#viewInCompensation .lnkCareerBuilderRDB
+{
+    color:White;
+    text-decoration: none;
+    font: 11px arial,helvetica;
+    font-weight:bold
+}
+img#dollarImg
+{
+    border:0 none;
+    float:left;
+    display:block;
+    padding-left: 6px;
+    padding-top: 7px;
+}
+
+#searchTipsLink
+{
+    display: block;
+    float: right;
+    margin-right: 12px;
+    width: 95px;
+    color:black;
+}
+
+#searchTipsPDF
+{
+    display: block;
+    float: left;
+    padding-top: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
+    margin-left: 18px;
+}
+#searchTipsText
+{
+    color:#000099;
+    clear: none;
+    display: block;
+    float: right;
+    padding-top: 6px;
+    font-size: 10px;
+}
+
+#searchTipsText:hover
+{
+    color:#000099;
+    text-decoration: underline;
+    clear: none;
+    display: block;
+    float: right;
+    padding-top: 6px;
+    font-size: 10px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+#faqsPDFLink
+{
+    float:none;
+    margin-right: 16px;
+}
+#faqsPDFImg
+{
+    float:none;
+    margin-right:6px;
+    margin-top: 1px;
+}
+#faqsPDFText
+{
+    float:none;
+    padding-top: 1px;
+}
+
+#CompensationLinkText
+{
+    padding-top:8px;
+    display:block;
+    float:left;
+}
+
+/***** Detail Heat Map *****/
+.MapsTabs div.content
+{
+    background-color: #F8F8F8;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    clear: both;
+    color: #5A5655;
+    display: block;
+    float: left;
+    font: 12px Verdana,Arial,Helvetica,sans-serif;
+    height: 300px;
+    margin: 0;
+    overflow: visible;
+    padding: 5px;
+    position: absolute;
+    text-align: left;
+    width: 968px;
+    z-index: 88;
+}
+
+#step-1 .StepTitle {
+    background-color: #E0E0E0;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px 5px 5px 5px;
+    clear: both;
+    color: #5A5655;
+    display: block;
+    font: bold 16px Verdana,Arial,Helvetica,sans-serif;
+    margin: 0;
+    padding: 5px;
+    position: relative;
+    text-align: left;
+    z-index: 88;
+}
+
+
+#step-1
+{
+    height: auto !important;
+    min-height: 300px !important;
+    position: relative !important;
+}
+
+
+.loadScreen {
+            border-color: #C0C0C0 #999999 #999999 #C0C0C0;
+            border-style: solid;
+            border-width: 1px;
+            display:none;
+            font-family: Tahoma;
+            font-size: 17px;
+            padding: 15px 0;
+            text-align: center;
+            width: 280px;
+            z-index: 20000;
+        }
+        
