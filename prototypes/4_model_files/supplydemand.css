@@ -287,7 +287,6 @@ div.facetNav li
 }
 #search-header .summary
 {
-    margin-top:10px;
     min-height: 160px;
     clear:both;
 }
@@ -306,7 +305,7 @@ div.facetNav li
 	float:left;
 	clear:both;
     font-size:16px;
-    font-weight:bold
+    font-weight:bold 
 }
 #search-header .label
 {
@@ -317,7 +316,7 @@ div.facetNav li
 #SummaryViewContent {padding-left:12px}
 #summary_demand_active_supply
 {
-    width:400px;
+    width:380px;
     margin-right:10px;
     float:left;
     border-right: solid 1px #777;
@@ -331,7 +330,7 @@ div.facetNav li
 }
 #summary_demand_active_supply div
 {
-    padding-bottom:7px;
+    padding:1% 1% 7px 1%;
     clear:both;
 }
 .total_supply_summary_Section
