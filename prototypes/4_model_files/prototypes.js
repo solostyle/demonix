@@ -5,7 +5,7 @@ this.Prototypes = this.Prototypes || function() {
 	/********************************************************/
 	var shuffleDemandByDisabling = function() {
 		// checks if the show headers option is selected
-		showOrHideHeaders();
+		showHeaders();
 		jQuery('#facetsSupply').find('.facets').each( function() {
 			jQuery(this).find('li').css('color','#ccc');
 			jQuery(this).find('.headerText').css('color','#ccc');
@@ -18,7 +18,7 @@ this.Prototypes = this.Prototypes || function() {
 	},
 	shuffleSupplyByDisabling = function() {
 		// checks if the show headers option is selected
-		showOrHideHeaders();
+		showHeaders();
 		jQuery('#facetsDemand').find('.facets').each( function() {
 			jQuery(this).find('li').css('color','#ccc');
 			jQuery(this).find('.headerText').css('color','#ccc');
@@ -31,7 +31,7 @@ this.Prototypes = this.Prototypes || function() {
 	},
 	shuffleBothByDisabling = function() {
 		// checks if the show headers option is selected
-		showOrHideHeaders();
+		showHeaders();
 		jQuery('#facetsSupply, #facetsDemand').find('.facets').each( function() {
 			jQuery(this).find('li').removeAttr('style'); // used to be css('color','#ccc');
 			jQuery(this).find('.headerText').removeAttr('style'); // used to be css('color','#ccc');
@@ -126,17 +126,9 @@ this.Prototypes = this.Prototypes || function() {
 	
 	return {
 		updateSummary: updateSummary,
-		bindTabClickForShuffle: bindTabClickForShuffle,
-		unbindTabClickForShuffle: unbindTabClickForShuffle,
+		bindTabClickByDisabling: bindTabClickByDisabling,
 		bindHeaderClickCollapse: bindHeaderClickCollapse,
-		bindHeaderClickAutocollapse: bindHeaderClickAutocollapse,
-		unbindHeaderClickAutocollapse: unbindHeaderClickAutocollapse,
-		shuffleWhenShuffleOptionSelected: shuffleWhenShuffleOptionSelected,
-		unshuffleWhenShuffleOptionSelected: unshuffleWhenShuffleOptionSelected,
-		showOrHideHeaders: showOrHideHeaders,
-		showOrHideKeepHeadersOption: showOrHideKeepHeadersOption,
-		changeFilterLabelWidth: changeFilterLabelWidth,
-		changePageWidth: changePageWidth
+		showHeaders: showHeaders
 	};
 
 }();
