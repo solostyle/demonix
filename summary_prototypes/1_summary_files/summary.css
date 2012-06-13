@@ -38,24 +38,26 @@
 #summaryDemand {clear:right!important}
 
 /* Summary Top Toolbar */
-#toolbar {height:29px;position:relative}
+#toolbar {height:29px;position:relative;background:url("http://img.icbdr.com/images/Personified/Tab_Sliver.png") repeat-x scroll 0 0 transparent}
 #toolbar>div {height:29px}
 #toolbar .content {
     background: none repeat scroll 0 0 white;
-    border: 1px solid #CCCCCC;
-    box-shadow: 0 5px 5px #666666;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     display: block;
-    padding: 5px;
+    padding: 5px 0;
     position: absolute;
 	z-index: 9999;
 }
+#toolbar .content li {padding:5px 10px;}
+#toolbar .content li:hover {background-color:#def}
 #newReport {width:200px!important}
 #newReport ul {padding:0 5px}
-#compensationLink, #newReport {float:left}
+#newReport {float:left}
 #newReport .content {width: 188px}
-#export, #help {float:right}
+#compensationLink, #export, #help {float:right}
 #export .content, #help .content {right:0}
 
 /* Summary Header Styles */
-#compLinkHeader, #newReportHeader, #exportHeader, #helpHeader, .gradient {background:#eee;border:1px solid #ccc;border-radius:5px 5px 0 0;color:#666;cursor:pointer;font-size:12px;font-weight:bold;padding:6px 10px}
-#compLinkHeader:hover, #newReportHeader:hover, #exportHeader:hover, #helpHeader:hover, .gradient:hover {background:#fff;color:#333}
+#compLinkHeader, #newReportHeader, #exportHeader, #helpHeader, .gradient {background:transparent;border:1px solid #79b;border-radius:5px 5px 0 0;color:white;cursor:pointer;font-size:12px;font-weight:bold;padding:6px 10px} /* todo: use jquery to remove border from one side */
+#compLinkHeader:hover, #lnkCompV2:hover, #newReportHeader:hover, #exportHeader:hover, #helpHeader:hover, .gradient:hover {background:#fff;color:#333}
