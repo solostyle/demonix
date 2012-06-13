@@ -30,8 +30,32 @@
 #controlpanel ul {padding:0;margin:5px;list-style:none}
 #controlpanel #shuffleMenu {margin-left:10px}
 
+/* Summary */
 .summaryCount {clear:none;float:left;width:45%}
 .summaryCount label.label {clear:left;float:left}
 .summaryCount .title {clear: both;float: left;font-size: 12px;font-weight: bold}
 #summarySupply {clear:left!important}
 #summaryDemand {clear:right!important}
+
+/* Summary Top Toolbar */
+#toolbar {height:29px;position:relative}
+#toolbar>div {height:29px}
+#toolbar .content {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 5px 5px #666666;
+    display: block;
+    padding: 5px;
+    position: absolute;
+	z-index: 9999;
+}
+#newReport {width:200px!important}
+#newReport ul {padding:0 5px}
+#compensationLink, #newReport {float:left}
+#newReport .content {width: 188px}
+#export, #help {float:right}
+#export .content, #help .content {right:0}
+
+/* Summary Header Styles */
+#compLinkHeader, #newReportHeader, #exportHeader, #helpHeader, .gradient {background:#eee;border:1px solid #ccc;border-radius:5px 5px 0 0;color:#666;cursor:pointer;font-size:12px;font-weight:bold;padding:6px 10px}
+#compLinkHeader:hover, #newReportHeader:hover, #exportHeader:hover, #helpHeader:hover, .gradient:hover {background:#fff;color:#333}

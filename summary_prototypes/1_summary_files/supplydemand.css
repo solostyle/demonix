@@ -2,7 +2,7 @@
 .cb_style {font: 11px arial,helvetica;text-align: left;}
 #pnlInnerWrapper {margin-left:4px!important;margin-top:10px}
 #_ctl0__ctl1_hgcPri, .nav .pri {overflow:hidden;padding:0;width:100%}
-
+ul, ol {list-style: none outside none;margin:0;padding:0}
 input[type="checkbox"] {
     margin-right: 1px;
 }
@@ -276,7 +276,7 @@ div.facetNav li
 }
 #search-header 
 {
-	background-color: #ddf3f8;
+	background-color: #edf6fb;
     border-radius:5px;
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
@@ -802,14 +802,7 @@ table.detailView .msa.last {padding-right:25px;}
     font: 11px arial,helvetica;
     font-weight:bold
 }
-img#dollarImg
-{
-    border:0 none;
-    float:left;
-    display:block;
-    padding-left: 6px;
-    padding-top: 7px;
-}
+img#dollarImg {float:left}
 
 #searchTipsLink
 {
@@ -863,18 +856,6 @@ img#dollarImg
     float:none;
     margin-right:6px;
     margin-top: 1px;
-}
-#faqsPDFText
-{
-    float:none;
-    padding-top: 1px;
-}
-
-#CompensationLinkText
-{
-    padding-top:8px;
-    display:block;
-    float:left;
 }
 
 /***** Detail Heat Map *****/
