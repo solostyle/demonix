@@ -38,8 +38,10 @@
 #summaryDemand {clear:right!important}
 
 /* Summary Top Toolbar */
-#toolbar {height:29px;position:relative;background:url("http://img.icbdr.com/images/Personified/Tab_Sliver.png") repeat-x scroll 0 0 transparent}
-#toolbar>div {height:29px}
+#toolbar {height:36px;position:relative;background:url("http://img.icbdr.com/images/Personified/Tab_Sliver.png") repeat-x scroll 0 0 transparent}
+#toolbarHeaderOuter {padding-left:10px;padding-top:8px;float:left}
+#toolbarHeaderInner {}
+#toolbar>div {height:36px}
 #toolbar .content {
     background: none repeat scroll 0 0 white;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -51,13 +53,15 @@
 }
 #toolbar .content li {padding:5px 10px;}
 #toolbar .content li:hover {background-color:#def}
-#newReport {width:200px!important}
+/*#newReport {width:200px!important}
 #newReport ul {padding:0 5px}
 #newReport {float:left}
-#newReport .content {width: 188px}
+#newReport .content {width: 188px}*/
 #compensationLink, #export, #help {float:right}
 #export .content, #help .content {right:0}
 
 /* Summary Header Styles */
-#compLinkHeader, #newReportHeader, #exportHeader, #helpHeader, .gradient {background:transparent;border:1px solid #79b;border-radius:5px 5px 0 0;color:white;cursor:pointer;font-size:12px;font-weight:bold;padding:6px 10px} /* todo: use jquery to remove border from one side */
-#compLinkHeader:hover, #lnkCompV2:hover, #newReportHeader:hover, #exportHeader:hover, #helpHeader:hover, .gradient:hover {background:#fff;color:#333}
+#exportHeader, #helpHeader, .gradient {background:transparent;border:1px solid #79b;border-radius:5px 5px 0 0;color:white;cursor:pointer;font-size:12px;font-weight:bold;padding:9px 10px} /* todo: use jquery to remove border from one side */
+#exportHeader:hover, #helpHeader:hover, .gradient:hover {background:#fff;color:#333}
+#compLinkHeader {background:url("../ReportSummary_files/money-dollar-icon.png") no-repeat scroll 3px 5px transparent;border:1px solid #79b;border-radius:5px 5px 0 0;color:white;cursor:pointer;font-size:12px;font-weight:bold;padding:9px 10px 9px 20px}
+#compLinkHeader:hover {background:url("../ReportSummary_files/money-dollar-icon.png") no-repeat scroll 3px 5px white;color:#333}

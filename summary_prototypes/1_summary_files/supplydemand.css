@@ -290,8 +290,8 @@ div.facetNav li
     min-height: 160px;
     clear:both;
 }
-#summary h1 {font-size:16px;color:#cdf;font-weight:bold;padding-left:10px;padding-top:5px;float:left}
-#summary h1 span {color:#fff}
+#summary h1 {font-size:16px;color:#cdf;font-weight:bold}
+#summary h1 span {color:#fff;text-shadow:0 0 1px #fff}
 #summary h2,
 #summary .header_dropdown
 {
@@ -796,14 +796,6 @@ table.detailView .msa.last {padding-right:25px;}
     padding-left: 5px;
     padding-top: 2px;
 }
-a#lnkCompV2
-{
-    color:White;
-    text-decoration: none;
-    font: 12px arial,helvetica;
-    font-weight:bold
-}
-img#dollarImg {float:left}
 
 #searchTipsLink
 {
