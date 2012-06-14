@@ -32,8 +32,8 @@
 
 /* Summary */
 .summaryCount {clear:none;float:left;width:45%}
-.summaryCount label.label {clear:left;float:left}
-.summaryCount .title {clear: both;float: left;font-size: 12px;font-weight: bold}
+#summaryContent label.label {clear:left;float:left}
+.summaryCount .title {clear: both;color:#333;float:left;font-size:12px;font-weight:bold;letter-spacing:0.05em}
 #summarySupply {clear:left!important}
 #summaryDemand {clear:right!important}
 
