@@ -1,10 +1,10 @@
 jQuery('body')
 .append('<div id="controlpanel"></div>')
 .find('#controlpanel')
-.append('<h1>Summary Toolbar Header</h1>')
+.append('<h1>Summary Appearance</h1>')
 .append('<ul></ul>')
 .find('ul')
-.append('<li><input type="checkbox" id="cpTwoLine"><label for="cpTwoLine">Two Lines</label></li>')
+.append('<li><input type="checkbox" id="cpTwoLine" checked="checked"><label for="cpTwoLine">Two Lines</label></li>')
 .append('<li><input type="checkbox" id="cpLong"><label for="cpLong">Long Search</label></li>');
 /*.append('<li><input type="checkbox" id="chkbx" checked="checked"><label for="chkbx">Checkbox</label></li>')
 .append('<li><input type="checkbox" id="wideMenu" checked="checked"><label for="wideMenu">Wide menu</label></li>')
