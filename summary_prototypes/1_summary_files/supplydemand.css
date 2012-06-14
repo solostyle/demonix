@@ -290,8 +290,6 @@ div.facetNav li
     min-height: 160px;
     clear:both;
 }
-#summary h1 {font-size:16px;color:#cdf;font-weight:bold}
-#summary h1 span {color:#fff;text-shadow:0 0 1px #fff}
 #summary h2,
 #summary .header_dropdown
 {

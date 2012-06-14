@@ -1,9 +1,20 @@
 this.Prototypes = this.Prototypes || function() {
 	
 	/*********************************************************
+	/*              Private variables
+	/********************************************************/
+	var savedHeader = '';
+
+	/*********************************************************
 	/*              Private functions
 	/********************************************************/
-	var shuffleDemandByDisabling = function() {
+	var saveHeader = function(text) {
+		savedHeader = text;
+	},
+	retrieveHeader = function() {
+		return savedHeader;
+	},
+	shuffleDemandByDisabling = function() {
 		// checks if the show headers option is selected
 		showHeaders();
 		jQuery('#facetsSupply').find('.facets').each( function() {
@@ -128,7 +139,9 @@ this.Prototypes = this.Prototypes || function() {
 		updateSummary: updateSummary,
 		bindTabClickByDisabling: bindTabClickByDisabling,
 		bindHeaderClickCollapse: bindHeaderClickCollapse,
-		showHeaders: showHeaders
+		showHeaders: showHeaders,
+		saveHeader: saveHeader,
+		retrieveHeader: retrieveHeader
 	};
 
 }();

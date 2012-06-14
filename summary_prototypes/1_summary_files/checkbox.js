@@ -84,7 +84,7 @@ jQuery('#facetsSupplyHeader .expandedInd,#facetsDemandHeader .expandedInd,#facet
 jQuery('#facetsSupplyHeader .collapsedInd,#facetsDemandHeader .collapsedInd,#facetsBothHeader .collapsedInd,#newReportHeader .collapsedInd').hide();
 
 // Mouseover events
-jQuery('#facetsBothHeader,#facetsSupplyHeader,#facetsDemandHeader,#newReportHeader').mouseover(function() {
+jQuery('#facetsBothHeader,#facetsSupplyHeader,#facetsDemandHeader,#newReportHeader,#compLinkHeader,#exportHeader,#helpHeader').mouseover(function() {
 	//if(console.log) {console.log(this);}
 	jQuery(this).css('background',"url('ReportSummary_files/orangeHeaderBg.png') repeat-x scroll 0 0 transparent");
 	// if (jQuery(this).next().css('display')=="none") {
@@ -93,7 +93,7 @@ jQuery('#facetsBothHeader,#facetsSupplyHeader,#facetsDemandHeader,#newReportHead
 		// jQuery(this).append('<span style="float:right;margin-top:-7px">_</span>');
 	// }
 });
-jQuery('#facetsBothHeader,#facetsSupplyHeader,#facetsDemandHeader,#newReportHeader').mouseout(function() {
+jQuery('#facetsBothHeader,#facetsSupplyHeader,#facetsDemandHeader,#newReportHeader,#compLinkHeader,#exportHeader,#helpHeader').mouseout(function() {
 	//if(console.log) {console.log(this);}
 	jQuery(this).css('background','');
 	// jQuery(this).find('span').remove();

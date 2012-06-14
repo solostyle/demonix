@@ -39,6 +39,11 @@
 
 /* Summary Top Toolbar */
 #toolbar {height:36px;position:relative;background:url("http://img.icbdr.com/images/Personified/Tab_Sliver.png") repeat-x scroll 0 0 transparent}
+#toolbar h1 {font-size:16px;color:#cdf;font-weight:bold}
+#toolbar h1 span {color:#fff;text-shadow:0 0 1px #fff}
+#summaryContent h1 {font-size:16px;color:#333;font-weight:bold}
+#summaryContent h1 span {color:#000;text-shadow:0 0 1px #000}
+.headerJobTitle {font-size:16px}
 #toolbarHeaderOuter {padding-left:10px;padding-top:8px;float:left}
 #toolbarHeaderInner {}
 #toolbar>div {height:36px}
@@ -58,10 +63,10 @@
 #newReport {float:left}
 #newReport .content {width: 188px}*/
 #compensationLink, #export, #help {float:right}
-#export .content, #help .content {right:0}
+#export .content, #help .content {right:0;display:none}
 
 /* Summary Header Styles */
 #exportHeader, #helpHeader, .gradient {background:transparent;border:1px solid #79b;border-radius:5px 5px 0 0;color:white;cursor:pointer;font-size:12px;font-weight:bold;padding:9px 10px} /* todo: use jquery to remove border from one side */
-#exportHeader:hover, #helpHeader:hover, .gradient:hover {background:#fff;color:#333}
+/*#exportHeader:hover, #helpHeader:hover, .gradient:hover {background:#fff;color:#333}*/
 #compLinkHeader {background:url("../ReportSummary_files/money-dollar-icon.png") no-repeat scroll 3px 8px transparent;border:1px solid #79b;border-radius:5px 5px 0 0;color:white;cursor:pointer;font-size:12px;font-weight:bold;padding:9px 10px 9px 20px}
-#compLinkHeader:hover {background:url("../ReportSummary_files/money-dollar-icon.png") no-repeat scroll 3px 5px white;color:#333}
+#compLinkHeader:hover {background:url("../ReportSummary_files/money-dollar-icon.png") no-repeat scroll 3px 8px transparent}
