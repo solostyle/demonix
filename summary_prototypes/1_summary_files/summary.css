@@ -39,13 +39,9 @@
 
 /* Summary Top Toolbar */
 #toolbar {height:36px;position:relative;background:url("http://img.icbdr.com/images/Personified/Tab_Sliver.png") repeat-x scroll 0 0 transparent}
-#toolbar h1 {font-size:16px;color:#cdf;font-weight:bold}
-#toolbar h1 span {color:#fff;text-shadow:0 0 1px #fff}
+#toolbar h1#reportHeader {font-size:16px;color:#fff;font-weight:bold;text-shadow:0 0 1px #fff;padding:8px 5px 5px 10px;float:left}
 #summaryContent h1 {font-size:16px;color:#333;font-weight:bold}
 #summaryContent h1 span {color:#000;text-shadow:0 0 1px #000}
-.headerJobTitle {font-size:16px}
-#toolbarHeaderOuter {padding-left:10px;padding-top:8px;float:left}
-#toolbarHeaderInner {}
 #toolbar>div {height:36px}
 #toolbar .content {
     background: none repeat scroll 0 0 white;
