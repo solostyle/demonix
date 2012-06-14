@@ -24,24 +24,28 @@ jQuery('body')
 
 jQuery('#cpTwoLine').bind('click', function() {
 	if (jQuery(this).filter(':checked').length) {
-		$('#toolbar').css('height','46px');
-		$('#toolbar>div').css('height','46px');
-		$('#compLinkHeader,#exportHeader,#helpHeader').css('padding','14px 10px');
-		$('#compLinkHeader').css('padding','14px 10px 14px 20px');
-		$('#compLinkHeader').css('background-position','3px 13px');
-		$('#toolbarHeaderOuter').css('padding-top','5px');
-		$('#toolbar').find('h1').css('font-size','14px');
-		$('#toolbar').find('.headerJobTitle').css('font-size','16px');
-		$('<br>').insertAfter('#toolbar .headerJobTitle');
+		if (jQuery('#cpSwap').filter(':checked').length) {
+		} else {
+			$('#toolbar').css('height','46px');
+			$('#toolbar>div').css('height','46px');
+			$('#compLinkHeader,#exportHeader,#helpHeader').css('padding','14px 10px');
+			$('#compLinkHeader').css('padding','14px 10px 14px 20px');
+			$('#compLinkHeader').css('background-position','3px 13px');
+			$('#toolbarHeaderOuter').css('padding-top','5px');
+			$('#toolbar').find('h1').css('font-size','14px');
+			$('#toolbar').find('.headerJobTitle').css('font-size','16px');
+		}
+		$('<br>').insertAfter('.headerJobTitle');
 	} else {
 		$('#toolbar,#toolbar>div,#compLinkHeader,#exportHeader,#helpHeader,#compLinkHeader,#toolbarHeaderOuter,#headerJobTitle,#toolbar h1').removeAttr('style');
-		$('#toolbar').find('.headerJobTitle').next().remove('br');
+		$('.headerJobTitle').next().remove('br');
 	}
 });
 
 jQuery('#cpLong').bind('click', function() {
 	if (jQuery(this).filter(':checked').length) {
 		$('#toolbar').find('.headerJobTitle').html('"Web Developer" or "Java Developer" or "Software Engineer" or "Computer Systems Analyst" or "C++ Developer" or "Programmer"');
+		jQuery('#toolbarHeaderOuter').width('525px');
 	} else {
 		$('#toolbar').find('.headerJobTitle').html('"Web Developer"');
 	}
