@@ -33,8 +33,8 @@
 /* Summary */
 .summaryCount {clear:none;float:left;width:45%}
 #summaryContent label.label {clear:left;float:left}
-.summaryCount .title {clear: both;color:#333;float:left;font-size:12px;font-weight:bold;letter-spacing:0.05em}
-#summarySupply {clear:left!important}
+.summaryCount .title {clear:both;color:#68a;float:left;font-size:13px;font-weight:bold}
+#summarySupply {clear:left!important;margin-right:5px}
 #summaryDemand {clear:right!important}
 
 /* Summary Top Toolbar */
