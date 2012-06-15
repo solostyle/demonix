@@ -31,7 +31,7 @@
 #controlpanel #shuffleMenu {margin-left:10px}
 
 /* Summary */
-.summaryCount {clear:none;float:left;width:45%}
+.summaryCount {clear:none;float:left;width:165px}
 #summaryContent label.label {clear:left;float:left}
 .summaryCount .title {clear:both;color:#68a;float:left;font-size:13px;font-weight:bold}
 #summarySupply {clear:left!important;margin-right:5px}
