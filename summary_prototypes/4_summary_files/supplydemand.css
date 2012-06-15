@@ -302,7 +302,7 @@ div.facetNav li
 #summaryHIRight>div {padding:5px;overflow:auto;border-radius:5px}
 #summaryActiveLP {margin-bottom:5px}
 #SummaryViewContent {padding-left:12px}
-#summaryLeft {float:left;width:520px;margin:5px 0 10px 10px}
+#summaryLeft {float:left;width:508px;margin:5px 0 10px 10px} /*actually 520px width */
 #summaryActiveLeft {min-height:100px}
 #summaryActiveLeft>div {background:#edf6fb;border-radius:5px;padding:5px}
 .position>* {text-align:center;width:100%}
