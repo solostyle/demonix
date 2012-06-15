@@ -75,14 +75,6 @@ jQuery(".searched-for-content").click( function toggleFilters(e) {
 	Prototypes.updateSummary();
 });
 
-// Events on load
-Prototypes.bindHeaderClickCollapse();
-jQuery('#facetsDemand, #facetsSupply').show();
-Prototypes.bindTabClickByDisabling();
-Prototypes.showHeaders();
-jQuery('#facetsSupplyHeader .expandedInd,#facetsDemandHeader .expandedInd,#facetsBothHeader .expandedInd,#newReportHeader .expandedInd').show();
-jQuery('#facetsSupplyHeader .collapsedInd,#facetsDemandHeader .collapsedInd,#facetsBothHeader .collapsedInd,#newReportHeader .collapsedInd').hide();
-
 // Mouseover events
 jQuery('#facetsBothHeader,#facetsSupplyHeader,#facetsDemandHeader,#newReportHeader,#compLinkHeader,#exportHeader,#helpHeader').mouseover(function() {
 	//if(console.log) {console.log(this);}
@@ -99,3 +91,25 @@ jQuery('#facetsBothHeader,#facetsSupplyHeader,#facetsDemandHeader,#newReportHead
 	// jQuery(this).find('span').remove();
 });
 
+/*************************
+/*    Events on load     *
+**************************/
+Prototypes.bindHeaderClickCollapse();
+jQuery('#facetsDemand, #facetsSupply').show();
+Prototypes.bindTabClickByDisabling();
+Prototypes.showHeaders();
+jQuery('#facetsSupplyHeader .expandedInd,#facetsDemandHeader .expandedInd,#facetsBothHeader .expandedInd,#newReportHeader .expandedInd').show();
+jQuery('#facetsSupplyHeader .collapsedInd,#facetsDemandHeader .collapsedInd,#facetsBothHeader .collapsedInd,#newReportHeader .collapsedInd').hide();
+
+// Position things perfectly for No Hiring Indicator + No Custom Supply
+
+// Vertically center text in the summary
+var computedHeight = Math.max(jQuery('#summarySupply').height(), jQuery('#summaryDemand').height(), 105);
+jQuery('.displayTable').height(computedHeight-25);
+// Adjust the position of #summarytotalright
+var leftoverMargin = computedHeight;
+jQuery('#summaryTotalRight').height(computedHeight);
+jQuery('#summaryTotalRight').children().each(function() {
+	leftoverMargin -= jQuery(this).outerHeight();
+});
+jQuery('#summaryActiveLP').css('margin-bottom',leftoverMargin);
