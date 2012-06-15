@@ -1,0 +1,293 @@
+@charset "utf-8";
+/* CSS Document */
+
+.section
+{
+	float:left;
+	width:100%;
+}
+body
+{
+    position:relative;
+}
+#TabsContent
+{
+	padding-left:3px;
+	float:left;
+}
+#SupplyViewContent .module.half.end {
+    display: none;
+    float: none;
+}
+#FancyBoxDemographicsPopup .module.half.end
+{
+	display:inline-block;	
+}
+/********* BEGIN Styles for Tabbed Navigation & Rounded Corners */
+#Demographics_Tab {width:850px; margin:0px 15px;}
+#Demographics_Tab #YearsExperienceView, #Demographics_Tab #EducationView { width: 175px;}
+#Demographics_Tab #CityStateView { width: 175px;}
+#Demographics_Tab ul.DemographicsTabbedNavigation {
+    margin: 0;
+    padding: 0;
+    list-style: none none outside;
+    border: 0;
+    padding-left: 12px;
+    /*background: #FFF url(../../../../images/js/tab_nav_grad.jpg) repeat-x;*/
+    background-position: bottom;
+    height:43px;
+}
+#Demographics_Tab ul.DemographicsTabbedNavigation li {
+    margin: 0;
+    margin-bottom: -1px;
+    padding: 0;
+    display: block;
+    float: left;
+}
+#Demographics_Tab ul.DemographicsTabbedNavigation #YearsExperienceView {margin-bottom: 1px;}
+#Demographics_Tab ul.DemographicsTabbedNavigation li.selected {border: none; padding: 0;}
+#Demographics_Tab ul.DemographicsTabbedNavigation a {font-size: 12px; font-weight: bold; color: #000000; cursor: pointer;}
+#Demographics_Tab ul.DemographicsTabbedNavigation li span:hover {text-decoration:none;}
+#Demographics_Tab ul.DemographicsTabbedNavigation li.selected span:hover {text-decoration:none;}
+#Demographics_Tab ul.DemographicsTabbedNavigation li.selected a {color: #EE7F0C; font-size: 13px; background: #FFF;}
+#Demographics_Tab ul.DemographicsTabbedNavigation a * { display: block; }
+#Demographics_Tab ul.DemographicsTabbedNavigation a:hover{text-decoration:none;color:#000000}
+
+#Demographics_Tab .pad,
+#Demographics_Tab .round1,
+#Demographics_Tab .round2,
+#Demographics_Tab .round3,
+#Demographics_Tab .round4 {
+    background: #FFF;
+    background: transparent;
+    /* hide overflow:hidden from IE5/Mac */ 
+    /* \*/ 
+    overflow: hidden; 
+    /* */
+}
+#Demographics_Tab .pad { height: 4px; }
+#Demographics_Tab li.selected .pad { height: 1px; }
+
+#Demographics_Tab .tabtitle {
+    padding: 5px 7px;
+    margin: 0;
+    position: relative;
+    top: -3px;
+    border-left: solid 1px #DDD;
+    border-right: solid 1px #DDD;
+    border-top:solid 1px #DDD;
+    text-align: center;
+    margin: 0px;
+}
+#Demographics_Tab li.selected .tabtitle {
+    padding: 4px 5px 6px 5px;
+    background: #FFF;
+    margin: 0px -1px;
+    border-left: solid 2px #DDD;
+    border-right: solid 2px #DDD;
+    border-top:none;
+    top: 0px;
+}
+#Demographics_Tab li.selected .tabbottom
+{
+    border-bottom:1px solid #ffffff;
+    position:relative;
+    top:1px;
+}
+
+#Demographics_Tab .round1, #Demographics_Tab .round2, #Demographics_Tab .round3, #Demographics_Tab .round4 {font-size: 1px; height:1px;}
+
+#Demographics_Tab li.selected .round2,
+#Demographics_Tab li.selected .round3,
+#Demographics_Tab li.selected .round4 { border-left: 1px solid #CCC; border-right: 1px solid #CCC; }
+
+#Demographics_Tab .round1 { margin:0 2px; }
+#Demographics_Tab li.selected .round1 { background: #CCC; }
+#Demographics_Tab .round2 { margin:0 1px; }
+#Demographics_Tab li.selected .round2 { border-width: 0 1px; }
+#Demographics_Tab .round3 { margin:0 0px; }
+#Demographics_Tab li.selected .round3 { border-width: 0 1px; }
+#Demographics_Tab .round4 { margin: 0 0px; }
+
+#DemographicsTabsContent
+{
+    width:1004px;
+    padding:0px;
+    text-align:left;
+	float:left;
+	height:600px;
+	overflow-y:auto;
+    position:relative;
+}
+
+#DemographicsTabsContent h2
+{
+	background-color: #F2F2F2;
+    color: #000000;
+    padding: 10px;
+    text-align: left;
+	margin: 0 0 10px;
+}
+#FancyBoxBorderWrapper
+{
+	border: 1px solid #DDDDDD;
+    float: left;
+    height:600px;
+    padding-top: 0px;
+    width: 1004px;
+}	
+
+#FancyBoxDemographicsPopup .module
+{
+	border-bottom:none;	
+}
+
+#FancyBoxDemographicsPopup .module.half
+{
+	margin-left:2px;
+	margin-right:2px;	
+}
+
+#DemographicsTabsContent .DemographicsView
+{
+    width:360px;
+}
+
+#DemographicsTabsContent .header
+{
+    color: black;
+    float:none;
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 12px;
+    padding-left:12px;
+    display:table;
+}
+
+div#DemographicsTabsContent div#DemographicsChartsWrapper > div
+{
+    float:left;
+    width:360px;
+    min-height:80px;
+    padding-right:14px;
+    padding-top:10px;
+}
+div#DemographicsTabsContent div.AllDemographicsWrapper
+{
+    display:none;
+}
+
+#DemographicsfacetSummary .facet-ui  div, .facet-ui p, .facet-ui span, .facet-ui h3, .facet-ui h4, .facet-ui ol, .facet-ui ul, .facet-ui li {
+    border:0 none;  
+    clear:both;
+    margin:0px;
+    padding:0px;
+}
+#DemographicsfacetSummary .facet-ui.inactive {display:none;} 
+#DemographicsfacetSummary .facet-ui 
+{
+    width:165px;
+    color:#000000;
+    font:89.5% Arial,Helvetica;  
+}
+#DemographicsfacetSummary .facet-ui ol, ul  { list-style-type:none; list-style:none outside none; }
+#DemographicsfacetSummary .facet-ui .header {
+    font-weight:bold;
+    padding:6px 10px 4px;
+    font-size:14px;
+    color:#fff;
+    background:url("http://img.cbdr.com/images/Personified/blueHeader_bg.png") no-repeat scroll 0 0 transparent;
+    width: 165px;
+}
+#DemographicsfacetSummary .facet-ui .content 
+{
+    border:none;
+    padding:5px 10px 10px;
+    width: 183px;
+   /* padding-bottom:1205px;
+    margin-bottom:-1205px; */
+    height:100%;
+}
+#DemographicsfacetSummary .facet-ui .more-filters {display:none;}
+#DemographicsfacetSummary .facet-ui .more-filters.active {display:block;}
+/*
+#DemographicsfacetSummary .facet-ui .content .show-more
+{
+    color:#064189;
+    font-size:10px;
+    text-decoration:none;
+    display:inline;
+}
+*/
+#DemographicsfacetSummary .facet-ui .content .keep-filters
+{
+    font-size:10px;
+    text-decoration:none;
+    display:inline;
+}
+#DemographicsfacetSummary .search-content li input {width: 170px; } 
+#DemographicsfacetSummary .search-content li select {margin-top:4px;}
+
+#DemographicsfacetSummary #Demographics-searched-for .searched-for-content {font-size:80.5%;}
+#DemographicsfacetSummary #Demographics-searched-for .searched-for-content li{
+    background-image: url(../../../../images/personified/remove_selection.gif);
+    background-repeat: no-repeat;
+    background-position: 0 -.3em;
+    /*height:18px;*/
+}
+#DemographicsfacetSummary #Demographics-searched-for .searched-for-content li.longText {height:33px;}
+#DemographicsfacetSummary #Demographics-searched-for .searched-for-content span{
+    vertical-align:bottom;
+    margin-left:10px;   
+    cursor:pointer;
+}
+#DemographicsfacetSummary .filter-content {font-size:80.5%;}
+/*
+#DemographicsfacetSummary #filter-search .filter-content .show-more 
+{
+    padding-bottom:5px;
+    border-bottom:dashed 1px #ddd;
+    display:block;
+}
+*/
+#DemographicsfacetSummary .filter-content .headerText{font-size:12px; font-weight:bold; padding-top:5px; padding-bottom:5px;}
+#DemographicsfacetSummary .filter-content li input {
+   float:left;
+   margin-top:-1px;
+}
+#DemographicsfacetSummary .filter-content .toggle, #facetSummary .filter-content .toggle {
+    cursor: pointer;
+    float: right;
+    text-indent:0px;
+}
+
+#DemographicsfacetSummary
+{
+    width:205px !IMPORTANT;
+    border:none !IMPORTANT;
+    /* padding-bottom:1205px;
+    margin-bottom:-1205px; */
+    height:100%;
+    float:left;
+    
+}
+
+.chartDisclaimerText
+{
+    display:table;
+    font-size:12px;
+    color:black;
+    margin-left:12px;
+    margin:0px 0px 12px 12px;
+    padding:0px;
+    font-weight:bold;
+    font-style:italic;
+}
+
+#DemographicsTabsContent div#DemographicsChartsWrapper
+{
+    width:750px !IMPORTANT;
+    float:left;
+    border-left:1px solid #DDDDDD;
+    margin-top: 10px;
+}

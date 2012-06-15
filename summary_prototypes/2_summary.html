@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html id="HTMLTag" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>SD Summary Prototype</title>
+<title>SD Summary Prototype: Custom Supply + no hiring indicator</title>
 <meta http-equiv="Content-Language" content="en-US"><meta name="google-site-verification" content="FPWKt6e3SsrSwYTgl1vezPZmueP1qMcox7KlaIk1s3A"><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
         <style type="text/css">
             .table { behavior: url(http://www.careerbuilder.com/display-table.min.htc); }
@@ -11,14 +11,14 @@
 	<link rel="stylesheet" type="text/css" href="ReportSummary_files/jquery.css">
 	<link rel="stylesheet" type="text/css" href="ReportSummary_files/jquery-ui-1.css">
 	<link rel="stylesheet" type="text/css" href="ReportSummary_files/jquery.cluetip.min.js">
-	<link rel="stylesheet" type="text/css" href="1_summary_files/supplydemand.css">
-	<link rel="stylesheet" type="text/css" href="1_summary_files/demographicsv2.css">
-	<link rel="stylesheet" type="text/css" href="1_summary_files/demographics.css">
+	<link rel="stylesheet" type="text/css" href="2_summary_files/supplydemand.css">
+	<link rel="stylesheet" type="text/css" href="2_summary_files/demographicsv2.css">
+	<link rel="stylesheet" type="text/css" href="2_summary_files/demographics.css">
 	<link rel="stylesheet" type="text/css" href="ReportSummary_files/demo_style.css">
 	<link rel="stylesheet" type="text/css" href="ReportSummary_files/smart_wizard.css">
-	<link rel="stylesheet" type="text/css" href="1_summary_files/jpnav.css">
+	<link rel="stylesheet" type="text/css" href="2_summary_files/jpnav.css">
 	<link rel="stylesheet" type="text/css" href="ReportSummary_files/jpnestednavigation.css">
-	<link rel="stylesheet" type="text/css" href="1_summary_files/summary.css">
+	<link rel="stylesheet" type="text/css" href="2_summary_files/summary.css">
 	<script type="text/javascript">    var ScriptVariables = function(){
         var _vars = new Array();
             _vars['currentVer'] = 'v16.10';
@@ -74,13 +74,13 @@
 <script type="text/javascript" src="ReportSummary_files/datacollections.js"></script>
 <script type="text/javascript" src="ReportSummary_files/locationautocomplete.js"></script>
 <script type="text/javascript" src="ReportSummary_files/moment.js"></script>
-<script type="text/javascript" src="1_summary_files/detailreports.js"></script>
+<script type="text/javascript" src="2_summary_files/detailreports.js"></script>
 <script type="text/javascript" src="ReportSummary_files/search.js"></script>
 <script type="text/javascript" src="ReportSummary_files/demographics_popup.js"></script>
 <script type="text/javascript" src="ReportSummary_files/jquery_003.js"></script>
 <script type="text/javascript" src="ReportSummary_files/pdfconversion.js"></script>
 <script type="text/javascript" src="ReportSummary_files/rdbsearchlicenselinkcontrol.js"></script>
-<script type="text/javascript" src="1_summary_files/prototypes.js"></script>
+<script type="text/javascript" src="2_summary_files/prototypes.js"></script>
 
 </head>
 
@@ -1041,9 +1041,11 @@
 								<label class="title">Supply</label>
 								<div class="displayTable">
 									<div class="position">
+										<label class="count"><span id="lblCustomSupplyCount">427</span></label>
+										<label class="label" style="padding-bottom:10px">Active Kelly Services Resumes<a href="#" class="titled_tips" title="Custom Supply Job Postings|This data is provided by our Custom Supply.  The data is deduplicated to provide the number of unique job  postings matching the keywords and timeframe specified.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></label>
 										<label class="count"><span id="lblActiveSupply">10,752</span></label>
-										<label class="label">Active Resumes<a href="#" class="titled_tips" title="Active Resumes|The data provided includes active jobs seekers from the entire CareerBuilder network including our niche sites.  An active job seeker is anyone who has completed at least one of the following in the time frame specified:&lt;ol&gt;&lt;li&gt;Created a new resume&lt;/li&gt;&lt;li&gt;Modified an existing resume&lt;/li&gt;&lt;li&gt;Applied to a job posting using a saved resume.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></label>
-										<label class="label"><a id="lnkCareerBuilderRDB" class="lnkCareerBuilderRDB" href="http://www.careerbuilder.com/JobPoster/Resumes/ResResultsV2.aspx?SrchHst=1&amp;cibookmark=1&amp;strcrit=QID%3dA6659194863435%3bst%3da%3brawWords%3dweb+developer%3bQT%3dN%3bUSE%3dADV%3bRPP%3d25%3bCAT%3dALL%3bRXPOST%3dALL%3bCF_FUNCTIONS%3dALL%3bRXSPEC%3dALL%3bFRE%3d792%3bCID%3d%3f%3bSID%3d%3f%3bRAD%3d30%3bLOCCID%3dUS%3bONET%3d15-1099.04%3bAHISTMIN%3d2011%2f09%3bAHISTMAX%3d2012%2f02%3bTDRV%3d0%3bEXP%3dALL%3bTVL%3dALL%3bEXCT%3dNO%3bPAY%3dALL%3bCMTP%3dSALR%3bPOY%3dNO%3bPAYL%3d0%3bPAYH%3d0%3bRPC%3dNS%3bWST%3dALL%3bGV%3dALL%3bMGE%3dALL%3bMGC%3d0%3bCE%3dALL%3bMC%3d0%3bWSC%3dALL%3bEI%3dEINO%3bQS%3dsid_unknown%3bSS%3dNO%3bCVT%3dFR%3bNLC%3dNLCNO%3bSFNMC%3dSFNMCNO%3bRIC%3dRICNO">View These Resumes</a><a href="#" class="titled_tips" title="CareerBuilder Resume Database Link|This link will take you out of the Supply &amp; Demand portal and over to the CareerBuilder Resume Database (RDB).  You will land on the search results page with the results currently displayed here.&lt;BR&gt;&lt;BR&gt;Note #1: Since CareerBuilder RDB product is only used when you perform an action on an individual resume you may browse the results on the RDB page as much as you like without using any of your RDB product until you choose to perform an action (such as viewing or emailing a specific resume).&lt;BR&gt;&lt;BR&gt;Note #2: Once in the RDB if you modify your search you will lose some of your Supply &amp; Demand search fields (such as Active Month Range) as they are not available on the RDB at this time.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></label>
+										<label class="label">Active CB Resumes<a href="#" class="titled_tips" title="Active Resumes|The data provided includes active jobs seekers from the entire CareerBuilder network including our niche sites.  An active job seeker is anyone who has completed at least one of the following in the time frame specified:&lt;ol&gt;&lt;li&gt;Created a new resume&lt;/li&gt;&lt;li&gt;Modified an existing resume&lt;/li&gt;&lt;li&gt;Applied to a job posting using a saved resume.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></label>
+										<label class="label"><a id="lnkCareerBuilderRDB" class="lnkCareerBuilderRDB" href="http://www.careerbuilder.com/JobPoster/Resumes/ResResultsV2.aspx?SrchHst=1&amp;cibookmark=1&amp;strcrit=QID%3dA6659194863435%3bst%3da%3brawWords%3dweb+developer%3bQT%3dN%3bUSE%3dADV%3bRPP%3d25%3bCAT%3dALL%3bRXPOST%3dALL%3bCF_FUNCTIONS%3dALL%3bRXSPEC%3dALL%3bFRE%3d792%3bCID%3d%3f%3bSID%3d%3f%3bRAD%3d30%3bLOCCID%3dUS%3bONET%3d15-1099.04%3bAHISTMIN%3d2011%2f09%3bAHISTMAX%3d2012%2f02%3bTDRV%3d0%3bEXP%3dALL%3bTVL%3dALL%3bEXCT%3dNO%3bPAY%3dALL%3bCMTP%3dSALR%3bPOY%3dNO%3bPAYL%3d0%3bPAYH%3d0%3bRPC%3dNS%3bWST%3dALL%3bGV%3dALL%3bMGE%3dALL%3bMGC%3d0%3bCE%3dALL%3bMC%3d0%3bWSC%3dALL%3bEI%3dEINO%3bQS%3dsid_unknown%3bSS%3dNO%3bCVT%3dFR%3bNLC%3dNLCNO%3bSFNMC%3dSFNMCNO%3bRIC%3dRICNO">View These CB Resumes</a><a href="#" class="titled_tips" title="CareerBuilder Resume Database Link|This link will take you out of the Supply &amp; Demand portal and over to the CareerBuilder Resume Database (RDB).  You will land on the search results page with the results currently displayed here.&lt;BR&gt;&lt;BR&gt;Note #1: Since CareerBuilder RDB product is only used when you perform an action on an individual resume you may browse the results on the RDB page as much as you like without using any of your RDB product until you choose to perform an action (such as viewing or emailing a specific resume).&lt;BR&gt;&lt;BR&gt;Note #2: Once in the RDB if you modify your search you will lose some of your Supply &amp; Demand search fields (such as Active Month Range) as they are not available on the RDB at this time.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></label>
 									</div>
 								</div>
 							</div>
@@ -1052,7 +1054,7 @@
 								<div class="displayTable">
 									<div class="position">
 										<label class="count"><span id="lblJobCount">145,280</span></label>
-										<label class="label">Total Unique<br> Job Postings<a href="#" class="titled_tips" title="Job Postings|This data is provided by Wanted Analytics that aggregates job postings across multiple websites covering 90% of the online market.  The data is deduplicated to provide the number of unique job  postings matching the keywords and timeframe specified.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></label>
+										<label class="label">Total Unique Job Postings<a href="#" class="titled_tips" title="Job Postings|This data is provided by Wanted Analytics that aggregates job postings across multiple websites covering 90% of the online market.  The data is deduplicated to provide the number of unique job  postings matching the keywords and timeframe specified.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></label>
 									</div>
 								</div>
 							</div>
@@ -4173,8 +4175,8 @@ UserDIDOL : 'OIk6IuyctT8itJ0qcR4Ji/VHKtjDAcB3pFOmiWD1PafQ='
 		</div>
 	</div>
 	
-	<script type="text/javascript" src="1_summary_files/checkbox.js"></script>
-	<script type="text/javascript" src="1_summary_files/control-panel.js"></script>
+	<script type="text/javascript" src="2_summary_files/checkbox.js"></script>
+	<script type="text/javascript" src="2_summary_files/control-panel.js"></script>
 	
 	</body>
 </html>

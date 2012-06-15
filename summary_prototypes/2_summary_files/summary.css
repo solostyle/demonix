@@ -1,0 +1,69 @@
+.facets li li {display:table!important;border-radius:4px;border:1px solid transparent;cursor:pointer}
+.facetNumberTitle>div, .facets li li>* {display:block;float:left;clear:none!important}
+.facets li li:hover {background-color:#def}
+.facets li li.selected {background-color:#ffe0aa;border-color:#dca}
+.facets li li.selected:hover {background-color:#fea;border-color:#dca}
+
+.facetCountSupplyWrapper, .facetCountDemandWrapper {text-align:right;width:50px}
+.facetNumberTitle .facetCountSupplyWrapper, #facetsDemand .facetNumberTitle .facetCountDemandWrapper {margin-left:14px}
+.facetNumberTitle .facetCountSupplyWrapper, .facetNumberTitle .facetCountDemandWrapper {text-align:right}
+
+.filterCheckboxWrapper {width:113px;padding:0 2px!important}
+#facetsSupply .filterCheckboxWrapper, #facetsDemand .filterCheckboxWrapper {width:160px;padding:0 2px!important}
+.filterCheckbox {display:none!important}
+
+.facetCountDemand, .facetCountSupply {color:#369;display:inline}
+.filterCheckboxWrapper input {display:inline}
+
+#facetsBothHeader, #facetsSupplyHeader, #facetsDemandHeader, #newReportHeader {cursor:pointer;border-radius:5px 5px 0 0}
+.facetsBoth {}
+.facetsSupply {}
+.facetsDemand {}
+
+.filter-content, .searched-for-content {color:#333!important;cursor:pointer;font-size:10px}
+.searched-for-content {padding:5px 0!important;}
+.headerText {color:#09609a}
+#searched-for {margin-bottom:10px}
+
+#controlpanel {position:fixed;top:0;right:0;background-color:rgba(250,250,250,.7);border-radius:7px;font:normal normal 12px/16px arial,sans-serif;z-index:99999}
+#controlpanel h1 {margin:5px;font:normal normal 12px/16px arial,sans-serif}
+#controlpanel ul {padding:0;margin:5px;list-style:none}
+#controlpanel #shuffleMenu {margin-left:10px}
+
+/* Summary */
+.summaryCount {clear:none;float:left;width:190px}
+#summaryContent label.label {clear:left;float:left}
+.summaryCount .title {clear:both;color:#68a;float:left;font-size:13px;font-weight:bold;text-align:center;width:100%}
+#summarySupply {clear:left!important;margin-right:5px}
+#summaryDemand {clear:right!important}
+
+/* Summary Top Toolbar */
+#toolbar {height:36px;position:relative;background:url("http://img.icbdr.com/images/Personified/Tab_Sliver.png") repeat-x scroll 0 0 transparent}
+#toolbar h1#reportHeader {font-size:16px;color:#fff;font-weight:bold;text-shadow:0 0 1px #fff;margin:8px 5px 5px 10px;float:left}
+#summaryContent h1 {font-size:14px;color:#333;font-weight:bold;margin:5px 5px 5px 10px}
+#summaryContent h1 span {color:#000;}
+#summaryContent #headerJobTitle {font-size:16px}
+#toolbar>div {height:36px}
+#toolbar .content {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: block;
+    padding: 5px 0;
+    position: absolute;
+	z-index: 9999;
+}
+#toolbar .content li {padding:5px 10px;}
+#toolbar .content li:hover {background-color:#def}
+/*#newReport {width:200px!important}
+#newReport ul {padding:0 5px}
+#newReport {float:left}
+#newReport .content {width: 188px}*/
+#compensationLink, #export, #help {float:right}
+#export .content, #help .content {right:0;display:none}
+
+/* Summary Header Styles */
+#exportHeader, #helpHeader, .gradient {background:transparent;border:1px solid #79b;border-radius:5px 5px 0 0;color:white;cursor:pointer;font-size:12px;font-weight:bold;padding:9px 10px} /* todo: use jquery to remove border from one side */
+/*#exportHeader:hover, #helpHeader:hover, .gradient:hover {background:#fff;color:#333}*/
+#compLinkHeader {background:url("../ReportSummary_files/money-dollar-icon.png") no-repeat scroll 3px 8px transparent;border:1px solid #79b;border-radius:5px 5px 0 0;color:white;cursor:pointer;font-size:12px;font-weight:bold;padding:9px 10px 9px 20px}
+#compLinkHeader:hover {background:url("../ReportSummary_files/money-dollar-icon.png") no-repeat scroll 3px 8px transparent}
