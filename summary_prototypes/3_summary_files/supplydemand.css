@@ -274,8 +274,7 @@ div.facetNav li
     height:100%;
     overflow: hidden;
 }
-#summary 
-{
+#summary {
 	background-color: #def;
     border-radius:5px;
     -moz-border-radius:5px;
@@ -285,13 +284,11 @@ div.facetNav li
     padding:0;
 	width:850px;
 }
-#summaryContent
-{
+#summaryContent {
     min-height: 160px;
     clear:both;
 }
-#summary h2,
-#summary .header_dropdown
+#summary h2, #summary .header_dropdown
 {
     color:#5C5C5C;font-size:14px;font-weight:normal;display:inline;
 }
