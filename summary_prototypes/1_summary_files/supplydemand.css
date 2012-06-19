@@ -581,7 +581,7 @@ table.detailView .msa.last {padding-right:25px;}
 .clearAll {font-size:10px; text-align:left; cursor:pointer; color:#EE7F0C; text-decoration:underline;}
 .clearAll.inactive {display:none;}
 
-.titled_tips {font-size:1em;min-height:16px;min-width:16px}
+.titled_tips {font-size:1em;min-height:16px;min-width:16px;clear:left}
 .titled_tips:hover {cursor:help;text-decoration:none!important}
 .titled_tips * {vertical-align:bottom}
 .section h2
