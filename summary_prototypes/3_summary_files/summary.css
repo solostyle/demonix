@@ -31,13 +31,13 @@
 #controlpanel #shuffleMenu {margin-left:10px}
 
 /* Summary */
-#summaryLeft {overflow:hidden}
+#summaryLeft {overflow:auto}
 .summaryCount {clear:none;float:left;width:235px}
 #summaryContent label.label {clear:left;float:left}
 .summaryCount .title {clear:both;color:#68a;float:left;font-size:13px;font-weight:bold;text-align:center;width:100%}
 #summarySupply {clear:left!important;margin-right:15px}
 #summaryDemand {clear:right!important}
-#summaryTotalSupply {padding:5px;overflow:hidden;width:100%}
+#summaryTotalSupply {padding:20px 5px 5px 5px;overflow:auto}
 #summaryTotalSupply label.count {padding-right:5px}
 #summaryTotalSupply label.label {clear:none}
 

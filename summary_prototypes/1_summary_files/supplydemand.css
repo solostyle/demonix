@@ -298,11 +298,11 @@ div.facetNav li
 #summary .content {overflow:auto}
 #summary .count {clear:both;color:#444;float:left;font-size:16px;font-weight:bold;text-shadow:0 0 7px white}
 #summary .label {font-size:13px;margin:0}
-#summaryTotalRight {float:left;width:460px;margin:5px 10px 10px 5px;min-height:100px}
-#summaryTotalRight>div {padding:5px;overflow:auto;background:#edf6fb;border-radius:5px}
+#summaryTotalRight {float:left;width:410px;margin:5px 10px 10px 5px;min-height:100px}
+#summaryTotalRight>div {padding:5px;overflow:auto;border-radius:5px}
 #summaryActiveLP {margin-bottom:5px}
 #SummaryViewContent {padding-left:12px}
-#summaryActiveLeft {float:left;width:360px;margin:5px 0 10px 10px;min-height:100px}
+#summaryActiveLeft {float:left;width:410px;margin:5px 0 10px 10px;min-height:100px}
 #summaryActiveLeft>div {background:#edf6fb;border-radius:5px;padding:5px}
 .position>* {text-align:center;width:100%}
 #summaryActiveLeft div {clear:both}
