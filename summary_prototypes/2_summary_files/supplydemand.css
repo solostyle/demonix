@@ -62,22 +62,10 @@ body div#pnlOuterWrapper.pnlOuterWrapper div#JPLeftNav,
 }
 #filterLoading {display:none;}
 
-a.lnkStartOver:link,a.lnkStartOver:active,a.lnkStartOver:visited{
-    text-decoration: underline;
-    color:#336699;
-    font-weight:bold;
-}
-a.lnkFeedback:link,a.lnkFeedback:active,a.lnkFeedback:visited{
-    text-decoration: underline;
-    color:#EE7F0C;
-    font-weight:bold;
-}
-a.lnkStartOver, a.lnkFeedback{font-size:10px;vertical-align:top; padding-right:5px; text-transform:lowercase;}
-
-a.lnkCareerBuilderRDB{
-    color:#EE7F0C;
-    font-weight:bold;
-	font-size:12px
+a#lnkCareerBuilderRDB {
+    color: #EE7F0C;
+    font-size: 12px;
+    font-weight: bold;
 }
 .outputs  {
     float: right;
