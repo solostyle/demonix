@@ -62,22 +62,10 @@ body div#pnlOuterWrapper.pnlOuterWrapper div#JPLeftNav,
 }
 #filterLoading {display:none;}
 
-a.lnkStartOver:link,a.lnkStartOver:active,a.lnkStartOver:visited{
-    text-decoration: underline;
-    color:#336699;
-    font-weight:bold;
-}
-a.lnkFeedback:link,a.lnkFeedback:active,a.lnkFeedback:visited{
-    text-decoration: underline;
-    color:#EE7F0C;
-    font-weight:bold;
-}
-a.lnkStartOver, a.lnkFeedback{font-size:10px;vertical-align:top; padding-right:5px; text-transform:lowercase;}
-
-a#lnkCareerBuilderRDB{
-    color:#EE7F0C;
-    font-weight:bold;
-	font-size:12px
+a#lnkCareerBuilderRDB {
+    color: #EE7F0C;
+    font-size: 12px;
+    font-weight: bold;
 }
 .outputs  {
     float: right;
@@ -274,8 +262,8 @@ div.facetNav li
     height:100%;
     overflow: hidden;
 }
-#summary 
-{
+/* Summary */
+#summary {
 	background-color: #def;
     border-radius:5px;
     -moz-border-radius:5px;
@@ -285,29 +273,78 @@ div.facetNav li
     padding:0;
 	width:850px;
 }
-#summaryContent
-{
-    min-height: 160px;
-    clear:both;
-}
-#summary h2,
 #summary .header_dropdown
 {
     color:#5C5C5C;font-size:14px;font-weight:normal;display:inline;
 }
-#summary .content {overflow:auto}
+
 #summary .count {clear:both;color:#444;float:left;font-size:16px;font-weight:bold;text-shadow:0 0 7px white}
-#summary .label {font-size:13px;margin:0}
-#summaryTotalRight {float:left;width:410px;margin:5px 10px 10px 5px;min-height:100px}
-#summaryTotalRight>div {padding:5px;overflow:auto;border-radius:5px}
-#summaryActiveLP {margin-bottom:5px}
-#SummaryViewContent {padding-left:12px}
-#summaryActiveLeft {float:left;width:410px;margin:5px 0 10px 10px;min-height:100px}
+#summary .label {font-size:12px;line-height:1.5em;margin:0}
+
+/* Summary */
+#summaryContent {min-height: 160px;clear:both;overflow:auto}
+#summaryContent label.label {clear:left;float:left}
+#summaryContent h1 {font-size:14px;color:#68a;font-weight:bold;margin:5px 5px 5px 10px}
+#summaryContent h1 span {color:#000;}
+#summaryContent #headerJobTitle {font-size:16px}
+.summaryCount {clear:none;float:left;width:235px}
+.summaryCount .title {clear:both;color:#68a;float:left;font-size:13px;font-weight:bold;text-align:center;width:100%}
+
+#summaryLeft {float:left;width:508px;margin:5px 0 10px 10px;overflow:auto} /*actually 520px width */
+#summaryActiveLeft {min-height:100px}
 #summaryActiveLeft>div {background:#edf6fb;border-radius:5px;padding:5px}
 .position>* {text-align:center;width:100%}
 #summaryActiveLeft div {clear:both}
 #summaryActiveLeft .displayTable {display:table;width:100%;height:100%}
 #summaryActiveLeft .displayTable .position {vertical-align:middle;display:table-cell}
+
+#summarySupply {clear:left!important;margin-right:15px}
+#summaryDemand {clear:right!important}
+#summaryTotalSupply-left {padding:20px 5px 5px;overflow:auto}
+#summaryTotalSupply-left>* {cursor:pointer}
+#summaryTotalSupply-left label.count {padding-right:5px}
+#summaryTotalSupply-left label.label {clear:none}
+#summaryLeft .content label.count, #summaryRight .content label.count {padding-right:5px}
+#summaryLeft .content label.label, #summaryRight .content label.label {clear:none}
+
+#summaryTotalSupply-right {padding:20px 5px 5px 5px;overflow:auto}
+#summaryTotalSupply-right label.count {padding-right:5px}
+#summaryTotalSupply-right label.label {clear:none}
+
+#summaryRight {float:left;width:300px;margin:5px 10px 10px 5px;min-height:100px}
+#summaryRight>div {padding:5px;overflow:auto;border-radius:5px}
+
+#summaryActiveLP {margin-bottom:5px}
+
+
+/* Summary Top Toolbar */
+#toolbar {border-radius:5px 5px 0 0;height:36px;position:relative;background:url("http://img.icbdr.com/images/Personified/Tab_Sliver.png") repeat-x scroll 0 0 transparent}
+#toolbar h1#summaryHeader {font-size:16px;color:#fff;font-weight:bold;margin:8px 5px 5px 10px;float:left}
+#toolbar>div {height:36px}
+#toolbar .content, #summaryLeft .content, #summaryRight .content {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 5px 0;
+    position: absolute;
+	z-index: 9999;
+}
+#toolbar .content li {padding:5px 10px;}
+#toolbar .content li:hover {background-color:#def}
+#toolbar .content ol, #summaryContent ol {list-style: none outside none;margin: 0;padding: 0}
+#toolbar .content ol a:hover {text-decoration:none}
+#compensationLink, #export, #help {float:right}
+#export .content, #help .content {display:none;right:0}
+/* Total Supply Rollup */
+#summaryLeft .content, #summaryRight .content {display:none;padding:5px}
+
+/* Summary Header Styles */
+#exportHeader, #helpHeader {background:transparent;border:1px solid #79b;border-radius:5px 5px 0 0;color:white;cursor:pointer;font-size:12px;font-weight:bold;padding:10px 10px 9px 10px} /* todo: use jquery to remove border from one side */
+/*#exportHeader:hover, #helpHeader:hover {background:#def;color:#333;border-color:#aaa}*/
+#compLinkHeader {background:url("http://img.icbdr.com/images/personified/money-dollar-icon.png") no-repeat scroll 3px 8px transparent;border:1px solid #79b;border-radius:5px 5px 0 0;color:white;cursor:pointer;font-size:12px;font-weight:bold;padding:10px 10px 9px 20px}
+#compLinkHeader a#lnkCareerBuilderCompV2 {color:White;font-weight:bold;font-size;12px}
+#compLinkHeader:hover, #exportHeader:hover, #helpHeader:hover {text-decoration:underline}
+
 .total_supply_summary_Section
 {
     width:510px;
@@ -581,9 +618,10 @@ table.detailView .msa.last {padding-right:25px;}
 .clearAll {font-size:10px; text-align:left; cursor:pointer; color:#EE7F0C; text-decoration:underline;}
 .clearAll.inactive {display:none;}
 
-.titled_tips {font-size:1em;min-height:16px;min-width:16px;clear:left}
-.titled_tips:hover {cursor:help;text-decoration:none!important}
-.titled_tips * {vertical-align:bottom}
+#RDBNoAccessLink .titled_tips { color:#5C5C5C; font:11px arial,helvetica; font-weight:bold; text-decoration:underline !important; }
+.titled_tips {font-size:10px;clear:left;min-height:16px;min-width:16px;vertical-align:top}
+.titled_tips img {border:none 0; vertical-align:top;}
+
 .section h2
 {
     text-align:left;

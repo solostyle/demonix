@@ -75,22 +75,6 @@ jQuery(".searched-for-content").click( function toggleFilters(e) {
 	Prototypes.updateSummary();
 });
 
-// Mouseover events
-jQuery('#facetsBothHeader,#facetsSupplyHeader,#facetsDemandHeader,#newReportHeader,#compLinkHeader,#exportHeader,#helpHeader').mouseover(function() {
-	//if(console.log) {console.log(this);}
-	jQuery(this).css('background',"url('ReportSummary_files/orangeHeaderBg.png') repeat-x scroll 0 0 transparent");
-	// if (jQuery(this).next().css('display')=="none") {
-		// jQuery(this).append('<span style="float:right">+</span>');
-	// } else {
-		// jQuery(this).append('<span style="float:right;margin-top:-7px">_</span>');
-	// }
-});
-jQuery('#facetsBothHeader,#facetsSupplyHeader,#facetsDemandHeader,#newReportHeader,#compLinkHeader,#exportHeader,#helpHeader').mouseout(function() {
-	//if(console.log) {console.log(this);}
-	jQuery(this).css('background','');
-	// jQuery(this).find('span').remove();
-});
-
 /*************************
 /*    Events on load     *
 **************************/
@@ -105,11 +89,13 @@ jQuery('#facetsSupplyHeader .collapsedInd,#facetsDemandHeader .collapsedInd,#fac
 
 // Vertically center text in the summary
 var computedHeight = Math.max(jQuery('#summarySupply').height(), jQuery('#summaryDemand').height(), 105);
-jQuery('.displayTable').height(computedHeight-25);
+jQuery('.displayTable').height(computedHeight);
 // Adjust the position of #summarytotalright
-var leftoverMargin = computedHeight;
-jQuery('#summaryTotalRight').height(computedHeight);
+var leftoverMargin = jQuery('#summaryActiveLeft').height();
+jQuery('#summaryTotalRight').height(jQuery('#summaryActiveLeft').height());
+/*
 jQuery('#summaryTotalRight').children().each(function() {
 	leftoverMargin -= jQuery(this).outerHeight();
 });
-jQuery('#summaryActiveLP').css('margin-bottom',leftoverMargin);
+*/
+//jQuery('#summaryActiveLP').css('margin-bottom',leftoverMargin);

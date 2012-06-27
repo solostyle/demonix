@@ -1529,6 +1529,7 @@ $(document).ready(function () {
     formSubmitter.onDocumentReady();
     downloadManager.onDocumentReady();
 
+	SummaryManager.Load();
 
     $('.search-content .show-more').click(function (event) {
         $('.search-content .show-more').toggle();
