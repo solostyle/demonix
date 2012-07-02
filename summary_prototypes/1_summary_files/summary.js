@@ -5,7 +5,8 @@ this.SummaryManager = function () {
         changeHeights();
         positionRYGGauge();
         hideEMSI();
-        toolbarActions();
+		toolbarManager();
+        totalSupplyRollup();
 
     };
 
@@ -60,43 +61,43 @@ this.SummaryManager = function () {
         }
     };
 
-    /* Toolbar Actions */
-    var toolbarActions = function () {
+    /* Toolbar Manager manages the toolbar dropdown actions */
+    var toolbarManager = function () {
 
-        //jQuery("#toolbar .content").hide(); // taken care of by css
-        // Open the menu on click
-        jQuery('#export .header, #help .header').click(function () {
-			jQuery(this).next().slideToggle("slow", function () {
-				if (jQuery(this).css("display") == "none") {
-					jQuery(this).prev().removeAttr('style');
-				} else {
-					jQuery(this).prev().css({ "background": "#def", "color": "#333", "border-color": "#aaa" });
-				}
-			});
-        });
-        
-        /* jQuery('#export .content, #help .content').css('position', 'static');
-        jQuery('#export .header, #help .header').click(function () {
-            jQuery(this).next().slideDown("slow");
-            jQuery(this).css({ "background": "#def", "color": "#333", "border-color": "#aaa" });
-        });
+        var timeout    = 500;
+		var closetimer = 0;
+		var ddmenuitem = 0;
 
-        jQuery('#export .header, #help .header, #export .content, #help .content').mouseleave(function () {
-			if (jQuery(this).hasClass('header')) {
-				jQuery(this).next().slideUp("slow");
-				jQuery(this).removeAttr('style');
-			} else {
-				jQuery(this).slideUp("slow");
-				jQuery(this).prev().removeAttr('style');
+		function jsddm_open() {
+			jsddm_canceltimer();
+			jsddm_close();
+			ddmenuitem = $(this).find('ol').css('display', 'block');
+		}
+
+		function jsddm_close() {
+			if(ddmenuitem) {
+				ddmenuitem.css('display', 'none');
 			}
-        });
-        // jQuery('#export, #help').mouseleave(function () {
-            // jQuery(this).children().filter('.content').slideUp("slow");
-            // jQuery(this).children().filter('.header').removeAttr('style');
-        // });
-		*/
+		}
 
-        // Total Supply Rollup
+		function jsddm_timer() {
+			closetimer = window.setTimeout(jsddm_close, timeout);
+		}
+
+		function jsddm_canceltimer() {
+			if(closetimer) {
+				window.clearTimeout(closetimer);
+				closetimer = null;
+			}
+		}
+
+		$('#toolbar > li.tool').bind('mouseover', jsddm_open);
+		$('#toolbar > li.tool').bind('mouseout',  jsddm_timer);
+		document.onclick = jsddm_close;
+	};
+	
+	var totalSupplyRollup = function() {
+
         jQuery('#summaryTotalSupply-left .count, #summaryTotalSupply-left .label, #summaryTotalSupply-right .count, #summaryTotalSupply-right .label')
         .mouseenter(function () {
             jQuery(this).parent().next().show();
