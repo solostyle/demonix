@@ -319,7 +319,7 @@ div.facetNav li
 
 /* Summary Top Toolbar */
 #toolbar {border-radius:5px 5px 0 0;height:36px;position:relative;background:url("http://img.icbdr.com/images/Personified/Tab_Sliver.png") repeat-x scroll 0 0 transparent}
-#toolbar h1#summaryHeader {font-size:16px;color:#fff;font-weight:bold;margin:8px 5px 5px 10px;float:left}
+#toolbar #summaryHeader {font-size:16px;color:#fff;font-weight:bold;margin:8px 5px 5px 10px;float:left}
 #toolbar>div {height:36px}
 #toolbar .content, #summaryLeft .content, #summaryRight .content {
     background: none repeat scroll 0 0 white;
