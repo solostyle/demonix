@@ -1,0 +1,12 @@
+body {font:normal normal 14px/1.3em Helvetica,arial,sans-serif;margin:2em auto;max-width:700px;border:2px solid #aaa;padding:2em}
+h1 {font-weight:normal;text-align:center}
+h3 {cursor:pointer;margin:0;padding:5px 0;color:#09609A;font-weight:normal} /*margin:0 removes jumpyness */
+div, p {padding:0}
+.icon {vertical-align:middle;padding:0 5px;width:20px;height:20px}
+.img {text-align:center;clear:right}
+.expand, .collapse {padding:0 5px;vertical-align:middle}
+#menu {float:right;margin:0;padding:0;list-style-type:none}
+#menu li {display:inline;padding-right:10px}
+a {text-decoration:none;color:#00c}
+a:hover {text-decoration:underline}
+img {border:none}

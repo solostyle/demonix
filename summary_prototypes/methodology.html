@@ -1,0 +1,104 @@
+<!doctype html />
+<html>
+    <head>
+        <title>Compensation Portal Methodology</title>
+
+        <link rel="Stylesheet" type="text/css" media="screen" href="css/faqscreen.css"/>
+        <link rel="Stylesheet" type="text/css" media="print" href="css/faqprint.css"/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+    </head>
+    <body>
+        <form id="form1" runat="server">
+            <ul id="menu">
+                <li><a href="javascript:window.print()"><img class="icon" src="http://img.icbdr.com/images/Personified/print_icon.gif" />Print</a></li>
+                <li><a href="http://img.icbdr.com/images/personified/CompPortalFaq_July12.pdf"><img class="icon" src="http://img.icbdr.com/images/Personified/new_pdf_icon.png" />Save</a></li>
+            </ul>
+            <h1 class="img"><img src="http://img.icbdr.com/images/personified/compensationportal_web.jpg" alt="Compensation Portal" width="60%" /></h1>
+            <h1>Methodology</h1>
+
+            <p class="img"><img src="http://img.icbdr.com/images/personified/compensationgraphicnoborder.jpg" /></p>
+
+            <h2>Data Collection</h2>
+
+            <div><p>We at CareerBuilder strive to provide the most reliable, valid compensation information to our clientele.  Our dataset encompasses two sources: data derived directly from job seekers that reflect only their most recent pay and employer pay rates directly from the jobs they post. Data presented for job seekers and employers is 100% CareerBuilder proprietary. Transparency in our methods of data collection, analysis, and presentation isn’t only integral for users to trust our information; it’s the only way we do business at CareerBuilder. </p></div>
+
+            <h2>Data Integrity</h2>
+
+            <div><p>Job seekers and job postings provide both salary and hourly pay rates to CareerBuilder. Knowing that different occupations and industries adhere to varying compensation practices, we present the pay rates within two distinct data sets. Meaning that the data points presented in the Hourly View tab within the Talent Compensation Portal are only those provided to us by job seekers and job postings in an hourly pay format. The same designation holds true for the Salary View tab. This allows for the comparison of salary versus hourly pay trends for occupations as well as which compensation practice most commonly is utilized for a position.</p><p>For relevancy purposes, we utilize technology which provides a minimum threshold score pertinent to the classification of a job seeker or a job posting as representing an occupation. Only data exceeding our scores is utilized for reporting.</p><p>To ensure the integrity of the data we present, outlier elimination rules are set to discard after review any data point we deem erroneous for reporting purposes.</p></div>
+
+            <h2>Data Segmentation</h2>
+            <div>
+				<p>From the extensive job seeker profiles and company job postings which we source our compensation data, we also have the ability to utilize the demographics that characterize those people and jobs. Within the Compensation Portal, users can sort, or filter through, our compensation information by the following areas:</p>
+				<h3>Company Designation</h3>
+				<div>
+					<ul>
+						<li>Company Name – Source benchmark competition data against competing businesses.</li>
+						<li>Industry (NAICS) – We classify job seekers and job postings by the United States federal statistical agencies’ North American Industry Classification System (NAICS). Pay trends differ immensely by industry and we see large value for users by being able to segment the U.S. labor landscape into more granular levels.</li>
+						<li>Company Size – Companies of differing sizes structure compensation systems differently.</li>
+					</ul>
+				</div>
+
+				<h3>Experience Designation</h3>
+				<div>
+					<ul>
+						<li>Years of Experience – Amount of time in workforce.</li>
+						<li>Management Experience – The impact on compensation when roles and responsibilities include the supervision or oversight of individuals/projects.</li>
+						<li>Occupation Type (O*NET) – We classify job seekers and job postings by O*Net code, which is based off of the United States Bureau of Labor’s Standard Occupational Coding (SOC) system. Not only does this allow for more accurate reporting by job title or position, it allows the user to only source the compensation information he or she deems valuable within a specific occupational code.</li>
+					</ul>
+				</div>
+
+				<h3>Location Designation</h3>
+				<div>
+					<ul>
+						<li>Nationwide – Search for trends and compare/contrast compensation in different regions of the entire United States.</li>
+						<li>State – Differences in pay can be heavily dependent on location within the country.</li>
+						<li>Metropolitan Statistical Area (MSA) – Utilized by the United States government’s Office of Management and Budget as geographic reporting entities, Metropolitan Statistical Areas are core urban areas which house a specific threshold of population.</li>
+						<li>City, State – The ability to view individual cities when State or MSA filtering is applied.</li>
+					</ul>
+				</div>
+
+				<h3>Education Designation</h3>
+				<div>
+					<ul>
+						<li>Education Level – Highest job seeker educational level attained</li>
+						<li>School Attended – Trade School, College, or University attended</li>
+						<li>School Major – Program listed on resume</li>
+					</ul>
+				</div>
+            </div>
+
+            <h2>Guide to Interpreting Percentiles</h2>
+            <div>
+                <ul>
+                    <li>10<sup>th</sup> Percentile – 10% of all the data in the sample is found below this value when ranked low to high.</li>
+                    <li>25<sup>th</sup> Percentile – 25% of all the data in the sample is found below this value when ranked low to high. Also known as the first quartile.</li>
+                    <li>50<sup>th</sup> Percentile – 50% of all the data in the sample is found below this value when ranked low to high. Also known as the median, or the data point that splits the sample in two halves.</li>
+                    <li>75<sup>th</sup> Percentile – 75% of all the data in the sample is found below this value when ranked low to high. Also known as the third quartile.</li>
+                    <li>90<sup>th</sup> Percentile – 90% of all the data in the sample is found below this value when ranked low to high.</li>
+                </ul>
+            </div>
+        </form>
+
+    <script type="text/javascript">
+        jQuery('h3').append('<img src="http://img.icbdr.com/images/personified/454545_7x7_arrow_down.gif" class="expand" style="display:none" /><img src="http://img.icbdr.com/images/personified/454545_7x7_arrow_up.gif" class="collapse" style="display:none" />');
+        jQuery('h3').next().hide();
+        jQuery('h3').bind("mouseover", function () {
+            jQuery(this).css({ 'color': '#000' });
+            if (jQuery(this).next().css('display') == 'none') {
+                jQuery(this).find('.expand').show();
+            } else {
+                jQuery(this).find('.collapse').show();
+            }
+        });
+        jQuery('h3').bind("mouseout", function () {
+            jQuery(this).removeAttr('style');
+            jQuery(this).find('.expand, .collapse').hide();
+        });
+        jQuery('h3').bind("click", function () {
+            jQuery(this).next().slideToggle("slow");
+        });
+    
+    </script>
+
+    </body>
+</html>
